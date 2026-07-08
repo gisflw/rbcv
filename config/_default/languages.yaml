@@ -122,14 +122,14 @@ pt:
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           jobs:
             - name: "Pesquisador de pós-doutorado"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com a ANA"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com a Agência Nacional de Águas e Saneamento Básico (ANA)"
               date: "Mar 2026 – atual"
               content: |-
                 Modelagem hidrológica em larga escala e análise de dados ambientais para apoiar o desenvolvimento de aplicações hidrológicas nacionais no Brasil, com ênfase em influências antrópicas e impactos de mudanças climáticas.
 
                 Projetos relacionados: [Aplicações hidrológicas nacionais](/pt/projects/national-hydrological-applications/) e [MGB em escala nacional](/pt/projects/mgb-national-scale/).
             - name: "Pesquisador de pós-doutorado"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com o SGB"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com o Serviço Geológico do Brasil (SGB)"
               date: "Jul 2025 – atual"
               content: |-
                 Processamento e análise de dados geoespaciais e séries temporais para aprimorar sistemas de alerta de cheias em bacias do Rio Grande do Sul.
@@ -162,7 +162,7 @@ pt:
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           jobs:
             - name: "Pesquisador assistente"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com a ANA"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com a Agência Nacional de Águas e Saneamento Básico (ANA)"
               date: "Jan 2020 – Jun 2022"
               content: |-
                 Compatibilização de modelagem hidrológica com rede hidrográfica vetorial, análise de variáveis hidrológicas nacionais, aplicações de aprendizado de máquina para regionalização de vazões e apoio ao SEEA-Water no Brasil.
@@ -375,14 +375,14 @@ es:
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           jobs:
             - name: "Investigador posdoctoral"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con ANA"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con la Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA)"
               date: "Mar 2026 – actualidad"
               content: |-
                 Modelización hidrológica a gran escala y análisis de datos ambientales para apoyar aplicaciones hidrológicas nacionales en Brasil, con énfasis en influencias antrópicas e impactos del cambio climático.
 
                 Proyectos relacionados: [Aplicaciones hidrológicas nacionales](/es/projects/national-hydrological-applications/) y [MGB a escala nacional](/es/projects/mgb-national-scale/).
             - name: "Investigador posdoctoral"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con SGB"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con el Servicio Geológico de Brasil (SGB)"
               date: "Jul 2025 – actualidad"
               content: |-
                 Procesamiento y análisis de datos geoespaciales y series temporales para mejorar sistemas de alerta temprana de inundaciones en cuencas de Rio Grande do Sul.
@@ -415,7 +415,7 @@ es:
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           jobs:
             - name: "Asistente de investigación"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con ANA"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con la Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA)"
               date: "Ene 2020 – Jun 2022"
               content: |-
                 Compatibilización de modelización hidrológica con red hidrográfica vectorial, análisis de variables hidrológicas nacionales, aprendizaje automático para regionalización de caudales y apoyo al SEEA-Water en Brasil.

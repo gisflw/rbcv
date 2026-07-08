@@ -148,14 +148,14 @@ experience:
     - company: "Federal University of Rio Grande do Sul (UFRGS)"
       jobs:
         - name: "Postdoctoral Researcher"
-          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with ANA"
+          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with the Brazilian National Water Agency (ANA)"
           date: "Mar 2026 – present"
           content: |-
             Large-scale hydrological modelling and environmental data analysis to support the development and improvement of national-scale hydrological applications in Brazil, with emphasis on anthropogenic influences and climate-change impacts on water systems.
 
             Related projects: [National hydrological applications](/projects/national-hydrological-applications/) and [National-scale MGB modelling](/projects/mgb-national-scale/).
         - name: "Postdoctoral Researcher"
-          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with SGB"
+          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with the Brazilian Geological Survey (SGB)"
           date: "Jul 2025 – present"
           content: |-
             Processing and analysis of geospatial and time-series data to enhance flood early warning systems for river basins in Rio Grande do Sul, including water level and streamflow modelling, quality control, validation, and dashboards.
@@ -166,7 +166,7 @@ experience:
         - name: "Hydrology and geospatial data consultant"
           date: "May 2025 – Nov 2025"
           content: |-
-            Modelling and structuring of a relational and geospatial PostgreSQL/PostGIS database to unify and standardize water availability datasets used by ANA, including data modelling, migration routines, processing functions, documentation, and technical training.
+            Modelling and structuring of a relational and geospatial PostgreSQL/PostGIS database to unify and standardize water availability datasets used by the Brazilian National Water Agency (ANA), including data modelling, migration routines, processing functions, documentation, and technical training.
 
             Related project: [Brazilian Hydrological Availability Data System](/tools/brazilian-hydrological-availability-data-system/).
     - company: "Institute of the Brazilian Savannah"
@@ -188,7 +188,7 @@ experience:
     - company: "Federal University of Rio Grande do Sul (UFRGS)"
       jobs:
         - name: "Research Assistant"
-          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with ANA"
+          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with the Brazilian National Water Agency (ANA)"
           date: "Jan 2020 – Jun 2022"
           content: |-
             Hydrological modelling compatibility with vector river networks, national-scale analysis of precipitation, soil moisture, evapotranspiration, and water storage, machine-learning reference-flow regionalization, and support for SEEA-Water in Brazil.
