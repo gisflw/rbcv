@@ -38,6 +38,9 @@ hero:
   content: >-
     I build hydrological models, geospatial workflows, and environmental data systems for research, forecasting, and water resources applications.
   image: "/images/me.jpg"
+  locationBadge:
+    nationality: "🇧🇷 Brazilian"
+    location: "📍 Porto Alegre, RS"
   bottomImage:
     enable: true
   button:
@@ -49,7 +52,7 @@ hero:
   socialLinks:
     fontAwesomeIcons:
       - icon: "fab fa-github"
-        url: "https://github.com/barbedorafael"
+        url: "https://github.com/gisflw"
       - icon: "fab fa-linkedin"
         url: "https://www.linkedin.com/in/rafael-barbedo/"
       - icon: "fa-solid fa-envelope"
@@ -268,15 +271,15 @@ achievements:
   items:
     - title: "Rating Curve Explorer"
       content: "Toolset for organizing, visualizing, and doing initial analysis on streamflow data related to rating-curve derivation."
-      url: "https://github.com/barbedorafael/rating-curve-explorer"
+      url: "https://github.com/gisflw/rating-curve-explorer"
       image: "/images/achievement.jpg"
     - title: "Brazilian Hydrological Availability Data System"
       content: "ETL framework for consolidating geospatial hydrological data within ANA's water availability data system, with traceable processing over national hydrographic network versions."
-      url: "https://github.com/barbedorafael/db-disphid"
+      url: "https://github.com/gisflw/db-disphid"
       image: "/images/achievement.jpg"
     - title: "Build Hydro Database Brazil"
       content: "Tools for retrieving streamflow and rainfall data from stations of the Brazilian Hydrological Network."
-      url: "https://github.com/barbedorafael/build_hydrodb"
+      url: "https://github.com/gisflw/build_hydrodb"
       image: "/images/achievement.jpg"
     - title: "Reference Mean and Low Streamflow Dataset"
       content: "Reference streamflows, including long-term mean flow and q95, for more than 400,000 ungauged river points in Brazil, estimated with machine-learning models."
@@ -288,11 +291,11 @@ achievements:
       image: "/images/achievement.jpg"
     - title: "Topographic Position-based Stream definition (TPS)"
       content: "Algorithm for drainage extraction on digital elevation models based on topographic position."
-      url: "https://github.com/barbedorafael/TPS"
+      url: "https://github.com/gisflw/TPS"
       image: "/images/achievement.jpg"
     - title: "Attention UNet for shrub segmentation"
       content: "Deep-learning pipeline used to identify shrub individuals or clumps in drone-derived RGB imagery."
-      url: "https://github.com/barbedorafael/att-unet-shrub-id"
+      url: "https://github.com/gisflw/att-unet-shrub-id"
       image: "/images/achievement.jpg"
 
 contact:
@@ -306,7 +309,7 @@ footer:
   recentPosts:
     enable: false
   socialNetworks:
-    github: "https://github.com/barbedorafael"
+    github: "https://github.com/gisflw"
     linkedin: "https://www.linkedin.com/in/rafael-barbedo/"
 
 listPages:

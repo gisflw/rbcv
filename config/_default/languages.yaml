@@ -39,6 +39,9 @@ pt:
       subtitle: "Hidrologia, geoprocessamento e sistemas ambientais"
       content: >-
         Desenvolvo modelos hidrológicos, análises geoespaciais e sistemas de dados ambientais para aplicações de pesquisa, previsão hidrológica e gestão de recursos hídricos.
+      locationBadge:
+        nationality: "🇧🇷 Brasileiro"
+        location: "📍 Porto Alegre, RS"
       button:
         name: "Baixar CV"
         url: "/cv/cv-pt.pdf"
@@ -219,15 +222,15 @@ pt:
       items:
         - title: "Rating Curve Explorer"
           content: "Ferramenta para organizar, visualizar e fazer análises iniciais de dados de vazão usados na derivação de curvas-chave."
-          url: "https://github.com/barbedorafael/rating-curve-explorer"
+          url: "https://github.com/gisflw/rating-curve-explorer"
           image: "/images/achievement.jpg"
         - title: "Brazilian Hydrological Availability Data System"
           content: "Framework ETL para consolidar dados hidrológicos geoespaciais no sistema de disponibilidade hídrica da ANA."
-          url: "https://github.com/barbedorafael/db-disphid"
+          url: "https://github.com/gisflw/db-disphid"
           image: "/images/achievement.jpg"
         - title: "Build Hydro Database Brazil"
           content: "Ferramentas para recuperar dados de vazão e precipitação da Rede Hidrometeorológica Nacional."
-          url: "https://github.com/barbedorafael/build_hydrodb"
+          url: "https://github.com/gisflw/build_hydrodb"
           image: "/images/achievement.jpg"
         - title: "Reference Streamflow Dataset"
           content: "Vazões médias e baixas de referência para mais de 400 mil pontos da rede hidrográfica brasileira, estimadas com modelos de aprendizado de máquina."
@@ -239,7 +242,7 @@ pt:
           image: "/images/achievement.jpg"
         - title: "TPS"
           content: "Algoritmo de extração de drenagem em MDEs baseado em posição topográfica."
-          url: "https://github.com/barbedorafael/TPS"
+          url: "https://github.com/gisflw/TPS"
           image: "/images/achievement.jpg"
     contact:
       title: "Contato"
@@ -292,6 +295,9 @@ es:
       subtitle: "Hidrología, geoprocesamiento y sistemas ambientales"
       content: >-
         Desarrollo modelos hidrológicos, análisis geoespaciales y sistemas de datos ambientales para investigación, pronóstico hidrológico y gestión de recursos hídricos.
+      locationBadge:
+        nationality: "🇧🇷 Brasileño"
+        location: "📍 Porto Alegre, RS"
       button:
         name: "Descargar CV"
         url: "/cv/cv-es.pdf"
@@ -472,15 +478,15 @@ es:
       items:
         - title: "Rating Curve Explorer"
           content: "Herramienta para organizar, visualizar y hacer análisis inicial de datos de caudal usados en la derivación de curvas de gasto."
-          url: "https://github.com/barbedorafael/rating-curve-explorer"
+          url: "https://github.com/gisflw/rating-curve-explorer"
           image: "/images/achievement.jpg"
         - title: "Brazilian Hydrological Availability Data System"
           content: "Framework ETL para consolidar datos hidrológicos geoespaciales en el sistema de disponibilidad hídrica de ANA."
-          url: "https://github.com/barbedorafael/db-disphid"
+          url: "https://github.com/gisflw/db-disphid"
           image: "/images/achievement.jpg"
         - title: "Build Hydro Database Brazil"
           content: "Herramientas para recuperar datos de caudal y precipitación de la red hidrometeorológica brasileña."
-          url: "https://github.com/barbedorafael/build_hydrodb"
+          url: "https://github.com/gisflw/build_hydrodb"
           image: "/images/achievement.jpg"
         - title: "Reference Streamflow Dataset"
           content: "Caudales medios y bajos de referencia para más de 400 mil puntos de la red hidrográfica brasileña, estimados con aprendizaje automático."
@@ -492,7 +498,7 @@ es:
           image: "/images/achievement.jpg"
         - title: "TPS"
           content: "Algoritmo de extracción de drenaje en MDEs basado en posición topográfica."
-          url: "https://github.com/barbedorafael/TPS"
+          url: "https://github.com/gisflw/TPS"
           image: "/images/achievement.jpg"
     contact:
       title: "Contacto"
