@@ -22,6 +22,8 @@ LABELS = {
     publications: "Publications",
     contact: "Contact",
     stack: "Tools",
+    portfolio: "Portfolio",
+    headline: "Hydrologist | Geospatial Data Scientist | Research Software Engineer",
     country: "Brazil",
     current: "present"
   },
@@ -33,6 +35,8 @@ LABELS = {
     publications: "Publicações",
     contact: "Contato",
     stack: "Ferramentas",
+    portfolio: "Portfólio",
+    headline: "Hidrólogo | Cientista de Dados Geoespaciais | Engenheiro de Software Científico",
     country: "Brasil",
     current: "atual"
   },
@@ -44,6 +48,8 @@ LABELS = {
     publications: "Publicaciones",
     contact: "Contacto",
     stack: "Herramientas",
+    portfolio: "Portafolio",
+    headline: "Hidrólogo | Científico de Datos Geoespaciales | Ingeniero de Software Científico",
     country: "Brasil",
     current: "actual"
   }
@@ -131,7 +137,7 @@ class CvDocument
   end
 
   def headline
-    "Hydrologist | Geospatial Data Scientist | Research Software Engineer"
+    labels[:headline]
   end
 
   def city_country
@@ -150,8 +156,16 @@ class CvDocument
     end.reject { |link| blank?(link["url"]) }
   end
 
+  def portfolio_link
+    suffix = lang == "en" ? "" : "#{lang}/"
+    {
+      "label" => labels[:portfolio],
+      "url" => "https://gisflw.github.io/rbcv/#{suffix}"
+    }
+  end
+
   def profile_links
-    contact_links.reject { |link| link["label"] == "Email" }
+    [portfolio_link] + contact_links.reject { |link| link["label"] == "Email" }
   end
 
   def email
