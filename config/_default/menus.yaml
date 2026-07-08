@@ -2,10 +2,10 @@ main:
   - identifier: tools-datasets
     name: "Tools & Datasets"
     title: "Tools and datasets"
-    url: "/#achievements"
+    url: "/#tools-datasets"
     weight: 4
   - identifier: publications
     name: "Publications"
     title: "Publications"
-    url: "/publications/"
+    url: "/#publications"
     weight: 5

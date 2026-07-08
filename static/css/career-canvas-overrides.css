@@ -464,6 +464,13 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
   text-decoration: none;
 }
 
+.cv-section-anchor {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden;
+}
+
 #achievements .cv-tool-card {
   align-items: flex-start;
   gap: 0.8rem;

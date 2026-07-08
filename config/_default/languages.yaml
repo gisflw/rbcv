@@ -8,12 +8,12 @@ en:
       - identifier: tools-datasets
         name: "Tools & Datasets"
         title: "Tools and datasets"
-        url: "/#achievements"
+        url: "/#tools-datasets"
         weight: 4
       - identifier: publications
         name: "Publications"
         title: "Publications"
-        url: "/publications/"
+        url: "/#publications"
         weight: 5
 pt:
   languageName: "Português"
@@ -25,12 +25,12 @@ pt:
       - identifier: tools-datasets
         name: "Ferramentas & Bases de Dados"
         title: "Ferramentas e bases de dados"
-        url: "/pt/#achievements"
+        url: "/pt/#tools-datasets"
         weight: 4
       - identifier: publications
         name: "Publicações"
         title: "Publicações"
-        url: "/pt/publications/"
+        url: "/pt/#publications"
         weight: 5
   params:
     hero:
@@ -408,12 +408,12 @@ es:
       - identifier: tools-datasets
         name: "Herramientas y Conjuntos de Datos"
         title: "Herramientas y conjuntos de datos"
-        url: "/es/#achievements"
+        url: "/es/#tools-datasets"
         weight: 4
       - identifier: publications
         name: "Publicaciones"
         title: "Publicaciones"
-        url: "/es/publications/"
+        url: "/es/#publications"
         weight: 5
   params:
     hero:
