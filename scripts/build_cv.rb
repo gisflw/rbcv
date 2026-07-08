@@ -203,8 +203,8 @@ def build_pdf(lang, params)
   FileUtils.mkdir_p(OUTPUT_DIR)
 
   document = CvDocument.new(lang: lang, params: params)
-  markdown_path = File.join(BUILD_DIR, "cv-#{lang}.md")
-  pdf_path = File.join(OUTPUT_DIR, "cv-#{lang}.pdf")
+  markdown_path = File.join(BUILD_DIR, "rbcv-#{lang}.md")
+  pdf_path = File.join(OUTPUT_DIR, "rbcv-#{lang}.pdf")
   File.write(markdown_path, document.render)
 
   command = [

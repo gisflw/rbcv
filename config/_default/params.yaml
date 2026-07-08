@@ -46,7 +46,7 @@ hero:
   button:
     enable: true
     name: "Download CV"
-    url: "cv/cv-en.pdf"
+    url: "cv/rbcv-en.pdf"
     download: true
     newPage: false
   socialLinks:

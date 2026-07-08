@@ -44,7 +44,7 @@ pt:
         location: "📍 Porto Alegre, RS"
       button:
         name: "Baixar CV"
-        url: "cv/cv-pt.pdf"
+        url: "cv/rbcv-pt.pdf"
         download: true
         newPage: false
     about:
@@ -427,7 +427,7 @@ es:
         location: "📍 Porto Alegre, RS"
       button:
         name: "Descargar CV"
-        url: "cv/cv-es.pdf"
+        url: "cv/rbcv-es.pdf"
         download: true
         newPage: false
     about:

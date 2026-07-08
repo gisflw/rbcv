@@ -12,6 +12,14 @@
 <%= [email, city_country].reject { |item| blank?(item) }.join(" | ") %>
 <% end -%>
 
+<% unless blank?(education["items"]) -%>
+## <%= education["title"] || labels[:education] %>
+
+<% (education["items"] || []).each do |item| -%>
+- **<%= item["title"] %>**, <%= item.dig("school", "name") %> (<%= item["date"] %>)<% unless blank?(item["content"]) %>. <%= compact_markdown(item["content"]).gsub(/\AThesis:\s*/, "Thesis: ") %><% end %>
+<% end -%>
+<% end -%>
+
 <% unless blank?(skills["sets"]) && blank?(skills["stack"]) -%>
 ## <%= skills["title"] || labels[:skills] %>
 
@@ -36,14 +44,6 @@
 <%= compact_markdown(job["content"]) %>
 
 <% end -%>
-<% end -%>
-<% end -%>
-
-<% unless blank?(education["items"]) -%>
-## <%= education["title"] || labels[:education] %>
-
-<% (education["items"] || []).each do |item| -%>
-- **<%= item["title"] %>**, <%= item.dig("school", "name") %> (<%= item["date"] %>)<% unless blank?(item["content"]) %>. <%= compact_markdown(item["content"]).gsub(/\AThesis:\s*/, "Thesis: ") %><% end %>
 <% end -%>
 <% end -%>
 
