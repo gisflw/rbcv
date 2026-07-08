@@ -11,6 +11,7 @@
         {{ $companyUrl := .companyUrl }}
 
         {{ range .jobs }}
+        {{ $companyDisplay := .companyDisplay | default $company }}
         <article class="cv-timeline-item">
           <div class="cv-timeline-marker" aria-hidden="true"></div>
 
@@ -20,14 +21,19 @@
               <span>{{ .date }}</span>
             </div>
 
-            <h4>
+            <h4>{{ .name }}</h4>
+            <div class="cv-experience-company">
               {{ if $companyUrl }}
-              <a href="{{ $companyUrl }}" target="_blank" rel="noopener">{{ $company }}</a>
+              <a href="{{ $companyUrl }}" target="_blank" rel="noopener">{{ $companyDisplay }}</a>
               {{ else }}
-              {{ $company }}
+              {{ $companyDisplay }}
               {{ end }}
-            </h4>
-            <h5>{{ .name }}</h5>
+            </div>
+
+            <div class="cv-company-logo-placeholder" aria-hidden="true">
+              <i class="fa-solid fa-building"></i>
+              <span>Logo</span>
+            </div>
           </div>
 
           <div class="cv-experience-card cv-experience-details">

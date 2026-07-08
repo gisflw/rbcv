@@ -196,7 +196,7 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
   position: relative;
   display: grid;
   gap: 2rem;
-  max-width: 1100px;
+  max-width: 1180px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -216,22 +216,23 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
 #experience .cv-timeline-item {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
-  gap: 3rem;
+  grid-template-columns: minmax(0, 1fr) 72px minmax(0, 1fr);
+  gap: 0;
   align-items: start;
 }
 
 #experience .cv-timeline-marker {
-  position: absolute;
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
   top: 1.25rem;
-  left: 50%;
   width: 1rem;
   height: 1rem;
   background-color: var(--primary-color) !important;
   border: 3px solid var(--background-color);
   border-radius: 50%;
   box-shadow: 0 0 0 5px rgba(127, 127, 127, 0.16);
-  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -241,6 +242,7 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
 }
 
 #experience .cv-experience-meta {
+  grid-column: 1;
   text-align: right;
 }
 
@@ -259,18 +261,42 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
 
 #experience .cv-experience-meta h4 {
   margin-bottom: 0.4rem;
-  color: var(--text-color) !important;
+  color: var(--primary-color) !important;
   font-size: 1.2rem;
+  line-height: 1.4;
 }
 
-#experience .cv-experience-meta h5 {
-  margin: 0;
-  color: var(--primary-color) !important;
+#experience .cv-experience-company {
+  color: var(--text-color) !important;
   font-size: 1rem;
+  font-weight: 700;
   line-height: 1.45;
 }
 
+#experience .cv-company-logo-placeholder {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 82px;
+  padding: 1rem;
+  margin-top: 1.25rem;
+  color: var(--text-secondary-color) !important;
+  background-color: var(--background-color) !important;
+  border: 1px dashed rgba(127, 127, 127, 0.45);
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+#experience .cv-company-logo-placeholder i {
+  color: var(--primary-color) !important;
+  font-size: 1.4rem;
+}
+
 #experience .cv-experience-details {
+  grid-column: 3;
   color: var(--text-secondary-color) !important;
   line-height: 1.65;
 }
@@ -311,10 +337,19 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
   }
 
   #experience .cv-timeline-marker {
+    position: absolute;
+    grid-column: auto;
+    grid-row: auto;
     left: 0.5rem;
+    transform: translateX(-50%);
   }
 
   #experience .cv-experience-meta {
+    grid-column: auto;
     text-align: left;
+  }
+
+  #experience .cv-experience-details {
+    grid-column: auto;
   }
 }

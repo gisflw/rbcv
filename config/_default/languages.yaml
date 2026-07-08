@@ -57,8 +57,9 @@ pt:
         interestsTitle: "Interesses"
       languages:
         - "Português: nativo"
-        - "Inglês: profissional"
-        - "Espanhol: proficiência de trabalho"
+        - "Inglês: fluente"
+        - "Espanhol: fluente"
+        - "Francê: intermediário"
       interests:
         - "Previsão hidrológica"
         - "Dados ambientais abertos"
@@ -124,13 +125,15 @@ pt:
       items:
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           jobs:
-            - name: "Pesquisador de pós-doutorado — parceria ANA"
+            - name: "Pesquisador de pós-doutorado"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com a ANA"
               date: "Mar 2026 – atual"
               content: |-
                 Modelagem hidrológica em larga escala e análise de dados ambientais para apoiar o desenvolvimento de aplicações hidrológicas nacionais no Brasil, com ênfase em influências antrópicas e impactos de mudanças climáticas.
 
                 Projetos relacionados: [Aplicações hidrológicas nacionais](/pt/projects/national-hydrological-applications/) e [MGB em escala nacional](/pt/projects/mgb-national-scale/).
-            - name: "Pesquisador de pós-doutorado — parceria SGB"
+            - name: "Pesquisador de pós-doutorado"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com o SGB"
               date: "Jul 2025 – atual"
               content: |-
                 Processamento e análise de dados geoespaciais e séries temporais para aprimorar sistemas de alerta de cheias em bacias do Rio Grande do Sul.
@@ -162,7 +165,8 @@ pt:
                 Projetos relacionados: [CAMELS-GB v2](/pt/projects/camels-gb-v2/), [Atributos NRFA](/pt/projects/nrfa-catchment-attributes/) e [FDRI LiDAR](/pt/projects/fdri-lidar/).
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           jobs:
-            - name: "Pesquisador assistente — parceria ANA"
+            - name: "Pesquisador assistente"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com a ANA"
               date: "Jan 2020 – Jun 2022"
               content: |-
                 Compatibilização de modelagem hidrológica com rede hidrográfica vetorial, análise de variáveis hidrológicas nacionais, aplicações de aprendizado de máquina para regionalização de vazões e apoio ao SEEA-Water no Brasil.
@@ -310,8 +314,9 @@ es:
         interestsTitle: "Intereses"
       languages:
         - "Portugués: nativo"
-        - "Inglés: profesional"
-        - "Español: competencia laboral"
+        - "Inglés: fluente"
+        - "Español: fluente"
+        - "Francés: intermedio"
       interests:
         - "Pronóstico hidrológico"
         - "Datos ambientales abiertos"
@@ -377,13 +382,15 @@ es:
       items:
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           jobs:
-            - name: "Investigador posdoctoral — colaboración ANA"
+            - name: "Investigador posdoctoral"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con ANA"
               date: "Mar 2026 – actualidad"
               content: |-
                 Modelización hidrológica a gran escala y análisis de datos ambientales para apoyar aplicaciones hidrológicas nacionales en Brasil, con énfasis en influencias antrópicas e impactos del cambio climático.
 
                 Proyectos relacionados: [Aplicaciones hidrológicas nacionales](/es/projects/national-hydrological-applications/) y [MGB a escala nacional](/es/projects/mgb-national-scale/).
-            - name: "Investigador posdoctoral — colaboración SGB"
+            - name: "Investigador posdoctoral"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con SGB"
               date: "Jul 2025 – actualidad"
               content: |-
                 Procesamiento y análisis de datos geoespaciales y series temporales para mejorar sistemas de alerta temprana de inundaciones en cuencas de Rio Grande do Sul.
@@ -415,7 +422,8 @@ es:
                 Proyectos relacionados: [CAMELS-GB v2](/es/projects/camels-gb-v2/), [Atributos NRFA](/es/projects/nrfa-catchment-attributes/) y [FDRI LiDAR](/es/projects/fdri-lidar/).
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           jobs:
-            - name: "Asistente de investigación — colaboración ANA"
+            - name: "Asistente de investigación"
+              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con ANA"
               date: "Ene 2020 – Jun 2022"
               content: |-
                 Compatibilización de modelización hidrológica con red hidrográfica vectorial, análisis de variables hidrológicas nacionales, aprendizaje automático para regionalización de caudales y apoyo al SEEA-Water en Brasil.

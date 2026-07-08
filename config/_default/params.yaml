@@ -36,7 +36,7 @@ hero:
   subtitle: "Hydrology, geospatial data engineering, and environmental modelling"
   content: >-
     I build hydrological models, geospatial workflows, and environmental data systems for research, forecasting, and water resources applications.
-  image: "/images/hero.svg"
+  image: "/images/me.jpg"
   bottomImage:
     enable: true
   button:
@@ -57,7 +57,6 @@ hero:
 about:
   enable: true
   title: "About"
-  image: "/images/me.png"
   content: |-
     I am a Brazilian hydrologist, civil engineer, and geospatial data scientist with experience in large-scale hydrological modelling, flood forecasting, water availability, remote sensing, topography, and reproducible environmental data systems.
 
@@ -69,8 +68,9 @@ about:
     interestsTitle: "Interests"
   languages:
     - "Portuguese: native"
-    - "English: professional"
-    - "Spanish: working proficiency"
+    - "English: fluent"
+    - "Spanish: fluent"
+    - "French: intermediate"
   interests:
     - "Hydrological forecasting"
     - "Open environmental data"
@@ -150,13 +150,15 @@ experience:
   items:
     - company: "Federal University of Rio Grande do Sul (UFRGS)"
       jobs:
-        - name: "Postdoctoral Researcher — ANA partnership"
+        - name: "Postdoctoral Researcher"
+          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with ANA"
           date: "Mar 2026 – present"
           content: |-
             Large-scale hydrological modelling and environmental data analysis to support the development and improvement of national-scale hydrological applications in Brazil, with emphasis on anthropogenic influences and climate-change impacts on water systems.
 
             Related projects: [National hydrological applications](/projects/national-hydrological-applications/) and [National-scale MGB modelling](/projects/mgb-national-scale/).
-        - name: "Postdoctoral Researcher — SGB partnership"
+        - name: "Postdoctoral Researcher"
+          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with SGB"
           date: "Jul 2025 – present"
           content: |-
             Processing and analysis of geospatial and time-series data to enhance flood early warning systems for river basins in Rio Grande do Sul, including water level and streamflow modelling, quality control, validation, and dashboards.
@@ -188,7 +190,8 @@ experience:
             Related projects: [CAMELS-GB v2](/projects/camels-gb-v2/), [NRFA Catchment Attributes](/projects/nrfa-catchment-attributes/), and [FDRI LiDAR](/projects/fdri-lidar/).
     - company: "Federal University of Rio Grande do Sul (UFRGS)"
       jobs:
-        - name: "Research Assistant — ANA partnership"
+        - name: "Research Assistant"
+          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with ANA"
           date: "Jan 2020 – Jun 2022"
           content: |-
             Hydrological modelling compatibility with vector river networks, national-scale analysis of precipitation, soil moisture, evapotranspiration, and water storage, machine-learning reference-flow regionalization, and support for SEEA-Water in Brazil.
