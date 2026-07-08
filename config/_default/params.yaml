@@ -6,7 +6,7 @@ mathjax: false
 animate: true
 
 theme:
-  defaultTheme: "dark"
+  defaultTheme: "light"
   font:
     fontSize: "1rem"
     fontWeight: 400
@@ -56,7 +56,7 @@ hero:
       - icon: "fab fa-linkedin"
         url: "https://www.linkedin.com/in/rafael-barbedo/"
       - icon: "fa-solid fa-envelope"
-        url: "mailto:rbarbedofontana@gmail.com"
+        url: "mailto:barbedo.rf@gmail.com"
 
 about:
   enable: true
@@ -93,7 +93,7 @@ about:
       - "Geospatial data processing: topography, remote sensing, and LiDAR"
       - "Environmental time-series analysis, quality control, and validation"
       - "Statistical modelling, machine learning, and deep learning"
-      - "Python, JavaScript, SQL, and Fortran"
+      - "Python, SQL, and Fortran"
       - "PostgreSQL/PostGIS, Oracle, SQLite, NetCDF, and Zarr"
       - "Linux-based systems, Docker, QGIS, and Google Earth Engine"
 
@@ -113,7 +113,7 @@ skills:
       description: "Reproducible pipelines for environmental time series, geospatial databases, quality control, validation, and data products."
     - title: "Scientific computing"
       icon: "code"
-      description: "Scientific software development with Python, SQL, JavaScript, Fortran, statistical modelling, machine learning, and deep learning."
+      description: "Scientific software development with Python, SQL, Fortran, statistical modelling, machine learning, and deep learning."
   stack:
     - name: "Python"
       iconType: "devicon"
@@ -133,15 +133,6 @@ skills:
     - name: "Docker"
       iconType: "devicon"
       icon: "docker-plain"
-    - name: "JavaScript"
-      iconType: "devicon"
-      icon: "javascript-plain"
-    - name: "Panel"
-      iconType: "devicon"
-      icon: "panel-plain"
-    - name: "Streamlit"
-      iconType: "devicon"
-      icon: "streamlit-plain"
     - name: "SQL"
       iconType: "fa"
       icon: "database"
@@ -162,51 +153,70 @@ experience:
         - name: "Postdoctoral Researcher"
           companyDisplay: "[Federal University of Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) in partnership with the [National Water and Sanitation Agency (ANA)](https://www.gov.br/ana/pt-br)"
           date: "Mar 2026 – present"
+          country: "🇧🇷 Brazil"
           content: |-
             - Large-scale hydrological modelling and environmental data analysis for national water resources applications in Brazil.
-            - Assessment of anthropogenic influences and climate-change impacts on water systems.
-            - Modelling work with the Modelo de Grandes Bacias (MGB) large-basin hydrological model.
+            - Processing and analysis of geospatial and hydrological time-series data, with integration of environmental datasets into reproducible computational workflows.
+            - Support for hydrological model parameterization and evaluation, including modelling work with the Modelo de Grandes Bacias (MGB) large-basin hydrological model.
+            - Assessment of reservoirs, water use, land-use change, climate variability, and climate-change impacts on hydrological processes.
+            - Contributions to operational and research-oriented initiatives related to water resources management and hydrological forecasting in Brazil.
         - name: "Postdoctoral Researcher"
           companyDisplay: "[Federal University of Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) in partnership with the [Brazilian Geological Survey (SGB)](https://www.sgb.gov.br/)"
           date: "Jul 2025 – present"
+          country: "🇧🇷 Brazil"
           content: |-
             - Processing and analysis of geospatial and time-series data for flood early warning systems in Rio Grande do Sul.
-            - Water level and streamflow modelling, quality control, validation, and dashboard support.
+            - Water level and streamflow modelling to enhance basin-scale flood monitoring and forecasting workflows.
+            - Data quality control, validation, and integration of multiple hydrological data sources.
+            - Development and support of visualization dashboards for operational flood-warning activities.
     - company: "Brazilian National Water Agency (ANA)"
       companyUrl: "https://www.gov.br/ana/pt-br"
       jobs:
         - name: "Hydrology and geospatial data consultant"
           date: "May 2025 – Nov 2025"
+          country: "🇧🇷 Brazil"
           content: |-
-            - Modelled and structured a relational and geospatial PostgreSQL/PostGIS database for water availability datasets used by the National Water and Sanitation Agency (ANA).
-            - Developed data modelling, migration routines, processing functions, documentation, and technical training material.
-    - company: "Institute of the Brazilian Savannah"
+            - Modelled and structured a relational and geospatial PostgreSQL/PostGIS database for unifying and standardizing water availability datasets.
+            - Diagnosed and mapped the existing database, including tables, relationships, and spatial routines required to define water availability.
+            - Developed a new logical and physical data model, processing functions, migration routines, and a full data migration to the new structure.
+            - Produced a user manual and technical training materials for ANA staff, covering data querying, updating, and ingestion procedures.
+            - Worked closely with ANA's technical team while applying best practices in data modelling, version control, and geospatial-system documentation.
+    - company: "Cerrados Institute (IC)"
+      companyUrl: "https://cerrados.org/"
       jobs:
         - name: "Hydrological modelling consultant"
           date: "Jan 2025 – Sep 2025"
+          country: "🇧🇷 Brazil"
           content: |-
             - Hydrological modelling and spatial analysis to prioritize native vegetation protection and restoration in the Cerrado biome.
-            - Integrated remote sensing, climate time series, land-use maps, Python, and QGIS workflows.
+            - Application of the PLANS hydrological model to simulate infiltration, evapotranspiration, and surface runoff under different vegetation-cover scenarios.
+            - Integration of remote sensing data, historical climate time series, land-use maps, Python, and QGIS workflows.
+            - Organization and processing of large environmental datasets, development and calibration of representative hydrological models, and regional-scale analysis of hydrological additionality.
+            - Development of indicators, prioritization maps, geospatial visualizations, automated workflows, technical reports, and methodological inputs for conservation and water-management decisions.
     - company: "UK Centre for Ecology & Hydrology (UKCEH)"
       companyUrl: "https://www.ceh.ac.uk/"
       jobs:
         - name: "Spatial Data Scientist"
           date: "Jul 2022 – May 2025"
+          country: "🇬🇧 United Kingdom"
           content: |-
             - Spatial data analysis, management, and mapping for the Water Resources Systems group.
-            - Catchment attribute development for the [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/).
-            - LiDAR processing tools for the [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
-            - Research data curation through the [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
+            - Processing and maintenance of hydrological and environmental datasets associated with monitored catchments of the [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/).
+            - Development of catchment descriptors and mapping products for water resources research projects.
+            - Development of tools for processing high-resolution topographic data derived from LiDAR for the [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
+            - Promotion of data-management best practices and support for research data curation through the [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
     - company: "Federal University of Rio Grande do Sul (UFRGS)"
       companyUrl: "https://www.ufrgs.br/"
       jobs:
         - name: "Research Assistant"
           companyDisplay: "[Federal University of Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) in partnership with the [National Water and Sanitation Agency (ANA)](https://www.gov.br/ana/pt-br)"
           date: "Jan 2020 – Jun 2022"
+          country: "🇧🇷 Brazil"
           content: |-
-            - Hydrological modelling compatibility with vector river networks.
-            - National-scale analysis of precipitation, soil moisture, evapotranspiration, and water storage.
-            - Machine-learning regionalization of reference streamflows and support for the System of Environmental-Economic Accounting for Water (SEEA-Water) in Brazil.
+            - Hydrological modelling compatibilization with vector river networks, including the integration of the Brazilian Ottocodified Hydrographic Base (BHO) with the Modelo de Grandes Bacias (MGB) and the acquisition of hydrological parameters for the national river-network database.
+            - National-scale analysis and quantification of hydrological variables, including precipitation, soil moisture, evapotranspiration, and water storage, to support the development of the System of Environmental-Economic Accounting for Water (SEEA-Water) in Brazil.
+            - Machine-learning regionalization of reference streamflows using environmental variables at national scale.
+            - Assessment of hydrological sensitivity to climate change within national-scale hydrological analyses.
 
 education:
   enable: true
@@ -291,6 +301,9 @@ achievements:
     - title: "Reference Mean and Low Streamflow Dataset"
       content: "Reference streamflows, including long-term mean flow and q95, for more than 400,000 ungauged river points in Brazil, estimated with machine-learning models."
       url: "https://zenodo.org/records/14217002"
+    - title: "Cerrado Water Conservation Priority Areas Dataset"
+      content: "Geospatial database of environmental variables, derived indexes, catchment units, and priority maps supporting multiscale assessment of water-conservation priority areas in the Cerrado biome."
+      url: "https://zenodo.org/records/21206140"
     - title: "BHO2MGB"
       content: "QGIS plugin to process the Brazilian coded river network database in the framework of the MGB large-basin hydrological model."
       url: "https://www.ufrgs.br/hge/modelos-e-outros-produtos/bho2mgb/"
@@ -321,7 +334,7 @@ contact:
   title: "Contact"
   content: "For collaboration, research, consulting, or data/software questions, contact me by email or through my professional profiles."
   btnName: "Email me"
-  btnLink: "mailto:rbarbedofontana@gmail.com"
+  btnLink: "mailto:barbedo.rf@gmail.com"
 
 footer:
   recentPosts:
@@ -349,57 +362,108 @@ publications:
   items:
     - title: "CAMELS-GB v2: hydrometeorological time series and landscape attributes for 671 catchments in Great Britain"
       year: 2026
+      type: "Journal Article"
+      language: "English"
       venue: "Earth System Science Data"
       authors: "Gemma Coxon; Yanchen Zheng; **Rafael Barbedo**; Hollie Cooper; Felipe Fileni; Hayley J. Fowler; Matt Fry; Amy Green; Tom Gribbin; Helen Harfoot; Elizabeth Lewis; Germano Gondim Ribeiro Neto; Xiaobin Qiu; Saskia Salwey; Doris E. Wendt"
-      summary: "Contributing author; derivation of catchment descriptors such as land cover, topography, and rainfall."
+      summary: "Derivation of catchment descriptors such as land cover, topography, and rainfall."
       doi: "https://doi.org/10.5194/essd-18-4345-2026"
     - title: "Modeling Long-Term Flow Regimes in Ungauged Basins: An Evaluation of Machine Learning Performance and Uncertainty"
       year: 2025
+      type: "Preprint"
+      language: "English"
       venue: "ESS Open Archive"
       authors: "**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn"
-      summary: "Main author; evaluation of machine-learning performance and uncertainty for long-term flow regimes in ungauged basins."
+      summary: "Evaluation of machine-learning performance and uncertainty for long-term flow regimes in ungauged basins."
       doi: "https://doi.org/10.22541/essoar.175336960.03823488/v1"
     - title: "Data integration approaches for hydrological analyses in Brazil"
       year: 2024
-      venue: "Doctoral dissertation, Federal University of Rio Grande do Sul"
+      type: "Doctoral Thesis"
+      language: "English"
+      venue: "Federal University of Rio Grande do Sul"
       authors: "**Rafael Barbedo**"
-      summary: "PhD dissertation."
       url: "https://lume.ufrgs.br/handle/10183/293616"
     - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
       year: 2023
+      type: "Journal Article"
+      language: "English"
       venue: "Journal of Hydrology"
       authors: "Iporã Possantti; **Rafael Barbedo**; Marcelo Kronbauer; Walter Collischonn; Guilherme Marques"
-      summary: "Contributing author; drainage-network derivation and water-table analysis."
+      summary: "Drainage-network derivation and water-table analysis."
       doi: "https://doi.org/10.1016/j.jhydrol.2022.129003"
     - title: "How much inundation occurs in the Amazon River basin?"
       year: 2022
+      type: "Journal Article"
+      language: "English"
       venue: "Remote Sensing of Environment"
       authors: "Ayan Santos Fleischmann; Fabrice Papa; Alice Fassoni-Andrade; John M. Melack; Sly Wongchuig; Rodrigo Cauduro Dias Paiva; Stephen K. Hamilton; Etienne Fluet-Chouinard; **Rafael Barbedo**; Filipe Aires; Ahmad Al Bitar; Marie-Paule Bonnet; Michael Coe; Jefferson Ferreira-Ferreira; Laura Hess; Katherine Jensen; Kyle McDonald; Alex Ovando; Edward Park; Marie Parrens; Sébastien Pinel; Catherine Prigent; Angélica F. Resende; Menaka Revel; Ake Rosenqvist; Jessica Rosenqvist; Conrado Rudorff; Thiago S.F. Silva; Dai Yamazaki; Walter Collischonn"
-      summary: "Contributing author; assessment of inundation extent in the Amazon River basin."
+      summary: "Assessment of inundation extent in the Amazon River basin."
       doi: "https://doi.org/10.1016/j.rse.2022.113099"
     - title: "Water storage variability across Brazil"
       year: 2022
+      type: "Journal Article"
+      language: "English"
       venue: "Brazilian Journal of Water Resources"
       authors: "**Rafael Barbedo**; Ayan Santos Fleischmann; Vinícius Siqueira; João Paulo Brêda; Gabriel Matte; Leonardo Laipelt; Alexandre Amorim; Alexandre Abdalla Araújo; Marcus Fuckner; Adalberto Meller; Fernando Mainardi Fan; Walter Collischonn; Anderson Ruhoff; Rodrigo Cauduro Dias de Paiva"
-      summary: "Main author; analysis of water-storage variability across Brazil."
+      summary: "Analysis of water-storage variability across Brazil."
       doi: "https://doi.org/10.1590/2318-0331.272220220077"
     - title: "Global Evapotranspiration Datasets Assessment Using Water Balance in South America"
       year: 2022
+      type: "Journal Article"
+      language: "English"
       venue: "Remote Sensing"
       authors: "Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez; João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira; Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs"
-      summary: "Contributing author; analysis of spatial agreement among evapotranspiration datasets."
+      summary: "Analysis of spatial agreement among evapotranspiration datasets."
       doi: "https://doi.org/10.3390/rs14112526"
     - title: "Topographic Position-based Stream definition (TPS)"
       year: 2022
+      type: "Journal Article"
+      language: "English"
       venue: "Hydrological Sciences Journal"
       authors: "**Rafael Barbedo**; Vinícius Siqueira; Walter Collischonn"
-      summary: "Main author; method to address spatial variability of drainage density in stream networks."
+      summary: "Method to address spatial variability of drainage density in stream networks."
       doi: "https://doi.org/10.1080/02626667.2022.2047190"
+    - title: "Cooperação em tecnologias para análises hidrológicas em escala nacional : subprojeto estimativas hidrológicas para contas econômicas ambientais da água (CEAA) no Brasil"
+      year: 2022
+      type: "Technical Report"
+      language: "Portuguese"
+      venue: "UFRGS/IPH"
+      authors: "Anderson Luis Ruhoff; Vinícius Alencar Siqueira; João Paulo Lyra Fialho Brêda; Ayan Santos Fleischmann; Gabriel Matte Rios Fernandez; Rafael Henrique Bloedow Kayser; Leonardo Laipelt dos Santos; **Rafael Barbedo**; Mino Viana Sorribas; Aline Meyer Oliveira; Rodrigo Cauduro Dias de Paiva"
+      url: "https://lume.ufrgs.br/handle/10183/274942"
+    - title: "Cooperação em tecnologias para análises hidrológicas em escala nacional : sub-projeto - regionalização de vazões via modelagem hidrológica : métodos de discretização do modelo MGB e sua relação com a BHO"
+      year: 2021
+      type: "Technical Report"
+      language: "Portuguese"
+      venue: "UFRGS/IPH"
+      authors: "Walter Collischonn; Mino Viana Sorribas; Cléber Henrique Araújo Gama; **Rafael Barbedo**; Rodrigo Cauduro Dias de Paiva"
+      url: "https://lume.ufrgs.br/handle/10183/253797"
+    - title: "Cooperação em tecnologias para análises hidrológicas em escala nacional : sub-projeto - regionalização de vazões via modelagem hidrológica : MGB-BHO : pré-processamento do MGB em cima da base hidrográfica ottocodificada"
+      year: 2021
+      type: "Technical Report"
+      language: "Portuguese"
+      venue: "UFRGS/IPH"
+      authors: "**Rafael Barbedo**; Leonardo Laipelt dos Santos; Rafaela Cristina de Oliveira; Gabriel Matte Rios Fernandez; Vinícius Alencar Siqueira; Walter Collischonn; Rodrigo Cauduro Dias de Paiva"
+      url: "https://lume.ufrgs.br/handle/10183/253840"
+    - title: "Cooperação em tecnologias para análises hidrológicas em escala nacional : sub-projeto - regionalização de vazões via modelagem hidrológica : comparação de métodos para estimativas de vazões de referência : vazão média e Q95"
+      year: 2021
+      type: "Technical Report"
+      language: "Portuguese"
+      venue: "UFRGS/IPH"
+      authors: "Mino Viana Sorribas; Walter Collischonn; Cléber Henrique Araújo Gama; **Rafael Barbedo**; Larissa de Castro Ribeiro; Rodrigo Cauduro Dias de Paiva"
+      url: "https://lume.ufrgs.br/handle/10183/253831"
+    - title: "Cooperação em tecnologias para análises hidrológicas em escala nacional : sub-projeto - regionalização de vazões via modelagem hidrológica : estimativa de vazão em locais sem dados usando machine learning"
+      year: 2021
+      type: "Technical Report"
+      language: "Portuguese"
+      venue: "UFRGS/IPH"
+      authors: "**Rafael Barbedo**; Mino Viana Sorribas; Walter Collischonn; Rodrigo Cauduro Dias de Paiva"
+      url: "https://lume.ufrgs.br/handle/10183/253843"
     - title: "Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah"
       year: 2020
-      venue: "Master's thesis, Federal University of Rio Grande do Sul"
+      type: "Master's Dissertation"
+      language: "English"
+      venue: "Federal University of Rio Grande do Sul"
       authors: "**Rafael Barbedo**"
-      summary: "Master's dissertation."
       url: "https://lume.ufrgs.br/handle/10183/221892"
 
 terms:

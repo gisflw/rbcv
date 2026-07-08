@@ -1,1 +1,55 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function isExternalLink(link) {
+      var href = link.getAttribute("href");
+
+      if (!href) {
+        return false;
+      }
+
+      try {
+        var url = new URL(href, window.location.href);
+        return (url.protocol === "http:" || url.protocol === "https:") && url.origin !== window.location.origin;
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function openExternalLinksInNewTabs(root) {
+      var links = [];
+
+      if (root.matches && root.matches("a[href]")) {
+        links.push(root);
+      }
+
+      if (root.querySelectorAll) {
+        links = links.concat(Array.prototype.slice.call(root.querySelectorAll("a[href]")));
+      }
+
+      links.forEach(function (link) {
+        if (!isExternalLink(link)) {
+          return;
+        }
+
+        link.setAttribute("target", "_blank");
+        var rel = new Set((link.getAttribute("rel") || "").split(/\s+/).filter(Boolean));
+        rel.add("noopener");
+        rel.add("noreferrer");
+        link.setAttribute("rel", Array.from(rel).join(" "));
+      });
+    }
+
+    openExternalLinksInNewTabs(document);
+
+    new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        mutation.addedNodes.forEach(function (node) {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            openExternalLinksInNewTabs(node);
+          }
+        });
+      });
+    }).observe(document.body, { childList: true, subtree: true });
+  });
+</script>

@@ -8,7 +8,9 @@
       {{ range . }}
       {{ $link := .doi | default .url }}
       <article class="cv-publication-item">
-        <span class="cv-publication-year">{{ .year }}</span>
+        <div class="cv-publication-labels">
+          <span class="cv-publication-year">{{ .year }}</span>
+        </div>
         <div class="cv-publication-body">
           <span class="cv-publication-title">
             {{ if $link }}
@@ -18,7 +20,10 @@
             {{ end }}
           </span>
         {{ with .authors }}
-        <span class="cv-publication-authors">{{ . | markdownify }}</span>
+        <span class="cv-publication-authors">{{ . | markdownify }}.</span>
+        {{ end }}
+        {{ if or .type .language }}
+        <span class="cv-publication-meta">{{ delimit (slice .type .language) " · " }}</span>
         {{ end }}
         <span class="cv-publication-meta">{{ .venue }}</span>
         {{ with .summary }}

@@ -11,7 +11,7 @@ PARAMS_PATH = File.join(ROOT, "config", "_default", "params.yaml")
 LANGUAGES_PATH = File.join(ROOT, "config", "_default", "languages.yaml")
 TEMPLATE_PATH = File.join(ROOT, "templates", "cv.md.erb")
 BUILD_DIR = File.join(ROOT, "build", "cv")
-OUTPUT_DIR = File.join(ROOT, "static", "cv")
+OUTPUT_DIR = File.join(ROOT, "public", "cv")
 
 LABELS = {
   "en" => {

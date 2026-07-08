@@ -3,6 +3,7 @@
 /resources/
 /.hugo_build.lock
 /build/
+/static/cv/*.pdf
 
 # Local environment and editor files
 .DS_Store

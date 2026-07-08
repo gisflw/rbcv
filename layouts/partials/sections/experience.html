@@ -30,6 +30,9 @@
               {{ $companyDisplay | markdownify }}
               {{ end }}
             </div>
+            {{ with .country }}
+            <div class="cv-experience-country">{{ . }}</div>
+            {{ end }}
 
           </div>
 

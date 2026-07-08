@@ -202,6 +202,12 @@ body.dark #hero .cv-hero-location-badge {
   border-bottom: 0;
 }
 
+#publications .cv-publication-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 #publications .cv-publication-year {
   display: inline-flex;
   align-items: center;
@@ -382,6 +388,26 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
+}
+
+#experience .cv-experience-country {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.7rem;
+  margin-top: 0.85rem;
+  color: var(--text-color) !important;
+  background-color: var(--background-color) !important;
+  border: 1px solid rgba(127, 127, 127, 0.24);
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  #experience .cv-experience-country {
+    margin-left: auto;
+  }
 }
 
 #experience .cv-company-logo-placeholder {
