@@ -39,17 +39,38 @@ jobs:
         with:
           ruby-version: "3.3"
 
-      - name: Install PDF dependencies
+      - name: Cache TinyTeX
+        id: cache-tinytex
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.TinyTeX
+            ~/.texlive*
+          key: ${{ runner.os }}-tinytex-v1-${{ hashFiles('.github/workflows/pages.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-tinytex-v1-
+
+      - name: Install Pandoc
         run: |
           sudo apt-get update
           sudo apt-get install --yes --no-install-recommends \
-            pandoc \
-            texlive-xetex \
-            texlive-latex-recommended \
-            texlive-latex-extra \
-            texlive-fonts-recommended \
-            lmodern \
-            fonts-dejavu
+            pandoc
+
+      - name: Install TinyTeX
+        if: steps.cache-tinytex.outputs.cache-hit != 'true'
+        run: |
+          TINYTEX_BIN="$HOME/.TinyTeX/bin/$(uname -m)-linux"
+          if [ ! -x "$TINYTEX_BIN/tlmgr" ]; then
+            curl -sL https://yihui.org/tinytex/install-bin-unix.sh | sh
+          fi
+          "$TINYTEX_BIN/tlmgr" install \
+            collection-fontsrecommended \
+            collection-latexextra \
+            collection-latexrecommended \
+            collection-xetex
+
+      - name: Add TinyTeX to PATH
+        run: echo "$HOME/.TinyTeX/bin/$(uname -m)-linux" >> "$GITHUB_PATH"
 
       - name: Build Hugo site
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
