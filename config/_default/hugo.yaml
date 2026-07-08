@@ -1,0 +1,26 @@
+baseURL: "https://barbedorafael.github.io/"
+languageCode: "en-us"
+title: "Rafael Barbedo"
+theme: "hugo-profile"
+
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+enableRobotsTXT: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - RSS
+
+pagination:
+  pagerSize: 6
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

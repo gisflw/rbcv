@@ -1,0 +1,363 @@
+title: "Rafael Barbedo"
+description: "Hydrologist and geospatial data scientist working on hydrological modelling, environmental data systems, and flood forecasting."
+favicon: "/fav.png"
+useBootstrapCDN: false
+mathjax: false
+animate: true
+
+theme:
+  defaultTheme: "dark"
+  font:
+    fontSize: "1rem"
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: "left"
+
+navbar:
+  align: "ms-auto"
+  brandName: "Rafael Barbedo"
+  disableSearch: false
+  stickyNavBar:
+    enable: true
+    showOnScrollUp: true
+  enableSeparator: false
+  menus:
+    disableAbout: false
+    disableExperience: false
+    disableEducation: true
+    disableProjects: false
+    disableAchievements: true
+    disableContact: false
+
+hero:
+  enable: true
+  intro: "Hi, my name is"
+  title: "Rafael Barbedo."
+  subtitle: "Hydrology, geospatial data engineering, and environmental modelling"
+  content: >-
+    I build hydrological models, geospatial workflows, and environmental data systems for research, forecasting, and water resources applications.
+  image: "/images/hero.svg"
+  bottomImage:
+    enable: true
+  button:
+    enable: true
+    name: "Download CV"
+    url: "/cv/cv-en.pdf"
+    download: true
+    newPage: false
+  socialLinks:
+    fontAwesomeIcons:
+      - icon: "fab fa-github"
+        url: "https://github.com/barbedorafael"
+      - icon: "fab fa-linkedin"
+        url: "https://www.linkedin.com/in/rafael-barbedo/"
+      - icon: "fa-solid fa-envelope"
+        url: "mailto:rbarbedofontana@gmail.com"
+
+about:
+  enable: true
+  title: "About"
+  image: "/images/me.png"
+  content: |-
+    I am a Brazilian hydrologist, civil engineer, and geospatial data scientist with experience in large-scale hydrological modelling, flood forecasting, water availability, remote sensing, topography, and reproducible environmental data systems.
+
+    My work combines applied research, scientific software development, and data engineering to turn large environmental datasets into useful products for modelling, monitoring, and decision-making.
+  info:
+    title: "Profile snapshot"
+    educationTitle: "Education"
+    languagesTitle: "Languages"
+    interestsTitle: "Interests"
+  languages:
+    - "Portuguese: native"
+    - "English: professional"
+    - "Spanish: working proficiency"
+  interests:
+    - "Hydrological forecasting"
+    - "Open environmental data"
+    - "Geospatial software"
+    - "Reproducible research"
+  skills:
+    enable: true
+    title: "Core expertise"
+    items:
+      - "Hydrological modelling and flood forecasting"
+      - "Water resources, water availability, and reference streamflows"
+      - "Geospatial data processing: topography, remote sensing, and LiDAR"
+      - "Environmental time-series analysis, quality control, and validation"
+      - "Statistical modelling, machine learning, and deep learning"
+      - "Python, JavaScript, SQL, and Fortran"
+      - "PostgreSQL/PostGIS, Oracle, SQLite, NetCDF, and Zarr"
+      - "Linux-based systems, Docker, QGIS, and Google Earth Engine"
+
+skills:
+  enable: true
+  title: "Skills"
+  intro: "A compact view of the domains, methods, and tools I use across hydrology, geospatial analysis, and environmental data systems."
+  sets:
+    - title: "Hydrological modelling"
+      icon: "water"
+      description: "Large-scale hydrological modelling, flood forecasting, water availability analysis, and reference streamflow estimation."
+    - title: "Geospatial data science"
+      icon: "earth-americas"
+      description: "Processing and analysis of topography, remote sensing, land-use, LiDAR, and catchment-scale spatial datasets."
+    - title: "Environmental data engineering"
+      icon: "database"
+      description: "Reproducible pipelines for environmental time series, geospatial databases, quality control, validation, and data products."
+    - title: "Scientific computing"
+      icon: "code"
+      description: "Scientific software development with Python, SQL, JavaScript, Fortran, statistical modelling, machine learning, and deep learning."
+  stack:
+    - name: "Python"
+      iconType: "devicon"
+      icon: "python-plain"
+    - name: "PostgreSQL"
+      iconType: "devicon"
+      icon: "postgresql-plain"
+    - name: "SQLite"
+      iconType: "devicon"
+      icon: "sqlite-plain"
+    - name: "Google Earth Engine"
+      iconType: "fa"
+      icon: "earth-americas"
+    - name: "VS Code"
+      iconType: "devicon"
+      icon: "vscode-plain"
+    - name: "Linux"
+      iconType: "devicon"
+      icon: "linux-plain"
+    - name: "QGIS"
+      iconType: "devicon"
+      icon: "qgis-plain"
+    - name: "Docker"
+      iconType: "devicon"
+      icon: "docker-plain"
+    - name: "JavaScript"
+      iconType: "devicon"
+      icon: "javascript-plain"
+    - name: "SQL"
+      iconType: "fa"
+      icon: "database"
+    - name: "Fortran"
+      iconType: "fa"
+      icon: "terminal"
+    - name: "NetCDF/Zarr"
+      iconType: "fa"
+      icon: "cube"
+
+experience:
+  enable: true
+  title: "Experience"
+  items:
+    - company: "Federal University of Rio Grande do Sul (UFRGS)"
+      jobs:
+        - name: "Postdoctoral Researcher — ANA partnership"
+          date: "Mar 2026 – present"
+          content: |-
+            Large-scale hydrological modelling and environmental data analysis to support the development and improvement of national-scale hydrological applications in Brazil, with emphasis on anthropogenic influences and climate-change impacts on water systems.
+
+            Related projects: [National hydrological applications](/projects/national-hydrological-applications/) and [National-scale MGB modelling](/projects/mgb-national-scale/).
+        - name: "Postdoctoral Researcher — SGB partnership"
+          date: "Jul 2025 – present"
+          content: |-
+            Processing and analysis of geospatial and time-series data to enhance flood early warning systems for river basins in Rio Grande do Sul, including water level and streamflow modelling, quality control, validation, and dashboards.
+
+            Related project: [Flood early warning system](/projects/flood-early-warning/).
+    - company: "Brazilian National Water Agency (ANA)"
+      jobs:
+        - name: "Hydrology and geospatial data consultant"
+          date: "May 2025 – Nov 2025"
+          content: |-
+            Modelling and structuring of a relational and geospatial PostgreSQL/PostGIS database to unify and standardize water availability datasets used by ANA, including data modelling, migration routines, processing functions, documentation, and technical training.
+
+            Related project: [Brazilian Hydrological Availability Data System](/tools/brazilian-hydrological-availability-data-system/).
+    - company: "Institute of the Brazilian Savannah"
+      jobs:
+        - name: "Hydrological modelling consultant"
+          date: "Jan 2025 – Sep 2025"
+          content: |-
+            Hydrological modelling and spatial analysis to prioritize interventions for native vegetation protection and restoration in the Cerrado biome, integrating remote sensing, climate time series, land-use maps, Python, and QGIS workflows.
+
+            Related project: [Cerrado hydrological prioritisation](/projects/cerrado-hydrological-prioritisation/).
+    - company: "UK Centre for Ecology & Hydrology (UKCEH)"
+      jobs:
+        - name: "Spatial Data Scientist"
+          date: "Jul 2022 – May 2025"
+          content: |-
+            Spatial data analysis, management, and mapping across projects related to the Water Resources Systems group, including NRFA catchment attributes, LiDAR processing tools for FDRI, and research data curation through EIDC.
+
+            Related projects: [CAMELS-GB v2](/projects/camels-gb-v2/), [NRFA Catchment Attributes](/projects/nrfa-catchment-attributes/), and [FDRI LiDAR](/projects/fdri-lidar/).
+    - company: "Federal University of Rio Grande do Sul (UFRGS)"
+      jobs:
+        - name: "Research Assistant — ANA partnership"
+          date: "Jan 2020 – Jun 2022"
+          content: |-
+            Hydrological modelling compatibility with vector river networks, national-scale analysis of precipitation, soil moisture, evapotranspiration, and water storage, machine-learning reference-flow regionalization, and support for SEEA-Water in Brazil.
+
+            Related projects: [PhD data integration project](/projects/phd-data-integration/) and [Reference streamflow regionalization](/tools/reference-streamflow-dataset/).
+
+education:
+  enable: true
+  title: "Education"
+  index: false
+  items:
+    - title: "PhD in Water Resources"
+      school:
+        name: "Federal University of Rio Grande do Sul (UFRGS)"
+      date: "2020 – 2024"
+      content: |-
+        Thesis: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616).
+    - title: "Master's degree in Water Resources"
+      school:
+        name: "Federal University of Rio Grande do Sul (UFRGS)"
+      date: "2018 – 2020"
+    - title: "Civil Engineering degree"
+      school:
+        name: "Pontifical Catholic University of Rio Grande do Sul (PUCRS)"
+      date: "2011 – 2016"
+
+projects:
+  enable: true
+  title: "Projects"
+  items:
+    - title: "National hydrological applications"
+      content: "Large-scale hydrological modelling and environmental data integration to support national water resources applications in Brazil."
+      image: "/images/projects/profile.png"
+      featured:
+        name: "Details"
+        link: "/projects/national-hydrological-applications/"
+      badges: ["Hydrology", "MGB", "Brazil"]
+    - title: "Flood early warning system"
+      content: "Processing, validation, and visualization of water level and streamflow data to support flood forecasting and warning systems."
+      image: "/images/projects/profile2.jpg"
+      featured:
+        name: "Details"
+        link: "/projects/flood-early-warning/"
+      badges: ["Flood forecasting", "Time series", "Dashboards"]
+    - title: "Cerrado hydrological prioritisation"
+      content: "Hydrological modelling and spatial analysis to prioritize native vegetation restoration and conservation in the Cerrado biome."
+      image: "/images/projects/converter.jpg"
+      featured:
+        name: "Details"
+        link: "/projects/cerrado-hydrological-prioritisation/"
+      badges: ["Cerrado", "PLANS", "QGIS"]
+    - title: "UKCEH hydrological datasets"
+      content: "Catchment attributes, LiDAR-derived data processing, and environmental dataset curation for UK hydrological research infrastructure."
+      image: "/images/projects/profile.png"
+      featured:
+        name: "Details"
+        link: "/projects/ukceh-hydrological-datasets/"
+      badges: ["UKCEH", "NRFA", "LiDAR"]
+    - title: "PhD project — Data integration approaches for hydrological analyses in Brazil"
+      content: "Evaluation of data integration approaches for water storage variability, drainage extraction, and machine-learning reference streamflow estimation across Brazil."
+      image: "/images/projects/profile2.jpg"
+      featured:
+        name: "Thesis"
+        link: "https://lume.ufrgs.br/handle/10183/293616"
+      badges: ["Hydrology", "Brazil", "Machine Learning"]
+    - title: "Master's project — Riparian vegetation in the Brazilian Savannah"
+      content: "Riparian-zone identification, terrain analysis, drainage extraction, vegetation indices, and evapotranspiration analysis in a region of agricultural expansion."
+      image: "/images/projects/converter.jpg"
+      featured:
+        name: "Dissertation"
+        link: "https://lume.ufrgs.br/handle/10183/221892"
+      badges: ["Remote sensing", "DEM", "Cerrado"]
+
+achievements:
+  enable: true
+  title: "Tools & Datasets"
+  items:
+    - title: "Rating Curve Explorer"
+      content: "Toolset for organizing, visualizing, and doing initial analysis on streamflow data related to rating-curve derivation."
+      url: "https://github.com/barbedorafael/rating-curve-explorer"
+      image: "/images/achievement.jpg"
+    - title: "Brazilian Hydrological Availability Data System"
+      content: "ETL framework for consolidating geospatial hydrological data within ANA's water availability data system, with traceable processing over national hydrographic network versions."
+      url: "https://github.com/barbedorafael/db-disphid"
+      image: "/images/achievement.jpg"
+    - title: "Build Hydro Database Brazil"
+      content: "Tools for retrieving streamflow and rainfall data from stations of the Brazilian Hydrological Network."
+      url: "https://github.com/barbedorafael/build_hydrodb"
+      image: "/images/achievement.jpg"
+    - title: "Reference Mean and Low Streamflow Dataset"
+      content: "Reference streamflows, including long-term mean flow and q95, for more than 400,000 ungauged river points in Brazil, estimated with machine-learning models."
+      url: "https://zenodo.org/records/14217002"
+      image: "/images/achievement.jpg"
+    - title: "BHO2MGB"
+      content: "QGIS plugin to process the Brazilian coded river network database in the framework of the MGB large-basin hydrological model."
+      url: "https://www.ufrgs.br/hge/modelos-e-outros-produtos/bho2mgb/"
+      image: "/images/achievement.jpg"
+    - title: "Topographic Position-based Stream definition (TPS)"
+      content: "Algorithm for drainage extraction on digital elevation models based on topographic position."
+      url: "https://github.com/barbedorafael/TPS"
+      image: "/images/achievement.jpg"
+    - title: "Attention UNet for shrub segmentation"
+      content: "Deep-learning pipeline used to identify shrub individuals or clumps in drone-derived RGB imagery."
+      url: "https://github.com/barbedorafael/att-unet-shrub-id"
+      image: "/images/achievement.jpg"
+
+contact:
+  enable: true
+  title: "Contact"
+  content: "For collaboration, research, consulting, or data/software questions, contact me by email or through my professional profiles."
+  btnName: "Email me"
+  btnLink: "mailto:rbarbedofontana@gmail.com"
+
+footer:
+  recentPosts:
+    enable: false
+  socialNetworks:
+    github: "https://github.com/barbedorafael"
+    linkedin: "https://www.linkedin.com/in/rafael-barbedo/"
+
+listPages:
+  disableFeaturedImage: false
+
+singlePages:
+  socialShare: true
+  readTime:
+    enable: true
+    content: "min read"
+  scrollprogress:
+    enable: true
+
+tags:
+  openInNewTab: true
+
+publications:
+  title: "Publications"
+  items:
+    - title: "CAMELS-GB v2: hydrometeorological time series and landscape attributes for 671 catchments in Great Britain"
+      year: 2026
+      venue: "Earth System Science Data"
+      summary: "Contributing author; derivation of catchment descriptors such as land cover, topography, and rainfall."
+      doi: "https://doi.org/10.5194/essd-2025-608"
+    - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
+      year: 2023
+      venue: "Journal of Hydrology"
+      summary: "Contributing author; drainage-network derivation and water-table analysis."
+      doi: "https://doi.org/10.1016/j.jhydrol.2022.129003"
+    - title: "Water storage variability across Brazil"
+      year: 2022
+      venue: "Brazilian Journal of Water Resources"
+      summary: "Main author; analysis of water-storage variability across Brazil."
+      doi: "https://doi.org/10.1590/2318-0331.272220220077"
+    - title: "Global Evapotranspiration Datasets Assessment Using Water Balance in South America"
+      year: 2022
+      venue: "Remote Sensing"
+      summary: "Contributing author; analysis of spatial agreement among evapotranspiration datasets."
+      doi: "https://doi.org/10.3390/rs14112526"
+    - title: "Topographic Position-based Stream definition (TPS)"
+      year: 2022
+      venue: "Hydrological Sciences Journal"
+      summary: "Main author; method to address spatial variability of drainage density in stream networks."
+      doi: "https://doi.org/10.1080/02626667.2022.2047190"
+
+terms:
+  read: "Read"
+  toc: "Table of contents"
+  copyright: "All rights reserved"
+  emailText: "Check out this site"
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"

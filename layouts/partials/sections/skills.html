@@ -1,0 +1,40 @@
+{{ if .Site.Params.skills.enable | default false }}
+{{- $skills := .Site.Language.Params.skills | default .Site.Params.skills -}}
+<section id="skills" class="py-5 cv-skills-section">
+  <div class="container">
+    <h3 class="text-center">{{ $skills.title | default "Skills" }}</h3>
+    {{ with $skills.intro }}
+    <p class="cv-section-intro text-center mx-auto">{{ . }}</p>
+    {{ end }}
+
+    <div class="row g-4 mt-4">
+      {{ range $skills.sets }}
+      <div class="col-md-6 col-xl-3">
+        <article class="cv-skill-card h-100">
+          <div class="cv-skill-card-header">
+            <i class="fa-solid fa-{{ .icon }}"></i>
+            <h4>{{ .title }}</h4>
+          </div>
+          <p>{{ .description }}</p>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ with $skills.stack }}
+    <div class="cv-tech-stack mt-5">
+      {{ range . }}
+      <div class="cv-tech-item">
+        {{ if eq .iconType "devicon" }}
+        <i class="devicon-{{ .icon }} colored" aria-hidden="true"></i>
+        {{ else }}
+        <i class="fa-solid fa-{{ .icon }}" aria-hidden="true"></i>
+        {{ end }}
+        <span>{{ .name }}</span>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
