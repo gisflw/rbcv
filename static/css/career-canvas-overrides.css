@@ -187,7 +187,8 @@ body.dark #hero .cv-hero-location-badge {
 }
 
 #publications .cv-publications-list a {
-  font-size: 0.82rem;
+  color: var(--text-link-color) !important;
+  text-decoration: none;
 }
 
 #skills .cv-skill-card {
@@ -370,10 +371,45 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
   font-style: italic;
 }
 
+#experience .cv-experience-list ul {
+  padding-left: 1.15rem;
+  margin-bottom: 0;
+}
+
+#experience .cv-experience-list li {
+  margin-bottom: 0.65rem;
+}
+
+#experience .cv-experience-list li:last-child {
+  margin-bottom: 0;
+}
+
 #experience .cv-experience-details a,
 #experience .cv-experience-meta a {
   color: var(--text-link-color) !important;
   text-decoration: none;
+}
+
+#achievements .cv-tool-card {
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+#achievements .cv-tool-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  color: var(--primary-color) !important;
+  background-color: var(--background-color) !important;
+  border: 1px solid rgba(127, 127, 127, 0.28);
+  border-radius: 0.75rem;
+  font-size: 1.35rem;
+}
+
+#achievements .cv-tool-card .card-body {
+  padding: 0;
 }
 
 @media (max-width: 767.98px) {

@@ -123,54 +123,56 @@ pt:
       title: "Experiência"
       items:
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
+          companyUrl: "https://www.ufrgs.br/"
           jobs:
             - name: "Pesquisador de pós-doutorado"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com a Agência Nacional de Águas e Saneamento Básico (ANA)"
+              companyDisplay: "[Universidade Federal do Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) em parceria com a [Agência Nacional de Águas e Saneamento Básico (ANA)](https://www.gov.br/ana/pt-br)"
               date: "Mar 2026 – atual"
               content: |-
-                Modelagem hidrológica em larga escala e análise de dados ambientais para apoiar o desenvolvimento de aplicações hidrológicas nacionais no Brasil, com ênfase em influências antrópicas e impactos de mudanças climáticas.
-
-                Projetos relacionados: [Aplicações hidrológicas nacionais](/pt/projects/national-hydrological-applications/) e [MGB em escala nacional](/pt/projects/mgb-national-scale/).
+                - Modelagem hidrológica em larga escala e análise de dados ambientais para aplicações nacionais no Brasil.
+                - Avaliação de influências antrópicas e impactos de mudanças climáticas em sistemas hídricos.
+                - Modelagem com o Modelo de Grandes Bacias (MGB).
             - name: "Pesquisador de pós-doutorado"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com o Serviço Geológico do Brasil (SGB)"
+              companyDisplay: "[Universidade Federal do Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) em parceria com o [Serviço Geológico do Brasil (SGB)](https://www.sgb.gov.br/)"
               date: "Jul 2025 – atual"
               content: |-
-                Processamento e análise de dados geoespaciais e séries temporais para aprimorar sistemas de alerta de cheias em bacias do Rio Grande do Sul.
-
-                Projeto relacionado: [Sistema de alerta de cheias](/pt/projects/flood-early-warning/).
+                - Processamento e análise de dados geoespaciais e séries temporais para sistemas de alerta de cheias no Rio Grande do Sul.
+                - Modelagem de nível e vazão, controle de qualidade, validação e apoio a dashboards.
         - company: "Agência Nacional de Águas e Saneamento Básico (ANA)"
+          companyUrl: "https://www.gov.br/ana/pt-br"
           jobs:
             - name: "Consultor em hidrologia e dados geoespaciais"
               date: "Mai 2025 – Nov 2025"
               content: |-
-                Modelagem e estruturação de banco de dados relacional e geoespacial em PostgreSQL/PostGIS para unificar e padronizar bases de disponibilidade hídrica.
-
-                Projeto relacionado: [Sistema brasileiro de disponibilidade hídrica](/pt/tools/brazilian-hydrological-availability-data-system/).
+                - Modelagem e estruturação de banco de dados relacional e geoespacial em PostgreSQL/PostGIS para bases de disponibilidade hídrica da Agência Nacional de Águas e Saneamento Básico (ANA).
+                - Desenvolvimento de modelo de dados, rotinas de migração, funções de processamento, documentação e treinamento técnico.
         - company: "Instituto Cerrados"
           jobs:
             - name: "Consultor em modelagem hidrológica"
               date: "Jan 2025 – Set 2025"
               content: |-
-                Modelagem hidrológica e análise espacial para priorização de intervenções de proteção e restauração de vegetação nativa no Cerrado.
-
-                Projeto relacionado: [Priorização hidrológica no Cerrado](/pt/projects/cerrado-hydrological-prioritisation/).
+                - Modelagem hidrológica e análise espacial para priorização de proteção e restauração de vegetação nativa no Cerrado.
+                - Integração de sensoriamento remoto, séries climáticas, mapas de uso da terra, Python e QGIS.
         - company: "UK Centre for Ecology & Hydrology (UKCEH)"
+          companyUrl: "https://www.ceh.ac.uk/"
           jobs:
             - name: "Spatial Data Scientist"
               date: "Jul 2022 – Mai 2025"
               content: |-
-                Processamento e gestão de bases hidrológicas e ambientais, atributos de bacias do NRFA, ferramentas para processamento de LiDAR no projeto FDRI e curadoria de dados para publicação no EIDC.
-
-                Projetos relacionados: [CAMELS-GB v2](/pt/projects/camels-gb-v2/), [Atributos NRFA](/pt/projects/nrfa-catchment-attributes/) e [FDRI LiDAR](/pt/projects/fdri-lidar/).
+                - Análise, gestão e mapeamento de dados espaciais para o grupo Water Resources Systems.
+                - Desenvolvimento de atributos de bacias para o [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/).
+                - Ferramentas de processamento de LiDAR para o [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
+                - Curadoria de dados de pesquisa pelo [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
+          companyUrl: "https://www.ufrgs.br/"
           jobs:
             - name: "Pesquisador assistente"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) em parceria com a Agência Nacional de Águas e Saneamento Básico (ANA)"
+              companyDisplay: "[Universidade Federal do Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) em parceria com a [Agência Nacional de Águas e Saneamento Básico (ANA)](https://www.gov.br/ana/pt-br)"
               date: "Jan 2020 – Jun 2022"
               content: |-
-                Compatibilização de modelagem hidrológica com rede hidrográfica vetorial, análise de variáveis hidrológicas nacionais, aplicações de aprendizado de máquina para regionalização de vazões e apoio ao SEEA-Water no Brasil.
-
-                Projetos relacionados: [Projeto de doutorado](/pt/projects/phd-data-integration/) e [Regionalização de vazões de referência](/pt/tools/reference-streamflow-dataset/).
+                - Compatibilização de modelagem hidrológica com rede hidrográfica vetorial.
+                - Análise nacional de precipitação, umidade do solo, evapotranspiração e armazenamento de água.
+                - Regionalização de vazões de referência com aprendizado de máquina e apoio ao Sistema de Contas Econômicas Ambientais para a Água (SEEA-Water) no Brasil.
     education:
       title: "Formação"
       items:
@@ -223,27 +225,21 @@ pt:
         - title: "Rating Curve Explorer"
           content: "Ferramenta para organizar, visualizar e fazer análises iniciais de dados de vazão usados na derivação de curvas-chave."
           url: "https://github.com/gisflw/rating-curve-explorer"
-          image: "/images/achievement.jpg"
         - title: "Brazilian Hydrological Availability Data System"
           content: "Framework ETL para consolidar dados hidrológicos geoespaciais no sistema de disponibilidade hídrica da ANA."
           url: "https://github.com/gisflw/db-disphid"
-          image: "/images/achievement.jpg"
         - title: "Build Hydro Database Brazil"
           content: "Ferramentas para recuperar dados de vazão e precipitação da Rede Hidrometeorológica Nacional."
           url: "https://github.com/gisflw/build_hydrodb"
-          image: "/images/achievement.jpg"
         - title: "Reference Streamflow Dataset"
           content: "Vazões médias e baixas de referência para mais de 400 mil pontos da rede hidrográfica brasileira, estimadas com modelos de aprendizado de máquina."
           url: "https://zenodo.org/records/14217002"
-          image: "/images/achievement.jpg"
         - title: "BHO2MGB"
           content: "Plugin QGIS para processar a BHO no contexto do modelo hidrológico MGB."
           url: "https://www.ufrgs.br/hge/modelos-e-outros-produtos/bho2mgb/"
-          image: "/images/achievement.jpg"
         - title: "TPS"
           content: "Algoritmo de extração de drenagem em MDEs baseado em posição topográfica."
           url: "https://github.com/gisflw/TPS"
-          image: "/images/achievement.jpg"
     contact:
       title: "Contato"
       content: "Entre em contato por e-mail ou pelas redes profissionais."
@@ -262,6 +258,16 @@ pt:
           venue: "Brazilian Journal of Water Resources"
           summary: "Análise da variabilidade do armazenamento de água no Brasil."
           doi: "https://doi.org/10.1590/2318-0331.272220220077"
+        - title: "Data integration approaches for hydrological analyses in Brazil"
+          year: 2024
+          venue: "Tese de doutorado, Universidade Federal do Rio Grande do Sul"
+          summary: "Tese de doutorado."
+          url: "https://lume.ufrgs.br/handle/10183/293616"
+        - title: "Riparian vegetation in the Brazilian Savannah"
+          year: 2020
+          venue: "Dissertação de mestrado, Universidade Federal do Rio Grande do Sul"
+          summary: "Dissertação de mestrado."
+          url: "https://lume.ufrgs.br/handle/10183/221892"
     terms:
       read: "Ler"
       toc: "Sumário"
@@ -379,54 +385,56 @@ es:
       title: "Experiencia"
       items:
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
+          companyUrl: "https://www.ufrgs.br/"
           jobs:
             - name: "Investigador posdoctoral"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con la Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA)"
+              companyDisplay: "[Universidade Federal do Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) en colaboración con la [Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA)](https://www.gov.br/ana/pt-br)"
               date: "Mar 2026 – actualidad"
               content: |-
-                Modelización hidrológica a gran escala y análisis de datos ambientales para apoyar aplicaciones hidrológicas nacionales en Brasil, con énfasis en influencias antrópicas e impactos del cambio climático.
-
-                Proyectos relacionados: [Aplicaciones hidrológicas nacionales](/es/projects/national-hydrological-applications/) y [MGB a escala nacional](/es/projects/mgb-national-scale/).
+                - Modelización hidrológica a gran escala y análisis de datos ambientales para aplicaciones nacionales en Brasil.
+                - Evaluación de influencias antrópicas e impactos del cambio climático en sistemas hídricos.
+                - Modelización con el Modelo de Grandes Bacias (MGB).
             - name: "Investigador posdoctoral"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con el Servicio Geológico de Brasil (SGB)"
+              companyDisplay: "[Universidade Federal do Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) en colaboración con el [Servicio Geológico de Brasil (SGB)](https://www.sgb.gov.br/)"
               date: "Jul 2025 – actualidad"
               content: |-
-                Procesamiento y análisis de datos geoespaciales y series temporales para mejorar sistemas de alerta temprana de inundaciones en cuencas de Rio Grande do Sul.
-
-                Proyecto relacionado: [Sistema de alerta de inundaciones](/es/projects/flood-early-warning/).
+                - Procesamiento y análisis de datos geoespaciales y series temporales para sistemas de alerta temprana de inundaciones en Rio Grande do Sul.
+                - Modelización de nivel y caudal, control de calidad, validación y apoyo a dashboards.
         - company: "Agência Nacional de Águas e Saneamento Básico (ANA)"
+          companyUrl: "https://www.gov.br/ana/pt-br"
           jobs:
             - name: "Consultor en hidrología y datos geoespaciales"
               date: "May 2025 – Nov 2025"
               content: |-
-                Modelización y estructuración de una base de datos relacional y geoespacial en PostgreSQL/PostGIS para unificar y estandarizar datos de disponibilidad hídrica.
-
-                Proyecto relacionado: [Sistema brasileño de disponibilidad hídrica](/es/tools/brazilian-hydrological-availability-data-system/).
+                - Modelización y estructuración de una base de datos relacional y geoespacial en PostgreSQL/PostGIS para datos de disponibilidad hídrica de la Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA).
+                - Desarrollo de modelo de datos, rutinas de migración, funciones de procesamiento, documentación y capacitación técnica.
         - company: "Instituto Cerrados"
           jobs:
             - name: "Consultor en modelización hidrológica"
               date: "Ene 2025 – Sep 2025"
               content: |-
-                Modelización hidrológica y análisis espacial para priorizar intervenciones de protección y restauración de vegetación nativa en el Cerrado.
-
-                Proyecto relacionado: [Priorización hidrológica en el Cerrado](/es/projects/cerrado-hydrological-prioritisation/).
+                - Modelización hidrológica y análisis espacial para priorizar protección y restauración de vegetación nativa en el Cerrado.
+                - Integración de teledetección, series climáticas, mapas de uso del suelo, Python y QGIS.
         - company: "UK Centre for Ecology & Hydrology (UKCEH)"
+          companyUrl: "https://www.ceh.ac.uk/"
           jobs:
             - name: "Spatial Data Scientist"
               date: "Jul 2022 – May 2025"
               content: |-
-                Procesamiento y gestión de datos hidrológicos y ambientales, atributos de cuencas del NRFA, herramientas para datos LiDAR en FDRI y curaduría de datos para publicación en EIDC.
-
-                Proyectos relacionados: [CAMELS-GB v2](/es/projects/camels-gb-v2/), [Atributos NRFA](/es/projects/nrfa-catchment-attributes/) y [FDRI LiDAR](/es/projects/fdri-lidar/).
+                - Análisis, gestión y cartografía de datos espaciales para el grupo Water Resources Systems.
+                - Desarrollo de atributos de cuencas para el [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/).
+                - Herramientas de procesamiento LiDAR para la [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
+                - Curaduría de datos de investigación mediante el [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
         - company: "Universidade Federal do Rio Grande do Sul (UFRGS)"
+          companyUrl: "https://www.ufrgs.br/"
           jobs:
             - name: "Asistente de investigación"
-              companyDisplay: "Universidade Federal do Rio Grande do Sul (UFRGS) en colaboración con la Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA)"
+              companyDisplay: "[Universidade Federal do Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) en colaboración con la [Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA)](https://www.gov.br/ana/pt-br)"
               date: "Ene 2020 – Jun 2022"
               content: |-
-                Compatibilización de modelización hidrológica con red hidrográfica vectorial, análisis de variables hidrológicas nacionales, aprendizaje automático para regionalización de caudales y apoyo al SEEA-Water en Brasil.
-
-                Proyectos relacionados: [Proyecto doctoral](/es/projects/phd-data-integration/) y [Regionalización de caudales de referencia](/es/tools/reference-streamflow-dataset/).
+                - Compatibilización de modelización hidrológica con red hidrográfica vectorial.
+                - Análisis nacional de precipitación, humedad del suelo, evapotranspiración y almacenamiento de agua.
+                - Regionalización de caudales de referencia con aprendizaje automático y apoyo al Sistema de Contabilidad Ambiental y Económica del Agua (SEEA-Water) en Brasil.
     education:
       title: "Formación"
       items:
@@ -479,27 +487,21 @@ es:
         - title: "Rating Curve Explorer"
           content: "Herramienta para organizar, visualizar y hacer análisis inicial de datos de caudal usados en la derivación de curvas de gasto."
           url: "https://github.com/gisflw/rating-curve-explorer"
-          image: "/images/achievement.jpg"
         - title: "Brazilian Hydrological Availability Data System"
           content: "Framework ETL para consolidar datos hidrológicos geoespaciales en el sistema de disponibilidad hídrica de ANA."
           url: "https://github.com/gisflw/db-disphid"
-          image: "/images/achievement.jpg"
         - title: "Build Hydro Database Brazil"
           content: "Herramientas para recuperar datos de caudal y precipitación de la red hidrometeorológica brasileña."
           url: "https://github.com/gisflw/build_hydrodb"
-          image: "/images/achievement.jpg"
         - title: "Reference Streamflow Dataset"
           content: "Caudales medios y bajos de referencia para más de 400 mil puntos de la red hidrográfica brasileña, estimados con aprendizaje automático."
           url: "https://zenodo.org/records/14217002"
-          image: "/images/achievement.jpg"
         - title: "BHO2MGB"
           content: "Plugin QGIS para procesar la BHO en el contexto del modelo hidrológico MGB."
           url: "https://www.ufrgs.br/hge/modelos-e-outros-produtos/bho2mgb/"
-          image: "/images/achievement.jpg"
         - title: "TPS"
           content: "Algoritmo de extracción de drenaje en MDEs basado en posición topográfica."
           url: "https://github.com/gisflw/TPS"
-          image: "/images/achievement.jpg"
     contact:
       title: "Contacto"
       content: "Contacto por correo electrónico o redes profesionales."
@@ -518,6 +520,16 @@ es:
           venue: "Brazilian Journal of Water Resources"
           summary: "Análisis de la variabilidad del almacenamiento de agua en Brasil."
           doi: "https://doi.org/10.1590/2318-0331.272220220077"
+        - title: "Data integration approaches for hydrological analyses in Brazil"
+          year: 2024
+          venue: "Tesis doctoral, Universidade Federal do Rio Grande do Sul"
+          summary: "Tesis doctoral."
+          url: "https://lume.ufrgs.br/handle/10183/293616"
+        - title: "Riparian vegetation in the Brazilian Savannah"
+          year: 2020
+          venue: "Tesis de maestría, Universidade Federal do Rio Grande do Sul"
+          summary: "Disertación de maestría."
+          url: "https://lume.ufrgs.br/handle/10183/221892"
     terms:
       read: "Leer"
       toc: "Tabla de contenidos"

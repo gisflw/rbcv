@@ -26,7 +26,7 @@ navbar:
     disableAbout: false
     disableExperience: false
     disableEducation: true
-    disableProjects: false
+    disableProjects: true
     disableAchievements: true
     disableContact: false
 
@@ -149,54 +149,56 @@ experience:
   title: "Experience"
   items:
     - company: "Federal University of Rio Grande do Sul (UFRGS)"
+      companyUrl: "https://www.ufrgs.br/"
       jobs:
         - name: "Postdoctoral Researcher"
-          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with the Brazilian National Water Agency (ANA)"
+          companyDisplay: "[Federal University of Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) in partnership with the [National Water and Sanitation Agency (ANA)](https://www.gov.br/ana/pt-br)"
           date: "Mar 2026 – present"
           content: |-
-            Large-scale hydrological modelling and environmental data analysis to support the development and improvement of national-scale hydrological applications in Brazil, with emphasis on anthropogenic influences and climate-change impacts on water systems.
-
-            Related projects: [National hydrological applications](/projects/national-hydrological-applications/) and [National-scale MGB modelling](/projects/mgb-national-scale/).
+            - Large-scale hydrological modelling and environmental data analysis for national water resources applications in Brazil.
+            - Assessment of anthropogenic influences and climate-change impacts on water systems.
+            - Modelling work with the Modelo de Grandes Bacias (MGB) large-basin hydrological model.
         - name: "Postdoctoral Researcher"
-          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with the Brazilian Geological Survey (SGB)"
+          companyDisplay: "[Federal University of Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) in partnership with the [Brazilian Geological Survey (SGB)](https://www.sgb.gov.br/)"
           date: "Jul 2025 – present"
           content: |-
-            Processing and analysis of geospatial and time-series data to enhance flood early warning systems for river basins in Rio Grande do Sul, including water level and streamflow modelling, quality control, validation, and dashboards.
-
-            Related project: [Flood early warning system](/projects/flood-early-warning/).
+            - Processing and analysis of geospatial and time-series data for flood early warning systems in Rio Grande do Sul.
+            - Water level and streamflow modelling, quality control, validation, and dashboard support.
     - company: "Brazilian National Water Agency (ANA)"
+      companyUrl: "https://www.gov.br/ana/pt-br"
       jobs:
         - name: "Hydrology and geospatial data consultant"
           date: "May 2025 – Nov 2025"
           content: |-
-            Modelling and structuring of a relational and geospatial PostgreSQL/PostGIS database to unify and standardize water availability datasets used by the Brazilian National Water Agency (ANA), including data modelling, migration routines, processing functions, documentation, and technical training.
-
-            Related project: [Brazilian Hydrological Availability Data System](/tools/brazilian-hydrological-availability-data-system/).
+            - Modelled and structured a relational and geospatial PostgreSQL/PostGIS database for water availability datasets used by the National Water and Sanitation Agency (ANA).
+            - Developed data modelling, migration routines, processing functions, documentation, and technical training material.
     - company: "Institute of the Brazilian Savannah"
       jobs:
         - name: "Hydrological modelling consultant"
           date: "Jan 2025 – Sep 2025"
           content: |-
-            Hydrological modelling and spatial analysis to prioritize interventions for native vegetation protection and restoration in the Cerrado biome, integrating remote sensing, climate time series, land-use maps, Python, and QGIS workflows.
-
-            Related project: [Cerrado hydrological prioritisation](/projects/cerrado-hydrological-prioritisation/).
+            - Hydrological modelling and spatial analysis to prioritize native vegetation protection and restoration in the Cerrado biome.
+            - Integrated remote sensing, climate time series, land-use maps, Python, and QGIS workflows.
     - company: "UK Centre for Ecology & Hydrology (UKCEH)"
+      companyUrl: "https://www.ceh.ac.uk/"
       jobs:
         - name: "Spatial Data Scientist"
           date: "Jul 2022 – May 2025"
           content: |-
-            Spatial data analysis, management, and mapping across projects related to the Water Resources Systems group, including NRFA catchment attributes, LiDAR processing tools for FDRI, and research data curation through EIDC.
-
-            Related projects: [CAMELS-GB v2](/projects/camels-gb-v2/), [NRFA Catchment Attributes](/projects/nrfa-catchment-attributes/), and [FDRI LiDAR](/projects/fdri-lidar/).
+            - Spatial data analysis, management, and mapping for the Water Resources Systems group.
+            - Catchment attribute development for the [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/).
+            - LiDAR processing tools for the [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
+            - Research data curation through the [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
     - company: "Federal University of Rio Grande do Sul (UFRGS)"
+      companyUrl: "https://www.ufrgs.br/"
       jobs:
         - name: "Research Assistant"
-          companyDisplay: "Federal University of Rio Grande do Sul (UFRGS) in partnership with the Brazilian National Water Agency (ANA)"
+          companyDisplay: "[Federal University of Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) in partnership with the [National Water and Sanitation Agency (ANA)](https://www.gov.br/ana/pt-br)"
           date: "Jan 2020 – Jun 2022"
           content: |-
-            Hydrological modelling compatibility with vector river networks, national-scale analysis of precipitation, soil moisture, evapotranspiration, and water storage, machine-learning reference-flow regionalization, and support for SEEA-Water in Brazil.
-
-            Related projects: [PhD data integration project](/projects/phd-data-integration/) and [Reference streamflow regionalization](/tools/reference-streamflow-dataset/).
+            - Hydrological modelling compatibility with vector river networks.
+            - National-scale analysis of precipitation, soil moisture, evapotranspiration, and water storage.
+            - Machine-learning regionalization of reference streamflows and support for the System of Environmental-Economic Accounting for Water (SEEA-Water) in Brazil.
 
 education:
   enable: true
@@ -219,7 +221,7 @@ education:
       date: "2011 – 2016"
 
 projects:
-  enable: true
+  enable: false
   title: "Projects"
   items:
     - title: "National hydrological applications"
@@ -272,31 +274,24 @@ achievements:
     - title: "Rating Curve Explorer"
       content: "Toolset for organizing, visualizing, and doing initial analysis on streamflow data related to rating-curve derivation."
       url: "https://github.com/gisflw/rating-curve-explorer"
-      image: "/images/achievement.jpg"
     - title: "Brazilian Hydrological Availability Data System"
       content: "ETL framework for consolidating geospatial hydrological data within ANA's water availability data system, with traceable processing over national hydrographic network versions."
       url: "https://github.com/gisflw/db-disphid"
-      image: "/images/achievement.jpg"
     - title: "Build Hydro Database Brazil"
       content: "Tools for retrieving streamflow and rainfall data from stations of the Brazilian Hydrological Network."
       url: "https://github.com/gisflw/build_hydrodb"
-      image: "/images/achievement.jpg"
     - title: "Reference Mean and Low Streamflow Dataset"
       content: "Reference streamflows, including long-term mean flow and q95, for more than 400,000 ungauged river points in Brazil, estimated with machine-learning models."
       url: "https://zenodo.org/records/14217002"
-      image: "/images/achievement.jpg"
     - title: "BHO2MGB"
       content: "QGIS plugin to process the Brazilian coded river network database in the framework of the MGB large-basin hydrological model."
       url: "https://www.ufrgs.br/hge/modelos-e-outros-produtos/bho2mgb/"
-      image: "/images/achievement.jpg"
     - title: "Topographic Position-based Stream definition (TPS)"
       content: "Algorithm for drainage extraction on digital elevation models based on topographic position."
       url: "https://github.com/gisflw/TPS"
-      image: "/images/achievement.jpg"
     - title: "Attention UNet for shrub segmentation"
       content: "Deep-learning pipeline used to identify shrub individuals or clumps in drone-derived RGB imagery."
       url: "https://github.com/gisflw/att-unet-shrub-id"
-      image: "/images/achievement.jpg"
 
 contact:
   enable: true
@@ -354,6 +349,16 @@ publications:
       venue: "Hydrological Sciences Journal"
       summary: "Main author; method to address spatial variability of drainage density in stream networks."
       doi: "https://doi.org/10.1080/02626667.2022.2047190"
+    - title: "Data integration approaches for hydrological analyses in Brazil"
+      year: 2024
+      venue: "Doctoral dissertation, Federal University of Rio Grande do Sul"
+      summary: "PhD dissertation."
+      url: "https://lume.ufrgs.br/handle/10183/293616"
+    - title: "Riparian vegetation in the Brazilian Savannah"
+      year: 2020
+      venue: "Master's thesis, Federal University of Rio Grande do Sul"
+      summary: "Master's dissertation."
+      url: "https://lume.ufrgs.br/handle/10183/221892"
 
 terms:
   read: "Read"

@@ -1,0 +1,38 @@
+{{ if .Site.Params.achievements.enable | default false }}
+{{- $achievements := .Site.Language.Params.achievements | default .Site.Params.achievements -}}
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $achievements.title | default .Site.Params.achievements.title | default (i18n "achievements") }}</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                {{ range $achievements.items | default .Site.Params.achievements.items }}
+                {{ $isRepo := strings.HasPrefix .url "https://github.com/" }}
+                {{ $isDataset := strings.HasPrefix .url "https://zenodo.org/" }}
+                {{ $icon := cond $isRepo "fa-brands fa-github" (cond $isDataset "fa-solid fa-database" "fa-solid fa-screwdriver-wrench") }}
+                <div class="col-lg-4 col-md-6 my-3">
+                    {{ if .url }}
+                    <a class="card my-3 h-100 p-3 cv-tool-card" href="{{ .url }}" title="{{ .title }}" target="_blank" rel="noopener">
+                    {{ else }}
+                    <div class="card my-3 h-100 p-3 cv-tool-card" title="{{ .title }}">
+                    {{ end }}
+                        <div class="cv-tool-icon" aria-hidden="true">
+                            <i class="{{ $icon }}"></i>
+                        </div>
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">{{ .title }}</h5>
+                            <div class="card-text secondary-font">
+                                {{ .content }}
+                            </div>
+                        </div>
+                    {{ if .url }}
+                    </a>
+                    {{ else }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
