@@ -36,9 +36,9 @@ pt:
     hero:
       intro: "Olá, meu nome é"
       title: "Rafael Barbedo."
-      subtitle: "Hidrologia, geoprocessamento e sistemas ambientais"
+      subtitle: "Gosto de natureza, computadores e de construir coisas."
       content: >-
-        Desenvolvo modelos hidrológicos, análises geoespaciais e sistemas de dados ambientais para aplicações de pesquisa, previsão hidrológica e gestão de recursos hídricos.
+        Por isso desenvolvo e gerencio softwares e sistemas de dados para aplicações hidrológicas e ambientais.
       locationBadge:
         nationality: "🇧🇷 Brasileiro"
         location: "📍 Porto Alegre, RS"
@@ -50,9 +50,11 @@ pt:
     about:
       title: "Sobre"
       content: |-
-        Sou hidrólogo, engenheiro civil e cientista de dados geoespaciais brasileiro, com experiência em modelagem hidrológica em larga escala, previsão de cheias, disponibilidade hídrica, sensoriamento remoto, topografia e sistemas reprodutíveis de dados ambientais.
+        Sempre fui fascinado por entender como os sistemas naturais funcionam e pelo papel que a tecnologia pode desempenhar para compreendê-los. Meu interesse por ciências ambientais cresceu junto com a curiosidade por computadores e programação, o que acabou me levando a uma carreira que combina essas áreas.
 
-        Meu trabalho combina pesquisa aplicada, desenvolvimento de software científico e engenharia de dados para transformar grandes bases ambientais em produtos úteis para modelagem, monitoramento e tomada de decisão.
+        Meu trabalho se concentra na construção de ferramentas e sistemas de dados para pesquisa e gestão operacional da água. Já trabalhei em temas como modelagem hidrológica em larga escala, previsão de cheias, avaliação de disponibilidade hídrica, sensoriamento remoto, análise de terreno e engenharia de dados geoespaciais. Gosto especialmente de desenhar fluxos de trabalho reprodutíveis que aproximam a pesquisa científica de aplicações no mundo real, sempre buscando criar sistemas robustos, transparentes e fáceis de estender.
+
+        Tenho especial interesse por modelagem ambiental de base física, software científico aberto, computação geoespacial de alto desempenho e pipelines de dados reprodutíveis que apoiem uma melhor compreensão e gestão dos recursos hídricos.
       info:
         title: "Resumo do perfil"
         educationTitle: "Formação"
@@ -110,6 +112,12 @@ pt:
         - name: "JavaScript"
           iconType: "devicon"
           icon: "javascript-plain"
+        - name: "Panel"
+          iconType: "devicon"
+          icon: "panel-plain"
+        - name: "Streamlit"
+          iconType: "devicon"
+          icon: "streamlit-plain"
         - name: "SQL"
           iconType: "fa"
           icon: "database"
@@ -240,6 +248,21 @@ pt:
         - title: "TPS"
           content: "Algoritmo de extração de drenagem em MDEs baseado em posição topográfica."
           url: "https://github.com/gisflw/TPS"
+        - title: "Cerrado APCAC View"
+          content: "Visualizador interativo para produtos de dados e análises geoespaciais do Cerrado APCAC."
+          url: "https://github.com/gisflw/cerrado-apcac-view"
+        - title: "Flood QC"
+          content: "Ferramentas para controle de qualidade e validação de dados ambientais relacionados a cheias."
+          url: "https://github.com/gisflw/flood-qc"
+        - title: "MGB Vechy"
+          content: "Utilitários e fluxos de trabalho de apoio a aplicações de modelagem hidrológica com o MGB."
+          url: "https://github.com/gisflw/mgb-vechy"
+        - title: "PyGeoDev"
+          content: "Utilitários Python para desenvolvimento geoespacial e fluxos de processamento de dados."
+          url: "https://github.com/gisflw/pygeodev"
+        - title: "ML Pipeline"
+          content: "Componentes reutilizáveis de pipelines de aprendizado de máquina para modelagem ambiental e geoespacial."
+          url: "https://github.com/gisflw/ml-pipeline"
     contact:
       title: "Contato"
       content: "Entre em contato por e-mail ou pelas redes profissionais."
@@ -332,9 +355,9 @@ es:
     hero:
       intro: "Hola, mi nombre es"
       title: "Rafael Barbedo."
-      subtitle: "Hidrología, geoprocesamiento y sistemas ambientales"
+      subtitle: "Me gustan la naturaleza, las computadoras y construir cosas."
       content: >-
-        Desarrollo modelos hidrológicos, análisis geoespaciales y sistemas de datos ambientales para investigación, pronóstico hidrológico y gestión de recursos hídricos.
+        Por eso desarrollo y gestiono software y sistemas de datos para aplicaciones hidrológicas y ambientales.
       locationBadge:
         nationality: "🇧🇷 Brasileño"
         location: "📍 Porto Alegre, RS"
@@ -346,9 +369,11 @@ es:
     about:
       title: "Sobre mí"
       content: |-
-        Soy hidrólogo, ingeniero civil y científico de datos geoespaciales brasileño, con experiencia en modelización hidrológica a gran escala, pronóstico de inundaciones, disponibilidad hídrica, teledetección, topografía y sistemas reproducibles de datos ambientales.
+        Siempre me ha fascinado entender cómo funcionan los sistemas naturales y el papel que la tecnología puede desempeñar para comprenderlos. Mi interés por las ciencias ambientales creció junto con una curiosidad por las computadoras y la programación, lo que finalmente me llevó a una carrera que combina estas áreas.
 
-        Mi trabajo combina investigación aplicada, desarrollo de software científico e ingeniería de datos para transformar grandes bases ambientales en productos útiles para modelización, monitoreo y toma de decisiones.
+        Mi trabajo se centra en construir herramientas y sistemas de datos para la investigación y la gestión operativa del agua. He trabajado en temas que incluyen modelización hidrológica a gran escala, pronóstico de inundaciones, evaluación de disponibilidad hídrica, teledetección, análisis del terreno e ingeniería de datos geoespaciales. Disfruto especialmente diseñando flujos de trabajo reproducibles que conectan la investigación científica con aplicaciones en el mundo real, siempre con el objetivo de crear sistemas robustos, transparentes y fáciles de extender.
+
+        Me interesan especialmente la modelización ambiental de base física, el software científico abierto, la computación geoespacial de alto rendimiento y los pipelines de datos reproducibles que apoyan una mejor comprensión y gestión de los recursos hídricos.
       info:
         title: "Resumen del perfil"
         educationTitle: "Formación"
@@ -406,6 +431,12 @@ es:
         - name: "JavaScript"
           iconType: "devicon"
           icon: "javascript-plain"
+        - name: "Panel"
+          iconType: "devicon"
+          icon: "panel-plain"
+        - name: "Streamlit"
+          iconType: "devicon"
+          icon: "streamlit-plain"
         - name: "SQL"
           iconType: "fa"
           icon: "database"
@@ -536,6 +567,21 @@ es:
         - title: "TPS"
           content: "Algoritmo de extracción de drenaje en MDEs basado en posición topográfica."
           url: "https://github.com/gisflw/TPS"
+        - title: "Cerrado APCAC View"
+          content: "Visualizador interactivo para productos de datos y análisis geoespaciales del Cerrado APCAC."
+          url: "https://github.com/gisflw/cerrado-apcac-view"
+        - title: "Flood QC"
+          content: "Herramientas para control de calidad y validación de datos ambientales relacionados con inundaciones."
+          url: "https://github.com/gisflw/flood-qc"
+        - title: "MGB Vechy"
+          content: "Utilidades y flujos de trabajo de apoyo a aplicaciones de modelización hidrológica con MGB."
+          url: "https://github.com/gisflw/mgb-vechy"
+        - title: "PyGeoDev"
+          content: "Utilidades Python para desarrollo geoespacial y flujos de procesamiento de datos."
+          url: "https://github.com/gisflw/pygeodev"
+        - title: "ML Pipeline"
+          content: "Componentes reutilizables de pipelines de aprendizaje automático para modelización ambiental y geoespacial."
+          url: "https://github.com/gisflw/ml-pipeline"
     contact:
       title: "Contacto"
       content: "Contacto por correo electrónico o redes profesionales."

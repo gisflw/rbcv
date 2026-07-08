@@ -82,6 +82,25 @@ body.dark #hero .cv-hero-location-badge {
   background-color: rgba(24, 25, 26, 0.68);
 }
 
+#hero h2 {
+  margin-bottom: 1rem;
+  color: var(--text-secondary-color) !important;
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  opacity: 0.85 !important;
+}
+
+#hero .hero-content {
+  max-width: 640px;
+  margin-bottom: 2rem;
+  color: var(--text-color) !important;
+  font-size: clamp(1.45rem, 2.6vw, 2rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  opacity: 0.88 !important;
+}
+
 #about .cv-about-facts {
   padding: 1.5rem;
 }

@@ -1,0 +1,69 @@
+# <%= title %>
+
+<% unless blank?(headline) -%>
+<%= headline %>
+<% end -%>
+<% unless profile_links.empty? -%>
+
+<%= profile_links.map { |link| "[#{link["label"]}](#{link["url"]})" }.join(" | ") %>
+<% end -%>
+<% unless blank?(email) && blank?(city_country) -%>
+
+<%= [email, city_country].reject { |item| blank?(item) }.join(" | ") %>
+<% end -%>
+
+<% unless blank?(skills["sets"]) && blank?(skills["stack"]) -%>
+## <%= skills["title"] || labels[:skills] %>
+
+<% (skills["sets"] || []).each do |skill| -%>
+- **<%= skill["title"] %>**: <%= skill["description"] %>
+<% end -%>
+<% unless blank?(skills["stack"]) -%>
+
+**<%= labels[:stack] %>:** <%= skills["stack"].map { |item| item["name"] }.join(", ") %>
+<% end -%>
+<% end -%>
+
+<% unless blank?(experience["items"]) -%>
+## <%= experience["title"] || labels[:experience] %>
+
+<% (experience["items"] || []).each do |company| -%>
+<% (company["jobs"] || []).each do |job| -%>
+### <%= job["name"] %>
+
+*<%= job["date"] %> | <%= compact_markdown(job["companyDisplay"] || company["company"]) %>*
+
+<%= compact_markdown(job["content"]) %>
+
+<% end -%>
+<% end -%>
+<% end -%>
+
+<% unless blank?(education["items"]) -%>
+## <%= education["title"] || labels[:education] %>
+
+<% (education["items"] || []).each do |item| -%>
+- **<%= item["title"] %>**, <%= item.dig("school", "name") %> (<%= item["date"] %>)<% unless blank?(item["content"]) %>. <%= compact_markdown(item["content"]).gsub(/\AThesis:\s*/, "Thesis: ") %><% end %>
+<% end -%>
+<% end -%>
+
+<% unless blank?(tools["items"]) -%>
+## <%= tools["title"] || labels[:tools] %>
+
+<% (tools["items"] || []).each do |item| -%>
+- **<% if item["url"] %>[<%= item["title"] %>](<%= item["url"] %>)<% else %><%= item["title"] %><% end %>**: <%= item["content"] %>
+<% end -%>
+<% end -%>
+
+<% unless blank?(publications["items"]) -%>
+## <%= publications["title"] || labels[:publications] %>
+
+<% (publications["items"] || []).each do |item| -%>
+<% link = item["doi"] || item["url"] -%>
+<% summary, contribution = publication_summary_parts(item["summary"]) -%>
+- **<%= item["year"] %>**. <% if link %>[<%= item["title"] %>](<%= link %>)<% else %><%= item["title"] %><% end %>. <%= item["authors"] %>. *<%= item["venue"] %>*.<% unless blank?(summary) %> <%= summary %><% end %>
+<% unless blank?(contribution) -%>
+\newline Contribution: <%= contribution %>.
+<% end -%>
+<% end -%>
+<% end -%>

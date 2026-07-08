@@ -2,6 +2,7 @@
 /public/
 /resources/
 /.hugo_build.lock
+/build/
 
 # Local environment and editor files
 .DS_Store

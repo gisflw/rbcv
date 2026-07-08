@@ -34,9 +34,9 @@ hero:
   enable: true
   intro: "Hi, my name is"
   title: "Rafael Barbedo."
-  subtitle: "Hydrology, geospatial data engineering, and environmental modelling"
+  subtitle: "I like nature, computers, and building things."
   content: >-
-    I build hydrological models, geospatial workflows, and environmental data systems for research, forecasting, and water resources applications.
+    That's why I develop and manage software and data systems for hydrological and environmental applications.
   image: "/images/me.jpg"
   locationBadge:
     nationality: "🇧🇷 Brazilian"
@@ -62,9 +62,11 @@ about:
   enable: true
   title: "About"
   content: |-
-    I am a Brazilian hydrologist, civil engineer, and geospatial data scientist with experience in large-scale hydrological modelling, flood forecasting, water availability, remote sensing, topography, and reproducible environmental data systems.
+    I have always been fascinated by how natural systems work and by the role that technology can play in understanding them. My interest in environmental science grew alongside a curiosity for computers and programming, eventually leading me to a career that combines them.
 
-    My work combines applied research, scientific software development, and data engineering to turn large environmental datasets into useful products for modelling, monitoring, and decision-making.
+    My work focuses on building tools and data systems for research and operational water management. I have worked across topics including large-scale hydrological modelling, flood forecasting, water availability assessment, remote sensing, terrain analysis, and geospatial data engineering. I particularly enjoy designing reproducible workflows that bridge scientific research and real-world applications, always aiming to create systems that are robust, transparent, and easy to extend.
+
+    I am especially interested in physically based environmental modelling, open scientific software, high-performance geospatial computing, and reproducible data pipelines that support better understanding and management of water resources.
   info:
     title: "Profile snapshot"
     educationTitle: "Education"
@@ -134,6 +136,12 @@ skills:
     - name: "JavaScript"
       iconType: "devicon"
       icon: "javascript-plain"
+    - name: "Panel"
+      iconType: "devicon"
+      icon: "panel-plain"
+    - name: "Streamlit"
+      iconType: "devicon"
+      icon: "streamlit-plain"
     - name: "SQL"
       iconType: "fa"
       icon: "database"
@@ -292,6 +300,21 @@ achievements:
     - title: "Attention UNet for shrub segmentation"
       content: "Deep-learning pipeline used to identify shrub individuals or clumps in drone-derived RGB imagery."
       url: "https://github.com/gisflw/att-unet-shrub-id"
+    - title: "Cerrado APCAC View"
+      content: "Interactive viewer for Cerrado APCAC data products and geospatial analyses."
+      url: "https://github.com/gisflw/cerrado-apcac-view"
+    - title: "Flood QC"
+      content: "Tools for quality control and validation of flood-related environmental data."
+      url: "https://github.com/gisflw/flood-qc"
+    - title: "MGB Vechy"
+      content: "Utilities and workflows supporting MGB hydrological modelling applications."
+      url: "https://github.com/gisflw/mgb-vechy"
+    - title: "PyGeoDev"
+      content: "Python utilities for geospatial development and data-processing workflows."
+      url: "https://github.com/gisflw/pygeodev"
+    - title: "ML Pipeline"
+      content: "Reusable machine-learning pipeline components for environmental and geospatial modelling."
+      url: "https://github.com/gisflw/ml-pipeline"
 
 contact:
   enable: true

@@ -35,8 +35,12 @@ result.
 ## Hugo and Theme Conventions
 
 - Preserve the `hugo-profile` theme as the base site theme.
-- Prefer project-level overrides in `layouts/` instead of editing
-  `themes/hugo-profile/` directly.
+- Do not edit files under `themes/hugo-profile/` directly. Treat the theme as
+  vendor code.
+- Use project-level overrides in `layouts/`, `static/`, or `assets/` for all
+  custom behavior, styling, and markup changes.
+- If a theme change seems unavoidable, stop and ask the user before touching
+  anything under `themes/hugo-profile/`.
 - The current custom experience layout is
   `layouts/partials/sections/experience.html`.
 - Keep `hugo.yaml` valid YAML and avoid large unrelated rewrites.
