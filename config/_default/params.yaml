@@ -100,7 +100,7 @@ about:
 skills:
   enable: true
   title: "Skills"
-  intro: "A compact view of the domains, methods, and tools I use across hydrology, geospatial analysis, and environmental data systems."
+  intro: "A compact view of the domains, methods, and tools I use."
   sets:
     - title: "Hydrology"
       icon: "water"

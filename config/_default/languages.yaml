@@ -76,7 +76,7 @@ pt:
         title: "Competências principais"
     skills:
       title: "Competências"
-      intro: "Uma visão compacta dos domínios, métodos e ferramentas que uso em hidrologia, geoprocessamento e sistemas de dados ambientais."
+      intro: "Uma visão compacta dos domínios, métodos e ferramentas que uso."
       sets:
         - title: "Hidrologia"
           icon: "water"
@@ -459,7 +459,7 @@ es:
         title: "Competencias principales"
     skills:
       title: "Competencias"
-      intro: "Una vista compacta de los dominios, métodos y herramientas que uso en hidrología, geoprocesamiento y sistemas de datos ambientales."
+      intro: "Una vista compacta de los dominios, métodos y herramientas que uso."
       sets:
         - title: "Hidrología"
           icon: "water"
