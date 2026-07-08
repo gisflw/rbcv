@@ -10,7 +10,7 @@
         <div class="cv-about-copy">
           {{ if .Site.Params.about.image }}
           <div class="cv-about-image d-md-none">
-            <img src="{{ .Site.Params.about.image }}" alt="{{ .Site.Params.title }} profile picture">
+            <img src="{{ (.Site.Params.about.image | strings.TrimPrefix "/") | relURL }}" alt="{{ .Site.Params.title }} profile picture">
           </div>
           {{ end }}
           {{ $about.content | markdownify }}
