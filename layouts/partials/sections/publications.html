@@ -4,24 +4,30 @@
 <section id="publications" class="py-5">
   <div class="container">
     <h3 class="text-center">{{ $publications.title | default $defaultPublications.title | default "Publications" }}</h3>
-    <ol class="cv-publications-list mt-4">
+    <div class="cv-publications-list mt-4">
       {{ range . }}
       {{ $link := .doi | default .url }}
-      <li>
-        <span class="cv-publication-title">
-          {{ if $link }}
-          <a href="{{ $link }}" target="_blank" rel="noopener">{{ .title }}</a>
-          {{ else }}
-          {{ .title }}
-          {{ end }}
-        </span>
-        <span class="cv-publication-meta">{{ .year }} · {{ .venue }}</span>
+      <article class="cv-publication-item">
+        <span class="cv-publication-year">{{ .year }}</span>
+        <div class="cv-publication-body">
+          <span class="cv-publication-title">
+            {{ if $link }}
+            <a href="{{ $link }}" target="_blank" rel="noopener">{{ .title }}</a>
+            {{ else }}
+            {{ .title }}
+            {{ end }}
+          </span>
+        {{ with .authors }}
+        <span class="cv-publication-authors">{{ . | markdownify }}</span>
+        {{ end }}
+        <span class="cv-publication-meta">{{ .venue }}</span>
         {{ with .summary }}
         <span class="cv-publication-summary">{{ . }}</span>
         {{ end }}
-      </li>
+        </div>
+      </article>
       {{ end }}
-    </ol>
+    </div>
   </div>
 </section>
 {{- end -}}

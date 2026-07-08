@@ -248,24 +248,58 @@ pt:
     publications:
       title: "Publicações"
       items:
-        - title: "CAMELS-GB v2"
+        - title: "CAMELS-GB v2: hydrometeorological time series and landscape attributes for 671 catchments in Great Britain"
           year: 2026
           venue: "Earth System Science Data"
+          authors: "Gemma Coxon; Yanchen Zheng; **Rafael Barbedo**; Hollie Cooper; Felipe Fileni; Hayley J. Fowler; Matt Fry; Amy Green; Tom Gribbin; Helen Harfoot; Elizabeth Lewis; Germano Gondim Ribeiro Neto; Xiaobin Qiu; Saskia Salwey; Doris E. Wendt"
           summary: "Séries hidrometeorológicas e atributos de paisagem para 671 bacias na Grã-Bretanha."
-          doi: "https://doi.org/10.5194/essd-2025-608"
-        - title: "Water storage variability across Brazil"
-          year: 2022
-          venue: "Brazilian Journal of Water Resources"
-          summary: "Análise da variabilidade do armazenamento de água no Brasil."
-          doi: "https://doi.org/10.1590/2318-0331.272220220077"
+          doi: "https://doi.org/10.5194/essd-18-4345-2026"
+        - title: "Modeling Long-Term Flow Regimes in Ungauged Basins: An Evaluation of Machine Learning Performance and Uncertainty"
+          year: 2025
+          venue: "ESS Open Archive"
+          authors: "**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn"
+          summary: "Autor principal; avaliação de desempenho e incerteza de aprendizado de máquina para regimes de vazão de longo prazo em bacias não monitoradas."
+          doi: "https://doi.org/10.22541/essoar.175336960.03823488/v1"
         - title: "Data integration approaches for hydrological analyses in Brazil"
           year: 2024
           venue: "Tese de doutorado, Universidade Federal do Rio Grande do Sul"
+          authors: "**Rafael Barbedo**"
           summary: "Tese de doutorado."
           url: "https://lume.ufrgs.br/handle/10183/293616"
-        - title: "Riparian vegetation in the Brazilian Savannah"
+        - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
+          year: 2023
+          venue: "Journal of Hydrology"
+          authors: "Iporã Possantti; **Rafael Barbedo**; Marcelo Kronbauer; Walter Collischonn; Guilherme Marques"
+          summary: "Coautor; derivação de rede de drenagem e análise de lençol freático."
+          doi: "https://doi.org/10.1016/j.jhydrol.2022.129003"
+        - title: "How much inundation occurs in the Amazon River basin?"
+          year: 2022
+          venue: "Remote Sensing of Environment"
+          authors: "Ayan Santos Fleischmann; Fabrice Papa; Alice Fassoni-Andrade; John M. Melack; Sly Wongchuig; Rodrigo Cauduro Dias Paiva; Stephen K. Hamilton; Etienne Fluet-Chouinard; **Rafael Barbedo**; Filipe Aires; Ahmad Al Bitar; Marie-Paule Bonnet; Michael Coe; Jefferson Ferreira-Ferreira; Laura Hess; Katherine Jensen; Kyle McDonald; Alex Ovando; Edward Park; Marie Parrens; Sébastien Pinel; Catherine Prigent; Angélica F. Resende; Menaka Revel; Ake Rosenqvist; Jessica Rosenqvist; Conrado Rudorff; Thiago S.F. Silva; Dai Yamazaki; Walter Collischonn"
+          summary: "Coautor; avaliação da extensão de inundação na bacia Amazônica."
+          doi: "https://doi.org/10.1016/j.rse.2022.113099"
+        - title: "Water storage variability across Brazil"
+          year: 2022
+          venue: "Brazilian Journal of Water Resources"
+          authors: "**Rafael Barbedo**; Ayan Santos Fleischmann; Vinícius Siqueira; João Paulo Brêda; Gabriel Matte; Leonardo Laipelt; Alexandre Amorim; Alexandre Abdalla Araújo; Marcus Fuckner; Adalberto Meller; Fernando Mainardi Fan; Walter Collischonn; Anderson Ruhoff; Rodrigo Cauduro Dias de Paiva"
+          summary: "Análise da variabilidade do armazenamento de água no Brasil."
+          doi: "https://doi.org/10.1590/2318-0331.272220220077"
+        - title: "Global Evapotranspiration Datasets Assessment Using Water Balance in South America"
+          year: 2022
+          venue: "Remote Sensing"
+          authors: "Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez; João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira; Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs"
+          summary: "Coautor; análise de concordância espacial entre conjuntos de dados de evapotranspiração."
+          doi: "https://doi.org/10.3390/rs14112526"
+        - title: "Topographic Position-based Stream definition (TPS)"
+          year: 2022
+          venue: "Hydrological Sciences Journal"
+          authors: "**Rafael Barbedo**; Vinícius Siqueira; Walter Collischonn"
+          summary: "Autor principal; método para abordar a variabilidade espacial da densidade de drenagem em redes de drenagem."
+          doi: "https://doi.org/10.1080/02626667.2022.2047190"
+        - title: "Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah"
           year: 2020
           venue: "Dissertação de mestrado, Universidade Federal do Rio Grande do Sul"
+          authors: "**Rafael Barbedo**"
           summary: "Dissertação de mestrado."
           url: "https://lume.ufrgs.br/handle/10183/221892"
     terms:
@@ -510,24 +544,58 @@ es:
     publications:
       title: "Publicaciones"
       items:
-        - title: "CAMELS-GB v2"
+        - title: "CAMELS-GB v2: hydrometeorological time series and landscape attributes for 671 catchments in Great Britain"
           year: 2026
           venue: "Earth System Science Data"
+          authors: "Gemma Coxon; Yanchen Zheng; **Rafael Barbedo**; Hollie Cooper; Felipe Fileni; Hayley J. Fowler; Matt Fry; Amy Green; Tom Gribbin; Helen Harfoot; Elizabeth Lewis; Germano Gondim Ribeiro Neto; Xiaobin Qiu; Saskia Salwey; Doris E. Wendt"
           summary: "Series hidrometeorológicas y atributos de paisaje para 671 cuencas en Gran Bretaña."
-          doi: "https://doi.org/10.5194/essd-2025-608"
-        - title: "Water storage variability across Brazil"
-          year: 2022
-          venue: "Brazilian Journal of Water Resources"
-          summary: "Análisis de la variabilidad del almacenamiento de agua en Brasil."
-          doi: "https://doi.org/10.1590/2318-0331.272220220077"
+          doi: "https://doi.org/10.5194/essd-18-4345-2026"
+        - title: "Modeling Long-Term Flow Regimes in Ungauged Basins: An Evaluation of Machine Learning Performance and Uncertainty"
+          year: 2025
+          venue: "ESS Open Archive"
+          authors: "**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn"
+          summary: "Autor principal; evaluación del desempeño y la incertidumbre del aprendizaje automático para regímenes de caudal de largo plazo en cuencas no aforadas."
+          doi: "https://doi.org/10.22541/essoar.175336960.03823488/v1"
         - title: "Data integration approaches for hydrological analyses in Brazil"
           year: 2024
           venue: "Tesis doctoral, Universidade Federal do Rio Grande do Sul"
+          authors: "**Rafael Barbedo**"
           summary: "Tesis doctoral."
           url: "https://lume.ufrgs.br/handle/10183/293616"
-        - title: "Riparian vegetation in the Brazilian Savannah"
+        - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
+          year: 2023
+          venue: "Journal of Hydrology"
+          authors: "Iporã Possantti; **Rafael Barbedo**; Marcelo Kronbauer; Walter Collischonn; Guilherme Marques"
+          summary: "Coautor; derivación de red de drenaje y análisis del nivel freático."
+          doi: "https://doi.org/10.1016/j.jhydrol.2022.129003"
+        - title: "How much inundation occurs in the Amazon River basin?"
+          year: 2022
+          venue: "Remote Sensing of Environment"
+          authors: "Ayan Santos Fleischmann; Fabrice Papa; Alice Fassoni-Andrade; John M. Melack; Sly Wongchuig; Rodrigo Cauduro Dias Paiva; Stephen K. Hamilton; Etienne Fluet-Chouinard; **Rafael Barbedo**; Filipe Aires; Ahmad Al Bitar; Marie-Paule Bonnet; Michael Coe; Jefferson Ferreira-Ferreira; Laura Hess; Katherine Jensen; Kyle McDonald; Alex Ovando; Edward Park; Marie Parrens; Sébastien Pinel; Catherine Prigent; Angélica F. Resende; Menaka Revel; Ake Rosenqvist; Jessica Rosenqvist; Conrado Rudorff; Thiago S.F. Silva; Dai Yamazaki; Walter Collischonn"
+          summary: "Coautor; evaluación de la extensión de inundación en la cuenca Amazónica."
+          doi: "https://doi.org/10.1016/j.rse.2022.113099"
+        - title: "Water storage variability across Brazil"
+          year: 2022
+          venue: "Brazilian Journal of Water Resources"
+          authors: "**Rafael Barbedo**; Ayan Santos Fleischmann; Vinícius Siqueira; João Paulo Brêda; Gabriel Matte; Leonardo Laipelt; Alexandre Amorim; Alexandre Abdalla Araújo; Marcus Fuckner; Adalberto Meller; Fernando Mainardi Fan; Walter Collischonn; Anderson Ruhoff; Rodrigo Cauduro Dias de Paiva"
+          summary: "Análisis de la variabilidad del almacenamiento de agua en Brasil."
+          doi: "https://doi.org/10.1590/2318-0331.272220220077"
+        - title: "Global Evapotranspiration Datasets Assessment Using Water Balance in South America"
+          year: 2022
+          venue: "Remote Sensing"
+          authors: "Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez; João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira; Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs"
+          summary: "Coautor; análisis de concordancia espacial entre conjuntos de datos de evapotranspiración."
+          doi: "https://doi.org/10.3390/rs14112526"
+        - title: "Topographic Position-based Stream definition (TPS)"
+          year: 2022
+          venue: "Hydrological Sciences Journal"
+          authors: "**Rafael Barbedo**; Vinícius Siqueira; Walter Collischonn"
+          summary: "Autor principal; método para abordar la variabilidad espacial de la densidad de drenaje en redes de drenaje."
+          doi: "https://doi.org/10.1080/02626667.2022.2047190"
+        - title: "Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah"
           year: 2020
           venue: "Tesis de maestría, Universidade Federal do Rio Grande do Sul"
+          authors: "**Rafael Barbedo**"
           summary: "Disertación de maestría."
           url: "https://lume.ufrgs.br/handle/10183/221892"
     terms:

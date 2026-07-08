@@ -164,7 +164,6 @@ body.dark #hero .cv-hero-location-badge {
 
 #publications .cv-publications-list {
   max-width: 900px;
-  padding-left: 1.25rem;
   margin-right: auto;
   margin-left: auto;
   color: var(--text-secondary-color) !important;
@@ -172,8 +171,33 @@ body.dark #hero .cv-hero-location-badge {
   line-height: 1.45;
 }
 
-#publications .cv-publications-list li {
-  margin-bottom: 0.85rem;
+#publications .cv-publication-item {
+  display: grid;
+  grid-template-columns: 4.2rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.18);
+}
+
+#publications .cv-publication-item:last-child {
+  border-bottom: 0;
+}
+
+#publications .cv-publication-year {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 2rem;
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+#publications .cv-publication-body {
+  min-width: 0;
 }
 
 #publications .cv-publication-title {
@@ -181,9 +205,14 @@ body.dark #hero .cv-hero-location-badge {
   font-weight: 600;
 }
 
+#publications .cv-publication-authors,
 #publications .cv-publication-meta,
 #publications .cv-publication-summary {
   display: block;
+}
+
+#publications .cv-publication-authors {
+  margin-top: 0.2rem;
 }
 
 #publications .cv-publications-list a {
