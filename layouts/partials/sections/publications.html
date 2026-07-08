@@ -1,0 +1,23 @@
+{{- $publications := .Site.Language.Params.publications | default .Site.Params.publications -}}
+{{- $defaultPublications := .Site.Params.publications -}}
+{{- with $publications.items | default .Site.Params.publications.items -}}
+<section id="publications" class="py-5">
+  <div class="container">
+    <h3 class="text-center">{{ $publications.title | default $defaultPublications.title | default "Publications" }}</h3>
+    <ol class="cv-publications-list mt-4">
+      {{ range . }}
+      <li>
+        <span class="cv-publication-title">{{ .title }}</span>
+        <span class="cv-publication-meta">{{ .year }} · {{ .venue }}</span>
+        {{ with .summary }}
+        <span class="cv-publication-summary">{{ . }}</span>
+        {{ end }}
+        {{ with .doi }}
+        <a href="{{ . }}" target="_blank" rel="noopener">DOI</a>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+{{- end -}}

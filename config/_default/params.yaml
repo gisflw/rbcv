@@ -16,6 +16,7 @@ theme:
 navbar:
   align: "ms-auto"
   brandName: "Rafael Barbedo"
+  showBrandLogo: false
   disableSearch: false
   stickyNavBar:
     enable: true
@@ -72,10 +73,12 @@ about:
     - "Spanish: fluent"
     - "French: intermediate"
   interests:
-    - "Hydrological forecasting"
-    - "Open environmental data"
-    - "Geospatial software"
-    - "Reproducible research"
+    - "🧗 Climbing"
+    - "🚴 Cycling"
+    - "🥾 Hiking"
+    - "🌿 Nature"
+    - "✈️ Traveling"
+    - "📚 Reading"
   skills:
     enable: true
     title: "Core expertise"
