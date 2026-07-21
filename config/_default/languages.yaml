@@ -50,7 +50,7 @@ pt:
     about:
       title: "Sobre"
       content: |-
-        Sempre fui fascinado por entender como os sistemas naturais funcionam e pelo papel que a tecnologia pode desempenhar para compreendê-los. Meu interesse por ciências ambientais cresceu junto com a curiosidade por computadores e programação, o que acabou me levando a uma carreira que combina essas áreas.
+        Sempre fui fascinado por entender como sistemas naturais funcionam e pelo papel que a tecnologia pode desempenhar para compreendê-los. Meu interesse por ciências ambientais cresceu junto com a curiosidade por computadores e programação, o que acabou me levando a uma carreira que combina essas áreas.
 
         Meu trabalho se concentra na construção de ferramentas e sistemas de dados para pesquisa e gestão operacional da água. Já trabalhei em temas como modelagem hidrológica em larga escala, previsão de cheias, avaliação de disponibilidade hídrica, sensoriamento remoto, análise de terreno e engenharia de dados geoespaciais. Gosto especialmente de desenhar fluxos de trabalho reprodutíveis que aproximam a pesquisa científica de aplicações no mundo real, sempre buscando criar sistemas robustos, transparentes e fáceis de estender.
 
@@ -146,7 +146,7 @@ pt:
         - company: "Agência Nacional de Águas e Saneamento Básico (ANA)"
           companyUrl: "https://www.gov.br/ana/pt-br"
           jobs:
-            - name: "Consultor em hidrologia e dados geoespaciais"
+            - name: "Consultor em sistemas de bases de dados"
               date: "Mai 2025 – Nov 2025"
               country: "🇧🇷 Brasil"
               content: |-
@@ -529,7 +529,7 @@ es:
         - company: "Agência Nacional de Águas e Saneamento Básico (ANA)"
           companyUrl: "https://www.gov.br/ana/pt-br"
           jobs:
-            - name: "Consultor en hidrología y datos geoespaciales"
+            - name: "Consultor en sistemas de bases de datos"
               date: "May 2025 – Nov 2025"
               country: "🇧🇷 Brasil"
               content: |-
