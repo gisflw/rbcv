@@ -37,9 +37,10 @@
 
 <% (experience["items"] || []).each do |company| -%>
 <% (company["jobs"] || []).each do |job| -%>
+<% employer = company_display(company, job) -%>
 ### <%= job["name"] %>
 
-*<%= [job["date"], compact_markdown(job["companyDisplay"] || company["company"]), job["country"]].reject { |item| blank?(item) }.join(" | ") %>*
+<%= [job["date"], employer, strip_emoji(job["country"])].reject { |item| blank?(item) }.join(" | ") %>
 
 <%= compact_markdown(job["content"]) %>
 
@@ -60,7 +61,6 @@
 
 <% (publications["items"] || []).each do |item| -%>
 <% link = item["doi"] || item["url"] -%>
-<% summary, = publication_summary_parts(item["summary"]) -%>
-- **<%= item["year"] %>**. <% if link %>[<%= item["title"] %>](<%= link %>)<% else %><%= item["title"] %><% end %>. <%= item["authors"].to_s.sub(/\.+\z/, "") %>. <% unless blank?(item["type"]) && blank?(item["language"]) %><%= [item["type"], item["language"]].reject { |value| blank?(value) }.join("; ") %>. <% end %>*<%= item["venue"] %>*.<% unless blank?(summary) %> <%= summary %><% end %>
+- **<%= item["year"] %>**. <% if link %>[<%= item["title"] %>](<%= link %>)<% else %><%= item["title"] %><% end %>. <%= item["authors"].to_s.sub(/\.+\z/, "") %>. <% unless blank?(item["type"]) && blank?(item["language"]) %><%= [item["type"], item["language"]].reject { |value| blank?(value) }.join("; ") %>. <% end %><%= item["venue"] %>.
 <% end -%>
 <% end -%>

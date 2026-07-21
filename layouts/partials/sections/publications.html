@@ -26,9 +26,6 @@
         <span class="cv-publication-meta">{{ delimit (slice .type .language) " · " }}</span>
         {{ end }}
         <span class="cv-publication-meta">{{ .venue }}</span>
-        {{ with .summary }}
-        <span class="cv-publication-summary">{{ . }}</span>
-        {{ end }}
         </div>
       </article>
       {{ end }}

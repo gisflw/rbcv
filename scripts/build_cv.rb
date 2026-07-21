@@ -98,23 +98,6 @@ def social_url(url)
   url.to_s.sub(/\Amailto:/, "")
 end
 
-def contribution_prefixes
-  [
-    "Main author",
-    "Contributing author",
-    "Autor principal",
-    "Coautor"
-  ]
-end
-
-def publication_summary_parts(summary)
-  text = summary.to_s.strip
-  prefix = contribution_prefixes.find { |item| text.start_with?("#{item};") }
-  return [text, nil] unless prefix
-
-  [text.sub(/\A#{Regexp.escape(prefix)};\s*/, ""), prefix]
-end
-
 def compact_markdown(value)
   value.to_s.strip
 end
@@ -191,6 +174,17 @@ class CvDocument
 
   def publications
     params["publications"] || {}
+  end
+
+  def company_display(company, job)
+    display = job["companyDisplay"]
+    return compact_markdown(display) unless blank?(display)
+
+    name = company["company"]
+    url = job["companyUrl"] || company["companyUrl"]
+    return name if blank?(url)
+
+    "[#{name}](#{url})"
   end
 
   def render

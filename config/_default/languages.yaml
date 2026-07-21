@@ -66,11 +66,10 @@ pt:
         - "Espanhol: fluente"
         - "Francê: intermediário"
       interests:
+        - "🌿 Natureza"
         - "🧗 Escalada"
         - "🚴 Ciclismo"
         - "🥾 Trilhas"
-        - "🌿 Natureza"
-        - "✈️ Viajar"
         - "📚 Leitura"
       skills:
         title: "Competências principais"
@@ -198,10 +197,14 @@ pt:
           school:
             name: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           date: "2020 – 2024"
+          content: |-
+            Tese: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616).
         - title: "Mestrado em Recursos Hídricos"
           school:
             name: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           date: "2018 – 2020"
+          content: |-
+            Dissertação: [Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah](https://lume.ufrgs.br/handle/10183/221892).
         - title: "Graduação em Engenharia Civil"
           school:
             name: "Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)"
@@ -290,7 +293,6 @@ pt:
           language: "Inglês"
           venue: "Earth System Science Data"
           authors: "Gemma Coxon; Yanchen Zheng; **Rafael Barbedo**; Hollie Cooper; Felipe Fileni; Hayley J. Fowler; Matt Fry; Amy Green; Tom Gribbin; Helen Harfoot; Elizabeth Lewis; Germano Gondim Ribeiro Neto; Xiaobin Qiu; Saskia Salwey; Doris E. Wendt"
-          summary: "Séries hidrometeorológicas e atributos de paisagem para 671 bacias na Grã-Bretanha."
           doi: "https://doi.org/10.5194/essd-18-4345-2026"
         - title: "Modeling Long-Term Flow Regimes in Ungauged Basins: An Evaluation of Machine Learning Performance and Uncertainty"
           year: 2025
@@ -298,22 +300,13 @@ pt:
           language: "Inglês"
           venue: "ESS Open Archive"
           authors: "**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn"
-          summary: "Avaliação de desempenho e incerteza de aprendizado de máquina para regimes de vazão de longo prazo em bacias não monitoradas."
           doi: "https://doi.org/10.22541/essoar.175336960.03823488/v1"
-        - title: "Data integration approaches for hydrological analyses in Brazil"
-          year: 2024
-          type: "Tese de doutorado"
-          language: "Inglês"
-          venue: "Universidade Federal do Rio Grande do Sul"
-          authors: "**Rafael Barbedo**"
-          url: "https://lume.ufrgs.br/handle/10183/293616"
         - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
           year: 2023
           type: "Artigo de periódico"
           language: "Inglês"
           venue: "Journal of Hydrology"
           authors: "Iporã Possantti; **Rafael Barbedo**; Marcelo Kronbauer; Walter Collischonn; Guilherme Marques"
-          summary: "Derivação de rede de drenagem e análise de lençol freático."
           doi: "https://doi.org/10.1016/j.jhydrol.2022.129003"
         - title: "How much inundation occurs in the Amazon River basin?"
           year: 2022
@@ -321,7 +314,6 @@ pt:
           language: "Inglês"
           venue: "Remote Sensing of Environment"
           authors: "Ayan Santos Fleischmann; Fabrice Papa; Alice Fassoni-Andrade; John M. Melack; Sly Wongchuig; Rodrigo Cauduro Dias Paiva; Stephen K. Hamilton; Etienne Fluet-Chouinard; **Rafael Barbedo**; Filipe Aires; Ahmad Al Bitar; Marie-Paule Bonnet; Michael Coe; Jefferson Ferreira-Ferreira; Laura Hess; Katherine Jensen; Kyle McDonald; Alex Ovando; Edward Park; Marie Parrens; Sébastien Pinel; Catherine Prigent; Angélica F. Resende; Menaka Revel; Ake Rosenqvist; Jessica Rosenqvist; Conrado Rudorff; Thiago S.F. Silva; Dai Yamazaki; Walter Collischonn"
-          summary: "Avaliação da extensão de inundação na bacia Amazônica."
           doi: "https://doi.org/10.1016/j.rse.2022.113099"
         - title: "Water storage variability across Brazil"
           year: 2022
@@ -329,7 +321,6 @@ pt:
           language: "Inglês"
           venue: "Brazilian Journal of Water Resources"
           authors: "**Rafael Barbedo**; Ayan Santos Fleischmann; Vinícius Siqueira; João Paulo Brêda; Gabriel Matte; Leonardo Laipelt; Alexandre Amorim; Alexandre Abdalla Araújo; Marcus Fuckner; Adalberto Meller; Fernando Mainardi Fan; Walter Collischonn; Anderson Ruhoff; Rodrigo Cauduro Dias de Paiva"
-          summary: "Análise da variabilidade do armazenamento de água no Brasil."
           doi: "https://doi.org/10.1590/2318-0331.272220220077"
         - title: "Global Evapotranspiration Datasets Assessment Using Water Balance in South America"
           year: 2022
@@ -337,7 +328,6 @@ pt:
           language: "Inglês"
           venue: "Remote Sensing"
           authors: "Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez; João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira; Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs"
-          summary: "Análise de concordância espacial entre conjuntos de dados de evapotranspiração."
           doi: "https://doi.org/10.3390/rs14112526"
         - title: "Topographic Position-based Stream definition (TPS)"
           year: 2022
@@ -345,7 +335,6 @@ pt:
           language: "Inglês"
           venue: "Hydrological Sciences Journal"
           authors: "**Rafael Barbedo**; Vinícius Siqueira; Walter Collischonn"
-          summary: "Método para abordar a variabilidade espacial da densidade de drenagem em redes de drenagem."
           doi: "https://doi.org/10.1080/02626667.2022.2047190"
         - title: "Cooperação em tecnologias para análises hidrológicas em escala nacional : subprojeto estimativas hidrológicas para contas econômicas ambientais da água (CEAA) no Brasil"
           year: 2022
@@ -382,13 +371,6 @@ pt:
           venue: "UFRGS/IPH"
           authors: "**Rafael Barbedo**; Mino Viana Sorribas; Walter Collischonn; Rodrigo Cauduro Dias de Paiva"
           url: "https://lume.ufrgs.br/handle/10183/253843"
-        - title: "Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah"
-          year: 2020
-          type: "Dissertação de mestrado"
-          language: "Inglês"
-          venue: "Universidade Federal do Rio Grande do Sul"
-          authors: "**Rafael Barbedo**"
-          url: "https://lume.ufrgs.br/handle/10183/221892"
     terms:
       read: "Ler"
       toc: "Sumário"
@@ -449,11 +431,10 @@ es:
         - "Español: fluente"
         - "Francés: intermedio"
       interests:
+        - "🌿 Naturaleza"
         - "🧗 Escalada"
         - "🚴 Ciclismo"
         - "🥾 Senderismo"
-        - "🌿 Naturaleza"
-        - "✈️ Viajar"
         - "📚 Lectura"
       skills:
         title: "Competencias principales"
@@ -581,10 +562,14 @@ es:
           school:
             name: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           date: "2020 – 2024"
+          content: |-
+            Tesis: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616).
         - title: "Maestría en Recursos Hídricos"
           school:
             name: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           date: "2018 – 2020"
+          content: |-
+            Tesis de maestría: [Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah](https://lume.ufrgs.br/handle/10183/221892).
         - title: "Grado en Ingeniería Civil"
           school:
             name: "Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)"
@@ -673,7 +658,6 @@ es:
           language: "Inglés"
           venue: "Earth System Science Data"
           authors: "Gemma Coxon; Yanchen Zheng; **Rafael Barbedo**; Hollie Cooper; Felipe Fileni; Hayley J. Fowler; Matt Fry; Amy Green; Tom Gribbin; Helen Harfoot; Elizabeth Lewis; Germano Gondim Ribeiro Neto; Xiaobin Qiu; Saskia Salwey; Doris E. Wendt"
-          summary: "Series hidrometeorológicas y atributos de paisaje para 671 cuencas en Gran Bretaña."
           doi: "https://doi.org/10.5194/essd-18-4345-2026"
         - title: "Modeling Long-Term Flow Regimes in Ungauged Basins: An Evaluation of Machine Learning Performance and Uncertainty"
           year: 2025
@@ -681,22 +665,13 @@ es:
           language: "Inglés"
           venue: "ESS Open Archive"
           authors: "**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn"
-          summary: "Evaluación del desempeño y la incertidumbre del aprendizaje automático para regímenes de caudal de largo plazo en cuencas no aforadas."
           doi: "https://doi.org/10.22541/essoar.175336960.03823488/v1"
-        - title: "Data integration approaches for hydrological analyses in Brazil"
-          year: 2024
-          type: "Tesis doctoral"
-          language: "Inglés"
-          venue: "Universidade Federal do Rio Grande do Sul"
-          authors: "**Rafael Barbedo**"
-          url: "https://lume.ufrgs.br/handle/10183/293616"
         - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
           year: 2023
           type: "Artículo de revista"
           language: "Inglés"
           venue: "Journal of Hydrology"
           authors: "Iporã Possantti; **Rafael Barbedo**; Marcelo Kronbauer; Walter Collischonn; Guilherme Marques"
-          summary: "Derivación de red de drenaje y análisis del nivel freático."
           doi: "https://doi.org/10.1016/j.jhydrol.2022.129003"
         - title: "How much inundation occurs in the Amazon River basin?"
           year: 2022
@@ -704,7 +679,6 @@ es:
           language: "Inglés"
           venue: "Remote Sensing of Environment"
           authors: "Ayan Santos Fleischmann; Fabrice Papa; Alice Fassoni-Andrade; John M. Melack; Sly Wongchuig; Rodrigo Cauduro Dias Paiva; Stephen K. Hamilton; Etienne Fluet-Chouinard; **Rafael Barbedo**; Filipe Aires; Ahmad Al Bitar; Marie-Paule Bonnet; Michael Coe; Jefferson Ferreira-Ferreira; Laura Hess; Katherine Jensen; Kyle McDonald; Alex Ovando; Edward Park; Marie Parrens; Sébastien Pinel; Catherine Prigent; Angélica F. Resende; Menaka Revel; Ake Rosenqvist; Jessica Rosenqvist; Conrado Rudorff; Thiago S.F. Silva; Dai Yamazaki; Walter Collischonn"
-          summary: "Evaluación de la extensión de inundación en la cuenca Amazónica."
           doi: "https://doi.org/10.1016/j.rse.2022.113099"
         - title: "Water storage variability across Brazil"
           year: 2022
@@ -712,7 +686,6 @@ es:
           language: "Inglés"
           venue: "Brazilian Journal of Water Resources"
           authors: "**Rafael Barbedo**; Ayan Santos Fleischmann; Vinícius Siqueira; João Paulo Brêda; Gabriel Matte; Leonardo Laipelt; Alexandre Amorim; Alexandre Abdalla Araújo; Marcus Fuckner; Adalberto Meller; Fernando Mainardi Fan; Walter Collischonn; Anderson Ruhoff; Rodrigo Cauduro Dias de Paiva"
-          summary: "Análisis de la variabilidad del almacenamiento de agua en Brasil."
           doi: "https://doi.org/10.1590/2318-0331.272220220077"
         - title: "Global Evapotranspiration Datasets Assessment Using Water Balance in South America"
           year: 2022
@@ -720,7 +693,6 @@ es:
           language: "Inglés"
           venue: "Remote Sensing"
           authors: "Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez; João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira; Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs"
-          summary: "Análisis de concordancia espacial entre conjuntos de datos de evapotranspiración."
           doi: "https://doi.org/10.3390/rs14112526"
         - title: "Topographic Position-based Stream definition (TPS)"
           year: 2022
@@ -728,7 +700,6 @@ es:
           language: "Inglés"
           venue: "Hydrological Sciences Journal"
           authors: "**Rafael Barbedo**; Vinícius Siqueira; Walter Collischonn"
-          summary: "Método para abordar la variabilidad espacial de la densidad de drenaje en redes de drenaje."
           doi: "https://doi.org/10.1080/02626667.2022.2047190"
         - title: "Cooperação em tecnologias para análises hidrológicas em escala nacional : subprojeto estimativas hidrológicas para contas econômicas ambientais da água (CEAA) no Brasil"
           year: 2022
@@ -765,13 +736,6 @@ es:
           venue: "UFRGS/IPH"
           authors: "**Rafael Barbedo**; Mino Viana Sorribas; Walter Collischonn; Rodrigo Cauduro Dias de Paiva"
           url: "https://lume.ufrgs.br/handle/10183/253843"
-        - title: "Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah"
-          year: 2020
-          type: "Tesis de maestría"
-          language: "Inglés"
-          venue: "Universidade Federal do Rio Grande do Sul"
-          authors: "**Rafael Barbedo**"
-          url: "https://lume.ufrgs.br/handle/10183/221892"
     terms:
       read: "Leer"
       toc: "Tabla de contenidos"
