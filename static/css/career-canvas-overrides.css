@@ -214,7 +214,8 @@ body.dark #hero .cv-hero-location-badge {
 #publications .cv-publication-labels {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 0.25rem;
 }
 
@@ -233,7 +234,7 @@ body.dark #hero .cv-hero-location-badge {
 
 #publications .cv-publication-label {
   color: var(--text-secondary-color) !important;
-  font-size: 0.72rem;
+  font-size: 0.6rem;
   line-height: 1.25;
   white-space: nowrap;
 }
