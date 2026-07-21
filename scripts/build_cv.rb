@@ -10,6 +10,7 @@ ROOT = File.expand_path("..", __dir__)
 PARAMS_PATH = File.join(ROOT, "config", "_default", "params.yaml")
 LANGUAGES_PATH = File.join(ROOT, "config", "_default", "languages.yaml")
 TEMPLATE_PATH = File.join(ROOT, "templates", "cv.md.erb")
+PDF_PREAMBLE_PATH = File.join(ROOT, "templates", "cv-preamble.tex")
 BUILD_DIR = File.join(ROOT, "build", "cv")
 OUTPUT_DIR = File.join(ROOT, "public", "cv")
 
@@ -206,10 +207,11 @@ def build_pdf(lang, params)
     markdown_path,
     "--from=markdown",
     "--pdf-engine=xelatex",
-    "-V", "geometry:margin=1.5cm",
-    "-V", "fontsize=10pt",
+    "--include-in-header", PDF_PREAMBLE_PATH,
+    "-V", "geometry:margin=1.9cm",
+    "-V", "fontsize=10.7pt",
     "-V", "colorlinks=true",
-    "-V", "linkcolor=blue",
+    "-V", "linkcolor=cvaccent",
     "-o", pdf_path
   ]
 

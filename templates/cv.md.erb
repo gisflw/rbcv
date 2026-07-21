@@ -1,22 +1,24 @@
-# <%= title %>
-
+\cvname{<%= title %>}
 <% unless blank?(headline) -%>
-<%= headline %>
+\cvheadline{<%= headline %>}
 <% end -%>
 <% unless profile_links.empty? -%>
-
-<%= profile_links.map { |link| "[#{link["label"]}](#{link["url"]})" }.join(" | ") %>
+\cvcontact{<%= profile_links.map { |link| "\\href{#{link["url"]}}{#{link["label"]}}" }.join("\\enspace{}|\\enspace{}") %>}
 <% end -%>
 <% unless blank?(email) && blank?(city_country) -%>
-
-<%= [email, city_country].reject { |item| blank?(item) }.join(" | ") %>
+\cvcontact{<%= [email, city_country].reject { |item| blank?(item) }.join("\\enspace{}|\\enspace{}") %>}
 <% end -%>
+\vspace{-0.65em}
 
 <% unless blank?(education["items"]) -%>
 ## <%= education["title"] || labels[:education] %>
 
 <% (education["items"] || []).each do |item| -%>
-- **<%= item["title"] %>**, <%= item.dig("school", "name") %> (<%= item["date"] %>)<% unless blank?(item["content"]) %>. <%= compact_markdown(item["content"]).gsub(/\AThesis:\s*/, "Thesis: ") %><% end %>
+**<%= item["title"] %>** \hfill \cvdate{<%= item["date"] %>}\
+<%= item.dig("school", "name") %><% unless blank?(item["content"]) %>\
+<%= compact_markdown(item["content"]).gsub(/\AThesis:\s*/, "Thesis: ") %><% end %>
+
+\vspace{0.3em}
 <% end -%>
 <% end -%>
 
@@ -24,7 +26,7 @@
 ## <%= skills["title"] || labels[:skills] %>
 
 <% (skills["sets"] || []).each do |skill| -%>
-- **<%= skill["title"] %>**: <%= skill["description"] %>
+**<%= skill["title"] %>:** <%= skill["description"] %>\
 <% end -%>
 <% unless blank?(skills["stack"]) -%>
 
@@ -38,12 +40,13 @@
 <% (experience["items"] || []).each do |company| -%>
 <% (company["jobs"] || []).each do |job| -%>
 <% employer = company_display(company, job) -%>
-### <%= job["name"] %>
-
-<%= [job["date"], employer, strip_emoji(job["country"])].reject { |item| blank?(item) }.join(" | ") %>
+\Needspace{8\baselineskip}
+**<%= job["name"] %>** \hfill \cvdate{<%= job["date"] %>}\
+<%= employer %><% unless blank?(job["country"]) %> \enspace\cvlocation{<%= strip_emoji(job["country"]) %>}<% end %>
 
 <%= compact_markdown(job["content"]) %>
 
+\vspace{0.5em}
 <% end -%>
 <% end -%>
 <% end -%>
@@ -52,7 +55,10 @@
 ## <%= tools["title"] || labels[:tools] %>
 
 <% (tools["items"] || []).each do |item| -%>
-- **<% if item["url"] %>[<%= item["title"] %>](<%= item["url"] %>)<% else %><%= item["title"] %><% end %>**: <%= item["content"] %>
+**<% if item["url"] %>[<%= item["title"] %>](<%= item["url"] %>)<% else %><%= item["title"] %><% end %>**
+\cvpadstart{}<%= item["content"] %>
+
+\vspace{0.3em}
 <% end -%>
 <% end -%>
 
@@ -61,6 +67,11 @@
 
 <% (publications["items"] || []).each do |item| -%>
 <% link = item["doi"] || item["url"] -%>
-- **<%= item["year"] %>**. <% if link %>[<%= item["title"] %>](<%= link %>)<% else %><%= item["title"] %><% end %>. <%= item["authors"].to_s.sub(/\.+\z/, "") %>. <% unless blank?(item["type"]) && blank?(item["language"]) %><%= [item["type"], item["language"]].reject { |value| blank?(value) }.join("; ") %>. <% end %><%= item["venue"] %>.
+**<% if link %>[<%= item["title"] %>](<%= link %>)<% else %><%= item["title"] %><% end %>**
+\cvpadstart{}<%= item["authors"].to_s.sub(/\.+\z/, "") %>\
+\hspace*{1em}*<%= item["venue"] %>*\
+\hspace*{1em}\cvmetadata{<%= [item["type"], item["year"], item["language"]].reject { |value| blank?(value) }.join(" \\textperiodcentered{} ") %>}
+
+\vspace{0.45em}
 <% end -%>
 <% end -%>
