@@ -39,10 +39,12 @@
 
 <% (experience["items"] || []).each do |company| -%>
 <% (company["jobs"] || []).each do |job| -%>
-<% employer = company_display(company, job) -%>
+<% employer = company_parts(company, job) -%>
 \Needspace{8\baselineskip}
 **<%= job["name"] %>** \hfill \cvdate{<%= job["date"] %>}\
-<%= employer %><% unless blank?(job["country"]) %> \enspace\cvlocation{<%= strip_emoji(job["country"]) %>}<% end %>
+<%= employer[:company] %><% unless blank?(employer[:partner]) %>\
+<%= partnership_label %> <%= employer[:partner] %><% end %><% unless blank?(job["country"]) %>\
+\cvlocation{<%= strip_emoji(job["country"]) %>}<% end %>
 
 <%= compact_markdown(job["content"]) %>
 

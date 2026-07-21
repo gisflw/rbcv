@@ -67,7 +67,8 @@ jobs:
             collection-fontsrecommended \
             collection-latexextra \
             collection-latexrecommended \
-            collection-xetex
+            collection-xetex \
+            noto
 
       - name: Add TinyTeX to PATH
         run: echo "$HOME/.TinyTeX/bin/$(uname -m)-linux" >> "$GITHUB_PATH"

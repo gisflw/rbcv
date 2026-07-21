@@ -188,6 +188,27 @@ class CvDocument
     "[#{name}](#{url})"
   end
 
+  def company_parts(company, job)
+    display = company_display(company, job)
+    patterns = {
+      "en" => /\A(?<company>.+?)\s+in partnership with(?: the)?\s+(?<partner>.+)\z/,
+      "pt" => /\A(?<company>.+?)\s+em parceria com(?: a| o)?\s+(?<partner>.+)\z/,
+      "es" => /\A(?<company>.+?)\s+en colaboración con(?: la| el)?\s+(?<partner>.+)\z/
+    }
+    match = display.match(patterns.fetch(lang, patterns["en"]))
+    return { company: display, partner: nil } unless match
+
+    { company: match[:company], partner: match[:partner] }
+  end
+
+  def partnership_label
+    {
+      "en" => "in partnership with:",
+      "pt" => "em parceria com:",
+      "es" => "en colaboración con:"
+    }.fetch(lang, "in partnership with:")
+  end
+
   def render
     ERB.new(File.read(TEMPLATE_PATH), trim_mode: "-").result(binding)
   end
