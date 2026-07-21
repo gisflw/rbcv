@@ -157,6 +157,15 @@ body.dark #hero .cv-hero-location-badge {
   color: var(--text-secondary-color) !important;
 }
 
+#about .cv-education-content {
+  color: var(--text-secondary-color) !important;
+  font-size: 0.9rem;
+}
+
+#about .cv-education-content p {
+  margin: 0;
+}
+
 #about .cv-tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -192,7 +201,7 @@ body.dark #hero .cv-hero-location-badge {
 
 #publications .cv-publication-item {
   display: grid;
-  grid-template-columns: 4.2rem minmax(0, 1fr);
+  grid-template-columns: 7rem minmax(0, 1fr);
   gap: 1rem;
   padding: 0.95rem 0;
   border-bottom: 1px solid rgba(127, 127, 127, 0.18);
@@ -206,6 +215,7 @@ body.dark #hero .cv-hero-location-badge {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.25rem;
 }
 
 #publications .cv-publication-year {
@@ -221,6 +231,13 @@ body.dark #hero .cv-hero-location-badge {
   font-weight: 700;
 }
 
+#publications .cv-publication-label {
+  color: var(--text-secondary-color) !important;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
 #publications .cv-publication-body {
   min-width: 0;
 }
@@ -231,13 +248,19 @@ body.dark #hero .cv-hero-location-badge {
 }
 
 #publications .cv-publication-authors,
-#publications .cv-publication-meta,
+#publications .cv-publication-venue,
 #publications .cv-publication-summary {
   display: block;
 }
 
 #publications .cv-publication-authors {
   margin-top: 0.2rem;
+}
+
+#publications .cv-publication-venue {
+  margin-top: 0.2rem;
+  color: var(--text-secondary-color) !important;
+  font-style: italic;
 }
 
 #publications .cv-publications-list a {

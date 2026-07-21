@@ -227,13 +227,13 @@ education:
         name: "Federal University of Rio Grande do Sul (UFRGS)"
       date: "2020 – 2024"
       content: |-
-        Thesis: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616).
+        Thesis: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616)
     - title: "Master's degree in Water Resources"
       school:
         name: "Federal University of Rio Grande do Sul (UFRGS)"
       date: "2018 – 2020"
       content: |-
-        Dissertation: [Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah](https://lume.ufrgs.br/handle/10183/221892).
+        Dissertation: [Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah](https://lume.ufrgs.br/handle/10183/221892)
     - title: "Civil Engineering degree"
       school:
         name: "Pontifical Catholic University of Rio Grande do Sul (PUCRS)"
@@ -375,7 +375,7 @@ publications:
       venue: "ESS Open Archive"
       authors: "**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn"
       doi: "https://doi.org/10.22541/essoar.175336960.03823488/v1"
-    - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
+    - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty: A case study in the Atlantic Forest, Brazil"
       year: 2023
       type: "Journal Article"
       language: "English"
@@ -403,7 +403,7 @@ publications:
       venue: "Remote Sensing"
       authors: "Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez; João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira; Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs"
       doi: "https://doi.org/10.3390/rs14112526"
-    - title: "Topographic Position-based Stream definition (TPS)"
+    - title: "Topographic Position-based Stream definition (TPS): A simple method to address spatial variability of drainage density in stream networks"
       year: 2022
       type: "Journal Article"
       language: "English"

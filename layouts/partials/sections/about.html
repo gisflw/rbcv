@@ -30,6 +30,9 @@
                 <strong>{{ .title }}</strong>
                 <span>{{ .school.name }}</span>
                 <small>{{ .date }}</small>
+                {{ with .content }}
+                <div class="cv-education-content">{{ . | markdownify }}</div>
+                {{ end }}
               </div>
               {{ end }}
             </div>

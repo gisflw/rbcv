@@ -10,6 +10,12 @@
       <article class="cv-publication-item">
         <div class="cv-publication-labels">
           <span class="cv-publication-year">{{ .year }}</span>
+          {{ with .type }}
+          <span class="cv-publication-label cv-publication-type">{{ . }}</span>
+          {{ end }}
+          {{ with .language }}
+          <span class="cv-publication-label cv-publication-language">{{ . }}</span>
+          {{ end }}
         </div>
         <div class="cv-publication-body">
           <span class="cv-publication-title">
@@ -22,10 +28,9 @@
         {{ with .authors }}
         <span class="cv-publication-authors">{{ . | markdownify }}.</span>
         {{ end }}
-        {{ if or .type .language }}
-        <span class="cv-publication-meta">{{ delimit (slice .type .language) " · " }}</span>
+        {{ with .venue }}
+        <span class="cv-publication-venue">{{ . }}</span>
         {{ end }}
-        <span class="cv-publication-meta">{{ .venue }}</span>
         </div>
       </article>
       {{ end }}

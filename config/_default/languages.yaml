@@ -198,13 +198,13 @@ pt:
             name: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           date: "2020 – 2024"
           content: |-
-            Tese: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616).
+            Tese: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616)
         - title: "Mestrado em Recursos Hídricos"
           school:
             name: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           date: "2018 – 2020"
           content: |-
-            Dissertação: [Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah](https://lume.ufrgs.br/handle/10183/221892).
+            Dissertação: [Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah](https://lume.ufrgs.br/handle/10183/221892)
         - title: "Graduação em Engenharia Civil"
           school:
             name: "Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)"
@@ -301,7 +301,7 @@ pt:
           venue: "ESS Open Archive"
           authors: "**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn"
           doi: "https://doi.org/10.22541/essoar.175336960.03823488/v1"
-        - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
+        - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty: A case study in the Atlantic Forest, Brazil"
           year: 2023
           type: "Artigo de periódico"
           language: "Inglês"
@@ -329,7 +329,7 @@ pt:
           venue: "Remote Sensing"
           authors: "Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez; João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira; Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs"
           doi: "https://doi.org/10.3390/rs14112526"
-        - title: "Topographic Position-based Stream definition (TPS)"
+        - title: "Topographic Position-based Stream definition (TPS): A simple method to address spatial variability of drainage density in stream networks"
           year: 2022
           type: "Artigo de periódico"
           language: "Inglês"
@@ -563,13 +563,13 @@ es:
             name: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           date: "2020 – 2024"
           content: |-
-            Tesis: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616).
+            Tesis: [Data integration approaches for hydrological analyses in Brazil](https://lume.ufrgs.br/handle/10183/293616)
         - title: "Maestría en Recursos Hídricos"
           school:
             name: "Universidade Federal do Rio Grande do Sul (UFRGS)"
           date: "2018 – 2020"
           content: |-
-            Tesis de maestría: [Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah](https://lume.ufrgs.br/handle/10183/221892).
+            Tesis de maestría: [Identifying and assessing vegetation behaviour in riparian zones at large scale in the Brazilian Savannah](https://lume.ufrgs.br/handle/10183/221892)
         - title: "Grado en Ingeniería Civil"
           school:
             name: "Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)"
@@ -666,7 +666,7 @@ es:
           venue: "ESS Open Archive"
           authors: "**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn"
           doi: "https://doi.org/10.22541/essoar.175336960.03823488/v1"
-        - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty"
+        - title: "A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty: A case study in the Atlantic Forest, Brazil"
           year: 2023
           type: "Artículo de revista"
           language: "Inglés"
@@ -694,7 +694,7 @@ es:
           venue: "Remote Sensing"
           authors: "Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez; João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira; Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs"
           doi: "https://doi.org/10.3390/rs14112526"
-        - title: "Topographic Position-based Stream definition (TPS)"
+        - title: "Topographic Position-based Stream definition (TPS): A simple method to address spatial variability of drainage density in stream networks"
           year: 2022
           type: "Artículo de revista"
           language: "Inglés"
