@@ -20,15 +20,17 @@
 \pagestyle{empty}
 \setlist[itemize]{leftmargin=1.35em, labelsep=0.45em, topsep=0.3em, itemsep=0.16em, parsep=0pt, partopsep=0pt}
 \AtBeginDocument{\hypersetup{colorlinks=true,linkcolor=cvaccent,urlcolor=cvaccent,citecolor=cvaccent}}
+\newlength{\cvsectionrulegap}
+\setlength{\cvsectionrulegap}{0.2em}
 
 \titleformat{\section}
   {\large\bfseries\scshape\color{cvaccent}}
-  {}{0pt}{}[\vspace{-0.08em}\titlerule]
-\titlespacing*{\section}{0pt}{1.55em}{0.65em}
+  {}{0pt}{}[\vspace{\cvsectionrulegap}\titlerule]
+\titlespacing*{\section}{0pt}{1.55em}{1.2em}
 \titleformat{\subsection}
   {\large\bfseries\scshape\color{cvaccent}}
-  {}{0pt}{}[\vspace{-0.08em}\titlerule]
-\titlespacing*{\subsection}{0pt}{1.55em}{0.65em}
+  {}{0pt}{}[\vspace{\cvsectionrulegap}\titlerule]
+\titlespacing*{\subsection}{0pt}{1.55em}{1.2em}
 
 \newcommand{\cvname}[1]{{\fontsize{25}{29}\selectfont\bfseries\color{black}#1\par}}
 \newcommand{\cvheadline}[1]{{\fontsize{12}{15}\selectfont\color{cvaccent}#1\par}}
