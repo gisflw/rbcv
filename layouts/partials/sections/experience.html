@@ -1,12 +1,13 @@
 {{ if .Site.Params.experience.enable | default false }}
-{{- $experience := .Site.Language.Params.experience | default .Site.Params.experience -}}
+{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $experience := $cv.experience -}}
 
 <section id="experience" class="py-5 cv-experience-section">
   <div class="container">
-    <h3 class="text-center">{{ $experience.title | default .Site.Params.experience.title | default (i18n "experience") }}</h3>
+    <h3 class="text-center">{{ $experience.title | default (i18n "experience") }}</h3>
 
     <div class="cv-timeline mt-5">
-      {{ range $experience.items | default .Site.Params.experience.items }}
+      {{ range $experience.items }}
         {{ $company := .company }}
         {{ $companyUrl := .companyUrl }}
 

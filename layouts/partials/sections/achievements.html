@@ -1,12 +1,13 @@
 {{ if .Site.Params.achievements.enable | default false }}
-{{- $achievements := .Site.Language.Params.achievements | default .Site.Params.achievements -}}
+{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $achievements := $cv.achievements -}}
 <span id="tools-datasets" class="cv-section-anchor"></span>
 <section id="achievements" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ $achievements.title | default .Site.Params.achievements.title | default (i18n "achievements") }}</h3>
+        <h3 class="text-center">{{ $achievements.title | default (i18n "achievements") }}</h3>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-3 px-md-5 px-lg-5">
-                {{ range $achievements.items | default .Site.Params.achievements.items }}
+                {{ range $achievements.items }}
                 {{ $isRepo := strings.HasPrefix .url "https://github.com/" }}
                 {{ $isDataset := strings.HasPrefix .url "https://zenodo.org/" }}
                 {{ $icon := cond $isRepo "fa-brands fa-github" (cond $isDataset "fa-solid fa-database" "fa-solid fa-screwdriver-wrench") }}

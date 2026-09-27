@@ -1,6 +1,7 @@
 {{ if .Site.Params.about.enable | default false }}
-{{- $about := .Site.Language.Params.about | default .Site.Params.about -}}
-{{- $education := .Site.Language.Params.education | default .Site.Params.education -}}
+{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $about := $cv.about -}}
+{{- $education := $cv.education -}}
 <section id="about" class="py-5 cv-about-section">
   <div class="container">
     <h3 class="text-center">{{ $about.title | default (i18n "about") }}</h3>

@@ -1,5 +1,6 @@
 {{ if .Site.Params.skills.enable | default false }}
-{{- $skills := .Site.Language.Params.skills | default .Site.Params.skills -}}
+{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $skills := $cv.skills -}}
 <section id="skills" class="py-5 cv-skills-section">
   <div class="container">
     <h3 class="text-center">{{ $skills.title | default "Skills" }}</h3>

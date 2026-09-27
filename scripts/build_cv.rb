@@ -7,66 +7,12 @@ require "open3"
 require "yaml"
 
 ROOT = File.expand_path("..", __dir__)
-PARAMS_PATH = File.join(ROOT, "config", "_default", "params.yaml")
-LANGUAGES_PATH = File.join(ROOT, "config", "_default", "languages.yaml")
+DATA_DIR = File.join(ROOT, "data")
 TEMPLATE_PATH = File.join(ROOT, "templates", "cv.md.erb")
 PDF_PREAMBLE_PATH = File.join(ROOT, "templates", "cv-preamble.tex")
 BUILD_DIR = File.join(ROOT, "build", "cv")
 OUTPUT_DIR = File.join(ROOT, "public", "cv")
-
-LABELS = {
-  "en" => {
-    skills: "Skills",
-    tools: "Tools & Datasets",
-    experience: "Experience",
-    education: "Education",
-    publications: "Publications",
-    contact: "Contact",
-    stack: "Tools",
-    portfolio: "Portfolio",
-    headline: "Hydrologist | Geospatial Data Scientist | Research Software Engineer",
-    country: "Brazil",
-    current: "present"
-  },
-  "pt" => {
-    skills: "Competências",
-    tools: "Ferramentas & Dados",
-    experience: "Experiência",
-    education: "Formação",
-    publications: "Publicações",
-    contact: "Contato",
-    stack: "Ferramentas",
-    portfolio: "Portfólio",
-    headline: "Hidrólogo | Cientista de Dados Geoespaciais | Engenheiro de Software Científico",
-    country: "Brasil",
-    current: "atual"
-  },
-  "es" => {
-    skills: "Competencias",
-    tools: "Herramientas y Datos",
-    experience: "Experiencia",
-    education: "Formación",
-    publications: "Publicaciones",
-    contact: "Contacto",
-    stack: "Herramientas",
-    portfolio: "Portafolio",
-    headline: "Hidrólogo | Científico de Datos Geoespaciales | Ingeniero de Software Científico",
-    country: "Brasil",
-    current: "actual"
-  }
-}.freeze
-
-def deep_merge(base, override)
-  return base unless override.is_a?(Hash)
-
-  base.merge(override) do |_key, old_value, new_value|
-    if old_value.is_a?(Hash) && new_value.is_a?(Hash)
-      deep_merge(old_value, new_value)
-    else
-      new_value
-    end
-  end
-end
+LANGUAGES = %w[en pt es].freeze
 
 def load_yaml(path)
   YAML.safe_load_file(path, aliases: true) || {}
@@ -80,7 +26,7 @@ def strip_emoji(value)
 end
 
 def strip_markdown_emphasis(value)
-  value.to_s.gsub(/\*\*(.*?)\*\*/, '\1').gsub(/\*(.*?)\*/, '\1')
+  value.to_s.gsub(/\*\*(.*?)\*\*/, '\\1').gsub(/\*(.*?)\*/, '\\1')
 end
 
 def blank?(value)
@@ -108,16 +54,16 @@ def first_sentence(value)
 end
 
 class CvDocument
-  attr_reader :lang, :params, :labels
+  attr_reader :lang, :data, :labels
 
-  def initialize(lang:, params:)
+  def initialize(lang:, data:)
     @lang = lang
-    @params = params
-    @labels = LABELS.fetch(lang, LABELS["en"])
+    @data = data
+    @labels = data.fetch("labels", {}).transform_keys(&:to_sym)
   end
 
   def title
-    params["title"].to_s
+    data["name"].to_s
   end
 
   def headline
@@ -125,13 +71,13 @@ class CvDocument
   end
 
   def city_country
-    badge = params.dig("hero", "locationBadge") || {}
+    badge = data.dig("hero", "locationBadge") || {}
     city = strip_emoji(badge["location"]).sub(/,\s*[A-Z]{2}\z/, "")
     [city, labels[:country]].reject { |item| blank?(item) }.join(", ")
   end
 
   def contact_links
-    links = params.dig("hero", "socialLinks", "fontAwesomeIcons") || []
+    links = data.dig("hero", "socialLinks", "fontAwesomeIcons") || []
     links.map do |link|
       {
         "label" => social_label(link["icon"], link["url"]),
@@ -141,10 +87,9 @@ class CvDocument
   end
 
   def portfolio_link
-    suffix = lang == "en" ? "" : "#{lang}/"
     {
       "label" => labels[:portfolio],
-      "url" => "https://gisflw.github.io/rbcv/#{suffix}"
+      "url" => data["portfolioUrl"]
     }
   end
 
@@ -158,23 +103,23 @@ class CvDocument
   end
 
   def skills
-    params["skills"] || {}
+    data["skills"] || {}
   end
 
   def experience
-    params["experience"] || {}
+    data["experience"] || {}
   end
 
   def education
-    params["education"] || {}
+    data["education"] || {}
   end
 
   def tools
-    params["achievements"] || {}
+    data["achievements"] || {}
   end
 
   def publications
-    params["publications"] || {}
+    data["publications"] || {}
   end
 
   def company_display(company, job)
@@ -202,11 +147,7 @@ class CvDocument
   end
 
   def partnership_label
-    {
-      "en" => "in partnership with:",
-      "pt" => "em parceria com:",
-      "es" => "en colaboración con:"
-    }.fetch(lang, "in partnership with:")
+    labels[:partnershipLabel]
   end
 
   def render
@@ -214,11 +155,11 @@ class CvDocument
   end
 end
 
-def build_pdf(lang, params)
+def build_pdf(lang, data)
   FileUtils.mkdir_p(BUILD_DIR)
   FileUtils.mkdir_p(OUTPUT_DIR)
 
-  document = CvDocument.new(lang: lang, params: params)
+  document = CvDocument.new(lang: lang, data: data)
   markdown_path = File.join(BUILD_DIR, "rbcv-#{lang}.md")
   pdf_path = File.join(OUTPUT_DIR, "rbcv-#{lang}.pdf")
   File.write(markdown_path, document.render)
@@ -244,13 +185,13 @@ def build_pdf(lang, params)
   abort "Failed to build #{pdf_path}"
 end
 
-base_params = load_yaml(PARAMS_PATH)
-languages = load_yaml(LANGUAGES_PATH)
-requested = ARGV.empty? || ARGV == ["all"] ? languages.keys : ARGV
+requested = ARGV.empty? || ARGV == ["all"] ? LANGUAGES : ARGV
 
 requested.each do |lang|
-  language = languages.fetch(lang) { abort "Unknown language: #{lang}" }
-  params = deep_merge(base_params, language["params"] || {})
-  pdf_path = build_pdf(lang, params)
+  abort "Unknown language: #{lang}" unless LANGUAGES.include?(lang)
+
+  data_path = File.join(DATA_DIR, "#{lang}.yaml")
+  data = load_yaml(data_path)
+  pdf_path = build_pdf(lang, data)
   puts "Built #{pdf_path.sub("#{ROOT}/", "")}"
 end
