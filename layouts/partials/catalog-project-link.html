@@ -1,0 +1,9 @@
+{{- $id := .projectId -}}
+{{- $experience := .experience -}}
+{{- range $experience.items -}}
+  {{- range .projects -}}
+    {{- if eq .id $id -}}
+      <a class="cv-catalog-project" href="{{ printf "#experience-project-%s" .id | relLangURL }}">{{ $experience.projectLinkLabel }} {{ .title }}</a>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

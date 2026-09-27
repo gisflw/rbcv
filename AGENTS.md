@@ -19,11 +19,11 @@ goal is to maintain one structured source of truth that can generate:
 
 ## CV Writing
 
-- Make experience and project descriptions achievement-oriented: identify Rafael's
-  contribution and a supported result or effect, rather than listing duties alone.
-- Use numbers, scale, and impact only when they can be substantiated. For active
-  projects, distinguish completed outcomes from work in progress and intended
-  goals; do not present goals as achievements.
+- Keep Publications in descending date order in every language and in the
+  generated PDFs. Use the documented `sortDate` at year, month, or day precision;
+  keep the relative order of entries with the same date. For EGU abstracts, use
+  the source page's "updated on" date for sorting, without presenting it as the
+  publication date.
 
 ## Edit Source, Not Output
 

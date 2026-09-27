@@ -1,8 +1,8 @@
 main:
-  - identifier: tools-datasets
-    name: "Tools & Datasets"
-    title: "Tools and datasets"
-    url: "/#tools-datasets"
+  - identifier: software
+    name: "Software"
+    title: "Software"
+    url: "/#software"
     weight: 4
   - identifier: publications
     name: "Publications"

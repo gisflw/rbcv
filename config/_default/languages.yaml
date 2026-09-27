@@ -6,10 +6,10 @@ en:
   contentDir: content/en
   menus:
     main:
-    - identifier: tools-datasets
-      name: Tools & Datasets
-      title: Tools and datasets
-      url: "/#tools-datasets"
+    - identifier: software
+      name: Software
+      title: Software
+      url: "/#software"
       weight: 4
     - identifier: publications
       name: Publications
@@ -33,10 +33,10 @@ pt:
   contentDir: content/pt
   menus:
     main:
-    - identifier: tools-datasets
-      name: Ferramentas & Bases de Dados
-      title: Ferramentas e bases de dados
-      url: "/pt/#tools-datasets"
+    - identifier: software
+      name: Software
+      title: Software
+      url: "/pt/#software"
       weight: 4
     - identifier: publications
       name: Publicações
@@ -60,10 +60,10 @@ es:
   contentDir: content/es
   menus:
     main:
-    - identifier: tools-datasets
-      name: Herramientas y Conjuntos de Datos
-      title: Herramientas y conjuntos de datos
-      url: "/es/#tools-datasets"
+    - identifier: software
+      name: Software
+      title: Software
+      url: "/es/#software"
       weight: 4
     - identifier: publications
       name: Publicaciones

@@ -127,8 +127,8 @@
 
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#tools-datasets"
-                            aria-label="tools-datasets">
+                        <a class="nav-link" href="{{ .Site.Home.RelPermalink }}#software"
+                            aria-label="software">
                             {{ $cv.achievements.title | default (i18n "nav_achievements") }}
                         </a>
                     </li>

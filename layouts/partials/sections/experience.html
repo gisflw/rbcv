@@ -1,55 +1,40 @@
 {{ if .Site.Params.experience.enable | default false }}
 {{- $cv := index hugo.Data .Site.Language.Lang -}}
 {{- $experience := $cv.experience -}}
-
 <section id="experience" class="py-5 cv-experience-section">
   <div class="container">
     <h3 class="text-center">{{ $experience.title | default (i18n "experience") }}</h3>
-
     <div class="cv-timeline mt-5">
       {{ range $experience.items }}
-        {{ $company := .company }}
-        {{ $companyUrl := .companyUrl }}
-
-        {{ range .jobs }}
-        {{ $companyDisplay := .companyDisplay | default $company }}
-        {{ $jobCompanyUrl := .companyUrl | default (cond (isset . "companyDisplay") "" $companyUrl) }}
-        <article class="cv-timeline-item">
-          <div class="cv-timeline-marker" aria-hidden="true"></div>
-
-          <div class="cv-experience-card cv-experience-meta">
-            <div class="cv-experience-date">
-              <i class="fa-solid fa-calendar-days"></i>
-              <span>{{ .date }}</span>
-            </div>
-
-            <h4>{{ .name }}</h4>
-            <div class="cv-experience-company">
-              {{ if $jobCompanyUrl }}
-              <a href="{{ $jobCompanyUrl }}" target="_blank" rel="noopener">{{ $companyDisplay }}</a>
-              {{ else }}
-              {{ $companyDisplay | markdownify }}
-              {{ end }}
-            </div>
-            {{ with .country }}
-            <div class="cv-experience-country">{{ . }}</div>
-            {{ end }}
-
+      <article class="cv-timeline-item">
+        <div class="cv-timeline-marker" aria-hidden="true"></div>
+        <div class="cv-experience-card cv-experience-meta">
+          <div class="cv-experience-date"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i><span>{{ .date }}</span></div>
+          <h4>{{ .title }}</h4>
+          <div class="cv-experience-company">
+            {{ if .institutionUrl }}<a href="{{ .institutionUrl }}" target="_blank" rel="noopener">{{ .institution }}</a>{{ else }}{{ .institution }}{{ end }}
           </div>
-
-          <div class="cv-experience-card cv-experience-details">
-            {{ with .info.content }}
-            <p class="cv-experience-note">{{ . | markdownify }}</p>
-            {{ end }}
-            <div class="cv-experience-list">
-              {{ .content | markdownify }}
+          {{ with .location }}<div class="cv-experience-country">{{ . }}</div>{{ end }}
+          {{ with .workload }}<div class="cv-experience-workload">{{ . }}</div>{{ end }}
+        </div>
+        <div class="cv-experience-projects">
+          {{ range .projects }}
+          {{ $project := . }}
+          <section id="experience-project-{{ .id }}" class="cv-experience-card cv-experience-project" aria-labelledby="experience-project-title-{{ .id }}">
+            <h5 id="experience-project-title-{{ .id }}">{{ .title }}</h5>
+            <div class="cv-project-meta">
+              {{ with .date }}<div class="cv-project-date">{{ . }}</div>{{ end }}
+              {{ with .partner }}<div class="cv-project-organization">{{ $experience.partnerLabel }} {{ if $project.partnerUrl }}<a href="{{ $project.partnerUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
+              {{ with .client }}<div class="cv-project-organization">{{ $experience.clientLabel }} {{ if $project.clientUrl }}<a href="{{ $project.clientUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
+              {{ with .funder }}<div class="cv-project-organization">{{ $experience.funderLabel }} {{ . }}</div>{{ end }}
             </div>
-          </div>
-        </article>
-        {{ end }}
+            {{ with .points }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+          </section>
+          {{ end }}
+        </div>
+      </article>
       {{ end }}
     </div>
   </div>
 </section>
-
 {{ end }}

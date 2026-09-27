@@ -20,8 +20,8 @@ three generated PDF CVs.
 - Language-specific profile, CV, project, tool, and publication summaries are in
   `data/en.yaml`, `data/pt.yaml`, and `data/es.yaml`.
 - The `hugo-profile` theme is vendored under `themes/hugo-profile`.
-- `layouts/partials/sections/experience.html` supports companies with multiple
-  jobs; other project-level overrides render the language data.
+- `layouts/partials/sections/experience.html` renders roles with dated project blocks;
+  catalog entries link back to those projects where a relationship is documented.
 - Detailed project, tool, and publication pages can be added under
   multilingual `content/<lang>/...` paths.
 - `public/` contains generated Hugo output and should not be edited by hand.

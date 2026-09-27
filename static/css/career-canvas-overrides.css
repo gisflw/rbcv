@@ -556,3 +556,69 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
     grid-column: auto;
   }
 }
+
+/* Roles own the timeline; projects stay visible within each role. */
+#experience .cv-experience-projects {
+  grid-column: 3;
+  display: grid;
+  gap: 0.9rem;
+  min-width: 0;
+}
+
+#experience .cv-experience-project {
+  scroll-margin-top: 6rem;
+  color: var(--text-secondary-color) !important;
+  line-height: 1.55;
+}
+
+#experience .cv-experience-project h5 {
+  margin-bottom: 0.4rem;
+  color: var(--text-color) !important;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+#experience .cv-project-meta {
+  display: grid;
+  gap: 0.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-secondary-color) !important;
+  font-size: 0.85rem;
+}
+
+#experience .cv-project-meta a {
+  color: var(--text-link-color) !important;
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
+
+#experience .cv-experience-project ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+#experience .cv-experience-workload {
+  margin-top: 0.5rem;
+  color: var(--text-secondary-color) !important;
+  font-size: 0.88rem;
+}
+
+.cv-catalog-project {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: var(--text-link-color) !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
+
+.cv-catalog-project:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  #experience .cv-experience-projects {
+    grid-column: auto;
+  }
+}

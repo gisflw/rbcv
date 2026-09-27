@@ -37,19 +37,28 @@
 <% unless blank?(experience["items"]) -%>
 ## <%= experience["title"] || labels[:experience] %>
 
-<% (experience["items"] || []).each do |company| -%>
-<% (company["jobs"] || []).each do |job| -%>
-<% employer = company_parts(company, job) -%>
+<% (experience["items"] || []).each do |role| -%>
 \Needspace{8\baselineskip}
-**<%= job["name"] %>** \hfill \cvdate{<%= job["date"] %>}\
-<%= employer[:company] %><% unless blank?(employer[:partner]) %>\
-<%= partnership_label %> <%= employer[:partner] %><% end %><% unless blank?(job["country"]) %>\
-\cvlocation{<%= strip_emoji(job["country"]) %>}<% end %>
+**<%= role["title"] %>** \hfill \cvdate{<%= role["date"] %>}\
+<% if role["institutionUrl"] -%>
+[<%= role["institution"] %>](<%= role["institutionUrl"] %>)<% else -%>
+<%= role["institution"] %><% end -%><% unless blank?(role["location"]) %>\
+\cvlocation{<%= role["location"] %>}<% end %><% unless blank?(role["workload"]) %> · <%= role["workload"] %><% end %>
 
-<%= compact_markdown(job["content"]) %>
+<% (role["projects"] || []).each do |project| -%>
+\Needspace{7\baselineskip}
+**<%= project["title"] %>**\
+\cvdate{<%= project["date"] %>}<% unless blank?(project["partner"]) %>\
+<%= experience["partnerLabel"] %> <% if project["partnerUrl"] %>[<%= project["partner"] %>](<%= project["partnerUrl"] %>)<% else %><%= project["partner"] %><% end %><% end %><% unless blank?(project["client"]) %>\
+<%= experience["clientLabel"] %> <% if project["clientUrl"] %>[<%= project["client"] %>](<%= project["clientUrl"] %>)<% else %><%= project["client"] %><% end %><% end %><% unless blank?(project["funder"]) %>\
+<%= experience["funderLabel"] %> <%= project["funder"] %><% end %>
 
-\vspace{0.5em}
+<% (project["points"] || []).each do |point| -%>
+- <%= point %>
 <% end -%>
+
+<% end -%>
+\vspace{0.5em}
 <% end -%>
 <% end -%>
 
@@ -70,7 +79,9 @@
 <% (publications["items"] || []).each do |item| -%>
 <% link = item["doi"] || item["url"] -%>
 **<% if link %>[<%= item["title"] %>](<%= link %>)<% else %><%= item["title"] %><% end %>**
+<% unless blank?(item["authors"]) -%>
 \cvpadstart{}<%= item["authors"].to_s.sub(/\.+\z/, "") %>\
+<% end -%>
 \hspace*{1em}*<%= item["venue"] %>*\
 \hspace*{1em}\cvmetadata{<%= [item["type"], item["year"], item["language"]].reject { |value| blank?(value) }.join(" \\textperiodcentered{} ") %>}
 
