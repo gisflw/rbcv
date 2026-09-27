@@ -124,20 +124,17 @@ experience:
       date: Mar 2026 – present
       country: "🇧🇷 Brazil"
       content: |-
-        - Large-scale hydrological modelling and environmental data analysis for national water resources applications in Brazil.
-        - Processing and analysis of geospatial and hydrological time-series data, with integration of environmental datasets into reproducible computational workflows.
-        - Support for hydrological model parameterization and evaluation, including modelling work with the Modelo de Grandes Bacias (MGB) large-basin hydrological model.
-        - Assessment of reservoirs, water use, land-use change, climate variability, and climate-change impacts on hydrological processes.
-        - Contributions to operational and research-oriented initiatives related to water resources management and hydrological forecasting in Brazil.
+        - Developing reproducible workflows that integrate geospatial, environmental, and hydrological time-series data for national water resources applications in Brazil.
+        - Developing large-scale hydrological modelling and evaluation workflows with the Modelo de Grandes Bacias (MGB) to assess the effects of reservoirs, water use, land-use change, and climate variability and change on hydrological processes.
+        - Developing analyses to support water resources management and hydrological forecasting initiatives in Brazil.
     - name: Postdoctoral Researcher
       companyDisplay: "[Federal University of Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) in partnership with the [Brazilian Geological Survey (SGB)](https://www.sgb.gov.br/)"
       date: Jul 2025 – present
       country: "🇧🇷 Brazil"
       content: |-
-        - Processing and analysis of geospatial and time-series data for flood early warning systems in Rio Grande do Sul.
-        - Water level and streamflow modelling to enhance basin-scale flood monitoring and forecasting workflows.
-        - Data quality control, validation, and integration of multiple hydrological data sources.
-        - Development and support of visualization dashboards for operational flood-warning activities.
+        - Developing workflows to validate and integrate geospatial and hydrological time-series data for flood early warning in Rio Grande do Sul.
+        - Developing water-level and streamflow modelling workflows to support basin-scale flood monitoring and forecasting.
+        - Developing and supporting visualization dashboards for operational flood-warning activities.
   - company: Brazilian National Water Agency (ANA)
     companyUrl: https://www.gov.br/ana/pt-br
     jobs:
@@ -145,11 +142,9 @@ experience:
       date: May 2025 – Nov 2025
       country: "🇧🇷 Brazil"
       content: |-
-        - Modelled and structured a relational and geospatial PostgreSQL/PostGIS database for unifying and standardizing water availability datasets.
-        - Diagnosed and mapped the existing database, including tables, relationships, and spatial routines required to define water availability.
-        - Developed a new logical and physical data model, processing functions, migration routines, and a full data migration to the new structure.
-        - Produced a user manual and technical training materials for ANA staff, covering data querying, updating, and ingestion procedures.
-        - Worked closely with ANA's technical team while applying best practices in data modelling, version control, and geospatial-system documentation.
+        - Delivered a PostgreSQL/PostGIS database structure that unifies and standardizes water availability datasets.
+        - Migrated the data to a new logical and physical model, with processing functions and migration routines based on an assessment of the existing tables, relationships, and spatial routines.
+        - Produced a user manual and technical training materials covering data queries, updates, and ingestion for ANA staff.
   - company: Cerrados Institute (IC)
     companyUrl: https://cerrados.org/
     jobs:
@@ -157,11 +152,9 @@ experience:
       date: Jan 2025 – Sep 2025
       country: "🇧🇷 Brazil"
       content: |-
-        - Hydrological modelling and spatial analysis to prioritize native vegetation protection and restoration in the Cerrado biome.
-        - Application of the PLANS hydrological model to simulate infiltration, evapotranspiration, and surface runoff under different vegetation-cover scenarios.
-        - Integration of remote sensing data, historical climate time series, land-use maps, Python, and QGIS workflows.
-        - Organization and processing of large environmental datasets, development and calibration of representative hydrological models, and regional-scale analysis of hydrological additionality.
-        - Development of indicators, prioritization maps, geospatial visualizations, automated workflows, technical reports, and methodological inputs for conservation and water-management decisions.
+        - Developed and calibrated representative PLANS hydrological models to simulate infiltration, evapotranspiration, and surface runoff under different vegetation-cover scenarios.
+        - Produced regional analyses of hydrological additionality and indicators to prioritize native vegetation protection and restoration in the Cerrado.
+        - Created prioritization maps, geospatial visualizations, automated workflows, and technical reports to inform conservation and water-management decisions.
   - company: UK Centre for Ecology & Hydrology (UKCEH)
     companyUrl: https://www.ceh.ac.uk/
     jobs:
@@ -169,11 +162,9 @@ experience:
       date: Jul 2022 – May 2025
       country: "🇬🇧 United Kingdom"
       content: |-
-        - Spatial data analysis, management, and mapping for the Water Resources Systems group.
-        - Processing and maintenance of hydrological and environmental datasets associated with monitored catchments of the [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/).
-        - Development of catchment descriptors and mapping products for water resources research projects.
-        - Development of tools for processing high-resolution topographic data derived from LiDAR for the [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
-        - Promotion of data-management best practices and support for research data curation through the [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
+        - Produced catchment descriptors and mapping products for water resources research projects.
+        - Developed tools to process high-resolution LiDAR-derived topographic data for the [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
+        - Maintained hydrological and environmental datasets for catchments monitored by the [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/) and supported research data curation through the [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
   - company: Federal University of Rio Grande do Sul (UFRGS)
     companyUrl: https://www.ufrgs.br/
     jobs:
@@ -182,10 +173,9 @@ experience:
       date: Jan 2020 – Jun 2022
       country: "🇧🇷 Brazil"
       content: |-
-        - Hydrological modelling compatibilization with vector river networks, including the integration of the Brazilian Ottocodified Hydrographic Base (BHO) with the Modelo de Grandes Bacias (MGB) and the acquisition of hydrological parameters for the national river-network database.
-        - National-scale analysis and quantification of hydrological variables, including precipitation, soil moisture, evapotranspiration, and water storage, to support the development of the System of Environmental-Economic Accounting for Water (SEEA-Water) in Brazil.
-        - Machine-learning regionalization of reference streamflows using environmental variables at national scale.
-        - Assessment of hydrological sensitivity to climate change within national-scale hydrological analyses.
+        - Integrated the Brazilian Ottocodified Hydrographic Base (BHO) with the Modelo de Grandes Bacias (MGB) and obtained hydrological parameters for the national river-network database.
+        - Quantified precipitation, soil moisture, evapotranspiration, and water storage at national scale to support the development of the System of Environmental-Economic Accounting for Water (SEEA-Water) in Brazil.
+        - Produced national-scale machine-learning estimates of reference streamflows using environmental variables and assessed hydrological sensitivity to climate change.
 education:
   title: Education
   items:

@@ -124,20 +124,17 @@ experience:
       date: Mar 2026 – atual
       country: "🇧🇷 Brasil"
       content: |-
-        - Modelagem hidrológica em larga escala e análise de dados ambientais para aplicações nacionais no Brasil.
-        - Processamento e análise de dados geoespaciais e séries temporais hidrológicas, com integração de bases ambientais em fluxos computacionais reprodutíveis.
-        - Apoio à parametrização e avaliação de modelos hidrológicos, incluindo modelagem com o Modelo de Grandes Bacias (MGB).
-        - Avaliação dos efeitos de reservatórios, usos da água, mudanças no uso da terra, variabilidade climática e mudanças climáticas sobre processos hidrológicos.
-        - Contribuições para iniciativas operacionais e de pesquisa relacionadas à gestão de recursos hídricos e previsão hidrológica no Brasil.
+        - Desenvolvendo fluxos computacionais reprodutíveis que integram dados geoespaciais, ambientais e séries temporais hidrológicas para aplicações nacionais de recursos hídricos no Brasil.
+        - Desenvolvendo fluxos de modelagem e avaliação hidrológica em larga escala com o Modelo de Grandes Bacias (MGB) para analisar os efeitos de reservatórios, usos da água, mudanças no uso da terra, variabilidade climática e mudanças climáticas sobre processos hidrológicos.
+        - Desenvolvendo análises para apoiar iniciativas de gestão de recursos hídricos e previsão hidrológica no Brasil.
     - name: Pesquisador de pós-doutorado
       companyDisplay: "[Universidade Federal do Rio Grande do Sul (UFRGS)](https://www.ufrgs.br/) em parceria com o [Serviço Geológico do Brasil (SGB)](https://www.sgb.gov.br/)"
       date: Jul 2025 – atual
       country: "🇧🇷 Brasil"
       content: |-
-        - Processamento e análise de dados geoespaciais e séries temporais para sistemas de alerta de cheias no Rio Grande do Sul.
-        - Modelagem de nível e vazão para aprimorar fluxos de monitoramento e previsão de cheias em bacias hidrográficas.
-        - Controle de qualidade, validação e integração de múltiplas fontes de dados hidrológicos.
-        - Desenvolvimento e apoio a dashboards de visualização para atividades operacionais de alerta de cheias.
+        - Desenvolvendo fluxos de validação e integração de dados geoespaciais e séries temporais hidrológicas para sistemas de alerta de cheias no Rio Grande do Sul.
+        - Desenvolvendo fluxos de modelagem de nível e vazão para apoiar o monitoramento e a previsão de cheias em bacias hidrográficas.
+        - Desenvolvendo e apoiando painéis de visualização para atividades operacionais de alerta de cheias.
   - company: Agência Nacional de Águas e Saneamento Básico (ANA)
     companyUrl: https://www.gov.br/ana/pt-br
     jobs:
@@ -145,11 +142,9 @@ experience:
       date: Mai 2025 – Nov 2025
       country: "🇧🇷 Brasil"
       content: |-
-        - Modelagem e estruturação de banco de dados relacional e geoespacial em PostgreSQL/PostGIS para unificação e padronização de bases de disponibilidade hídrica.
-        - Diagnóstico e mapeamento da base existente, incluindo tabelas, relacionamentos e rotinas espaciais necessárias para definição de disponibilidade hídrica.
-        - Desenvolvimento de novo modelo lógico e físico de dados, funções de processamento, rotinas de migração e migração completa para a nova estrutura.
-        - Produção de manual de usuário e materiais de treinamento técnico para equipes da ANA, cobrindo consulta, atualização e ingestão de dados.
-        - Trabalho em colaboração próxima com a equipe técnica da ANA, aplicando boas práticas de modelagem de dados, controle de versão e documentação de sistemas geoespaciais.
+        - Estruturei um banco de dados PostgreSQL/PostGIS que unifica e padroniza bases de disponibilidade hídrica.
+        - Migrei os dados para um novo modelo lógico e físico, com funções de processamento e rotinas de migração baseadas no diagnóstico das tabelas, dos relacionamentos e das rotinas espaciais existentes.
+        - Produzi um manual de usuário e materiais de treinamento técnico sobre consulta, atualização e ingestão de dados para as equipes da ANA.
   - company: Instituto Cerrados (IC)
     companyUrl: https://cerrados.org/
     jobs:
@@ -157,11 +152,9 @@ experience:
       date: Jan 2025 – Set 2025
       country: "🇧🇷 Brasil"
       content: |-
-        - Modelagem hidrológica e análise espacial para priorização de proteção e restauração de vegetação nativa no Cerrado.
-        - Aplicação do modelo hidrológico PLANS para simular infiltração, evapotranspiração e escoamento superficial em diferentes cenários de cobertura vegetal.
-        - Integração de dados de sensoriamento remoto, séries climáticas históricas, mapas de uso da terra, Python e QGIS.
-        - Organização e processamento de grandes bases ambientais, desenvolvimento e calibração de modelos hidrológicos representativos e análises regionais de adicionalidade hidrológica.
-        - Desenvolvimento de indicadores, mapas de priorização, visualizações geoespaciais, fluxos automatizados, relatórios técnicos e insumos metodológicos para decisões de conservação e gestão da água.
+        - Desenvolvi e calibrei modelos hidrológicos PLANS representativos para simular infiltração, evapotranspiração e escoamento superficial em diferentes cenários de cobertura vegetal.
+        - Produzi análises regionais de adicionalidade hidrológica e indicadores para priorizar a proteção e a restauração da vegetação nativa no Cerrado.
+        - Criei mapas de priorização, visualizações geoespaciais, fluxos automatizados e relatórios técnicos para orientar decisões de conservação e gestão da água.
   - company: Centro de Ecologia & Hidrologia do Reino Unido (UKCEH)
     companyUrl: https://www.ceh.ac.uk/
     jobs:
@@ -169,11 +162,9 @@ experience:
       date: Jul 2022 – Mai 2025
       country: "🇬🇧 Reino Unido"
       content: |-
-        - Análise, gestão e mapeamento de dados espaciais para o grupo Water Resources Systems.
-        - Processamento e manutenção de bases hidrológicas e ambientais associadas a bacias monitoradas pelo [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/).
-        - Desenvolvimento de descritores de bacias e produtos cartográficos para projetos de pesquisa em recursos hídricos.
-        - Desenvolvimento de ferramentas para processamento de dados topográficos de alta resolução derivados de LiDAR para o [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
-        - Promoção de boas práticas de gestão de dados e apoio à curadoria de dados de pesquisa pelo [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
+        - Produzi descritores de bacias e produtos cartográficos para projetos de pesquisa em recursos hídricos.
+        - Desenvolvi ferramentas para processar dados topográficos de alta resolução derivados de LiDAR para a [Floods and Droughts Research Infrastructure (FDRI)](https://fdri.org.uk/).
+        - Mantive bases hidrológicas e ambientais de bacias monitoradas pelo [National River Flow Archive (NRFA)](https://nrfa.ceh.ac.uk/) e apoiei a curadoria de dados de pesquisa pelo [Environmental Information Data Centre (EIDC)](https://eidc.ac.uk/).
   - company: Universidade Federal do Rio Grande do Sul (UFRGS)
     companyUrl: https://www.ufrgs.br/
     jobs:
@@ -182,10 +173,9 @@ experience:
       date: Jan 2020 – Jun 2022
       country: "🇧🇷 Brasil"
       content: |-
-        - Compatibilização da modelagem hidrológica com redes hidrográficas vetoriais, incluindo a integração da Base Hidrográfica Ottocodificada (BHO) com o Modelo de Grandes Bacias (MGB) e a aquisição de parâmetros hidrológicos para a base nacional de redes hidrográficas.
-        - Análise e quantificação, em escala nacional, de variáveis hidrológicas como precipitação, umidade do solo, evapotranspiração e armazenamento de água, em apoio ao desenvolvimento das Contas Econômicas Ambientais da Água (CEAA) no Brasil.
-        - Regionalização de vazões de referência com aprendizado de máquina, usando variáveis ambientais em escala nacional.
-        - Avaliação da sensibilidade hidrológica a mudanças climáticas em análises hidrológicas de escala nacional.
+        - Integrei a Base Hidrográfica Ottocodificada (BHO) ao Modelo de Grandes Bacias (MGB) e obtive parâmetros hidrológicos para a base nacional de redes hidrográficas.
+        - Quantifiquei precipitação, umidade do solo, evapotranspiração e armazenamento de água em escala nacional para apoiar o desenvolvimento das Contas Econômicas Ambientais da Água (CEAA) no Brasil.
+        - Produzi estimativas de vazões de referência em escala nacional com aprendizado de máquina e variáveis ambientais e avaliei a sensibilidade hidrológica a mudanças climáticas.
 education:
   title: Formação
   items:
