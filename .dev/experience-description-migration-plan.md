@@ -1,6 +1,6 @@
 # Experience and Project Content Migration Plan
 
-Status: draft for editorial review and approval. This document does not change the current website, CV data, templates, or generated files.
+Status: implemented. The English project copy below was used as the source for the migrated data.
 
 ## 1. Objective
 
@@ -303,9 +303,9 @@ The role headings below group project drafts for editorial review; they are not 
 - **Publication (Journal article, 2022):** [Topographic Position-based Stream definition (TPS): A simple method to address spatial variability of drainage density in stream networks](https://doi.org/10.1080/02626667.2022.2047190).
 - *A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty: A case study in the Atlantic Forest, Brazil* (2023). [use the metadata in data/]
 
-## 4. Records not attached to a project
+## 4. Record not attached to a project
 
-The following publications currently have no `project` value and therefore would remain only in the Publications section:
+The following publication has no `project` value and remains only in the Publications section:
 
 - *How much inundation occurs in the Amazon River basin?* (2022).
 
@@ -316,8 +316,8 @@ The following publications currently have no `project` value and therefore would
 - Project descriptions appear in the Projects section and main CV; Experience does not duplicate the detailed project prose.
 - The visible project labels are **Scope:**, **Main activities:**, and **Main outcomes:** in English, with approved equivalents in Portuguese and Spanish.
 - All 11 software records, including both MAMBO repositories, appear under their linked projects and remain in the standalone Software section.
-- All 18 project-linked publication records appear under their linked projects and remain in the standalone Publications section.
-- The three publications without a project association are not attached automatically.
+- All 20 project-linked publication records appear under their linked projects and remain in the standalone Publications section.
+- The Amazon inundation publication remains without a project association.
 - Related publications remain in descending `sortDate` order, preserving source order where dates are equal.
 - Software/publication titles and links come from their canonical lists rather than copied project metadata.
 - The resume is generated from the same source as the main CV and contains Experience, selected Software, selected Publications, then short Education and Languages; its selected records require no manually maintained duplicate descriptions.

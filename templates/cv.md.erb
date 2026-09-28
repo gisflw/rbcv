@@ -45,18 +45,52 @@
 <%= role["institution"] %><% end -%><% unless blank?(role["location"]) %>\
 \cvlocation{<%= role["location"] %>}<% end %><% unless blank?(role["workload"]) %> · <%= role["workload"] %><% end %>
 
-<% (role["projects"] || []).each do |project| -%>
-\Needspace{7\baselineskip}
+<% (role["overview"] || []).each do |item| -%>
+- <%= item %>
+<% end -%>
+
+\vspace{0.5em}
+<% end -%>
+<% end -%>
+
+<% unless blank?(projects["items"]) -%>
+## <%= projects["title"] %>
+
+<% (experience["items"] || []).each do |role| -%>
+<% role_projects = (projects["items"] || []).select { |item| item["role"] == role["id"] } -%>
+<% unless role_projects.empty? -%>
+### <%= role["title"] %> — <%= role["institution"] %>
+
+<% role_projects.each do |project| -%>
+\Needspace{9\baselineskip}
 **<%= project["title"] %>**\
-\cvdate{<%= project["date"] %>}<% unless blank?(project["partner"]) %>\
+\cvdate{<%= project_date_range(project) %>}<% unless blank?(project["partner"]) %>\
 <%= experience["partnerLabel"] %> <% if project["partnerUrl"] %>[<%= project["partner"] %>](<%= project["partnerUrl"] %>)<% else %><%= project["partner"] %><% end %><% end %><% unless blank?(project["client"]) %>\
 <%= experience["clientLabel"] %> <% if project["clientUrl"] %>[<%= project["client"] %>](<%= project["clientUrl"] %>)<% else %><%= project["client"] %><% end %><% end %><% unless blank?(project["funder"]) %>\
 <%= experience["funderLabel"] %> <%= project["funder"] %><% end %>
 
-<%= project["description"] %>
+**<%= projects["scopeLabel"] %>** <%= project["scope"] %>
 
+**<%= projects["activitiesLabel"] %>**
+<% (project["mainActivities"] || []).each do |item| -%>
+- <%= item %>
 <% end -%>
+
+**<%= projects["outcomesLabel"] %>**
+<% (project["mainOutcomes"] || []).each do |item| -%>
+- <%= item %>
+<% end -%>
+<% software_for(project).each do |item| -%>
+- **<%= projects["softwareLabel"] %>** <% if item["url"] %>[<%= item["title"] %>](<%= item["url"] %>)<% else %><%= item["title"] %><% end %> — <%= item["content"] %><% if item["repository"] && item["repository"] != item["url"] %> · [<%= projects["repositoryLabel"] %>](<%= item["repository"] %>)<% end %>
+<% end -%>
+<% publications_for(project).each do |item| -%>
+<% link = item["doi"] || item["url"] -%>
+- **<%= projects["publicationLabel"] %> (<%= item["type"] %>, <%= item["year"] %>)** <% if link %>[<%= item["title"] %>](<%= link %>)<% else %><%= item["title"] %><% end %>
+<% end -%>
+
 \vspace{0.5em}
+<% end -%>
+<% end -%>
 <% end -%>
 <% end -%>
 

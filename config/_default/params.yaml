@@ -25,7 +25,7 @@ navbar:
     disableAbout: false
     disableExperience: false
     disableEducation: true
-    disableProjects: true
+    disableProjects: false
     disableAchievements: true
     disableContact: false
 hero:
@@ -48,7 +48,7 @@ education:
   enable: true
   index: false
 projects:
-  enable: false
+  enable: true
 achievements:
   enable: true
 contact:

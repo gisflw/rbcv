@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require "date"
 require "erb"
 require "fileutils"
 require "open3"
@@ -114,6 +115,40 @@ class CvDocument
     data["education"] || {}
   end
 
+  def projects
+    data["projects"] || {}
+  end
+
+  def resume
+    data["resume"] || {}
+  end
+
+  def project_date_range(project)
+    months = {
+      "en" => %w[Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec],
+      "pt" => %w[jan fev mar abr mai jun jul ago set out nov dez],
+      "es" => %w[ene feb mar abr may jun jul ago sep oct nov dic]
+    }
+    format_date = lambda do |value|
+      parts = value.to_s.split("-")
+      next parts[0] if parts.length == 1
+
+      date = "#{months.fetch(lang).fetch(parts[1].to_i - 1)} #{parts[0]}"
+      parts.length == 3 ? "#{parts[2]} #{date}" : date
+    end
+    start_date = format_date.call(project.fetch("startDate"))
+    end_date = project["endDate"] ? format_date.call(project["endDate"]) : labels[:current]
+    "#{start_date} – #{end_date}"
+  end
+
+  def software_for(project)
+    (tools["items"] || []).select { |item| item["project"] == project["id"] }
+  end
+
+  def publications_for(project)
+    (publications["items"] || []).select { |item| item["project"] == project["id"] }
+  end
+
   def tools
     data["achievements"] || {}
   end
@@ -122,8 +157,8 @@ class CvDocument
     data["publications"] || {}
   end
 
-  def render
-    ERB.new(File.read(TEMPLATE_PATH), trim_mode: "-").result(binding)
+  def render(template_path: TEMPLATE_PATH)
+    ERB.new(File.read(template_path), trim_mode: "-").result(binding)
   end
 end
 
@@ -157,13 +192,15 @@ def build_pdf(lang, data)
   abort "Failed to build #{pdf_path}"
 end
 
-requested = ARGV.empty? || ARGV == ["all"] ? LANGUAGES : ARGV
+if $PROGRAM_NAME == __FILE__
+  requested = ARGV.empty? || ARGV == ["all"] ? LANGUAGES : ARGV
 
-requested.each do |lang|
-  abort "Unknown language: #{lang}" unless LANGUAGES.include?(lang)
+  requested.each do |lang|
+    abort "Unknown language: #{lang}" unless LANGUAGES.include?(lang)
 
-  data_path = File.join(DATA_DIR, "#{lang}.yaml")
-  data = load_yaml(data_path)
-  pdf_path = build_pdf(lang, data)
-  puts "Built #{pdf_path.sub("#{ROOT}/", "")}"
+    data_path = File.join(DATA_DIR, "#{lang}.yaml")
+    data = load_yaml(data_path)
+    pdf_path = build_pdf(lang, data)
+    puts "Built #{pdf_path.sub("#{ROOT}/", "")}"
+  end
 end

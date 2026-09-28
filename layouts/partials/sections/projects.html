@@ -1,0 +1,46 @@
+{{ if .Site.Params.projects.enable | default false }}
+{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $projects := $cv.projects -}}
+<section id="projects" class="py-5 cv-projects-section">
+  <div class="container">
+    <h3 class="text-center">{{ $projects.title }}</h3>
+    {{ range $cv.experience.items }}
+      <div class="cv-project-group">
+        <h4><a href="#experience-role-{{ .id }}">{{ .title }} — {{ .institution }}</a></h4>
+        <div class="row g-4">
+          {{ range where $projects.items "role" .id }}
+            {{ $project := . }}
+            <div class="col-12 col-xl-6">
+              <article id="project-{{ .id }}" class="card cv-project-card h-100" aria-labelledby="project-title-{{ .id }}">
+                <div class="card-body">
+                  <h5 id="project-title-{{ .id }}" class="card-title">{{ .title }}</h5>
+                  <div class="cv-project-meta">
+                    <span>{{ partial "project-date-range.html" (dict "project" . "lang" $.Site.Language.Lang "current" $cv.labels.current) }}</span>
+                    {{ with .partner }}<span>{{ $cv.experience.partnerLabel }} {{ if $project.partnerUrl }}<a href="{{ $project.partnerUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</span>{{ end }}
+                    {{ with .client }}<span>{{ $cv.experience.clientLabel }} {{ if $project.clientUrl }}<a href="{{ $project.clientUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</span>{{ end }}
+                    {{ with .funder }}<span>{{ $cv.experience.funderLabel }} {{ . }}</span>{{ end }}
+                  </div>
+                  <div class="cv-project-part">
+                    <h6>{{ $projects.scopeLabel }}</h6>
+                    <p>{{ .scope }}</p>
+                  </div>
+                  <div class="cv-project-part">
+                    <h6>{{ $projects.activitiesLabel }}</h6>
+                    <ul>{{ range .mainActivities }}<li>{{ . }}</li>{{ end }}</ul>
+                  </div>
+                  <div class="cv-project-part">
+                    <h6>{{ $projects.outcomesLabel }}</h6>
+                    <ul>
+                      {{ range .mainOutcomes }}<li>{{ . }}</li>{{ end }}
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

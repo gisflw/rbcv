@@ -4,10 +4,10 @@
 require "fileutils"
 require "open3"
 require "pathname"
+require_relative "build_cv"
 
-ROOT = File.expand_path("..", __dir__)
-PDF_PREAMBLE_PATH = File.join(ROOT, "templates", "cv-preamble.tex")
-OUTPUT_DIR = File.join(ROOT, "build", "applications")
+RESUME_TEMPLATE_PATH = File.join(ROOT, "templates", "resume.md.erb")
+RESUME_OUTPUT_DIR = File.join(ROOT, "build", "applications")
 
 def command_available?(command)
   ENV.fetch("PATH", "").split(File::PATH_SEPARATOR).any? do |directory|
@@ -16,16 +16,22 @@ def command_available?(command)
 end
 
 input_argument = ARGV[0]
-abort "Usage: ruby scripts/build_resume.rb applications/<name>.md [output.pdf]" unless input_argument
-
-input_path = File.expand_path(input_argument, ROOT)
-abort "Markdown input not found: #{input_argument}" unless File.file?(input_path)
-abort "Resume input must be a Markdown file" unless File.extname(input_path).downcase == ".md"
+if input_argument
+  input_path = File.expand_path(input_argument, ROOT)
+  abort "Markdown input not found: #{input_argument}" unless File.file?(input_path)
+  abort "Resume input must be a Markdown file" unless File.extname(input_path).downcase == ".md"
+else
+  FileUtils.mkdir_p(RESUME_OUTPUT_DIR)
+  data = load_yaml(File.join(DATA_DIR, "en.yaml"))
+  document = CvDocument.new(lang: "en", data: data)
+  input_path = File.join(RESUME_OUTPUT_DIR, "company-role.md")
+  File.write(input_path, document.render(template_path: RESUME_TEMPLATE_PATH))
+end
 
 output_path = if ARGV[1]
                 File.expand_path(ARGV[1], ROOT)
               else
-                File.join(OUTPUT_DIR, "#{File.basename(input_path, ".md")}.pdf")
+                File.join(RESUME_OUTPUT_DIR, "#{File.basename(input_path, ".md")}.pdf")
               end
 
 FileUtils.mkdir_p(File.dirname(output_path))
@@ -64,9 +70,9 @@ else
 end
 
 if command_available?("pdftotext")
-  text, text_error, text_status = Open3.capture3("pdftotext", "-layout", output_path, "-")
+  extracted_text, text_error, text_status = Open3.capture3("pdftotext", "-layout", output_path, "-")
   abort text_error unless text_status.success?
-  abort "Generated PDF does not contain enough extractable text for an ATS-friendly resume" if text.scan(/\S+/).length < 250
+  abort "Generated PDF does not contain enough extractable text for an ATS-friendly resume" if extracted_text.scan(/\S+/).length < 250
   validated_checks << "extractable text"
 else
   warn "Warning: pdftotext is unavailable; text-extraction validation was skipped"

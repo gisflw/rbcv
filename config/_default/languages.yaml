@@ -55,7 +55,7 @@ pt:
         articleRecent: 02 Jan 2006
 es:
   languageName: Español
-  languageCode: es-es
+  languageCode: es-419
   weight: 3
   contentDir: content/es
   menus:

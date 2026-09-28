@@ -1,3 +1,4 @@
+<!-- Editorial reference only. The default resume is generated from data/en.yaml by make resume. -->
 \cvname{Rafael Barbedo}
 \cvheadline{Hydrologist \textbar{} Geospatial Data Scientist \textbar{} Research Software Engineer}
 \cvcontact{\href{https://gisflw.github.io/rbcv/}{Portfolio}\enspace{}|\enspace{}\href{https://github.com/gisflw}{GitHub}\enspace{}|\enspace{}\href{https://www.linkedin.com/in/rafael-barbedo/}{LinkedIn}}

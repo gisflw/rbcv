@@ -117,154 +117,62 @@ experience:
   title: Experiencia
   clientLabel: 'Cliente:'
   partnerLabel: 'Socio:'
-  projectLinkLabel: 'Proyecto:'
   funderLabel: 'Financiación:'
   items:
-  - title: Investigador posdoctoral
+  - id: postdoctoral-researcher
+    title: Investigador posdoctoral
     institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date: jul 2025 – actualidad
     location: Brasil
     institutionUrl: https://www.ufrgs.br/
     workload: Tiempo parcial
-    projects:
-    - id: national-water-model
-      title: Desarrollo del Modelo Nacional del Agua
-      date: mar 2026 – actualidad
-      description: >-
-        Desarrollo y evaluación de un modelo hidrológico MGB a escala nacional para Brasil, con observaciones
-        hidrológicas y datos ambientales y geoespaciales. El trabajo abarca la parametrización, la evaluación del
-        desempeño y flujos reproducibles de procesamiento, además de la representación de embalses y usos del
-        agua. Estos componentes preparan el modelo para análisis de cambios en el uso del suelo, variabilidad
-        climática y pronóstico hidrológico.
-      partner: ANA
-      partnerUrl: https://www.gov.br/ana/pt-br
-    - id: rs-flood-alert
-      title: Sistema de Alerta de Inundaciones de Rio Grande do Sul
-      date: jul 2025 – actualidad
-      description: >-
-        Validación e integración de series hidrológicas y datos geoespaciales para monitorear inundaciones en Rio
-        Grande do Sul. El trabajo incluye modelización de niveles y caudales para pronósticos a escala de cuenca,
-        visualizaciones operativas para actividades de alerta y herramientas de control de calidad de los datos.
-        La exploración de curvas de gasto apoya la preparación e interpretación de observaciones de caudal.
-      partner: SGB
-      partnerUrl: https://www.sgb.gov.br/
-  - title: Consultor de hidrología y datos
+    overview:
+    - Desarrollo y evalúo un modelo hidrológico a escala nacional para Brasil, integrando observaciones, datos
+      ambientales, embalses y usos del agua mediante flujos de modelización reproducibles.
+    - Desarrollo flujos de monitoreo y pronóstico de inundaciones para Rio Grande do Sul, combinando validación
+      de datos, modelización de niveles y caudales y visualizaciones operativas para alertas.
+  - id: hydrology-data-consultant
+    title: Consultor de hidrología y datos
     institution: Independiente
     date: ene 2025 – actualidad
     location: Brasil
     workload: Tiempo parcial
-    projects:
-    - id: cerrado-conservation
-      title: Mapeo de Prioridades de Conservación
-      date: ene – sep 2025
-      description: >-
-        Desarrollo y calibración de modelos PLANS para comparar escenarios de protección y restauración de la
-        vegetación en el Cerrado, incluidos los cambios en infiltración, evapotranspiración y escorrentía
-        superficial. El análisis integra datos de teledetección, series climáticas históricas y mapas de uso del
-        suelo en flujos con Python y QGIS para evaluar la adicionalidad hídrica a escala regional. Los resultados
-        incluyen indicadores de conservación, mapas prioritarios, visualizaciones geoespaciales e informes
-        técnicos.
-      client: Instituto Cerrados
-      clientUrl: https://cerrados.org/
-    - id: water-availability-database
-      title: Base de Datos de Disponibilidad Hídrica
-      date: may – nov 2025
-      description: >-
-        Diagnóstico de una base existente de ANA, incluidas tablas, relaciones y rutinas espaciales, seguido del
-        diseño de un nuevo modelo lógico y físico en PostgreSQL/PostGIS. Las funciones de procesamiento y las
-        rutinas de migración trasladaron los registros a una estructura unificada de datos de disponibilidad
-        hídrica. Un manual y materiales técnicos de capacitación documentaron procedimientos de consulta,
-        actualización e ingestión de datos.
-      client: ANA
-      clientUrl: https://www.gov.br/ana/pt-br
-  - title: Científico de datos geoespaciales
+    overview:
+    - Desarrollé un indicador de importancia hidrológica basado en el terreno para identificar áreas prioritarias
+      para la conservación del agua y la restauración en el Cerrado.
+    - Diseñé un modelo de datos PostgreSQL/PostGIS y flujos de migración para consolidar registros de disponibilidad
+      hídrica y procedimientos espaciales para la Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA).
+  - id: spatial-data-scientist
+    title: Científico de datos geoespaciales
     institution: UK Centre for Ecology & Hydrology (UKCEH)
     date: jul 2022 – may 2025
     location: Reino Unido
     institutionUrl: https://www.ceh.ac.uk/
     workload: Tiempo completo
-    projects:
-    - id: nrfa
-      title: National River Flow Archive (NRFA)
-      date: jul 2022 – may 2025
-      description: >-
-        Procesamiento, mantenimiento y análisis espacial de datos ambientales y de cuencas fluviales monitoreadas
-        en el Reino Unido. El trabajo produjo descriptores de cuencas y mapas que resumen sus características
-        para productos de datos hidrológicos e investigaciones sobre recursos hídricos. Las actualizaciones
-        continuas requirieron verificaciones de coherencia de la información de las cuencas.
-    - id: fdri
-      title: Floods and Droughts Research Infrastructure (FDRI)
-      date: jun 2023 – may 2025
-      description: >-
-        Desarrollo de herramientas para procesar datos LiDAR de alta resolución y preparar modelos del terreno
-        para flujos de investigación. Este trabajo contribuyó a modelos digitales integrados del terreno y de la
-        superficie para Inglaterra y Gales, con información detallada de elevación disponible para análisis
-        espaciales. Cuadernos Jupyter complementarios muestran cómo utilizar el conjunto de datos integrado en
-        otras aplicaciones de investigación.
-    - id: mambo
-      title: Modern approaches to biodiversity monitoring (MAMBO)
-      date: dic 2022 – oct 2024
-      description: >-
-        Desarrollo de un flujo con attention U-Net para segmentar imágenes RGB obtenidas por drones. El
-        procesamiento de imágenes y la aplicación del modelo identifican arbustos individuales y agrupaciones,
-        convirtiendo observaciones visuales en elementos de vegetación cartografiados. Las delimitaciones
-        resultantes apoyan el análisis de la cobertura de arbustos y los patrones espaciales de la vegetación en
-        investigaciones de monitoreo de la biodiversidad.
-    - id: eidc
-      title: Environmental Information Data Centre (EIDC)
-      date: jul 2022 – dic 2024
-      description: >-
-        Curaduría y preparación de conjuntos de datos de investigación para su ingestión y publicación mediante
-        los flujos del centro. El trabajo aplicó prácticas consistentes de gestión de datos desde la recepción de
-        los conjuntos hasta su preparación para la publicación, facilitando la disponibilidad de datos
-        ambientales en un formato reutilizable por otros investigadores.
-  - title: Investigador
+    overview:
+    - Construí y mantuve la base espacial PostgreSQL/PostGIS y los atributos de cuencas del National River Flow
+      Archive, apoyando productos de datos hidrológicos como CAMELS-GB v2.
+    - Desarrollé flujos para transformar datos LiDAR de alta resolución en modelos integrados del terreno y de
+      superficie para Inglaterra y Gales.
+    - Desarrollé flujos de teledetección para delimitar arbustos en imágenes de drones y estimar su altura con
+      datos del terreno y mediciones LiDAR de referencia.
+    - Preparé y realicé la curaduría de conjuntos de datos ambientales de investigación para su publicación y
+      reutilización.
+  - id: researcher
+    title: Investigador
     institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date: mar 2018 – may 2022
     location: Brasil
     institutionUrl: https://www.ufrgs.br/
-    projects:
-    - id: mgb-bho
-      title: MGB–BHO
-      date: mar 2020 – may 2022
-      description: >-
-        Integración de un modelo hidrológico de grandes cuencas con la Base Hidrográfica Ottocodificada brasileña
-        para que las unidades del modelo siguieran una red fluvial vectorial nacional. Esto requirió métodos para
-        discretizar la red durante el preprocesamiento y obtener parámetros hidrológicos de los datos
-        hidrográficos. Los procedimientos resultantes apoyaron el uso coherente de la base fluvial nacional en
-        los flujos de modelización.
-      partner: ANA
-      partnerUrl: https://www.gov.br/ana/pt-br
-    - id: water-accounting
-      title: Contabilidad del Agua
-      date: mar 2020 – may 2022
-      description: >-
-        Análisis a escala nacional de precipitación, humedad del suelo, evapotranspiración y almacenamiento de
-        agua en las regiones hidrográficas de Brasil. La cuantificación de la variabilidad espacial y temporal
-        aportó insumos hidrológicos al Sistema de Contabilidad Ambiental y Económica para el Agua (SEEA-Water),
-        relacionando los datos ambientales con la información utilizada para describir reservas y flujos de agua.
-      partner: ANA
-      partnerUrl: https://www.gov.br/ana/pt-br
-    - id: reference-streamflow
-      title: Regionalización de Caudales de Referencia
-      date: nov 2021 – may 2022
-      description: >-
-        Desarrollo de métodos de aprendizaje automático para estimar caudales medios de largo plazo y caudales
-        bajos Q95 a partir de variables ambientales en lugares sin estaciones de aforo. Las estimaciones se
-        compararon con otros métodos de cálculo de caudales de referencia, ampliando el análisis más allá de los
-        ríos monitoreados y evaluando la representación de las condiciones de caudal mediante datos ambientales.
-      partner: ANA
-      partnerUrl: https://www.gov.br/ana/pt-br
-    - id: masters-riparian
-      title: Evaluación hidrológica de la vegetación ribereña
-      date: mar 2018 – feb 2020
-      description: >-
-        Evaluación de zonas ribereñas del Cerrado brasileño mediante análisis del terreno, teledetección, índices
-        de vegetación y datos de evapotranspiración en una región de expansión agrícola. Una parte central de la
-        investigación consistió en extraer y cartografiar redes de drenaje a partir de modelos digitales de
-        elevación para identificar corredores fluviales. El análisis de posición topográfica, incluido el método
-        publicado posteriormente como TPS, apoyó la evaluación de la vegetación ribereña a gran escala.
-      funder: CAPES
+    overview:
+    - Integré el modelo hidrológico MGB con la Base Hidrográfica Ottocodificada (BHO) de Brasil, desarrollando
+      métodos de preprocesamiento de la red fluvial y derivación de parámetros para la modelización nacional.
+    - Analicé precipitación, evapotranspiración, humedad del suelo y almacenamiento de agua en Brasil para apoyar
+      las cuentas ambientales y económicas del agua.
+    - Desarrollé métodos de aprendizaje automático para estimar caudales medios de largo plazo y caudales bajos
+      en lugares sin monitoreo de Brasil.
+    - Desarrollé un método de extracción de redes de drenaje basado en el terreno y lo combiné con teledetección
+      para evaluar la vegetación ribereña en el Cerrado brasileño.
 education:
   title: Formación
   items:
@@ -284,47 +192,243 @@ education:
     date: 2011 – 2016
 projects:
   title: Proyectos
+  scopeLabel: 'Alcance:'
+  activitiesLabel: 'Actividades principales:'
+  outcomesLabel: 'Resultados principales:'
+  softwareLabel: 'Software:'
+  publicationLabel: 'Publicación:'
+  repositoryLabel: 'Repositorio'
+  roleLabel: 'Cargo:'
+  projectLinkLabel: 'Proyecto:'
   items:
-  - title: Aplicaciones hidrológicas nacionales
-    content: Modelización hidrológica a gran escala e integración de datos ambientales para aplicaciones nacionales en Brasil.
-    image: "/images/projects/profile.png"
-    featured:
-      name: Detalles
-      link: "/es/projects/national-hydrological-applications/"
-    badges:
-    - Hidrología
-    - MGB
-    - Brasil
-  - title: Sistema de alerta de inundaciones
-    content: Procesamiento, validación y visualización de datos de nivel y caudal para pronóstico y alerta de inundaciones.
-    image: "/images/projects/profile2.jpg"
-    featured:
-      name: Detalles
-      link: "/es/projects/flood-early-warning/"
-    badges:
-    - Inundaciones
-    - Series temporales
-    - Dashboards
-  - title: Priorización hidrológica en el Cerrado
-    content: Modelización hidrológica y análisis espacial para priorizar restauración y conservación de vegetación nativa.
-    image: "/images/projects/converter.jpg"
-    featured:
-      name: Detalles
-      link: "/es/projects/cerrado-hydrological-prioritisation/"
-    badges:
-    - Cerrado
-    - PLANS
-    - QGIS
-  - title: Proyecto doctoral
-    content: Integración de datos para análisis hidrológicos en Brasil, incluyendo almacenamiento de agua, extracción de drenaje y regionalización de caudales.
-    image: "/images/projects/profile.png"
-    featured:
-      name: Tesis
-      link: https://lume.ufrgs.br/handle/10183/293616
-    badges:
-    - Hidrología
-    - Brasil
-    - Machine Learning
+  - id: national-water-model
+    role: postdoctoral-researcher
+    title: Modelo Hidrológico Nacional de Brasil
+    startDate: '2026-03'
+    endDate: null
+    scope: Desarrollo y evaluación de una implementación del modelo hidrológico MGB a escala nacional para Brasil.
+    mainActivities:
+    - Reunir y armonizar observaciones hidrológicas, datos ambientales e información geoespacial.
+    - Parametrizar el modelo y evaluar su desempeño en cuencas brasileñas.
+    - Representar embalses y usos del agua en el modelo.
+    - Desarrollar flujos reproducibles para preparar datos, evaluar el modelo y analizar escenarios.
+    - Preparar el modelo para estudios de cambio de uso del suelo, variabilidad climática y pronóstico hidrológico.
+    mainOutcomes:
+    - Configuración nacional reproducible del MGB y flujos de procesamiento asociados, aún en desarrollo.
+    - La evaluación del desempeño en cuencas y la representación de embalses y usos del agua están en
+      desarrollo para el modelo nacional.
+    partner: ANA
+    partnerUrl: https://www.gov.br/ana/pt-br
+  - id: rs-flood-alert
+    role: postdoctoral-researcher
+    title: Sistema de Alerta de Inundaciones de Rio Grande do Sul
+    startDate: '2025-07'
+    endDate: null
+    scope: Apoyo al monitoreo y pronóstico de inundaciones a escala de cuenca en Rio Grande do Sul.
+    mainActivities:
+    - Validar e integrar datos de nivel del agua, caudal e información geoespacial para el monitoreo.
+    - Desarrollar flujos de modelización de niveles y caudales para pronósticos a escala de cuenca.
+    - Producir visualizaciones operativas para las actividades de alerta.
+    - Desarrollar procedimientos de control de calidad de datos ambientales relacionados con inundaciones.
+    - Explorar curvas de gasto para preparar e interpretar observaciones de caudal.
+    mainOutcomes:
+    - Datos integrados de nivel del agua, caudal e información geoespacial para monitorear inundaciones a
+      escala de cuenca.
+    - Flujos de modelización y visualizaciones operativas que apoyan las actividades de alerta.
+    partner: SGB
+    partnerUrl: https://www.sgb.gov.br/
+  - id: cerrado-conservation
+    role: hydrology-data-consultant
+    title: Mapeo de Prioridades de Conservación
+    startDate: '2025-01'
+    endDate: '2025-09'
+    scope: Identificación de áreas prioritarias para conservar y restaurar vegetación nativa en beneficio de
+      la disponibilidad hídrica en el Cerrado.
+    mainActivities:
+    - Contribuir con métodos de modelización hidrológica y análisis espacial, con énfasis en el procesamiento
+      de datos topográficos de alta resolución.
+    - Desarrollar y aplicar un indicador topográfico de importancia hidrológica a partir de modelos digitales
+      del terreno, integrando HAND y TWI como medidas de tendencia a la saturación del suelo, presencia de humedales
+      y potencial natural de infiltración.
+    - Procesar e integrar datos geoespaciales, definir transformaciones de indicadores y criterios metodológicos
+      y contribuir al análisis y visualización de resultados.
+    mainOutcomes:
+    - Representación espacial detallada de condiciones topográficas asociadas con la saturación del suelo y el
+      potencial de infiltración, que distingue fondos de valle y humedales de laderas y mesetas.
+    - Indicador topográfico incorporado al índice de importancia hidrológica natural y al método de clasificación
+      de áreas prioritarias para conservar el agua en el Cerrado.
+    client: Instituto Cerrados
+    clientUrl: https://cerrados.org/
+  - id: water-availability-database
+    role: hydrology-data-consultant
+    title: Base de Datos de Disponibilidad Hídrica
+    startDate: '2025-05'
+    endDate: '2025-11'
+    scope: Rediseño y migración de la base geoespacial de ANA sobre disponibilidad hídrica a un sistema PostgreSQL/PostGIS
+      unificado y documentado.
+    mainActivities:
+    - Diagnosticar la estructura existente, incluidas tablas, relaciones y rutinas espaciales.
+    - Diseñar el nuevo modelo lógico y físico en PostgreSQL/PostGIS.
+    - Desarrollar funciones de procesamiento y rutinas de migración de registros antiguos.
+    - Consolidar los datos de disponibilidad hídrica en una estructura unificada.
+    - Preparar un manual y materiales de capacitación para consultar, actualizar e ingerir datos.
+    mainOutcomes:
+    - Modelo de datos PostgreSQL/PostGIS unificado y flujo de migración para información de
+      disponibilidad hídrica.
+    - Documentación y materiales de capacitación para consultar, actualizar e ingerir datos.
+    client: ANA
+    clientUrl: https://www.gov.br/ana/pt-br
+  - id: nrfa
+    role: spatial-data-scientist
+    title: National River Flow Archive (NRFA)
+    startDate: '2022-07'
+    endDate: '2025-05'
+    scope: Modernización de la infraestructura de datos espaciales del archivo oficial de caudales del Reino
+      Unido, con datos hidrológicos, metadatos e información de cuencas de más de 1600 estaciones; sustitución
+      de procesos manuales y archivos geográficos dispersos por un sistema centralizado.
+    mainActivities:
+    - Modelar e implementar una base espacial PostgreSQL/PostGIS, consolidando y estandarizando datos de shapefiles,
+      rásteres, hojas de cálculo y otros archivos.
+    - Desarrollar rutinas Python para procesamiento espacial, ingestión de datos y cálculo de atributos ambientales
+      de cuencas.
+    - Precalcular atributos en la red de drenaje del Reino Unido para reducir el procesamiento repetido de cada
+      consulta.
+    - Mantener la base y apoyar productos de datos de cuencas, incluido CAMELS-GB.
+    mainOutcomes:
+    - Base espacial centralizada con más de 3 millones de puntos de la red de drenaje, cada uno asociado con
+      más de 100 atributos espaciales y ambientales, en una arquitectura de menos de 3 GB.
+    - Consultas SQL realizadas en minutos en lugar de procedimientos manuales que podían tardar días, con acceso
+      más sencillo entre equipos y actualizaciones más eficientes y reproducibles.
+  - id: fdri
+    role: spatial-data-scientist
+    title: Floods and Droughts Research Infrastructure (FDRI)
+    startDate: '2023-06'
+    endDate: '2025-05'
+    scope: Transformación de datos LiDAR de alta resolución en productos integrados del terreno y recursos reutilizables
+      para investigar inundaciones y sequías en Inglaterra y Gales.
+    mainActivities:
+    - Desarrollar flujos para procesar LiDAR de alta resolución y generar insumos de modelos del terreno.
+    - Integrar los datos de origen en modelos digitales consistentes del terreno y de superficie para Inglaterra
+      y Gales.
+    - Preparar ejemplos de análisis de los datos de elevación integrados en flujos de investigación.
+    mainOutcomes:
+    - Modelos integrados del terreno y de superficie derivados de LiDAR para Inglaterra y Gales.
+    - Datos de elevación consistentes para investigar inundaciones y sequías en ambos países.
+  - id: mambo
+    role: spatial-data-scientist
+    title: Monitoreo Moderno de la Biodiversidad (MAMBO)
+    startDate: '2022-12'
+    endDate: '2024-10'
+    scope: Desarrollo de métodos de teledetección para monitorear hábitats en MAMBO, con énfasis en cartografiar
+      arbustos y estimar su altura a partir de imágenes de drones y mediciones LiDAR de referencia.
+    mainActivities:
+    - Desarrollar un flujo Attention U-Net para entrenar modelos de segmentación de arbustos y aplicar inferencia
+      por mosaicos a imágenes RGB de drones.
+    - Convertir las predicciones de segmentación en contornos de arbustos cartografiados para el análisis espacial.
+    - Desarrollar un flujo de estimación de altura con normalización de modelos de superficie fotogramétricos
+      mediante datos del terreno, extracción de alturas LiDAR de referencia y cálculo de métricas por polígono.
+    - Evaluar con validación cruzada modelos de aprendizaje automático para estimar la altura de arbustos a partir
+      de esas métricas.
+    mainOutcomes:
+    - Contornos de arbustos cartografiados a partir de imágenes de drones para evaluar hábitats.
+    - Estimaciones de altura de arbustos basadas en datos fotogramétricos y mediciones LiDAR de
+      referencia para investigaciones posteriores sobre biomasa.
+  - id: eidc
+    role: spatial-data-scientist
+    title: Environmental Information Data Centre (EIDC)
+    startDate: '2022-07'
+    endDate: '2024-12'
+    scope: Curaduría y preparación de conjuntos de datos ambientales para ingestión, publicación y reutilización
+      mediante los flujos del EIDC.
+    mainActivities:
+    - Revisar y preparar conjuntos de datos enviados para su ingestión.
+    - Aplicar prácticas consistentes de gestión de datos durante la preparación y publicación.
+    - Resolver problemas de organización de los datos que afecten la publicación o reutilización.
+    mainOutcomes:
+    - Conjuntos de datos ambientales listos para publicar y disponibles en formatos aptos para su
+      reutilización por otros investigadores.
+    - Organización y gestión de datos más consistentes durante la preparación y publicación de los
+      conjuntos.
+  - id: mgb-bho
+    role: researcher
+    title: Integración de la Red Hidrográfica Oficial de Brasil al Modelo MGB
+    startDate: '2020-03'
+    endDate: '2022-05'
+    scope: Integración del modelo hidrológico de grandes cuencas MGB con la Base Hidrográfica Ottocodificada
+      (BHO) para alinear las unidades del modelo con la red fluvial vectorial nacional.
+    mainActivities:
+    - Desarrollar métodos para discretizar la red BHO durante el preprocesamiento del MGB.
+    - Derivar parámetros hidrológicos de los datos hidrográficos nacionales.
+    - Desarrollar procedimientos para traducir de manera consistente la red vectorial a unidades y entradas del
+      modelo.
+    - Evaluar los efectos de las decisiones de discretización en flujos de modelización hidrológica nacional.
+    mainOutcomes:
+    - Procedimientos de preprocesamiento y derivación de parámetros que permiten usar la red BHO de
+      manera consistente en aplicaciones del MGB.
+    - Unidades e insumos del modelo alineados con la red fluvial vectorial oficial para aplicaciones a
+      escala nacional.
+    partner: ANA
+    partnerUrl: https://www.gov.br/ana/pt-br
+  - id: water-accounting
+    role: researcher
+    title: Sistema de Contabilidad Ambiental y Económica del Agua (SEEA-Water) para Brasil
+    startDate: '2020-03'
+    endDate: '2022-05'
+    scope: Cuantificación de la variabilidad espacial y temporal de las reservas y los flujos de agua en las
+      regiones hidrográficas brasileñas para el Sistema de Contabilidad Ambiental y Económica del Agua (SEEA-Water).
+    mainActivities:
+    - Reunir datos nacionales sobre precipitación, humedad del suelo, evapotranspiración y almacenamiento de
+      agua.
+    - Analizar la variabilidad espacial y temporal en las regiones hidrográficas brasileñas.
+    - Integrar evidencia hidrológica con información sobre reservas y flujos de agua en cuentas ambientales y
+      económicas.
+    mainOutcomes:
+    - Estimaciones y análisis hidrológicos nacionales que apoyan las cuentas ambientales y económicas del
+      agua en Brasil.
+    - Caracterización de la variación espacial y temporal de las reservas y los flujos de agua en las
+      regiones hidrográficas brasileñas.
+    partner: ANA
+    partnerUrl: https://www.gov.br/ana/pt-br
+  - id: reference-streamflow
+    role: researcher
+    title: Regionalización de Caudales de Referencia
+    startDate: '2021-11'
+    endDate: '2022-05'
+    scope: Estimación de caudales medios de largo plazo y caudales bajos Q95 en lugares sin estaciones de aforo
+      de Brasil mediante modelos de aprendizaje automático y variables ambientales.
+    mainActivities:
+    - Reunir observaciones de caudal y variables ambientales para desarrollar los modelos.
+    - Desarrollar modelos de aprendizaje automático para estimar el caudal medio de largo plazo y Q95.
+    - Evaluar el desempeño y la incertidumbre de los modelos en distintos contextos hidrológicos.
+    - Comparar las estimaciones de aprendizaje automático con otros métodos de caudales de referencia.
+    - Generar predicciones para lugares sin monitoreo en la red hidrográfica nacional.
+    mainOutcomes:
+    - Estimaciones nacionales de caudales de referencia para más de 400 000 puntos fluviales sin
+      monitoreo.
+    - Evaluaciones de desempeño e incertidumbre de las estimaciones de aprendizaje automático en
+      distintos contextos hidrológicos.
+    partner: ANA
+    partnerUrl: https://www.gov.br/ana/pt-br
+  - id: masters-riparian
+    role: researcher
+    title: Evaluación Hidrológica de Zonas Ribereñas en el Cerrado Brasileño
+    startDate: '2018-03'
+    endDate: '2020-02'
+    scope: Identificación de zonas ribereñas y evaluación a gran escala del comportamiento de la vegetación en
+      una región de expansión agrícola del Cerrado brasileño.
+    mainActivities:
+    - Extraer y cartografiar redes de drenaje a partir de modelos digitales de elevación para identificar corredores
+      fluviales.
+    - Analizar el terreno y la posición topográfica, representando la variación espacial de la densidad de drenaje.
+    - Combinar teledetección, índices de vegetación y datos de evapotranspiración para evaluar la vegetación
+      ribereña.
+    - Aplicar los métodos al análisis de zonas ribereñas a gran escala en el Cerrado.
+    mainOutcomes:
+    - Método basado en el terreno e información de drenaje cartografiada que apoyan la identificación y
+      evaluación de vegetación ribereña a gran escala.
+    - Evaluación a gran escala del comportamiento de la vegetación ribereña mediante teledetección,
+      índices de vegetación y datos de evapotranspiración.
+    funder: CAPES
 achievements:
   title: Software
   items:
@@ -526,6 +630,7 @@ publications:
     venue: Journal of Hydrology
     authors: Iporã Possantti; **Rafael Barbedo**; Marcelo Kronbauer; Walter Collischonn; Guilherme Marques
     doi: https://doi.org/10.1016/j.jhydrol.2022.129003
+    project: masters-riparian
     sortDate: 2023-02
   - title: Water storage variability across Brazil
     year: 2022
@@ -561,6 +666,7 @@ publications:
       João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira;
       Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs
     doi: https://doi.org/10.3390/rs14112526
+    project: water-accounting
     sortDate: '2022-05-25'
   - title: 'Topographic Position-based Stream definition (TPS): A simple method to address spatial variability of
       drainage density in stream networks'

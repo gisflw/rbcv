@@ -20,8 +20,8 @@ three generated PDF CVs.
 - Language-specific profile, CV, project, tool, and publication summaries are in
   `data/en.yaml`, `data/pt.yaml`, and `data/es.yaml`.
 - The `hugo-profile` theme is vendored under `themes/hugo-profile`.
-- `layouts/partials/sections/experience.html` renders roles with dated project blocks;
-  catalog entries link back to those projects where a relationship is documented.
+- Experience renders role overviews; Projects renders all 12 detailed project records,
+  with linked software and publications selected from their canonical lists.
 - Detailed project, tool, and publication pages can be added under
   multilingual `content/<lang>/...` paths.
 - `public/` contains generated Hugo output and should not be edited by hand.
@@ -34,7 +34,8 @@ three generated PDF CVs.
   profile and CV content used by the website and PDF builder.
 - `content/` - multilingual project, tool, and publication detail pages.
 - `layouts/` - project-level Hugo layout overrides.
-- `scripts/build_cv.rb` and `templates/` - PDF CV generation from `data/`.
+- `scripts/build_cv.rb`, `scripts/build_resume.rb`, and `templates/` - PDF CV and
+  English resume generation from `data/`.
 - `static/` and `assets/` - project images, styles, and other site assets.
 - `themes/hugo-profile/` - vendored Hugo theme. Prefer local overrides instead
   of editing the theme directly.
@@ -57,15 +58,17 @@ three PDFs. Pass `en`, `pt`, or `es` to build one PDF.
 
 ## Application resumes
 
-Application-specific resumes are plain Markdown files under `applications/`.
-They use the same Pandoc/XeLaTeX styling as the full CV but are not published
-with the website. Build the example resume with:
+The default two-page English resume is generated from `data/en.yaml`, using the
+same role, education, software, and publication records as the main CV. It is
+written to `build/applications/company-role.pdf` and is not published with the
+website. Build it with:
 
 ```bash
 make resume
 ```
 
-To build a different Markdown file, pass its path:
+You can also build a custom Markdown resume from `applications/` with the
+same Pandoc/XeLaTeX styling. Pass its path:
 
 ```bash
 make resume RESUME=applications/another-role.md

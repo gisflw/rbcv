@@ -1,0 +1,52 @@
+\cvname{<%= title %>}
+\cvheadline{<%= headline %>}
+\cvcontact{<%= profile_links.map { |link| "\\href{#{link["url"]}}{#{link["label"]}}" }.join("\\enspace{}|\\enspace{}") %>}
+\cvcontact{<%= [email, city_country].reject { |item| blank?(item) }.join("\\enspace{}|\\enspace{}") %>}
+\vspace{-0.65em}
+
+## Profile
+
+<%= resume["profile"] %>
+
+## <%= resume["expertiseTitle"] %>
+
+<% (resume["expertise"] || []).each do |item| -%>
+**<%= item["label"] %>:** <%= item["text"] %>  
+<% end -%>
+
+## <%= experience["title"] %>
+
+<% (experience["items"] || []).each do |role| -%>
+<% if role["id"] == "researcher" -%>
+\newpage
+
+<% end -%>
+**<%= role["title"] %> — <%= role["institution"] %>** \hfill \cvdate{<%= role["date"] %>}  
+\cvlocation{<%= [role["location"], role["workload"]].reject { |item| blank?(item) }.join(" · ") %>}
+
+<% (role["overview"] || []).each do |item| -%>
+- <%= item %>
+<% end -%>
+
+<% end -%>
+## <%= resume["softwareTitle"] %>
+
+<% (tools["items"] || []).select { |item| item["resume"] }.each do |item| -%>
+**[<%= item["title"] %>](<%= item["url"] %>)** — <%= item["content"] %>  
+<% end -%>
+
+## <%= resume["publicationsTitle"] %>
+
+<% (publications["items"] || []).select { |item| item["resume"] }.each do |item| -%>
+- [<%= item["title"] %>](<%= item["doi"] || item["url"] %>). *<%= item["venue"] %>* (<%= item["year"] %>).
+<% end -%>
+
+## <%= education["title"] %>
+
+<% (education["items"] || []).each do |item| -%>
+**<%= item["title"] %>** — <%= item.dig("school", "name") %> \hfill \cvdate{<%= item["date"] %>}  
+<% end -%>
+
+## <%= resume["languagesTitle"] %>
+
+<%= (data.dig("about", "languages") || []).join(" · ") %>
