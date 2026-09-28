@@ -130,21 +130,22 @@ experience:
     - id: national-water-model
       title: Desenvolvimento do Modelo Nacional da Água
       date: mar 2026 – atual
-      points:
-      - Estou desenvolvendo e avaliando um modelo hidrológico MGB em escala nacional para o Brasil.
-      - Integro dados hidrológicos, ambientais e geoespaciais aos fluxos de parametrização e avaliação do modelo.
-      - Trabalho na representação de reservatórios e usos da água para futuras aplicações em uso da terra, clima
-        e previsão.
+      description: >-
+        Desenvolvimento e avaliação de um modelo hidrológico MGB em escala nacional para o Brasil, com
+        observações hidrológicas e dados ambientais e geoespaciais. O trabalho abrange a parametrização, a
+        avaliação de desempenho e fluxos reprodutíveis de processamento, além da representação de reservatórios e
+        usos da água. Esses componentes preparam o modelo para análises de mudança no uso da terra, variabilidade
+        climática e previsão hidrológica.
       partner: ANA
       partnerUrl: https://www.gov.br/ana/pt-br
     - id: rs-flood-alert
       title: Sistema de Alerta de Cheias do Rio Grande do Sul
       date: jul 2025 – atual
-      points:
-      - Desenvolvo fluxos de validação e integração de séries hidrológicas e dados geoespaciais para o monitoramento
-        de cheias.
-      - Desenvolvo fluxos de modelagem de níveis e vazões para previsão de cheias em bacias hidrográficas.
-      - Desenvolvo visualizações operacionais para apoiar as atividades de alerta de cheias no Rio Grande do Sul.
+      description: >-
+        Validação e integração de séries temporais hidrológicas e dados geoespaciais para o monitoramento de
+        cheias no Rio Grande do Sul. O trabalho inclui modelagem de níveis e vazões para previsões em escala de
+        bacia, visualizações operacionais para atividades de alerta e ferramentas de controle de qualidade dos
+        dados. A exploração de curvas-chave apoia a preparação e a interpretação de observações de vazão.
       partner: SGB
       partnerUrl: https://www.sgb.gov.br/
   - title: Pesquisador independente em hidrologia e consultor de dados
@@ -156,21 +157,22 @@ experience:
     - id: cerrado-conservation
       title: Mapeamento de Prioridades de Conservação
       date: jan – set 2025
-      points:
-      - Desenvolvi e calibrei modelos hidrológicos PLANS para cenários de proteção e restauração da vegetação.
-      - Integrei dados de sensoriamento remoto, clima e uso da terra para analisar adicionalidade hídrica e gerar
-        indicadores de conservação.
-      - Produzi mapas de prioridade, visualizações geoespaciais e relatórios para subsidiar a priorização da conservação
-        e restauração.
+      description: >-
+        Desenvolvimento e calibração de modelos PLANS para comparar cenários de proteção e restauração da
+        vegetação no Cerrado, incluindo alterações na infiltração, evapotranspiração e escoamento superficial. A
+        análise integra dados de sensoriamento remoto, séries climáticas históricas e mapas de uso da terra em
+        fluxos com Python e QGIS para avaliar a adicionalidade hídrica em escala regional. Os resultados incluem
+        indicadores de conservação, mapas de prioridade, visualizações geoespaciais e relatórios técnicos.
       client: Instituto Cerrados
       clientUrl: https://cerrados.org/
     - id: water-availability-database
       title: Base de Dados de Disponibilidade Hídrica
       date: mai – nov 2025
-      points:
-      - Entreguei uma estrutura PostgreSQL/PostGIS que padroniza os dados de disponibilidade hídrica da ANA.
-      - Migrei os dados para um novo modelo lógico e físico e desenvolvi rotinas de processamento e migração.
-      - Produzi um manual e material de treinamento para a equipe da ANA sobre consultas, atualizações e ingestão
+      description: >-
+        Diagnóstico de uma base existente da ANA, incluindo tabelas, relações e rotinas espaciais, seguido do
+        projeto de um novo modelo lógico e físico em PostgreSQL/PostGIS. Funções de processamento e rotinas de
+        migração transferiram os registros para uma estrutura unificada de dados de disponibilidade hídrica. Um
+        manual e materiais técnicos de treinamento documentaram procedimentos de consulta, atualização e ingestão
         de dados.
       client: ANA
       clientUrl: https://www.gov.br/ana/pt-br
@@ -184,31 +186,37 @@ experience:
     - id: nrfa
       title: National River Flow Archive (NRFA)
       date: jul 2022 – mai 2025
-      points:
-      - Processei e mantive dados de bacias para o National River Flow Archive.
-      - Produzi descritores de bacias utilizados em produtos de dados e pesquisas hidrológicas.
-      - Realizei análises espaciais hidrológicas e ambientais de bacias monitoradas.
+      description: >-
+        Processamento, manutenção e análise espacial de dados de bacias e ambientais de rios monitorados no Reino
+        Unido. O trabalho produziu descritores de bacias e mapas que sintetizam suas características para
+        produtos de dados hidrológicos e pesquisas em recursos hídricos. Atualizações contínuas exigiram
+        verificações de consistência das informações das bacias.
     - id: fdri
       title: Floods and Droughts Research Infrastructure (FDRI)
       date: jun 2023 – mai 2025
-      points:
-      - Desenvolvi ferramentas para processar dados topográficos de alta resolução derivados de LiDAR.
-      - Trabalhei com modelos de terreno no fluxo de processamento de dados da infraestrutura de pesquisa.
-      - Apoiei a preparação de dados topográficos para aplicações de pesquisa do FDRI.
+      description: >-
+        Desenvolvimento de ferramentas para processar dados LiDAR de alta resolução e preparar modelos de terreno
+        para fluxos de pesquisa. Esse trabalho contribuiu para modelos digitais de terreno e de superfície
+        integrados para a Inglaterra e o País de Gales, disponibilizando informações detalhadas de elevação para
+        análises espaciais. Notebooks Jupyter complementares demonstram o uso do conjunto de dados integrado em
+        outras aplicações de pesquisa.
     - id: mambo
       title: Modern approaches to biodiversity monitoring (MAMBO)
       date: dez 2022 – out 2024
-      points:
-      - Desenvolvi um fluxo de segmentação de arbustos com attention U-Net.
-      - Utilizei imagens RGB de drones para identificar indivíduos ou agrupamentos de arbustos.
-      - Contribuí com um método de segmentação para a pesquisa de mapeamento da biodiversidade do projeto.
+      description: >-
+        Desenvolvimento de um fluxo com attention U-Net para segmentar imagens RGB obtidas por drones. O
+        processamento das imagens e a aplicação do modelo identificam arbustos individuais e agrupamentos,
+        convertendo observações visuais em feições de vegetação mapeadas. As delimitações resultantes apoiam
+        análises da cobertura de arbustos e dos padrões espaciais da vegetação em pesquisas de monitoramento da
+        biodiversidade.
     - id: eidc
       title: Environmental Information Data Centre (EIDC)
       date: jul 2022 – dez 2024
-      points:
-      - Apoiei a curadoria de conjuntos de dados de pesquisa tratados pelo Environmental Information Data Centre.
-      - Apliquei práticas de gestão de dados durante a preparação de conjuntos para ingestão.
-      - Apoiei os fluxos de ingestão e publicação que disponibilizam conjuntos de dados de pesquisa pelo centro.
+      description: >-
+        Curadoria e preparação de conjuntos de dados de pesquisa para ingestão e publicação nos fluxos do centro.
+        O trabalho aplicou práticas consistentes de gestão de dados desde o recebimento dos conjuntos até a
+        preparação para publicação, ajudando a disponibilizar dados ambientais em formato adequado para
+        reutilização por outros pesquisadores.
   - title: Pesquisador
     institution: Universidade Federal do Rio Grande do Sul (UFRGS)
     date: mar 2018 – mai 2022
@@ -218,38 +226,42 @@ experience:
     - id: mgb-bho
       title: MGB–BHO
       date: mar 2020 – mai 2022
-      points:
-      - Integrei o modelo hidrológico MGB à Base Hidrográfica Ottocodificada (BHO).
-      - Desenvolvi métodos de discretização da rede fluvial para o pré-processamento do modelo.
-      - Desenvolvi procedimentos para obter parâmetros hidrológicos a partir da base hidrográfica.
+      description: >-
+        Integração de um modelo hidrológico de grandes bacias à Base Hidrográfica Ottocodificada brasileira para
+        que as unidades do modelo acompanhassem uma rede fluvial vetorial nacional. Isso exigiu métodos para
+        discretizar a rede no pré-processamento e obter parâmetros hidrológicos dos dados hidrográficos. Os
+        procedimentos resultantes apoiaram o uso consistente da base fluvial nacional em fluxos de modelagem.
       partner: ANA
       partnerUrl: https://www.gov.br/ana/pt-br
     - id: water-accounting
       title: Contabilidade da Água
       date: mar 2020 – mai 2022
-      points:
-      - Analisei dados de precipitação e umidade do solo em escala nacional.
-      - Examinei a variabilidade da evapotranspiração e do armazenamento de água nas regiões hidrográficas do Brasil.
-      - Produzi insumos de pesquisa hidrológica para a contabilidade econômico-ambiental da água no Brasil.
+      description: >-
+        Análise em escala nacional de precipitação, umidade do solo, evapotranspiração e armazenamento de água
+        nas regiões hidrográficas do Brasil. A quantificação da variabilidade espacial e temporal forneceu
+        insumos hidrológicos ao Sistema de Contas Econômicas Ambientais para Água (SEEA-Water), conectando dados
+        ambientais às informações usadas para descrever estoques e fluxos de água.
       partner: ANA
       partnerUrl: https://www.gov.br/ana/pt-br
     - id: reference-streamflow
       title: Regionalização de Vazões de Referência
       date: nov 2021 – mai 2022
-      points:
-      - Desenvolvi métodos de aprendizado de máquina para estimar vazões médias de longo período.
-      - Estimei vazões mínimas Q95 a partir de variáveis ambientais.
-      - Produzi estimativas de pesquisa para locais sem monitoramento e para comparar métodos de estimativa de vazões
-        de referência.
+      description: >-
+        Desenvolvimento de métodos de aprendizado de máquina para estimar vazões médias de longo período e vazões
+        mínimas Q95 a partir de variáveis ambientais em locais sem estações fluviométricas. As estimativas foram
+        comparadas com outras abordagens de cálculo de vazões de referência, ampliando a análise para além dos
+        rios monitorados e avaliando a representação das condições de vazão por dados ambientais.
       partner: ANA
       partnerUrl: https://www.gov.br/ana/pt-br
     - id: masters-riparian
-      title: 'Vegetação ripária e mapeamento da drenagem'
+      title: Avaliação hidrológica da vegetação ripária
       date: mar 2018 – fev 2020
-      points:
-      - Investiguei a vegetação ripária e o mapeamento da drenagem no Cerrado brasileiro.
-      - Extraí redes de drenagem de modelos digitais de elevação.
-      - Apliquei análise de posição topográfica, incluindo o método posteriormente publicado como TPS.
+      description: >-
+        Avaliação de zonas ripárias no Cerrado brasileiro por meio de análise do terreno, sensoriamento remoto,
+        índices de vegetação e dados de evapotranspiração em uma região de expansão agrícola. Uma parte central
+        da pesquisa envolveu extrair e mapear redes de drenagem a partir de modelos digitais de elevação para
+        identificar corredores fluviais. A análise de posição topográfica, incluindo a abordagem posteriormente
+        publicada como TPS, apoiou a avaliação da vegetação ripária em larga escala.
       funder: CAPES
 education:
   title: Formação

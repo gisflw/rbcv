@@ -28,7 +28,7 @@
               {{ with .client }}<div class="cv-project-organization">{{ $experience.clientLabel }} {{ if $project.clientUrl }}<a href="{{ $project.clientUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
               {{ with .funder }}<div class="cv-project-organization">{{ $experience.funderLabel }} {{ . }}</div>{{ end }}
             </div>
-            {{ with .points }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ end }}
+            {{ with .description }}<p class="cv-project-description">{{ . }}</p>{{ end }}
           </section>
           {{ end }}
         </div>

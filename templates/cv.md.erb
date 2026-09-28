@@ -53,9 +53,7 @@
 <%= experience["clientLabel"] %> <% if project["clientUrl"] %>[<%= project["client"] %>](<%= project["clientUrl"] %>)<% else %><%= project["client"] %><% end %><% end %><% unless blank?(project["funder"]) %>\
 <%= experience["funderLabel"] %> <%= project["funder"] %><% end %>
 
-<% (project["points"] || []).each do |point| -%>
-- <%= point %>
-<% end -%>
+<%= project["description"] %>
 
 <% end -%>
 \vspace{0.5em}
