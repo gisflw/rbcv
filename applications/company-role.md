@@ -44,10 +44,10 @@ Hydrologist and research software engineer working at the intersection of enviro
 **Researcher — Federal University of Rio Grande do Sul (UFRGS)** \hfill \cvdate{Mar 2018–May 2022}  
 \cvlocation{Brazil}
 
-- Integrated the MGB hydrological model with Brazil's national ottocodified river network and developed preprocessing methods for national-scale modelling.
+- Integrated the MGB hydrological model with Brazil's national river network and developed preprocessing methods for national-scale modelling.
 - Analysed precipitation, evapotranspiration, soil moisture, and water storage for Brazil's environmental-economic water accounts.
-- Developed machine-learning models for estimating mean and Q95 streamflows at ungauged locations.
-- Created the TPS method for extracting drainage networks from elevation models and applied it to large-scale riparian-zone analysis.
+- Developed a machine-learning modeling pipeline for estimating mean and low streamflows at ungauged locations, and applied it nation-wide.
+- Created an algorithm for extracting drainage networks from elevation models that effectively describes natural variations in drainage density, and applied it to riparian-zone analysis in the Brazilian Savannah.
 
 ## Selected software and data products
 

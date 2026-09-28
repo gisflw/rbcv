@@ -368,11 +368,16 @@ achievements:
     url: https://github.com/gisflw/rating-curve-explorer
     project: rs-flood-alert
     dateCreated: '2025-08-13'
-  - title: Attention UNet for shrub segmentation
-    content: Repositório de um fluxo de segmentação de arbustos com attention U-Net em imagens RGB de drones.
-    url: https://github.com/gisflw/att-unet-shrub-id
+  - title: Attention UNet for Shrub Segmentation
+    content: Fluxo em PyTorch para treinamento e inferência por blocos em imagens RGB de drones, com extração dos contornos de arbustos.
+    url: https://github.com/MAMBO-Habitat/attn-unet-shrub-id
     project: mambo
-    dateCreated: '2024-11-24'
+    dateCreated: '2025-04-29'
+  - title: Shrub Height Estimation
+    content: Scripts que combinam modelos de superfície por fotogrametria (SfM), dados de terreno e medições LiDAR de referência para estimar a altura em polígonos de arbustos.
+    url: https://github.com/MAMBO-Habitat/shrub-height
+    project: mambo
+    dateCreated: '2025-04-02'
   - title: Definição de Drenagem Baseada em Posição Topográfica (TPS)
     content: Algoritmo de extração de drenagem em MDEs baseado em posição topográfica.
     url: https://github.com/gisflw/TPS

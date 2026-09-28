@@ -67,9 +67,9 @@ The bullets marked **Software** and **Publication** below are the output records
 
 ### Postdoctoral Researcher — Federal University of Rio Grande do Sul (UFRGS)
 
-#### National Water Model Development
+#### The Brazilian National Water Model
 
-**Scope:** Develop and evaluate a national-scale implementation of the MGB hydrological model for Brazil, integrating observations and environmental and geospatial datasets for water-resources analysis and forecasting.
+**Scope:** Development and evaluation of a national-scale implementation of the MGB hydrological model for Brazil.
 
 **Main activities:**
 
@@ -82,11 +82,11 @@ The bullets marked **Software** and **Publication** below are the output records
 **Main outcomes:**
 
 - A reproducible national MGB model configuration and supporting data-processing workflows, currently under development.
-- **Software:** [MGB Vechy](https://github.com/gisflw/mgb-vechy) — utilities and workflows supporting MGB hydrological modelling applications.
+- **Software:** [MGB Vechy](https://github.com/gisflw/mgb-vechy) — utilities and workflows supporting hydrological data preparation for hydrological modeling.
 
 #### Flood Alert System for Rio Grande do Sul
 
-**Scope:** Support basin-scale flood monitoring and forecasting in Rio Grande do Sul through integrated hydrological time series, geospatial data, modelling, and operational visualization.
+**Scope:** Support basin-scale flood monitoring and forecasting in Rio Grande do Sul.
 
 **Main activities:**
 
@@ -106,19 +106,18 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Priority Conservation Mapping
 
-**Scope:** Assess the hydrological benefits of vegetation protection and restoration scenarios in the Cerrado and identify priority areas for water conservation.
+**Scope:** Identify priority areas for native-vegetation conservation and restoration to support water availability in the Cerrado region (Brazilian Savannah).
 
 **Main activities:**
 
-- Develop and calibrate PLANS models representing alternative vegetation protection and restoration scenarios.
-- Evaluate changes in infiltration, evapotranspiration, and surface runoff.
-- Integrate remote-sensing observations, historical climate series, and land-use maps in Python and QGIS workflows.
-- Assess hydrological additionality at regional scale.
-- Produce conservation indicators, prioritization maps, geospatial visualizations, and technical reports.
+- Contribute hydrological-modelling and spatial-analysis methods, with emphasis on processing high-resolution topographic data.
+- Develop and apply a topographic hydrological-importance indicator from digital terrain models, combining HAND (Height Above Nearest Drainage) and TWI (Topographic Wetness Index) to represent soil-saturation tendency and distinguish wetlands, valley bottoms, and areas with greater natural infiltration potential.
+- Process and integrate geospatial data, define indicator transformations and methodological criteria, and contribute to analysis and visualization of the results.
 
 **Main outcomes:**
 
-- A multiscale geospatial evidence base and priority maps for water-conservation planning in the Cerrado.
+- A detailed spatial representation of topographic conditions associated with soil saturation and infiltration potential, distinguishing wetter valley bottoms and wetlands from slopes and plateaus with greater potential to receive and infiltrate rainfall.
+- A topographic indicator incorporated into the natural hydrological-importance index and the method for classifying priority areas for water conservation in the Cerrado.
 - **Software:** [Cerrado APCAC View](https://github.com/gisflw/cerrado-apcac-view) — interactive viewer for Cerrado APCAC data products and geospatial analyses.
 - **Publication (Conference abstract, 2026):** [A geomorphology-based framework for identifying water conservation priorities in the Brazilian Cerrado savanna](https://doi.org/10.5194/egusphere-egu26-3592).
 - **Publication (Dataset, 2026):** [Base de Dados Geoespaciais para Avaliação Multiescalar de Áreas Prioritárias de Conservação de Água no Bioma Cerrado](https://doi.org/10.5281/zenodo.21540477).
@@ -144,18 +143,19 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### National River Flow Archive (NRFA)
 
-**Scope:** Maintain and analyse catchment and environmental information for monitored river basins in the United Kingdom, supporting hydrological data products and water-resources research.
+**Scope:** Modernize the spatial-data infrastructure of the UK’s official river-flow archive, which holds hydrological data, metadata, and catchment information for more than 1,600 stations. Replace manual processes and dispersed geographic files with a centralized system for managing and querying the data.
 
 **Main activities:**
 
-- Process and maintain catchment boundaries and environmental datasets.
-- Perform spatial analyses for monitored river basins.
-- Derive catchment descriptors and mapping outputs that summarize basin characteristics.
-- Apply consistency and quality checks during updates to the underlying catchment information.
+- Model and implement a PostgreSQL/PostGIS spatial database, consolidating and standardizing data from shapefiles, rasters, spreadsheets, and other files.
+- Develop Python routines for spatial processing, data ingestion, and calculation of catchment environmental attributes.
+- Precompute attributes across the UK drainage network to avoid repeated processing for each query.
+- Maintain the database and support catchment data products, including CAMELS-GB.
 
 **Main outcomes:**
 
-- Maintained catchment information, derived descriptors, and maps used in national hydrological data products.
+- A centralized spatial database with more than 3 million drainage-network points, each linked to more than 100 spatial and environmental attributes, in an architecture smaller than 3 GB.
+- SQL queries completed in minutes instead of manual procedures and queries that could take days, with easier access across teams and more efficient, reproducible updates and addition of new stations.
 - **Publication (Journal article, 2026):** [CAMELS-GB v2: hydrometeorological time series and landscape attributes for 671 catchments in Great Britain](https://doi.org/10.5194/essd-18-4345-2026).
 - **Publication (Dataset, 2025):** [Catchment boundaries, daily and sub-daily hydrometeorological time series, groundwater level time series and attributes for 671 catchments in Great Britain (CAMELS-GB v2)](https://doi.org/10.5285/9a46d428-958f-4ac1-86eb-94eee70c0955).
 
@@ -175,21 +175,22 @@ The bullets marked **Software** and **Publication** below are the output records
 - **Software:** [High Resolution DTM & DSM Processing Workflows](https://github.com/NERC-CEH/dtm-analysis) — Jupyter notebooks and scripts for processing high-resolution LiDAR-derived terrain and surface models for England and Wales.
 - **Publication (Dataset, 2026):** [Merged LiDAR based Digital Terrain Model (DTM) and Digital Surface Model (DSM) for England and Wales](https://doi.org/10.5285/34443359-64c0-4909-9f27-bb5d47f1153f).
 
-#### Modern approaches to biodiversity monitoring (MAMBO)
+#### Modern Approaches to the Monitoring of Biodiversity (MAMBO)
 
-**Scope:** Develop a deep-learning workflow for mapping individual shrubs and shrub clumps in drone-derived RGB imagery for biodiversity monitoring.
+**Scope:** Develop remote-sensing methods for MAMBO's habitat monitoring work, focusing on shrub mapping and height estimation from drone imagery, with LiDAR measurements used as height references.
 
 **Main activities:**
 
-- Prepare drone-derived RGB imagery for semantic segmentation.
-- Develop and apply an attention U-Net workflow for shrub identification.
-- Convert model predictions into mapped vegetation features.
-- Support analyses of shrub cover, spatial patterns, biomass, and carbon.
+- Develop an Attention U-Net workflow for training a shrub-segmentation model and applying it to large drone RGB images through tiled inference.
+- Convert segmentation predictions into mapped shrub outlines for spatial analysis.
+- Develop a shrub-height workflow that normalizes structure-from-motion (SfM) surface models with terrain data, extracts reference heights from LiDAR point clouds at shrub polygons, and derives SfM metrics for those polygons.
+- Evaluate machine-learning models for estimating shrub height from the SfM metrics using cross-validation.
 
 **Main outcomes:**
 
-- Reproducible shrub delineations that convert drone imagery into spatial vegetation information for biodiversity research.
-- **Software:** [Attention UNet for shrub segmentation](https://github.com/gisflw/att-unet-shrub-id) — a deep-learning pipeline for identifying shrub individuals or clumps in drone-derived RGB imagery.
+- Reusable code for shrub delineation and height estimation, providing shrub extent and height information for habitat assessment and subsequent biomass research.
+- **Software:** [Attention UNet for Shrub Segmentation](https://github.com/MAMBO-Habitat/attn-unet-shrub-id) — PyTorch training and tiled-inference workflow for extracting shrub outlines from drone-derived RGB imagery.
+- **Software:** [Shrub Height Estimation](https://github.com/MAMBO-Habitat/shrub-height) — Scripts combining structure-from-motion surface models, terrain data, and LiDAR reference measurements to estimate height at shrub polygons.
 - **Publication (Conference abstract, 2026):** [Deriving shrub biomass and carbon from affordable UAV observations](https://doi.org/10.5194/egusphere-egu26-13800).
 - **Publication (Conference abstract, 2025):** [Biomass allometry for shrubs at a UK rewilding site](https://doi.org/10.5194/egusphere-egu25-11605).
 - **Publication (Conference abstract, 2025):** [Shrub species, cover and biomass from affordable UAV observations](https://doi.org/10.5194/egusphere-egu25-1632).
@@ -210,7 +211,7 @@ The bullets marked **Software** and **Publication** below are the output records
 
 ### Researcher — Federal University of Rio Grande do Sul (UFRGS)
 
-#### MGB–BHO
+#### Integration of the Brazilian Official River Network to the MGB Hydrological Model
 
 **Scope:** Integrate the MGB large-basin hydrological model with the Brazilian Ottocodified Hydrographic Base (BHO), allowing model units to follow the national vector river network.
 
@@ -228,7 +229,7 @@ The bullets marked **Software** and **Publication** below are the output records
 - **Publication (Technical report, 2021):** [Cooperação em tecnologias para análises hidrológicas em escala nacional: sub-projeto — regionalização de vazões via modelagem hidrológica: métodos de discretização do modelo MGB e sua relação com a BHO](https://lume.ufrgs.br/handle/10183/253797).
 - **Publication (Technical report, 2021):** [Cooperação em tecnologias para análises hidrológicas em escala nacional: sub-projeto — regionalização de vazões via modelagem hidrológica: MGB-BHO: pré-processamento do MGB em cima da base hidrográfica ottocodificada](https://lume.ufrgs.br/handle/10183/253840).
 
-#### Water Accounting
+#### System of Environmental-Economic Accounting for Water (SEEA-Water) for Brazil
 
 **Scope:** Quantify the spatial and temporal variability of water stocks and fluxes across Brazil’s hydrographic regions to support the System of Environmental-Economic Accounting for Water (SEEA-Water).
 
@@ -266,9 +267,9 @@ The bullets marked **Software** and **Publication** below are the output records
 - **Publication (Technical report, 2021):** [Cooperação em tecnologias para análises hidrológicas em escala nacional: sub-projeto — regionalização de vazões via modelagem hidrológica: comparação de métodos para estimativas de vazões de referência: vazão média e Q95](https://lume.ufrgs.br/handle/10183/253831).
 - **Publication (Technical report, 2021):** [Cooperação em tecnologias para análises hidrológicas em escala nacional: sub-projeto — regionalização de vazões via modelagem hidrológica: estimativa de vazão em locais sem dados usando machine learning](https://lume.ufrgs.br/handle/10183/253843).
 
-#### Riparian vegetation hydrological assessment
+#### Hydrological Assessment of Riparian Zones in the Brazilian Savannah
 
-**Scope:** Identify riparian zones and assess vegetation behaviour at large scale in an agricultural-expansion region of the Brazilian Cerrado.
+**Scope:** Identify riparian zones and assess vegetation behaviour at large scale in an agricultural-expansion region of the Brazilian Savannah.
 
 **Main activities:**
 
@@ -309,7 +310,7 @@ No project association should be inferred during this migration without editoria
 
 - Every one of the 12 experience projects has one brief scope paragraph, an activities list, and an outcomes list.
 - The visible labels are **Scope:**, **Main activities:**, and **Main outcomes:** in English, with approved equivalents in Portuguese and Spanish.
-- All ten software records appear under their linked projects and remain in the standalone Software section.
+- All 11 software records, including both MAMBO repositories, appear under their linked projects and remain in the standalone Software section.
 - All 18 project-linked publication records appear under their linked projects and remain in the standalone Publications section.
 - The three publications without a project association are not attached automatically.
 - Related publications remain in descending `sortDate` order, preserving source order where dates are equal.
@@ -321,7 +322,7 @@ No project association should be inferred during this migration without editoria
 ## 7. Editorial points to confirm before implementation
 
 - Whether “A reproducible national MGB model configuration” is an appropriate outcome while that project is still in progress.
-- Whether “Support analyses of shrub cover, spatial patterns, biomass, and carbon” accurately describes Rafael’s contribution to MAMBO, or whether biomass and carbon should appear only in the publication bullets.
+- Confirm whether Rafael also developed the allometric biomass-estimation step; the two software repositories establish the shrub-delineation and height-estimation workflows.
 - Whether the EIDC activities should mention metadata, licensing, DOI registration, or repository-specific quality assurance if those were part of the role.
 - Whether “more than 400,000 ungauged river points” should remain in the Reference Streamflow outcome.
 - Whether the three currently unassigned publications belong to an existing experience project or should remain standalone.
