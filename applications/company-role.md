@@ -20,22 +20,22 @@ Hydrologist and research software engineer working at the intersection of enviro
 **Postdoctoral Researcher — Federal University of Rio Grande do Sul (UFRGS)** \hfill \cvdate{Jul 2025–present}  
 \cvlocation{Brazil · Part-time}
 
-- Develop and evaluate a national-scale MGB hydrological model integrating observations, environmental datasets, reservoirs, and water-use information for Brazil's National Water and Sanitation Agency (ANA).
-- Build reproducible workflows for flood-data validation, water-level and streamflow modelling, and operational warning visualizations for Rio Grande do Sul.
+- Develop and evaluate a national-scale hydrological model for Brazil, integrating observations, environmental data, reservoirs, and water uses through reproducible modeling workflows.
+- Develop flood-monitoring and forecasting workflows for Rio Grande do Sul, combining data validation, water-level and streamflow modeling, and operational warning visualizations.
 
 **Hydrology \& Data Consultant — Independent** \hfill \cvdate{Jan 2025–present}  
 \cvlocation{Brazil · Part-time}
 
-- Modelled the hydrological effects of Cerrado conservation and restoration scenarios using hydrological modeling, remote sensing, and historical climate data through Python and GDAL workflows.
-- Designed a PostgreSQL/PostGIS data model and ETL routines to consolidate water-availability records, spatial procedures, and hydrographic-network versions for the Brazilian National Water Agency (ANA).
+- Developed a terrain-based hydrological-importance indicator to help identify priority areas for water conservation and restoration in the Cerrado.
+- Designed a PostgreSQL/PostGIS data model and migration workflows to consolidate water-availability records and spatial procedures for Brazil's National Water and Sanitation Agency (ANA).
 
 **Spatial Data Scientist — UK Centre for Ecology \& Hydrology (UKCEH)** \hfill \cvdate{Jul 2022–May 2025}  
 \cvlocation{United Kingdom · Full-time}
 
-- Produced and maintained catchment and environmental attributes supporting the National River Flow Archive (NRFA) database and CAMELS-GB research datasets.
-- Developed workflows that transformed high-resolution LiDAR into merged terrain and surface models for England and Wales.
-- Built an attention U-Net pipeline for mapping shrubs from drone RGB imagery validated with high-resolution LiDAR.
-- Curated environmental research datasets through preparation, validation, and publication workflows.
+- Built and maintained the National River Flow Archive's PostgreSQL/PostGIS spatial database and catchment attributes, supporting hydrological data products including the CAMELS-GB v2.
+- Developed workflows to turn high-resolution LiDAR into integrated terrain and surface models for England and Wales.
+- Developed remote-sensing workflows to delineate shrubs from drone imagery and estimate their height using terrain and LiDAR reference data.
+- Prepared and curated environmental research datasets for publication and reuse.
 
 \newpage
 
@@ -44,10 +44,10 @@ Hydrologist and research software engineer working at the intersection of enviro
 **Researcher — Federal University of Rio Grande do Sul (UFRGS)** \hfill \cvdate{Mar 2018–May 2022}  
 \cvlocation{Brazil}
 
-- Integrated the MGB hydrological model with Brazil's national river network and developed preprocessing methods for national-scale modelling.
-- Analysed precipitation, evapotranspiration, soil moisture, and water storage for Brazil's environmental-economic water accounts.
-- Developed a machine-learning modeling pipeline for estimating mean and low streamflows at ungauged locations, and applied it nation-wide.
-- Created an algorithm for extracting drainage networks from elevation models that effectively describes natural variations in drainage density, and applied it to riparian-zone analysis in the Brazilian Savannah.
+- Integrated the MGB hydrological model with Brazil's Ottocodified Hydrographic Base (BHO), developing river-network preprocessing and parameter-derivation methods for national-scale modeling.
+- Analyzed precipitation, evapotranspiration, soil moisture, and water storage across Brazil to support environmental-economic water accounts.
+- Developed machine-learning methods to estimate long-term mean and low streamflows at ungauged locations across Brazil.
+- Developed a terrain-based drainage-network extraction method and combined it with remote sensing to assess riparian vegetation in the Brazilian Savannah.
 
 ## Selected software and data products
 

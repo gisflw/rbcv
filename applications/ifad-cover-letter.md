@@ -1,0 +1,17 @@
+Dear Hiring Committee,
+
+I am writing to express my interest in joining IFAD's Geospatial Analysis and Earth Observation Consultant Roster. I would like to be considered primarily for **Area C — Geospatial Data Engineering, Programming and Automation**, followed by **Area A — GIS and Spatial Analysis** and **Area B — Earth Observation and Remote Sensing**.
+
+I am a hydrologist and geospatial data scientist with a PhD in Water Resources and experience across applied research, environmental data science, scientific software development, and consultancy. My work has focused particularly on transforming large and heterogeneous geospatial datasets into reproducible analytical workflows, data products, and tools for environmental and water-resources applications. I have worked in Brazil and the United Kingdom on projects ranging from national environmental datasets and hydrological modelling to water-resources information systems and conservation planning.
+
+**Geospatial Data Engineering, Programming and Automation (Area C)** is my main area of expertise. I develop automated and reproducible workflows for processing large raster, vector, time-series, hydrographic datasets, and HPC hydrological modeling, primarily using Python, Fortran, SQL/PostGIS, GDAL and associated open-source geospatial tools. My experience includes spatial database design, ETL and data harmonization, large-scale geoprocessing, workflow automation, data quality control, and development of reusable scientific software. At the UK Centre for Ecology & Hydrology, I contributed to the processing and delivery of national-scale environmental datasets and geospatial data infrastructure. More recently, my work in Brazil has included developing integrated databases and processing systems for national water-resources information and developing software and workflows supporting large-scale hydrological modelling.
+
+My experience in **GIS and Spatial Analysis (Area A)** is closely connected to my specialization in hydrology and water resources. I have developed methods and analyses involving catchment and hydrographic networks, terrain processing, hydrological regionalization, spatial modelling, and integration of climatic, physiographic, land-cover and hydrological information. This has included research and operational projects at scales ranging from individual landscapes to national and continental datasets, with outputs supporting water-resources assessment, environmental analysis and conservation planning.
+
+I also have experience in **Earth Observation and Remote Sensing (Area B)**, particularly where EO data are integrated into broader environmental and hydrological analyses. My work has involved land-cover products, LiDAR-derived terrain data, satellite and reanalysis datasets, environmental time series, and the processing of large raster datasets. I typically integrate these products with spatial databases, hydrological information and analytical workflows to derive information relevant to environmental monitoring and decision-making.
+
+Across these areas, my work combines domain knowledge in water and environmental systems with geospatial data engineering and scientific computing. I would bring to IFAD particular expertise in developing robust and reusable geospatial workflows and translating complex environmental datasets into analytical products that can support water resources, climate resilience, natural-resource management and related rural-development applications.
+
+Sincerely,
+
+Rafael Barbedo

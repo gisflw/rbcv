@@ -1,46 +1,63 @@
-# Experience Project Description Migration Plan
+# Experience and Project Content Migration Plan
 
 Status: draft for editorial review and approval. This document does not change the current website, CV data, templates, or generated files.
 
 ## 1. Objective
 
-Replace each project’s single `description` paragraph with three clearly labelled parts:
+Separate role summaries from project detail. The Experience section should give a broader view of each role, using the Experience section in `applications/company-role.md` as the reference for its level of detail. Do not copy that text into this plan.
+
+The Projects section should hold the descriptions of individual projects, each linked to its role and carrying structured start and end date metadata. Replace each project's single `description` paragraph with three clearly labelled parts:
 
 - **Scope:** one short paragraph explaining the purpose and boundaries of the project.
 - **Main activities:** concise bullet points describing the work performed.
 - **Main outcomes:** concise bullet points describing the principal deliverables and results, followed by the software and publications associated with that project.
 
-The same structure should eventually appear on the website and in all generated PDF CVs. The English wording proposed below is the source for implementation and translation.
+The website and main PDF CV should draw roles and projects from the same structured data. Generate the shorter resume from that main CV source, using Experience, selected Software, and selected Publications, followed by short Education and Languages sections. The English project wording proposed below is the source for implementation and translation.
 
 ## 2. Recommended content model
 
-Each project would move from this shape:
-
-```yaml
-- id: example-project
-  title: Example Project
-  description: >-
-    One combined paragraph.
-```
-
-to this shape:
-
-```yaml
-- id: example-project
-  title: Example Project
-  scope: >-
-    A brief description of the project’s purpose and boundaries.
-  mainActivities:
-  - First activity.
-  - Second activity.
-  mainOutcomes:
-  - First project result or deliverable.
-```
-
-Add translatable section labels under `experience`:
+Give each role a stable `id` and a short, translatable overview. Move the existing projects out of `experience.items[].projects` into a canonical project list; retain their current IDs and link each one to its role through `role`:
 
 ```yaml
 experience:
+  items:
+  - id: example-role
+    title: Example Role
+    overview: [] # write from the company-role reference during migration
+projects:
+  items:
+  - id: example-project
+    role: example-role
+    title: Example Project
+    description: >-
+      One combined paragraph.
+```
+
+Replace each project's `description` with the detailed structure, and add date metadata:
+
+```yaml
+projects:
+  items:
+  - id: example-project
+    role: example-role
+    title: Example Project
+    startDate: '2025-07'
+    endDate: null # ongoing; use YYYY, YYYY-MM, or YYYY-MM-DD as known
+    scope: >-
+      A brief description of the project's purpose and boundaries.
+    mainActivities:
+    - First activity.
+    - Second activity.
+    mainOutcomes:
+    - First project result or deliverable.
+```
+
+Keep role dates and project dates distinct. Store project dates at the precision supported by the source, and derive localized display ranges from them; an open end date means ongoing work. Preserve existing client, partner, funder, and link metadata on the project records. The current `projects.items` cards are a separate, broad portfolio summary: reconcile their links and presentation with the canonical project records during migration so project descriptions are maintained in one place.
+
+Add translatable section labels under `projects`:
+
+```yaml
+projects:
   scopeLabel: 'Scope:'
   activitiesLabel: 'Main activities:'
   outcomesLabel: 'Main outcomes:'
@@ -48,9 +65,9 @@ experience:
 
 ### Software and publication linking
 
-Software and publications should continue to live only in their existing canonical lists (`achievements.items` and `publications.items`). During rendering, select every item whose `project` value matches the experience project’s `id`, and append it as a bullet under **Main outcomes**.
+Software and publications should continue to live only in their existing canonical lists (`achievements.items` and `publications.items`). During project rendering, select every item whose `project` value matches the project’s `id`, and append it as a bullet under **Main outcomes**.
 
-This intentionally repeats those outputs in the Experience, Software, and Publications sections for readers, but avoids copying their metadata into multiple YAML locations. It also means that a future title, URL, DOI, type, or year correction needs to be made only once.
+This intentionally repeats those outputs in the Projects, Software, and Publications sections for readers, but avoids copying their metadata into multiple YAML locations. It also means that a future title, URL, DOI, type, or year correction needs to be made only once.
 
 Recommended rendered forms:
 
@@ -61,9 +78,9 @@ Where a software record contains both `url` and `repository`, use `url` as the t
 
 Publication bullets within a project must retain the order of the canonical publication list: descending `sortDate`, with source order preserved for equal dates. Software bullets should retain the order of the canonical software list.
 
-## 3. Proposed English write
+## 3. Proposed English project copy
 
-The bullets marked **Software** and **Publication** below are the output records that would be selected automatically through the existing `project` identifiers.
+The role headings below group project drafts for editorial review; they are not proposed Experience copy. The bullets marked **Software** and **Publication** are output records that would be selected automatically through the existing `project` identifiers.
 
 ### Postdoctoral Researcher — Federal University of Rio Grande do Sul (UFRGS)
 
@@ -73,11 +90,11 @@ The bullets marked **Software** and **Publication** below are the output records
 
 **Main activities:**
 
-- Assemble and harmonize hydrological observations, environmental datasets, and geospatial inputs.
-- Parameterize the model and assess its performance across Brazilian river basins.
-- Represent reservoirs and water uses within the modelling framework.
-- Build reproducible workflows for data preparation, model evaluation, and scenario analysis.
-- Prepare the model for studies of land-use change, climate variability, and hydrological forecasting.
+- Assembly and harmonization of hydrological observations, environmental datasets, and geospatial inputs.
+- Model parameterization and performance assessment across Brazilian river basins.
+- Representation of reservoirs and water uses within the modeling framework.
+- Development of reproducible workflows for data preparation, model evaluation, and scenario analysis.
+- Model preparation for studies of land-use change, climate variability, and hydrological forecasting.
 
 **Main outcomes:**
 
@@ -86,19 +103,19 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Flood Alert System for Rio Grande do Sul
 
-**Scope:** Support basin-scale flood monitoring and forecasting in Rio Grande do Sul.
+**Scope:** Supporting basin-scale flood monitoring and forecasting in Rio Grande do Sul.
 
 **Main activities:**
 
-- Validate and integrate water-level, streamflow, and geospatial datasets used in flood monitoring.
-- Develop water-level and streamflow modelling workflows for basin-scale forecasts.
-- Produce operational visualizations for flood-warning activities.
-- Develop quality-control procedures for flood-related environmental data.
-- Explore rating curves to support the preparation and interpretation of streamflow observations.
+- Validation and integration of water-level, streamflow, and geospatial datasets for flood monitoring.
+- Development of water-level and streamflow modeling workflows for basin-scale forecasts.
+- Production of operational visualizations for flood-warning activities.
+- Development of quality-control procedures for flood-related environmental data.
+- Rating-curve exploration for streamflow-observation preparation and interpretation.
 
 **Main outcomes:**
 
-- Integrated datasets, modelling workflows, and visual products supporting operational flood-warning activities.
+- Integrated datasets, modeling workflows, and visual products supporting operational flood-warning activities.
 - **Software:** [Flood QC](https://github.com/gisflw/flood-qc) — tools for quality control and validation of flood-related environmental data.
 - **Software:** [Rating Curve Explorer](https://github.com/gisflw/rating-curve-explorer) — tools for organizing, visualizing, and performing initial analyses of streamflow data used in rating-curve derivation.
 
@@ -106,13 +123,13 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Priority Conservation Mapping
 
-**Scope:** Identify priority areas for native-vegetation conservation and restoration to support water availability in the Cerrado region (Brazilian Savannah).
+**Scope:** Identification of priority areas for native-vegetation conservation and restoration for water availability in the Cerrado region (Brazilian Savannah).
 
 **Main activities:**
 
-- Contribute hydrological-modelling and spatial-analysis methods, with emphasis on processing high-resolution topographic data.
-- Develop and apply a topographic hydrological-importance indicator from digital terrain models, combining HAND (Height Above Nearest Drainage) and TWI (Topographic Wetness Index) to represent soil-saturation tendency and distinguish wetlands, valley bottoms, and areas with greater natural infiltration potential.
-- Process and integrate geospatial data, define indicator transformations and methodological criteria, and contribute to analysis and visualization of the results.
+- Contribution of hydrological-modeling and spatial-analysis methods, emphasizing high-resolution topographic-data processing.
+- Development and application of a topographic hydrological-importance indicator from digital terrain models, integrating HAND (Height Above Nearest Drainage) and TWI (Topographic Wetness Index) as measures of soil-saturation tendency, wetland and valley-bottom occurrence, and natural-infiltration potential.
+- Geospatial-data processing and integration; definition of indicator transformations and methodological criteria; and contribution to analysis and visualization of results.
 
 **Main outcomes:**
 
@@ -124,15 +141,15 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Water Availability Database
 
-**Scope:** Redesign and migrate ANA’s geospatial database for water-availability information into a unified, documented PostgreSQL/PostGIS system.
+**Scope:** Redesign and migration of ANA’s geospatial database for water-availability information into a unified, documented PostgreSQL/PostGIS system.
 
 **Main activities:**
 
-- Diagnose the existing database structure, including tables, relationships, and spatial routines.
-- Design the new logical and physical PostgreSQL/PostGIS data model.
-- Develop processing functions and migration routines for legacy records.
-- Consolidate water-availability data in a unified structure.
-- Prepare a user manual and technical training materials for querying, updating, and ingesting data.
+- Diagnosis of the existing database structure, including tables, relationships, and spatial routines.
+- Design of the new logical and physical PostgreSQL/PostGIS data model.
+- Development of processing functions and migration routines for legacy records.
+- Consolidation of water-availability data in a unified structure.
+- Preparation of a user manual and technical training materials for data querying, updating, and ingestion.
 
 **Main outcomes:**
 
@@ -143,14 +160,14 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### National River Flow Archive (NRFA)
 
-**Scope:** Modernize the spatial-data infrastructure of the UK’s official river-flow archive, which holds hydrological data, metadata, and catchment information for more than 1,600 stations. Replace manual processes and dispersed geographic files with a centralized system for managing and querying the data.
+**Scope:** Modernization of the spatial-data infrastructure of the UK’s official river-flow archive, including hydrological data, metadata, and catchment information for more than 1,600 stations. Replacement of manual processes and dispersed geographic files with a centralized system for data management and querying.
 
 **Main activities:**
 
-- Model and implement a PostgreSQL/PostGIS spatial database, consolidating and standardizing data from shapefiles, rasters, spreadsheets, and other files.
-- Develop Python routines for spatial processing, data ingestion, and calculation of catchment environmental attributes.
-- Precompute attributes across the UK drainage network to avoid repeated processing for each query.
-- Maintain the database and support catchment data products, including CAMELS-GB.
+- Modeling and implementation of a PostgreSQL/PostGIS spatial database, with consolidation and standardization of data from shapefiles, rasters, spreadsheets, and other files.
+- Development of Python routines for spatial processing, data ingestion, and calculation of catchment environmental attributes.
+- Precomputation of attributes across the UK drainage network and reduced repeated processing per query.
+- Database maintenance and support for catchment data products, including CAMELS-GB.
 
 **Main outcomes:**
 
@@ -161,13 +178,13 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Floods and Droughts Research Infrastructure (FDRI)
 
-**Scope:** Transform high-resolution LiDAR data into integrated terrain products and reusable analysis resources for floods-and-droughts research in England and Wales.
+**Scope:** Transformation of high-resolution LiDAR data into integrated terrain products and reusable analysis resources for floods-and-droughts research in England and Wales.
 
 **Main activities:**
 
-- Develop workflows for processing high-resolution LiDAR data into terrain-model inputs.
-- Merge source data into consistent digital terrain and digital surface models for England and Wales.
-- Prepare analysis examples demonstrating the use of the integrated elevation data in research workflows.
+- Development of workflows for high-resolution LiDAR processing into terrain-model inputs.
+- Merging of source data into consistent digital terrain and digital surface models for England and Wales.
+- Preparation of analysis examples on integrated elevation data in research workflows.
 
 **Main outcomes:**
 
@@ -177,14 +194,14 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Modern Approaches to the Monitoring of Biodiversity (MAMBO)
 
-**Scope:** Develop remote-sensing methods for MAMBO's habitat monitoring work, focusing on shrub mapping and height estimation from drone imagery, with LiDAR measurements used as height references.
+**Scope:** Development of remote-sensing methods for MAMBO's habitat monitoring work, focusing on shrub mapping and height estimation from drone imagery, with LiDAR measurements used as height references.
 
 **Main activities:**
 
-- Develop an Attention U-Net workflow for training a shrub-segmentation model and applying it to large drone RGB images through tiled inference.
-- Convert segmentation predictions into mapped shrub outlines for spatial analysis.
-- Develop a shrub-height workflow that normalizes structure-from-motion (SfM) surface models with terrain data, extracts reference heights from LiDAR point clouds at shrub polygons, and derives SfM metrics for those polygons.
-- Evaluate machine-learning models for estimating shrub height from the SfM metrics using cross-validation.
+- Development of an Attention U-Net workflow for shrub-segmentation model training and tiled inference across large drone RGB images.
+- Conversion of segmentation predictions into mapped shrub outlines for spatial analysis.
+- Development of a shrub-height workflow for normalization of structure-from-motion (SfM) surface models with terrain data, LiDAR reference-height extraction from point clouds at shrub polygons, and SfM-metric derivation for those polygons.
+- Evaluation of machine-learning models for shrub-height estimation from SfM metrics using cross-validation.
 
 **Main outcomes:**
 
@@ -197,13 +214,13 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Environmental Information Data Centre (EIDC)
 
-**Scope:** Curate and prepare environmental research datasets for ingestion, publication, and reuse through the EIDC’s data workflows.
+**Scope:** Curation and preparation of environmental research datasets for ingestion, publication, and reuse through the EIDC’s data workflows.
 
 **Main activities:**
 
-- Review and prepare submitted research datasets for ingestion.
-- Apply consistent data-management practices throughout the preparation and release process.
-- Resolve data-organization issues that could limit publication or downstream reuse.
+- Review and preparation of submitted research datasets for ingestion.
+- Application of consistent data-management practices throughout the preparation and release process.
+- Resolution of data-organization issues affecting publication or downstream reuse.
 
 **Main outcomes:**
 
@@ -213,14 +230,14 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Integration of the Brazilian Official River Network to the MGB Hydrological Model
 
-**Scope:** Integrate the MGB large-basin hydrological model with the Brazilian Ottocodified Hydrographic Base (BHO), allowing model units to follow the national vector river network.
+**Scope:** Integration of the MGB large-basin hydrological model with the Brazilian Ottocodified Hydrographic Base (BHO) for alignment of model units with the national vector river network.
 
 **Main activities:**
 
-- Develop methods to discretize the BHO river network during MGB preprocessing.
-- Derive hydrological parameters from the national hydrographic data.
-- Build procedures for consistently translating the vector network into model units and inputs.
-- Evaluate how discretization choices affect national-scale hydrological modelling workflows.
+- Development of methods for BHO river-network discretization during MGB preprocessing.
+- Derivation of hydrological parameters from national hydrographic data.
+- Development of procedures for consistent translation of the vector network into model units and inputs.
+- Evaluation of the effects of discretization choices on national-scale hydrological modeling workflows.
 
 **Main outcomes:**
 
@@ -231,13 +248,13 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### System of Environmental-Economic Accounting for Water (SEEA-Water) for Brazil
 
-**Scope:** Quantify the spatial and temporal variability of water stocks and fluxes across Brazil’s hydrographic regions to support the System of Environmental-Economic Accounting for Water (SEEA-Water).
+**Scope:** Quantification of the spatial and temporal variability of water stocks and fluxes across Brazil’s hydrographic regions for the System of Environmental-Economic Accounting for Water (SEEA-Water).
 
 **Main activities:**
 
-- Assemble national datasets describing precipitation, soil moisture, evapotranspiration, and water storage.
-- Analyse spatial and temporal variability across Brazilian hydrographic regions.
-- Integrate hydrological evidence with the information required to describe water stocks and flows in environmental-economic accounts.
+- Assembly of national datasets on precipitation, soil moisture, evapotranspiration, and water storage.
+- Analysis of spatial and temporal variability across Brazilian hydrographic regions.
+- Integration of hydrological evidence with information on water stocks and flows in environmental-economic accounts.
 
 **Main outcomes:**
 
@@ -247,20 +264,20 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Reference Streamflow Regionalization
 
-**Scope:** Estimate long-term mean streamflow and Q95 low flow at ungauged locations across Brazil using machine-learning models and environmental predictors.
+**Scope:** Estimating long-term mean streamflow and Q95 low flow at ungauged locations across Brazil using machine-learning models and environmental predictors.
 
 **Main activities:**
 
-- Assemble streamflow observations and environmental predictors for model development.
-- Develop machine-learning models for long-term mean streamflow and Q95 estimation.
-- Evaluate model performance and uncertainty across different hydrological settings.
-- Compare machine-learning estimates with alternative reference-streamflow methods.
-- Generate predictions for ungauged locations across the national hydrographic network.
+- Assembly of streamflow observations and environmental predictors for model development.
+- Development of machine-learning models for long-term mean streamflow and Q95 estimation.
+- Evaluation of model performance and uncertainty across different hydrological settings.
+- Comparison of machine-learning estimates with alternative reference-streamflow methods.
+- Generation of predictions for ungauged locations across the national hydrographic network.
 
 **Main outcomes:**
 
 - National reference-streamflow estimates for more than 400,000 ungauged river points, with associated performance and uncertainty assessments.
-- **Software:** [ML Pipeline](https://github.com/gisflw/ml-pipeline) — reusable machine-learning pipeline components for environmental and geospatial modelling.
+- **Software:** [ML Pipeline](https://github.com/gisflw/ml-pipeline) — reusable machine-learning pipeline components for environmental and geospatial modeling.
 - **Publication (Preprint, 2025):** [Modeling Long-Term Flow Regimes in Ungauged Basins: An Evaluation of Machine Learning Performance and Uncertainty](https://doi.org/10.22541/essoar.175336960.03823488/v1).
 - **Publication (Dataset, 2024):** [Reference Mean and Low Streamflow for all Brazilian Catchments Generated Using Machine Learning Models](https://doi.org/10.5281/zenodo.14217002).
 - **Publication (Conference abstract, 2023):** [Streamflow Estimation in Ungauged Catchments in Brazil using Machine Learning Approaches](https://doi.org/10.5194/egusphere-egu23-844).
@@ -269,14 +286,14 @@ The bullets marked **Software** and **Publication** below are the output records
 
 #### Hydrological Assessment of Riparian Zones in the Brazilian Savannah
 
-**Scope:** Identify riparian zones and assess vegetation behaviour at large scale in an agricultural-expansion region of the Brazilian Savannah.
+**Scope:** Identification of riparian zones and large-scale assessment of vegetation behavior in an agricultural-expansion region of the Brazilian Savannah.
 
 **Main activities:**
 
-- Extract and map drainage networks from digital elevation models to identify river corridors.
-- Analyse terrain and topographic position to represent spatial variation in drainage density.
-- Combine remote sensing, vegetation indices, and evapotranspiration data to assess riparian vegetation.
-- Apply the resulting methods to a large-scale analysis of riparian zones in the Cerrado.
+- Extraction and mapping of drainage networks from digital elevation models for river-corridor identification.
+- Analysis of terrain and topographic position, with representation of spatial variation in drainage density.
+- Combination of remote sensing, vegetation indices, and evapotranspiration data for riparian-vegetation assessment.
+- Application of the resulting methods to large-scale analysis of riparian zones in the Cerrado.
 
 **Main outcomes:**
 
@@ -284,7 +301,7 @@ The bullets marked **Software** and **Publication** below are the output records
 - **Software:** [Topographic Position-based Stream definition (TPS)](https://github.com/gisflw/TPS) — an algorithm for extracting drainage networks from digital elevation models using topographic position.
 - **Publication (Journal article, 2022):** [Topographic Position-based Stream definition (TPS): A simple method to address spatial variability of drainage density in stream networks](https://doi.org/10.1080/02626667.2022.2047190).
 
-## 4. Records not attached to an experience project
+## 4. Records not attached to a project
 
 The following publications currently have no `project` value and therefore would remain only in the Publications section unless an explicit relationship is added later:
 
@@ -296,27 +313,31 @@ No project association should be inferred during this migration without editoria
 
 ## 5. Implementation plan after approval
 
-1. **Approve the English copy and associations.** Edit this document until every scope, activity, outcome, and linked output is accepted. Decide whether the three currently unassigned publications should remain unassigned.
-2. **Add the new English fields.** In `data/en.yaml`, replace each project’s `description` with `scope`, `mainActivities`, and `mainOutcomes`. Keep every project `id` unchanged because it is the join key for software and publications.
-3. **Translate the approved copy.** Apply the identical structure and project IDs to `data/pt.yaml` and `data/es.yaml`; translate the three labels and authored prose, while keeping formal output titles in their canonical form unless a translated title is intentionally preferred.
-4. **Update the website renderer.** Modify the project block in `layouts/partials/sections/experience.html` to render the scope paragraph and both lists. Select related software and publications by project ID and append them to the outcomes list with accessible links.
-5. **Update the PDF renderer.** Modify `templates/cv.md.erb` so the PDF displays the same structure and derives the same related outputs. Avoid adding duplicated output records to the project data.
-6. **Adjust project-description styling.** Add narrowly scoped rules to `static/css/career-canvas-overrides.css` for label spacing, compact lists, and readable wrapping on mobile. Preserve the existing theme and project-level override approach.
-7. **Use a safe transition.** During implementation, optionally support `description` as a temporary fallback in both renderers until all three language files have migrated. Remove the fallback once migration is complete and verified.
-8. **Validate the data relationships.** Check that project IDs are unique and identical across languages; every non-empty software/publication `project` points to an existing project; and each expected output appears under the correct project exactly once.
-9. **Build and inspect.** Run `hugo`, then build all PDF CVs. Review all three languages, project anchors, links, mobile layout, page breaks, and publication ordering. Confirm that changes under `public/` are generated and intentional.
+1. **Approve the English project copy and associations.** Edit the project drafts until every scope, activity, outcome, and linked output is accepted. Use `applications/company-role.md` only as the reference for the breadth and style of role summaries; draft the summaries in the canonical data. Decide whether the three currently unassigned publications should remain unassigned.
+2. **Separate roles and projects in English data.** In `data/en.yaml`, give each experience role a stable ID and overview; move its nested projects into canonical `projects.items` records with a `role` reference, structured `startDate` and `endDate`, and the approved `scope`, `mainActivities`, and `mainOutcomes` fields. Keep every project ID unchanged because it is the join key for software and publications. Retain project client, partner, funder, and link metadata.
+3. **Reconcile portfolio cards.** Map or replace the current broad `projects.items` cards so the Projects section and project detail pages use the canonical records and links. Do not maintain a second set of project descriptions.
+4. **Translate the approved content.** Apply identical role and project IDs, relationships, and date metadata to `data/pt.yaml` and `data/es.yaml`; translate role overviews, project prose, and labels, while keeping formal output titles in their canonical form unless a translated title is intentionally preferred.
+5. **Update website rendering.** Make `layouts/partials/sections/experience.html` show the broader role overview and links to related projects. Render project dates, scope, activities, outcomes, and linked outputs in the Projects section and project detail pages using project-level overrides; keep navigation and anchors aligned across languages.
+6. **Update the main PDF CV.** Modify `templates/cv.md.erb` and its data preparation so the detailed CV displays role summaries and separately dated project descriptions, deriving related outputs from the canonical software and publication lists.
+7. **Generate the resume from the main CV source.** Adapt `scripts/build_resume.rb` and a resume template to read the same structured multilingual data used by the main CV. Put Experience first, then explicitly selected Software and Publications, with short Education and Languages sections at the end. Selection should use stable item IDs or an equivalent explicit configuration, with no copied CV prose in `applications/company-role.md`; keep that file as an editorial reference. The resume body should contain only those sections.
+8. **Use a safe transition.** During implementation, optionally support `description` as a temporary fallback in project renderers until all three language files have migrated. Remove the fallback once migration is complete and verified.
+9. **Validate relationships and selections.** Check that role and project IDs are unique and aligned across languages; each project points to an existing role; every non-empty software/publication `project` points to an existing project; project dates are valid; and resume selections resolve to canonical records.
+10. **Build and inspect.** Run `hugo`, build all three main PDF CVs and the generated resume, and inspect all three languages, role-to-project links, project dates, mobile layout, PDF page breaks, CV download links, and publication ordering. Confirm that changes under `public/` are generated and intentional.
 
 ## 6. Acceptance criteria
 
-- Every one of the 12 experience projects has one brief scope paragraph, an activities list, and an outcomes list.
-- The visible labels are **Scope:**, **Main activities:**, and **Main outcomes:** in English, with approved equivalents in Portuguese and Spanish.
+- Experience gives a broad overview for every role, with the Experience section in `applications/company-role.md` used as the editorial reference.
+- Every one of the 12 projects has a role association, structured date metadata, one brief scope paragraph, an activities list, and an outcomes list in the canonical Projects data.
+- Project descriptions appear in the Projects section and main CV; Experience does not duplicate the detailed project prose.
+- The visible project labels are **Scope:**, **Main activities:**, and **Main outcomes:** in English, with approved equivalents in Portuguese and Spanish.
 - All 11 software records, including both MAMBO repositories, appear under their linked projects and remain in the standalone Software section.
 - All 18 project-linked publication records appear under their linked projects and remain in the standalone Publications section.
 - The three publications without a project association are not attached automatically.
 - Related publications remain in descending `sortDate` order, preserving source order where dates are equal.
 - Software/publication titles and links come from their canonical lists rather than copied project metadata.
-- Website and PDF versions present equivalent content in English, Portuguese, and Spanish.
-- `hugo` and all three PDF builds complete successfully.
+- The resume is generated from the same source as the main CV and contains Experience, selected Software, selected Publications, then short Education and Languages; its selected records require no manually maintained duplicate descriptions.
+- Website and main PDF CV present equivalent content in English, Portuguese, and Spanish.
+- `hugo`, all three main PDF builds, and the resume build complete successfully.
 - No files under `themes/hugo-profile/` are modified.
 
 ## 7. Editorial points to confirm before implementation
@@ -325,5 +346,5 @@ No project association should be inferred during this migration without editoria
 - Confirm whether Rafael also developed the allometric biomass-estimation step; the two software repositories establish the shrub-delineation and height-estimation workflows.
 - Whether the EIDC activities should mention metadata, licensing, DOI registration, or repository-specific quality assurance if those were part of the role.
 - Whether “more than 400,000 ungauged river points” should remain in the Reference Streamflow outcome.
-- Whether the three currently unassigned publications belong to an existing experience project or should remain standalone.
-- Whether long publication titles should be shown in full in Experience or shortened there while retaining full titles in Publications.
+- Whether the three currently unassigned publications belong to an existing project or should remain standalone.
+- Whether long publication titles should be shown in full in Projects or shortened there while retaining full titles in Publications.

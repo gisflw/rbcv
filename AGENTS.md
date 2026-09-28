@@ -17,6 +17,13 @@ goal is to maintain one structured source of truth that can generate:
 - detailed pages for projects, tools/datasets, and publications;
 - PDF versions of the CV.
 
+## Language Conventions
+
+- Write English content in American English.
+- Write Spanish content in Latin American Spanish.
+- Write Portuguese content in Brazilian Portuguese.
+- Apply these language variants consistently in the website, CVs, translations, and editorial plans.
+
 ## CV Writing
 
 - Keep Publications in descending date order in every language and in the
