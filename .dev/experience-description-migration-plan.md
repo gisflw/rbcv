@@ -261,6 +261,7 @@ The role headings below group project drafts for editorial review; they are not 
 - National hydrological estimates and analyses supporting Brazil’s environmental-economic water accounts.
 - **Publication (Journal article, 2022):** [Water storage variability across Brazil](https://doi.org/10.1590/2318-0331.272220220077).
 - **Publication (Technical report, 2022):** [Cooperação em tecnologias para análises hidrológicas em escala nacional: subprojeto estimativas hidrológicas para contas econômicas ambientais da água (CEAA) no Brasil](https://lume.ufrgs.br/handle/10183/274942).
+- *Global Evapotranspiration Datasets Assessment Using Water Balance in South America* (2022). (use the metadata in the data/)
 
 #### Reference Streamflow Regionalization
 
@@ -300,31 +301,15 @@ The role headings below group project drafts for editorial review; they are not 
 - A terrain-based method and mapped drainage information supporting large-scale identification and assessment of riparian vegetation.
 - **Software:** [Topographic Position-based Stream definition (TPS)](https://github.com/gisflw/TPS) — an algorithm for extracting drainage networks from digital elevation models using topographic position.
 - **Publication (Journal article, 2022):** [Topographic Position-based Stream definition (TPS): A simple method to address spatial variability of drainage density in stream networks](https://doi.org/10.1080/02626667.2022.2047190).
+- *A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty: A case study in the Atlantic Forest, Brazil* (2023). [use the metadata in data/]
 
 ## 4. Records not attached to a project
 
-The following publications currently have no `project` value and therefore would remain only in the Publications section unless an explicit relationship is added later:
+The following publications currently have no `project` value and therefore would remain only in the Publications section:
 
-- *A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty: A case study in the Atlantic Forest, Brazil* (2023).
 - *How much inundation occurs in the Amazon River basin?* (2022).
-- *Global Evapotranspiration Datasets Assessment Using Water Balance in South America* (2022).
 
-No project association should be inferred during this migration without editorial confirmation.
-
-## 5. Implementation plan after approval
-
-1. **Approve the English project copy and associations.** Edit the project drafts until every scope, activity, outcome, and linked output is accepted. Use `applications/company-role.md` only as the reference for the breadth and style of role summaries; draft the summaries in the canonical data. Decide whether the three currently unassigned publications should remain unassigned.
-2. **Separate roles and projects in English data.** In `data/en.yaml`, give each experience role a stable ID and overview; move its nested projects into canonical `projects.items` records with a `role` reference, structured `startDate` and `endDate`, and the approved `scope`, `mainActivities`, and `mainOutcomes` fields. Keep every project ID unchanged because it is the join key for software and publications. Retain project client, partner, funder, and link metadata.
-3. **Reconcile portfolio cards.** Map or replace the current broad `projects.items` cards so the Projects section and project detail pages use the canonical records and links. Do not maintain a second set of project descriptions.
-4. **Translate the approved content.** Apply identical role and project IDs, relationships, and date metadata to `data/pt.yaml` and `data/es.yaml`; translate role overviews, project prose, and labels, while keeping formal output titles in their canonical form unless a translated title is intentionally preferred.
-5. **Update website rendering.** Make `layouts/partials/sections/experience.html` show the broader role overview and links to related projects. Render project dates, scope, activities, outcomes, and linked outputs in the Projects section and project detail pages using project-level overrides; keep navigation and anchors aligned across languages.
-6. **Update the main PDF CV.** Modify `templates/cv.md.erb` and its data preparation so the detailed CV displays role summaries and separately dated project descriptions, deriving related outputs from the canonical software and publication lists.
-7. **Generate the resume from the main CV source.** Adapt `scripts/build_resume.rb` and a resume template to read the same structured multilingual data used by the main CV. Put Experience first, then explicitly selected Software and Publications, with short Education and Languages sections at the end. Selection should use stable item IDs or an equivalent explicit configuration, with no copied CV prose in `applications/company-role.md`; keep that file as an editorial reference. The resume body should contain only those sections.
-8. **Use a safe transition.** During implementation, optionally support `description` as a temporary fallback in project renderers until all three language files have migrated. Remove the fallback once migration is complete and verified.
-9. **Validate relationships and selections.** Check that role and project IDs are unique and aligned across languages; each project points to an existing role; every non-empty software/publication `project` points to an existing project; project dates are valid; and resume selections resolve to canonical records.
-10. **Build and inspect.** Run `hugo`, build all three main PDF CVs and the generated resume, and inspect all three languages, role-to-project links, project dates, mobile layout, PDF page breaks, CV download links, and publication ordering. Confirm that changes under `public/` are generated and intentional.
-
-## 6. Acceptance criteria
+## 5. Acceptance criteria
 
 - Experience gives a broad overview for every role, with the Experience section in `applications/company-role.md` used as the editorial reference.
 - Every one of the 12 projects has a role association, structured date metadata, one brief scope paragraph, an activities list, and an outcomes list in the canonical Projects data.
@@ -339,12 +324,3 @@ No project association should be inferred during this migration without editoria
 - Website and main PDF CV present equivalent content in English, Portuguese, and Spanish.
 - `hugo`, all three main PDF builds, and the resume build complete successfully.
 - No files under `themes/hugo-profile/` are modified.
-
-## 7. Editorial points to confirm before implementation
-
-- Whether “A reproducible national MGB model configuration” is an appropriate outcome while that project is still in progress.
-- Confirm whether Rafael also developed the allometric biomass-estimation step; the two software repositories establish the shrub-delineation and height-estimation workflows.
-- Whether the EIDC activities should mention metadata, licensing, DOI registration, or repository-specific quality assurance if those were part of the role.
-- Whether “more than 400,000 ungauged river points” should remain in the Reference Streamflow outcome.
-- Whether the three currently unassigned publications belong to an existing project or should remain standalone.
-- Whether long publication titles should be shown in full in Projects or shortened there while retaining full titles in Publications.
