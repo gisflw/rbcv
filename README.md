@@ -55,6 +55,26 @@ Use `hugo server` for local development, `hugo` for a normal production build,
 `hugo --gc --minify` for an optimized build, and the Ruby script to generate all
 three PDFs. Pass `en`, `pt`, or `es` to build one PDF.
 
+## Application resumes
+
+Application-specific resumes are plain Markdown files under `applications/`.
+They use the same Pandoc/XeLaTeX styling as the full CV but are not published
+with the website. Build the example resume with:
+
+```bash
+make resume
+```
+
+To build a different Markdown file, pass its path:
+
+```bash
+make resume RESUME=applications/another-role.md
+```
+
+The PDF is written to `build/applications/`. When `pdfinfo` and `pdftotext` are
+available, the build also checks that the resume has exactly two pages and that
+its text can be extracted for applicant-tracking systems.
+
 ## Near-term roadmap
 
 - Add detailed pages for projects, tools/datasets, and publications under

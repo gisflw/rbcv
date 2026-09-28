@@ -7,7 +7,7 @@
         <h3 class="text-center">{{ $achievements.title | default (i18n "achievements") }}</h3>
         <div class="px-0 px-md-5 px-lg-5">
             <div class="row justify-content-center px-3 px-md-5 px-lg-5">
-                {{ range sort $achievements.items "lastCommit" "desc" }}
+                {{ range sort $achievements.items "dateCreated" "desc" }}
                 {{ $isRepo := strings.HasPrefix .url "https://github.com/" }}
                 {{ $icon := cond $isRepo "fa-brands fa-github" "fa-solid fa-code" }}
                 <div class="col-lg-4 col-md-6 my-3">

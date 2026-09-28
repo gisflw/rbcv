@@ -330,50 +330,54 @@ achievements:
     content: Ferramentas para controle de qualidade e validação de dados ambientais relacionados a cheias.
     url: https://github.com/gisflw/flood-qc
     project: rs-flood-alert
-    lastCommit: '2026-09-22'
+    dateCreated: '2026-02-02'
   - title: MGB Vechy
     content: Utilitários e fluxos de trabalho de apoio a aplicações de modelagem hidrológica com o MGB.
     url: https://github.com/gisflw/mgb-vechy
     project: national-water-model
-    lastCommit: '2026-09-08'
-  - title: FDRI example Jupyter notebooks
-    content: Notebooks de exemplo para usar a base de dados LiDAR integrada em análises do FDRI.
-    url: https://zenodo.org/records/21297015
+    dateCreated: '2026-06-24'
+  - title: High Resolution DTM & DSM Processing Workflows
+    content: Notebooks Jupyter e scripts para processar modelos digitais do terreno e da superfície derivados de LiDAR de alta resolução na Inglaterra e no País de Gales.
+    url: https://github.com/NERC-CEH/dtm-analysis
     project: fdri
-    repository: https://github.com/NERC-CEH/dtm-analysis
-    lastCommit: '2026-08-10'
+    dateCreated: '2025-05-20'
+  - title: BHO2MGB
+    content: Plugin QGIS para pré-processamento do Modelo de Grandes Bacias (MGB) na Base Hidrográfica Ottocodificada (BHO) do Brasil.
+    url: https://github.com/HGE-IPH/BHO2MGB
+    project: mgb-bho
+    dateCreated: '2023-01-13'
   - title: Visualizador Cerrado APCAC
     content: Visualizador interativo para produtos de dados e análises geoespaciais do Cerrado APCAC.
     url: https://github.com/gisflw/cerrado-apcac-view
     project: cerrado-conservation
-    lastCommit: '2026-05-26'
+    dateCreated: '2025-10-30'
   - title: Pipeline de Aprendizado de Máquina
     content: Componentes reutilizáveis de pipelines de aprendizado de máquina para modelagem ambiental e geoespacial.
     url: https://github.com/gisflw/ml-pipeline
     project: reference-streamflow
-    lastCommit: '2026-05-16'
+    dateCreated: '2023-12-27'
   - title: Sistema Brasileiro de Dados de Disponibilidade Hídrica
     content: Framework ETL para consolidar dados hidrológicos geoespaciais no sistema de disponibilidade hídrica
       da ANA.
     url: https://github.com/gisflw/db-disphid
     project: water-availability-database
-    lastCommit: '2025-12-05'
+    dateCreated: '2025-07-25'
   - title: Explorador de Curvas-Chave
     content: Ferramenta para organizar, visualizar e fazer análises iniciais de dados de vazão usados na derivação
       de curvas-chave.
     url: https://github.com/gisflw/rating-curve-explorer
     project: rs-flood-alert
-    lastCommit: '2025-11-05'
+    dateCreated: '2025-08-13'
   - title: Attention UNet for shrub segmentation
     content: Repositório de um fluxo de segmentação de arbustos com attention U-Net em imagens RGB de drones.
     url: https://github.com/gisflw/att-unet-shrub-id
     project: mambo
-    lastCommit: '2025-02-17'
+    dateCreated: '2024-11-24'
   - title: Definição de Drenagem Baseada em Posição Topográfica (TPS)
     content: Algoritmo de extração de drenagem em MDEs baseado em posição topográfica.
     url: https://github.com/gisflw/TPS
     project: masters-riparian
-    lastCommit: '2023-02-13'
+    dateCreated: '2021-05-24'
 contact:
   title: Contato
   content: Entre em contato por e-mail ou pelas redes profissionais.

@@ -347,50 +347,54 @@ achievements:
     content: Tools for quality control and validation of flood-related environmental data.
     url: https://github.com/gisflw/flood-qc
     project: rs-flood-alert
-    lastCommit: '2026-09-22'
+    dateCreated: '2026-02-02'
   - title: MGB Vechy
     content: Utilities and workflows supporting MGB hydrological modelling applications.
     url: https://github.com/gisflw/mgb-vechy
     project: national-water-model
-    lastCommit: '2026-09-08'
-  - title: FDRI example Jupyter notebooks
-    content: Companion notebooks for using the merged LiDAR terrain dataset in FDRI analyses.
-    url: https://zenodo.org/records/21297015
+    dateCreated: '2026-06-24'
+  - title: High Resolution DTM & DSM Processing Workflows
+    content: Jupyter notebooks and scripts for processing high-resolution LiDAR-derived terrain and surface models for England and Wales.
+    url: https://github.com/NERC-CEH/dtm-analysis
     project: fdri
-    repository: https://github.com/NERC-CEH/dtm-analysis
-    lastCommit: '2026-08-10'
+    dateCreated: '2025-05-20'
+  - title: BHO2MGB
+    content: QGIS plugin for preprocessing the MGB Large Basin Model with Brazil's Ottocodified Hydrographic Base (BHO).
+    url: https://github.com/HGE-IPH/BHO2MGB
+    project: mgb-bho
+    dateCreated: '2023-01-13'
   - title: Cerrado APCAC View
     content: Interactive viewer for Cerrado APCAC data products and geospatial analyses.
     url: https://github.com/gisflw/cerrado-apcac-view
     project: cerrado-conservation
-    lastCommit: '2026-05-26'
+    dateCreated: '2025-10-30'
   - title: ML Pipeline
     content: Reusable machine-learning pipeline components for environmental and geospatial modelling.
     url: https://github.com/gisflw/ml-pipeline
     project: reference-streamflow
-    lastCommit: '2026-05-16'
+    dateCreated: '2023-12-27'
   - title: Brazilian Hydrological Availability Data System
     content: ETL framework for consolidating geospatial hydrological data within ANA's water availability data system,
       with traceable processing over national hydrographic network versions.
     url: https://github.com/gisflw/db-disphid
     project: water-availability-database
-    lastCommit: '2025-12-05'
+    dateCreated: '2025-07-25'
   - title: Rating Curve Explorer
     content: Toolset for organizing, visualizing, and doing initial analysis on streamflow data related to rating-curve
       derivation.
     url: https://github.com/gisflw/rating-curve-explorer
     project: rs-flood-alert
-    lastCommit: '2025-11-05'
+    dateCreated: '2025-08-13'
   - title: Attention UNet for shrub segmentation
     content: Deep-learning pipeline used to identify shrub individuals or clumps in drone-derived RGB imagery.
     url: https://github.com/gisflw/att-unet-shrub-id
     project: mambo
-    lastCommit: '2025-02-17'
+    dateCreated: '2024-11-24'
   - title: Topographic Position-based Stream definition (TPS)
     content: Algorithm for drainage extraction on digital elevation models based on topographic position.
     url: https://github.com/gisflw/TPS
     project: masters-riparian
-    lastCommit: '2023-02-13'
+    dateCreated: '2021-05-24'
 contact:
   title: Contact
   content: For collaboration, research, consulting, or data/software questions, contact me by email or through my professional profiles.

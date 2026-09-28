@@ -1,4 +1,6 @@
-.PHONY: deploy-build pdf-cv pdf-cv-en pdf-cv-pt pdf-cv-es
+.PHONY: deploy-build pdf-cv pdf-cv-en pdf-cv-pt pdf-cv-es resume
+
+RESUME ?= applications/company-role.md
 
 deploy-build:
 	hugo
@@ -15,3 +17,6 @@ pdf-cv-pt:
 
 pdf-cv-es:
 	ruby scripts/build_cv.rb es
+
+resume:
+	ruby scripts/build_resume.rb "$(RESUME)"
