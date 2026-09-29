@@ -22,9 +22,13 @@ they are not website or CV translation targets.
 
 Never use verbs to describe experience or projects. Write experience overviews,
 project scopes, and project contributions as noun phrases, without finite verbs,
-verb-led bullets, or gerund-led descriptions. Preserve distinct methods, inputs,
-outputs, metrics, and status. Remove duplicated information only; do not shorten
-descriptions at the cost of detail.
+verb-led bullets, or gerund-led descriptions. Never use semicolons in
+experience or project descriptions, including scopes, overviews, and
+contributions. Each experience overview or project contribution bullet must
+express one coherent idea as a continuous noun phrase, without a period
+anywhere in the bullet. Use a separate bullet for a distinct idea.
+Preserve distinct methods, inputs, outputs, metrics, and status. Remove
+duplicated information only. Do not shorten descriptions at the cost of detail.
 
 Keep Publications in descending date order in the website and generated PDFs.
 Use the documented `sortDate` at year, month, or day precision; keep the
