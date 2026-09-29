@@ -1,0 +1,55 @@
+title: Experience
+clientLabel: 'Client:'
+partnerLabel: 'Partner:'
+funderLabel: 'Funding:'
+items:
+- id: postdoctoral-researcher
+  title: Postdoctoral Researcher
+  institution: Federal University of Rio Grande do Sul (UFRGS)
+  date: Jul 2025 – present
+  location: Brazil
+  institutionUrl: https://www.ufrgs.br/
+  overview:
+  - Develop and evaluate a national-scale hydrological model for Brazil, integrating observations, environmental
+    data, reservoirs, and water uses through reproducible modeling workflows.
+  - Develop flood-monitoring and forecasting workflows for Rio Grande do Sul, combining data validation, water-level
+    and streamflow modeling, and operational warning visualizations.
+- id: hydrology-data-consultant
+  title: Hydrology & Data Consultant
+  institution: Independent
+  date: Jan 2025 – present
+  location: Brazil
+  overview:
+  - Supported the development of a terrain-based hydrological-importance index to help identify priority areas
+    for water conservation and restoration in the Cerrado.
+  - Designed a PostgreSQL/PostGIS data model and migration workflows to consolidate water-availability records
+    and spatial procedures for Brazil's National Water and Sanitation Agency (ANA).
+- id: spatial-data-scientist
+  title: Spatial Data Scientist
+  institution: UK Centre for Ecology & Hydrology (UKCEH)
+  date: Jul 2022 – May 2025
+  location: United Kingdom
+  institutionUrl: https://www.ceh.ac.uk/
+  overview:
+  - Built and maintained the National River Flow Archive's PostgreSQL/PostGIS spatial database and catchment
+    attributes, supporting hydrological data products including the CAMELS-GB v2.
+  - Developed workflows to turn high-resolution LiDAR into integrated terrain and surface models for England
+    and Wales.
+  - Developed remote-sensing workflows to delineate shrubs from drone imagery and estimate their height using
+    terrain and LiDAR reference data.
+  - Prepared and curated environmental research datasets for publication and reuse.
+- id: researcher
+  title: Researcher
+  institution: Federal University of Rio Grande do Sul (UFRGS)
+  date: Mar 2018 – May 2022
+  location: Brazil
+  institutionUrl: https://www.ufrgs.br/
+  overview:
+  - Integrated the MGB hydrological model with Brazil's Ottocodified Hydrographic Base (BHO), developing river-network
+    preprocessing and parameter-derivation methods for national-scale modeling.
+  - Analyzed precipitation, evapotranspiration, soil moisture, and water storage across Brazil to support environmental-economic
+    water accounts.
+  - Developed machine-learning methods to estimate long-term mean and low streamflows at ungauged locations
+    across Brazil.
+  - Developed a terrain-based drainage-network extraction method and combined it with remote sensing to assess
+    riparian vegetation in the Brazilian Savannah.

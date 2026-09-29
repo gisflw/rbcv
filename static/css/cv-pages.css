@@ -25,9 +25,6 @@ body { min-width: 320px; }
 .cv-sidebar nav .cv-nav-role { display: block; color: var(--text-secondary-color); font-size: .72rem; font-weight: 700; padding: .7rem .45rem .2rem; }
 .cv-sidebar nav .cv-nav-project { font-size: .75rem; line-height: 1.3; padding: .3rem .45rem; }
 .cv-sidebar-footer { margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.25); }
-.cv-language-links { display: flex; flex-wrap: wrap; gap: .3rem .65rem; padding-bottom: .7rem; border-bottom: 1px solid rgba(127,127,127,.25); }
-.cv-language-links a { color: var(--text-link-color); font-size: .72rem; }
-.cv-language-links a[aria-current="page"] { font-weight: 700; }
 #theme-toggle { margin-top: .8rem; border: 0; background: transparent; color: var(--text-color); cursor: pointer; }
 .cv-page-shell { margin-left: 15.5rem; min-width: 0; }
 .cv-page-shell #content { min-height: 75vh; }

@@ -1,0 +1,16 @@
+profile: Hydrologist and research software engineer working at the intersection of environmental modeling,
+  geospatial data, and scientific computing. Experienced in building reproducible data systems for national-scale
+  hydrology, flood forecasting, water availability, terrain analysis, remote sensing, and environmental research.
+expertiseTitle: Core expertise
+softwareTitle: Selected software and data products
+publicationsTitle: Selected publications
+languagesTitle: Languages
+expertise:
+- label: Hydrology
+  text: Process-based modeling, flood forecasting, water resources, and streamflow regionalization.
+- label: Geospatial
+  text: PostGIS, QGIS, LiDAR, remote sensing, terrain analysis, and catchment analysis.
+- label: Computing
+  text: Python, SQL, Fortran, Linux, Docker, NetCDF, and Zarr.
+- label: Methods
+  text: Data engineering, quality control, statistics, machine learning, and deep learning.

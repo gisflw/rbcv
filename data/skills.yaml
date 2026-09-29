@@ -1,0 +1,43 @@
+title: Skills
+intro: A compact view of the domains, methods, and tools I use.
+sets:
+- title: Hydrology
+  icon: water
+  description: Hydrological processes, catchment behavior, water balance, river systems, floods and droughts, water resources, process-based modeling, calibration, uncertainty, and environmental change.
+- title: Geomatics
+  icon: earth-americas
+  description: Spatial analysis, terrain representation, hydrography, remote sensing, land cover, spatial databases, catchment delineation, scale effects, and environmental mapping.
+- title: Data systems
+  icon: database
+  description: Environmental databases, time series, metadata, data quality, validation, reproducible workflows, data integration, data infrastructure, and operational pipelines.
+- title: Scientific computing
+  icon: code
+  description: Software development, numerical modeling, automation, visualization, statistics, machine learning, Python, SQL, Fortran, and reproducible research.
+stack:
+- name: Python
+  iconType: devicon
+  icon: python-plain
+- name: PostgreSQL
+  iconType: devicon
+  icon: postgresql-plain
+- name: SQLite
+  iconType: devicon
+  icon: sqlite-plain
+- name: VS Code
+  iconType: devicon
+  icon: vscode-plain
+- name: Linux
+  iconType: devicon
+  icon: linux-plain
+- name: Docker
+  iconType: devicon
+  icon: docker-plain
+- name: SQL
+  iconType: fa
+  icon: database
+- name: Fortran
+  iconType: fa
+  icon: terminal
+- name: NetCDF/Zarr
+  iconType: fa
+  icon: cube

@@ -1,5 +1,5 @@
 {{ if .Site.Params.achievements.enable | default false }}
-{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $cv := hugo.Data -}}
 {{- $achievements := $cv.achievements -}}
 <span id="software" class="cv-section-anchor"></span>
 <section id="achievements" class="py-5">

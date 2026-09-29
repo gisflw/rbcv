@@ -1,5 +1,5 @@
 {{ if .Site.Params.contact.enable | default false }}
-{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $cv := hugo.Data -}}
 {{- $contact := $cv.contact -}}
 <section id="contact" class="py-5">
     <div class="container">

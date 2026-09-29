@@ -76,8 +76,8 @@ jobs:
       - name: Build Hugo site
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Build PDF CVs
-        run: ruby scripts/build_cv.rb all
+      - name: Build English PDF CV
+        run: ruby scripts/build_cv.rb
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,0 +1,34 @@
+title: About
+content: |-
+  I have always been fascinated by how natural systems work and by the role that technology can play in understanding them. My interest in environmental science grew alongside a curiosity for computers and programming, eventually leading me to a career that combines them.
+
+  My work focuses on building tools and data systems for research and operational water management. I have worked across topics including large-scale hydrological modeling, flood forecasting, water availability assessment, remote sensing, terrain analysis, and geospatial data engineering. I particularly enjoy designing reproducible workflows that bridge scientific research and real-world applications, always aiming to create systems that are robust, transparent, and easy to extend.
+
+  I am especially interested in physically based environmental modeling, open scientific software, high-performance geospatial computing, and reproducible data pipelines that support better understanding and management of water resources.
+info:
+  title: Profile snapshot
+  educationTitle: Education
+  languagesTitle: Languages
+  interestsTitle: Interests
+languages:
+- 'Portuguese: native'
+- 'English: fluent'
+- 'Spanish: fluent'
+- 'French: intermediate'
+interests:
+- "🌿 Nature"
+- "🧗 Climbing"
+- "🚴 Cycling"
+- "🥾 Hiking"
+- "📚 Reading"
+skills:
+  title: Core expertise
+  items:
+  - Hydrological modelling and flood forecasting
+  - Water resources, water availability, and reference streamflows
+  - 'Geospatial data processing: topography, remote sensing, and LiDAR'
+  - Environmental time-series analysis, quality control, and validation
+  - Statistical modeling, machine learning, and deep learning
+  - Python, SQL, and Fortran
+  - PostgreSQL/PostGIS, Oracle, SQLite, NetCDF, and Zarr
+  - Linux-based systems, Docker, QGIS, and Google Earth Engine

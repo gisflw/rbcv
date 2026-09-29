@@ -1,5 +1,5 @@
 {{ if .Site.Params.hero.enable | default false }}
-{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $cv := hugo.Data -}}
 {{- $hero := $cv.hero -}}
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">

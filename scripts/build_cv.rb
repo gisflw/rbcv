@@ -13,10 +13,17 @@ TEMPLATE_PATH = File.join(ROOT, "templates", "cv.md.erb")
 PDF_PREAMBLE_PATH = File.join(ROOT, "templates", "cv-preamble.tex")
 BUILD_DIR = File.join(ROOT, "build", "cv")
 OUTPUT_DIR = File.join(ROOT, "public", "cv")
-LANGUAGES = %w[en pt es].freeze
+CV_SECTIONS = %w[labels hero about skills resume experience education projects achievements contact publications navigation].freeze
 
 def load_yaml(path)
   YAML.safe_load_file(path, aliases: true) || {}
+end
+
+def load_cv_data
+  sections = CV_SECTIONS.to_h do |section|
+    [section, load_yaml(File.join(DATA_DIR, "#{section}.yaml"))]
+  end
+  sections.merge(load_yaml(File.join(DATA_DIR, "profile.yaml")))
 end
 
 def strip_emoji(value)
@@ -55,10 +62,9 @@ def first_sentence(value)
 end
 
 class CvDocument
-  attr_reader :lang, :data, :labels
+  attr_reader :data, :labels
 
-  def initialize(lang:, data:)
-    @lang = lang
+  def initialize(data:)
     @data = data
     @labels = data.fetch("labels", {}).transform_keys(&:to_sym)
   end
@@ -132,13 +138,13 @@ class CvDocument
   end
 end
 
-def build_pdf(lang, data)
+def build_pdf(data)
   FileUtils.mkdir_p(BUILD_DIR)
   FileUtils.mkdir_p(OUTPUT_DIR)
 
-  document = CvDocument.new(lang: lang, data: data)
-  markdown_path = File.join(BUILD_DIR, "rbcv-#{lang}.md")
-  pdf_path = File.join(OUTPUT_DIR, "rbcv-#{lang}.pdf")
+  document = CvDocument.new(data: data)
+  markdown_path = File.join(BUILD_DIR, "rbcv-en.md")
+  pdf_path = File.join(OUTPUT_DIR, "rbcv-en.pdf")
   File.write(markdown_path, document.render)
 
   command = [
@@ -163,14 +169,8 @@ def build_pdf(lang, data)
 end
 
 if $PROGRAM_NAME == __FILE__
-  requested = ARGV.empty? || ARGV == ["all"] ? LANGUAGES : ARGV
+  abort "Usage: ruby scripts/build_cv.rb" unless ARGV.empty?
 
-  requested.each do |lang|
-    abort "Unknown language: #{lang}" unless LANGUAGES.include?(lang)
-
-    data_path = File.join(DATA_DIR, "#{lang}.yaml")
-    data = load_yaml(data_path)
-    pdf_path = build_pdf(lang, data)
-    puts "Built #{pdf_path.sub("#{ROOT}/", "")}"
-  end
+  pdf_path = build_pdf(load_cv_data)
+  puts "Built #{pdf_path.sub("#{ROOT}/", "")}"
 end

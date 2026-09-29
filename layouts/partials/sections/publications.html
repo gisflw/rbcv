@@ -1,4 +1,4 @@
-{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $cv := hugo.Data -}}
 {{- $publications := $cv.publications -}}
 {{- with $publications.items -}}
 <section id="publications" class="py-5">

@@ -10,96 +10,55 @@ explicitly asks otherwise.
 
 ## Project Intent
 
-This is an under-construction Hugo CV/portfolio site for Rafael Barbedo. The
-goal is to maintain one structured source of truth that can generate:
+This is an under-construction Hugo CV/portfolio site for Rafael Barbedo. Keep
+one structured English source of truth that can generate the public website,
+detailed project/tool/publication pages, and PDF CV and résumé documents.
 
-- the public website;
-- detailed pages for projects, tools/datasets, and publications;
-- PDF versions of the CV.
+## Language and CV Writing
 
-## Language Conventions
+Write English content in American English. Portuguese, Spanish, and other
+languages may appear as language proficiency or original publication metadata;
+they are not website or CV translation targets.
 
-- Write English content in American English.
-- Write Spanish content in Latin American Spanish.
-- Write Portuguese content in Brazilian Portuguese.
-- Apply these language variants consistently in the website, CVs, translations, and editorial plans.
-
-## CV Writing
-
-- Keep Publications in descending date order in every language and in the
-  generated PDFs. Use the documented `sortDate` at year, month, or day precision;
-  keep the relative order of entries with the same date. For EGU abstracts, use
-  the source page's "updated on" date for sorting, without presenting it as the
-  publication date.
+Keep Publications in descending date order in the website and generated PDFs.
+Use the documented `sortDate` at year, month, or day precision; keep the
+relative order of entries with the same date. For EGU abstracts, use the source
+page's "updated on" date for sorting, without presenting it as the publication
+date.
 
 ## Edit Source, Not Output
 
-Prefer edits in:
-
-- `hugo.yaml`
-- `data/`
-- `content/`
-- `layouts/`
-- `static/`
-- `assets/`
-
-Avoid manual edits in `public/`; it is generated Hugo output. If generated files
-change during a build, make sure that is intentional before presenting the
-result.
+Prefer edits in `config/`, `data/`, `content/`, `layouts/`, `static/`, and
+`assets/`. Do not manually edit `public/`; it is generated Hugo output. If
+generated files change during a build, make sure that is intentional before
+presenting the result.
 
 ## Hugo and Theme Conventions
 
-- Preserve the `hugo-profile` theme as the base site theme.
-- Do not edit files under `themes/hugo-profile/` directly. Treat the theme as
-  vendor code.
-- Use project-level overrides in `layouts/`, `static/`, or `assets/` for all
-  custom behavior, styling, and markup changes.
-- If a theme change seems unavoidable, stop and ask the user before touching
-  anything under `themes/hugo-profile/`.
-- The current custom experience layout is
-  `layouts/partials/sections/experience.html`.
-- Keep `hugo.yaml` valid YAML and avoid large unrelated rewrites.
+Preserve the `hugo-profile` theme as the base site theme. Do not edit files under
+`themes/hugo-profile/` directly; treat the theme as vendor code. Use project
+level overrides in `layouts/`, `static/`, or `assets/` for custom behavior,
+styling, and markup. If a theme change seems unavoidable, ask the user before
+touching the theme. The custom experience layout is
+`layouts/partials/sections/experience.html`. Keep configuration YAML valid and
+avoid large unrelated rewrites.
 
-## Intended Structure
+## Content Structure
 
-The current bootstrap stores too much content in `hugo.yaml`. Future work should
-move CV/profile content into structured files under `data/`, keeping
-`hugo.yaml` mostly for Hugo configuration, language setup, menus, and global
-site settings.
+CV and profile content lives in section YAML files under `data/`; Hugo config
+contains site settings, menus, and the sole English language definition.
+Detailed public pages belong under `content/projects/`, `content/tools/`, and
+`content/publications/`. Keep links from data catalogs to detailed pages
+aligned.
 
-Detailed public pages should live under multilingual content paths, for example:
-
-- `content/en/projects/...`
-- `content/pt/projects/...`
-- `content/es/projects/...`
-- `content/en/tools/...`
-- `content/en/publications/...`
-
-Keep translations and cross-language links aligned when adding or changing
-content.
-
-## PDF CV Direction
-
-PDF CVs should eventually be generated from the same structured data used by the
-website. Do not create a workflow that requires manually duplicating CV content
-between web pages and PDF files unless the user explicitly chooses that
-tradeoff.
+PDF CVs and the default résumé must use the same structured data as the
+website. Do not introduce manual duplication between website content and PDF
+sources unless the user explicitly chooses that tradeoff.
 
 ## Verification
 
-After structural, content, layout, or configuration changes, run:
-
-```bash
-hugo
-```
-
-Also check:
-
-- language navigation;
-- important homepage sections;
-- internal links to project/tool/publication pages;
-- CV download links;
-- whether any changes under `public/` are expected generated output.
-
-For purely documentation-only changes, a Hugo build is still useful to confirm
-the repository remains healthy.
+After structural, content, layout, or configuration changes, run `hugo`. Also
+check the homepage sections, internal project/tool/publication links, CV
+download link, and whether any `public/` changes are expected generated output.
+For documentation-only changes, a Hugo build is still useful to confirm the
+repository remains healthy.

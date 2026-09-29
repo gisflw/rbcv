@@ -1,12 +1,9 @@
-{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $cv := hugo.Data -}}
 {{- $isProjects := or (eq .Params.sectionKey "projects") (ne (.Params.projectId | default "") "") -}}
 {{- $activeProject := .Params.projectId | default "" -}}
 {{- $home := .Site.Home.RelPermalink -}}
 {{- $projectsURL := "projects/" | relLangURL -}}
 <aside class="cv-sidebar">
-  <div class="cv-language-links" aria-label="{{ $cv.navigation.languages | default "Languages" }}">
-    {{ range .AllTranslations }}<a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}" {{ if eq .Language.Lang $.Language.Lang }}aria-current="page"{{ end }}>{{ .Language.Label }}</a>{{ end }}
-  </div>
   <a class="cv-sidebar-brand" href="{{ $home }}">{{ .Site.Title }}</a>
   <nav aria-label="{{ $cv.navigation.label | default "Main navigation" }}">
     <div class="cv-nav-group">

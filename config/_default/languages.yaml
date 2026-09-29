@@ -3,7 +3,7 @@ en:
   languageName: English
   languageCode: en-us
   weight: 1
-  contentDir: content/en
+  contentDir: content
   menus:
     main:
     - identifier: software
@@ -26,57 +26,3 @@ en:
         article: Jan 2, 2006
         articleList: Jan 2, 2006
         articleRecent: Jan 2, 2006
-pt:
-  languageName: Português
-  languageCode: pt-br
-  weight: 2
-  contentDir: content/pt
-  menus:
-    main:
-    - identifier: software
-      name: Software
-      title: Software
-      url: "/pt/#software"
-      weight: 4
-    - identifier: publications
-      name: Publicações
-      title: Publicações
-      url: "/pt/#publications"
-      weight: 5
-  params:
-    terms:
-      read: Ler
-      toc: Sumário
-      copyright: Todos os direitos reservados
-      emailText: Veja este site
-      datesFormat:
-        article: 02 Jan 2006
-        articleList: 02 Jan 2006
-        articleRecent: 02 Jan 2006
-es:
-  languageName: Español
-  languageCode: es-419
-  weight: 3
-  contentDir: content/es
-  menus:
-    main:
-    - identifier: software
-      name: Software
-      title: Software
-      url: "/es/#software"
-      weight: 4
-    - identifier: publications
-      name: Publicaciones
-      title: Publicaciones
-      url: "/es/#publications"
-      weight: 5
-  params:
-    terms:
-      read: Leer
-      toc: Tabla de contenidos
-      copyright: Todos los derechos reservados
-      emailText: Mira este sitio
-      datesFormat:
-        article: 02 Jan 2006
-        articleList: 02 Jan 2006
-        articleRecent: 02 Jan 2006

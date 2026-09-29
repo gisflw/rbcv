@@ -1,102 +1,72 @@
 # rbcv
 
-Personal CV and portfolio site for Rafael Barbedo.
-
-The multilingual CV content lives in `data/en.yaml`, `data/pt.yaml`, and
-`data/es.yaml`. These files are the shared source for the Hugo site and the
-three generated PDF CVs.
+Personal CV and portfolio site for Rafael Barbedo. English content under
+`data/` is the shared source for the Hugo website, PDF CV, and default résumé.
 
 ## Purpose
 
-- Build and maintain Rafael Barbedo's personal CV/portfolio website.
-- Keep web content, project descriptions, publications, tools, and CV data in a
-  reusable structure.
-- Generate PDF CV versions from the same structured source data, avoiding
-  manual duplication between website and documents. Project details appear on
-  the website and are excluded from the PDF CVs.
+- Maintain the website, project descriptions, publications, tools, and CV from
+  reusable structured data.
+- Generate the PDF CV and default résumé without duplicating their content.
+  Detailed project pages appear on the website and are excluded from the PDF CV.
 
-## Current state
+## Repository map
 
-- Hugo configuration and shared theme settings are under `config/_default/`.
-- Language-specific profile, CV, project, tool, and publication summaries are in
-  `data/en.yaml`, `data/pt.yaml`, and `data/es.yaml`.
-- The `hugo-profile` theme is vendored under `themes/hugo-profile`.
-- Experience renders role overviews. Projects has a compact index grouped by role
-  and one page per project in each language. Project pages pull their titles,
-  descriptions, and related software and publications from the catalog data.
-- Detailed tool and publication pages can be added under multilingual
-  `content/<lang>/...` paths.
-- `public/` contains generated Hugo output and should not be edited by hand.
-- `../scratch.md` is raw CV source material outside this repo.
+- `config/_default/` contains Hugo configuration and site settings.
+- `data/` contains one YAML file per content section. `profile.yaml` holds the
+  name and portfolio URL; `labels.yaml` holds shared labels. `projects.yaml`
+  and `publications.yaml` are the catalogs used across pages and documents.
+- `content/projects/` contains project page stubs; their details come from the
+  project catalog in `data/`.
+- `layouts/` contains project-level Hugo overrides. `themes/hugo-profile/` is
+  vendored theme code and should not be edited directly.
+- `scripts/` and `templates/` generate the English PDF CV and application
+  résumés from the section files.
+- `static/` contains site assets. `public/` is generated output; do not edit it
+  by hand.
 
-## Repo map
+## Build
 
-- `config/_default/` - Hugo setup, shared site parameters, languages, and menus.
-- `data/en.yaml`, `data/pt.yaml`, `data/es.yaml` - structured multilingual
-  profile and CV content used by the website and PDF builder.
-- `content/` - multilingual project page stubs and future tool/publication pages.
-- `layouts/` - project-level Hugo layout overrides.
-- `scripts/build_cv.rb`, `scripts/build_resume.rb`, and `templates/` - PDF CV and
-  English resume generation from `data/`.
-- `static/` and `assets/` - project images, styles, and other site assets.
-- `themes/hugo-profile/` - vendored Hugo theme. Prefer local overrides instead
-  of editing the theme directly.
-- `public/` - generated site output.
-
-## Common commands
-
-Run commands from this directory:
+Run from the repository root:
 
 ```bash
 hugo server
 hugo
 hugo --gc --minify
-ruby scripts/build_cv.rb all
+ruby scripts/build_cv.rb
 ```
 
-Use `hugo server` for local development, `hugo` for a normal production build,
-`hugo --gc --minify` for an optimized build, and the Ruby script to generate all
-three PDFs. Pass `en`, `pt`, or `es` to build one PDF.
+The CV builder writes `public/cv/rbcv-en.pdf`, which the website links to.
+`make deploy-build` runs both the Hugo and PDF builds.
 
-## Application resumes
+## Application résumés
 
-The default two-page English resume is generated from `data/en.yaml`, using the
-same role, education, software, and publication records as the main CV. It is
-written to `build/applications/company-role.pdf` and is not published with the
-website. Build it with:
+The default two-page English résumé uses the same role, education, software,
+and publication records as the CV. Build it with:
 
 ```bash
 make resume
 ```
 
-You can also build a custom Markdown resume from `applications/` with the
-same Pandoc/XeLaTeX styling. Pass its path:
+It writes `build/applications/company-role.pdf`, which is not published with
+this site. To build a custom Markdown résumé from `applications/`, run:
 
 ```bash
 make resume RESUME=applications/another-role.md
 ```
 
 The PDF is written to `build/applications/`. When `pdfinfo` and `pdftotext` are
-available, the build also checks that the resume has exactly two pages and that
-its text can be extracted for applicant-tracking systems.
-
-## Near-term roadmap
-
-- Add detailed pages for tools/datasets and publications under multilingual
-  `content/<lang>/...` paths.
-- Keep translations aligned across English, Portuguese, and Spanish.
-- Replace placeholder/example assets with semantically accurate images and CV
-  files.
-- Clarify generated-output conventions, including whether `public/` should
-  stay committed or be generated during deployment.
+available, the builder checks that the default résumé has exactly two pages
+and extractable text.
 
 ## Working conventions
 
-- Edit source files, configuration, content, layouts, and assets; do not
-  manually edit generated files in `public/`.
-- Add project-level layout overrides in `layouts/` when the theme needs custom
-  behavior.
-- Avoid editing `themes/hugo-profile/` unless the change is intentionally
-  vendored theme maintenance.
-- After structural or content changes, run `hugo` and check important pages,
-  language links, and internal links.
+- Edit source files rather than generated files in `public/`.
+- Use local layout overrides; keep the `hugo-profile` theme as vendor code.
+- Add future tool and publication pages under `content/tools/` and
+  `content/publications/`, drawing their content from the corresponding data
+  catalogs.
+- Keep Publications in descending `sortDate` order. Preserve relative order
+  for entries with the same date.
+- After structural or content changes, run `hugo` and check the homepage,
+  project links, and CV download link.

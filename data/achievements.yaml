@@ -1,0 +1,64 @@
+title: Software
+items:
+- title: Flood QC
+  content: Tools for quality control and validation of flood-related environmental data.
+  url: https://github.com/gisflw/flood-qc
+  resume: true
+  project: rs-flood-monitor-forecast
+  dateCreated: '2026-02-02'
+- title: MGB Vechy
+  content: Utilities and workflows supporting MGB hydrological modeling applications.
+  url: https://github.com/gisflw/mgb-vechy
+  resume: true
+  project: brazil-national-water-model
+  dateCreated: '2026-06-24'
+- title: High Resolution DTM & DSM Processing Workflows
+  content: Jupyter notebooks and scripts for processing high-resolution LiDAR-derived terrain and surface models for England and Wales.
+  url: https://github.com/NERC-CEH/dtm-analysis
+  project: england-wales-lidar-terrain-models
+  dateCreated: '2025-05-20'
+- title: BHO2MGB
+  content: QGIS plugin for preprocessing the MGB Large Basin Model with Brazil's Ottocodified Hydrographic Base (BHO).
+  url: https://github.com/HGE-IPH/BHO2MGB
+  project: bho-mgb-integration
+  dateCreated: '2023-01-13'
+- title: Cerrado APCAC View
+  content: Interactive viewer for Cerrado APCAC data products and geospatial analyses.
+  url: https://github.com/gisflw/cerrado-apcac-view
+  project: cerrado-water-conservation-mapping
+  dateCreated: '2025-10-30'
+- title: ML Pipeline
+  content: Reusable machine-learning pipeline components for environmental and geospatial modeling.
+  url: https://github.com/gisflw/ml-pipeline
+  project: brazil-ungauged-streamflow-machine-learning
+  dateCreated: '2023-12-27'
+- title: Brazilian Hydrological Availability Data System
+  content: ETL framework for consolidating geospatial hydrological data within ANA's water availability data system,
+    with traceable processing over national hydrographic network versions.
+  url: https://github.com/gisflw/db-disphid
+  resume: true
+  project: brazil-water-availability-database
+  dateCreated: '2025-07-25'
+- title: Rating Curve Explorer
+  content: Toolset for organizing, visualizing, and doing initial analysis on streamflow data related to rating-curve
+    derivation.
+  url: https://github.com/gisflw/rating-curve-explorer
+  resume: true
+  project: rs-flood-monitor-forecast
+  dateCreated: '2025-08-13'
+- title: Attention UNet for Shrub Segmentation
+  content: PyTorch training and tiled-inference workflow for extracting shrub outlines from drone-derived RGB imagery.
+  url: https://github.com/MAMBO-Habitat/attn-unet-shrub-id
+  project: shrub-mapping-height-estimation
+  dateCreated: '2025-04-29'
+- title: Shrub Height Estimation
+  content: Scripts combining structure-from-motion surface models, terrain data, and LiDAR reference measurements to estimate height at shrub polygons.
+  url: https://github.com/MAMBO-Habitat/shrub-height
+  project: shrub-mapping-height-estimation
+  dateCreated: '2025-04-02'
+- title: Topographic Position-based Stream definition (TPS)
+  content: Algorithm for drainage extraction on digital elevation models based on topographic position.
+  url: https://github.com/gisflw/TPS
+  resume: true
+  project: cerrado-riparian-drainage-mapping
+  dateCreated: '2021-05-24'

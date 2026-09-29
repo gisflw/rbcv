@@ -1,14 +1,13 @@
 {{- $project := .project -}}
-{{- $lang := .lang -}}
 {{- $current := .current -}}
-{{- $months := dict "en" (slice "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec") "pt" (slice "jan" "fev" "mar" "abr" "mai" "jun" "jul" "ago" "set" "out" "nov" "dez") "es" (slice "ene" "feb" "mar" "abr" "may" "jun" "jul" "ago" "sep" "oct" "nov" "dic") -}}
+{{- $months := slice "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec" -}}
 {{- $parts := slice -}}
 {{- range (slice $project.startDate $project.endDate) -}}
   {{- $value := printf "%v" . -}}
   {{- if and (ne $value "<nil>") (ne $value "") -}}
     {{- $date := $value -}}
     {{- if ge (len $value) 7 -}}
-      {{- $month := index (index $months $lang) (sub (int (strings.TrimPrefix "0" (substr $value 5 2))) 1) -}}
+      {{- $month := index $months (sub (int (strings.TrimPrefix "0" (substr $value 5 2))) 1) -}}
       {{- $date = printf "%s %s" $month (substr $value 0 4) -}}
       {{- if eq (len $value) 10 -}}
         {{- $date = printf "%s %s" (substr $value 8 2) $date -}}

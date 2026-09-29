@@ -1,5 +1,5 @@
 {{ if .Site.Params.experience.enable | default false }}
-{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $cv := hugo.Data -}}
 {{- $experience := $cv.experience -}}
 <section id="experience" class="py-5 cv-experience-section">
   <div class="container">

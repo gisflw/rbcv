@@ -1,4 +1,4 @@
-{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $cv := hugo.Data -}}
 {{- /* theme is auto */}}
 <script>
     let localStorageValue = localStorage.getItem("pref-theme");
@@ -177,7 +177,6 @@
                     </li>
                     {{ end }}
 
-                    {{- partial "sections/language-switcher.html" . -}}
 
                     {{ if (not .Site.Params.theme.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">

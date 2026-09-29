@@ -1,5 +1,5 @@
 {{ if .Site.Params.skills.enable | default false }}
-{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $cv := hugo.Data -}}
 {{- $skills := $cv.skills -}}
 <section id="skills" class="py-5 cv-skills-section">
   <div class="container">

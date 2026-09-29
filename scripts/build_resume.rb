@@ -22,8 +22,8 @@ if input_argument
   abort "Resume input must be a Markdown file" unless File.extname(input_path).downcase == ".md"
 else
   FileUtils.mkdir_p(RESUME_OUTPUT_DIR)
-  data = load_yaml(File.join(DATA_DIR, "en.yaml"))
-  document = CvDocument.new(lang: "en", data: data)
+  data = load_cv_data
+  document = CvDocument.new(data: data)
   input_path = File.join(RESUME_OUTPUT_DIR, "company-role.md")
   File.write(input_path, document.render(template_path: RESUME_TEMPLATE_PATH))
 end

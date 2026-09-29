@@ -1,0 +1,19 @@
+intro: Hi, my name is
+title: Rafael Barbedo.
+subtitle: I like nature, computers, and building things.
+content: That's why I develop and manage software and data systems for hydrological and environmental applications.
+image: "/images/me.jpg"
+locationBadge:
+  nationality: "🇧🇷 Brazilian"
+  location: "📍 Porto Alegre, RS"
+button:
+  name: Download CV
+  url: cv/rbcv-en.pdf
+socialLinks:
+  fontAwesomeIcons:
+  - icon: fab fa-github
+    url: https://github.com/gisflw
+  - icon: fab fa-linkedin
+    url: https://www.linkedin.com/in/rafael-barbedo/
+  - icon: fa-solid fa-envelope
+    url: mailto:barbedo.rf@gmail.com

@@ -1,0 +1,242 @@
+title: Publications
+items:
+- title: Merged LiDAR based Digital Terrain Model (DTM) and Digital Surface Model (DSM) for England and Wales
+  content: Merged terrain and surface models released in 2026; related to FDRI terrain-data processing.
+  url: https://catalogue.ceh.ac.uk/documents/34443359-64c0-4909-9f27-bb5d47f1153f
+  project: england-wales-lidar-terrain-models
+  year: 2026
+  sortDate: '2026-08-07'
+  language: English
+  authors: '**Rafael Barbedo**; L. Chambers; C. M. Tso; H. Cooper; R. Smith; A. Barr; F. Samreen; M. Brown; A. Rudd;
+    M. Fry'
+  venue: NERC EDS Environmental Information Data Centre
+  doi: https://doi.org/10.5285/34443359-64c0-4909-9f27-bb5d47f1153f
+  type: Dataset
+- title: 'CAMELS-GB v2: hydrometeorological time series and landscape attributes for 671 catchments in Great Britain'
+  year: 2026
+  type: Journal Article
+  language: English
+  venue: Earth System Science Data
+  authors: Gemma Coxon; Yanchen Zheng; **Rafael Barbedo**; Hollie Cooper; Felipe Fileni; Hayley J. Fowler; Matt
+    Fry; Amy Green; Tom Gribbin; Helen Harfoot; Elizabeth Lewis; Germano Gondim Ribeiro Neto; Xiaobin Qiu; Saskia
+    Salwey; Doris E. Wendt
+  doi: https://doi.org/10.5194/essd-18-4345-2026
+  resume: true
+  project: uk-catchment-spatial-database
+  sortDate: '2026-06-26'
+- title: Deriving shrub biomass and carbon from affordable UAV observations
+  year: 2026
+  type: Conference abstract
+  language: English
+  venue: EGU General Assembly 2026
+  url: https://meetingorganizer.copernicus.org/EGU26/EGU26-13800.html
+  project: shrub-mapping-height-estimation
+  authors: France Gerard; Douglas Kelley; Richard Broughton; Emily Upcott; Ce Zhang; **Rafael Barbedo**; Charles
+    George
+  doi: https://doi.org/10.5194/egusphere-egu26-13800
+  sortDate: '2026-03-14'
+- title: A geomorphology-based framework for identifying water conservation priorities in the Brazilian Cerrado
+    savanna
+  year: 2026
+  type: Conference abstract
+  language: English
+  venue: EGU General Assembly 2026
+  url: https://meetingorganizer.copernicus.org/EGU26/EGU26-3592.html
+  project: cerrado-water-conservation-mapping
+  authors: Iporã Possantti; **Rafael Barbedo**; Guilherme Marques; Lucas Lira; Yuri Salmona
+  doi: https://doi.org/10.5194/egusphere-egu26-3592
+  sortDate: '2026-03-13'
+- title: Base de Dados Geoespaciais para Avaliação Multiescalar de Áreas Prioritárias de Conservação de Água no Bioma Cerrado
+  content: Geospatial database of environmental variables, derived indexes, catchment units, and priority maps supporting
+    multiscale assessment of water-conservation priority areas in the Cerrado biome.
+  url: https://zenodo.org/records/21540477
+  project: cerrado-water-conservation-mapping
+  year: 2026
+  sortDate: '2026'
+  language: Portuguese
+  authors: Instituto Cerrados; Iporã Possantti; **Rafael Barbedo**; Guilherme Marques; Yuri Salmona
+  venue: Zenodo
+  doi: https://doi.org/10.5281/zenodo.21540477
+  type: Dataset
+- title: Catchment boundaries, daily and sub-daily hydrometeorological time series, groundwater level time series and attributes for 671 catchments in Great Britain (CAMELS-GB v2)
+  content: Hydrometeorological time series and landscape attributes for catchments in Great Britain; a later output
+    associated with NRFA inputs.
+  url: https://catalogue.ceh.ac.uk/documents/9a46d428-958f-4ac1-86eb-94eee70c0955
+  project: uk-catchment-spatial-database
+  year: 2025
+  sortDate: '2025-10-21'
+  language: English
+  authors: G. Coxon; Y. Zheng; **Rafael Barbedo**; H. Cooper; F. Fileni; H. Fowler; M. Fry; A. Green; T. Gribbin;
+    H. Harfoot; E. Lewis; X. Qiu; S. Salwey; D. E. Wendt; G. Ribeiro Neto
+  venue: NERC EDS Environmental Information Data Centre
+  doi: https://doi.org/10.5285/9a46d428-958f-4ac1-86eb-94eee70c0955
+  type: Dataset
+- title: 'Modeling Long-Term Flow Regimes in Ungauged Basins: An Evaluation of Machine Learning Performance and
+    Uncertainty'
+  year: 2025
+  type: Preprint
+  language: English
+  venue: ESS Open Archive
+  authors: '**Rafael Barbedo**; Iporã Possantti; Mino Viana Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn'
+  doi: https://doi.org/10.22541/essoar.175336960.03823488/v1
+  resume: true
+  project: brazil-ungauged-streamflow-machine-learning
+  sortDate: '2025-07-24'
+- title: Biomass allometry for shrubs at a UK rewilding site
+  year: 2025
+  type: Conference abstract
+  language: English
+  venue: EGU General Assembly 2025
+  url: https://meetingorganizer.copernicus.org/EGU25/EGU25-11605.html
+  project: shrub-mapping-height-estimation
+  authors: Emily Upcott; Douglas Kelley; Charles George; Richard Broughton; **Rafael Barbedo**; Josh Hall; France
+    Gerard
+  doi: https://doi.org/10.5194/egusphere-egu25-11605
+  sortDate: '2025-03-15'
+- title: Shrub species, cover and biomass from affordable UAV observations
+  year: 2025
+  type: Conference abstract
+  language: English
+  venue: EGU General Assembly 2025
+  url: https://meetingorganizer.copernicus.org/EGU25/EGU25-1632.html
+  project: shrub-mapping-height-estimation
+  authors: France Gerard; ce Zhang; **Rafael Barbedo**; Charles George; Emily Upcott; Douglas Kelley; Richard
+    Broughton
+  doi: https://doi.org/10.5194/egusphere-egu25-1632
+  sortDate: '2025-03-14'
+- title: Reference Mean and Low Streamflow for all Brazilian Catchments Generated Using Machine Learning Models
+  content: Reference streamflows, including long-term mean flow and q95, for more than 400,000 ungauged river points
+    in Brazil, estimated with machine-learning models.
+  url: https://zenodo.org/records/14217002
+  project: brazil-ungauged-streamflow-machine-learning
+  year: 2024
+  sortDate: '2024-11-25'
+  language: English
+  authors: '**Rafael Barbedo**; Iporã Possantti; Mino Sorribas; Rodrigo Cauduro Dias de Paiva; Walter Collischonn'
+  venue: Zenodo
+  doi: https://doi.org/10.5281/zenodo.14217002
+  type: Dataset
+- title: Streamflow Estimation in Ungauged Catchments in Brazil using Machine Learning Approaches
+  year: 2023
+  type: Conference abstract
+  language: English
+  venue: EGU General Assembly 2023
+  url: https://meetingorganizer.copernicus.org/EGU23/EGU23-844.html
+  project: brazil-ungauged-streamflow-machine-learning
+  authors: '**Rafael Barbedo**; Mino Sorribas; Walter Collischonn'
+  doi: https://doi.org/10.5194/egusphere-egu23-844
+  sortDate: '2023-05-11'
+- title: 'A comprehensive strategy for modeling watershed restoration priority areas under epistemic uncertainty:
+    A case study in the Atlantic Forest, Brazil'
+  year: 2023
+  type: Journal Article
+  language: English
+  venue: Journal of Hydrology
+  authors: Iporã Possantti; **Rafael Barbedo**; Marcelo Kronbauer; Walter Collischonn; Guilherme Marques
+  doi: https://doi.org/10.1016/j.jhydrol.2022.129003
+  project: cerrado-riparian-drainage-mapping
+  sortDate: 2023-02
+- title: Water storage variability across Brazil
+  year: 2022
+  type: Journal Article
+  language: English
+  venue: Brazilian Journal of Water Resources
+  authors: '**Rafael Barbedo**; Ayan Santos Fleischmann; Vinícius Siqueira; João Paulo Brêda; Gabriel Matte; Leonardo
+    Laipelt; Alexandre Amorim; Alexandre Abdalla Araújo; Marcus Fuckner; Adalberto Meller; Fernando Mainardi Fan;
+    Walter Collischonn; Anderson Ruhoff; Rodrigo Cauduro Dias de Paiva'
+  doi: https://doi.org/10.1590/2318-0331.272220220077
+  resume: true
+  project: brazil-water-accounting
+  sortDate: '2022-11-28'
+- title: How much inundation occurs in the Amazon River basin?
+  year: 2022
+  type: Journal Article
+  language: English
+  venue: Remote Sensing of Environment
+  authors: Ayan Santos Fleischmann; Fabrice Papa; Alice Fassoni-Andrade; John M. Melack; Sly Wongchuig; Rodrigo
+    Cauduro Dias Paiva; Stephen K. Hamilton; Etienne Fluet-Chouinard; **Rafael Barbedo**; Filipe Aires; Ahmad
+    Al Bitar; Marie-Paule Bonnet; Michael Coe; Jefferson Ferreira-Ferreira; Laura Hess; Katherine Jensen; Kyle
+    McDonald; Alex Ovando; Edward Park; Marie Parrens; Sébastien Pinel; Catherine Prigent; Angélica F. Resende;
+    Menaka Revel; Ake Rosenqvist; Jessica Rosenqvist; Conrado Rudorff; Thiago S.F. Silva; Dai Yamazaki; Walter
+    Collischonn
+  doi: https://doi.org/10.1016/j.rse.2022.113099
+  sortDate: '2022-09-01'
+- title: Global Evapotranspiration Datasets Assessment Using Water Balance in South America
+  year: 2022
+  type: Journal Article
+  language: English
+  venue: Remote Sensing
+  authors: Anderson Ruhoff; Bruno Comini de Andrade; Leonardo Laipelt; Ayan Santos Fleischmann; Vinícius Alencar
+    Siqueira; Adriana Aparecida Moreira; **Rafael Barbedo**; Gabriele Leão Cyganski; Gabriel Matte Rios Fernandez;
+    João Paulo Lyra Fialho Brêda; Rodrigo Cauduro Dias de Paiva; Adalberto Meller; Alexandre de Amorim Teixeira;
+    Alexandre Abdalla Araújo; Marcus André Fuckner; Trent Biggs
+  doi: https://doi.org/10.3390/rs14112526
+  project: brazil-water-accounting
+  sortDate: '2022-05-25'
+- title: 'Topographic Position-based Stream definition (TPS): A simple method to address spatial variability of
+    drainage density in stream networks'
+  year: 2022
+  type: Journal Article
+  language: English
+  venue: Hydrological Sciences Journal
+  authors: '**Rafael Barbedo**; Vinícius Siqueira; Walter Collischonn'
+  doi: https://doi.org/10.1080/02626667.2022.2047190
+  resume: true
+  project: cerrado-riparian-drainage-mapping
+  sortDate: '2022-03-29'
+- title: 'Cooperação em tecnologias para análises hidrológicas em escala nacional : subprojeto estimativas hidrológicas
+    para contas econômicas ambientais da água (CEAA) no Brasil'
+  year: 2022
+  type: Technical Report
+  language: Portuguese
+  venue: UFRGS/IPH
+  authors: Anderson Luis Ruhoff; Vinícius Alencar Siqueira; João Paulo Lyra Fialho Brêda; Ayan Santos Fleischmann;
+    Gabriel Matte Rios Fernandez; Rafael Henrique Bloedow Kayser; Leonardo Laipelt dos Santos; **Rafael Barbedo**;
+    Mino Viana Sorribas; Aline Meyer Oliveira; Rodrigo Cauduro Dias de Paiva
+  url: https://lume.ufrgs.br/handle/10183/274942
+  project: brazil-water-accounting
+  sortDate: '2022'
+- title: 'Cooperação em tecnologias para análises hidrológicas em escala nacional : sub-projeto - regionalização
+    de vazões via modelagem hidrológica : métodos de discretização do modelo MGB e sua relação com a BHO'
+  year: 2021
+  type: Technical Report
+  language: Portuguese
+  venue: UFRGS/IPH
+  authors: Walter Collischonn; Mino Viana Sorribas; Cléber Henrique Araújo Gama; **Rafael Barbedo**; Rodrigo Cauduro
+    Dias de Paiva
+  url: https://lume.ufrgs.br/handle/10183/253797
+  project: bho-mgb-integration
+  sortDate: '2021'
+- title: 'Cooperação em tecnologias para análises hidrológicas em escala nacional : sub-projeto - regionalização
+    de vazões via modelagem hidrológica : MGB-BHO : pré-processamento do MGB em cima da base hidrográfica ottocodificada'
+  year: 2021
+  type: Technical Report
+  language: Portuguese
+  venue: UFRGS/IPH
+  authors: '**Rafael Barbedo**; Leonardo Laipelt dos Santos; Rafaela Cristina de Oliveira; Gabriel Matte Rios
+    Fernandez; Vinícius Alencar Siqueira; Walter Collischonn; Rodrigo Cauduro Dias de Paiva'
+  url: https://lume.ufrgs.br/handle/10183/253840
+  project: bho-mgb-integration
+  sortDate: '2021'
+- title: 'Cooperação em tecnologias para análises hidrológicas em escala nacional : sub-projeto - regionalização
+    de vazões via modelagem hidrológica : comparação de métodos para estimativas de vazões de referência : vazão
+    média e Q95'
+  year: 2021
+  type: Technical Report
+  language: Portuguese
+  venue: UFRGS/IPH
+  authors: Mino Viana Sorribas; Walter Collischonn; Cléber Henrique Araújo Gama; **Rafael Barbedo**; Larissa de
+    Castro Ribeiro; Rodrigo Cauduro Dias de Paiva
+  url: https://lume.ufrgs.br/handle/10183/253831
+  project: brazil-ungauged-streamflow-machine-learning
+  sortDate: '2021'
+- title: 'Cooperação em tecnologias para análises hidrológicas em escala nacional : sub-projeto - regionalização
+    de vazões via modelagem hidrológica : estimativa de vazão em locais sem dados usando machine learning'
+  year: 2021
+  type: Technical Report
+  language: Portuguese
+  venue: UFRGS/IPH
+  authors: '**Rafael Barbedo**; Mino Viana Sorribas; Walter Collischonn; Rodrigo Cauduro Dias de Paiva'
+  url: https://lume.ufrgs.br/handle/10183/253843
+  project: brazil-ungauged-streamflow-machine-learning
+  sortDate: '2021'

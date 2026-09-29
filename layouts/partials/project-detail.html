@@ -10,7 +10,7 @@
         <div class="card-body">
           <h1 id="project-title-{{ $project.id }}" class="card-title">{{ $project.title }}</h1>
           <div class="cv-project-meta">
-            <div>{{ partial "project-date-range.html" (dict "project" $project "lang" $page.Site.Language.Lang "current" $cv.labels.current) }}</div>
+            <div>{{ partial "project-date-range.html" (dict "project" $project "current" $cv.labels.current) }}</div>
             {{ with $project.partner }}<div>{{ $cv.experience.partnerLabel }} {{ if $project.partnerUrl }}<a href="{{ $project.partnerUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
             {{ with $project.client }}<div>{{ $cv.experience.clientLabel }} {{ if $project.clientUrl }}<a href="{{ $project.clientUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
             {{ with $project.funder }}<div>{{ $cv.experience.funderLabel }} {{ if $project.funderUrl }}<a href="{{ $project.funderUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
