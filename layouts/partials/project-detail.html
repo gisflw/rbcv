@@ -11,6 +11,7 @@
           <h1 id="project-title-{{ $project.id }}" class="card-title">{{ $project.title }}</h1>
           <div class="cv-project-meta">
             <div>{{ partial "project-date-range.html" (dict "project" $project "current" $cv.labels.current) }}</div>
+            {{ with $project.context }}<div>{{ $cv.projects.contextLabel }} <a href="{{ $project.contextUrl }}" target="_blank" rel="noopener">{{ . }}</a></div>{{ end }}
             {{ with $project.partner }}<div>{{ $cv.experience.partnerLabel }} {{ if $project.partnerUrl }}<a href="{{ $project.partnerUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
             {{ with $project.client }}<div>{{ $cv.experience.clientLabel }} {{ if $project.clientUrl }}<a href="{{ $project.clientUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
             {{ with $project.funder }}<div>{{ $cv.experience.funderLabel }} {{ if $project.funderUrl }}<a href="{{ $project.funderUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
@@ -20,12 +21,8 @@
             <p>{{ $project.scope }}</p>
           </div>
           <div class="cv-project-part">
-            <h2>{{ $cv.projects.activitiesLabel }}</h2>
-            <ul>{{ range $project.mainActivities }}<li>{{ . }}</li>{{ end }}</ul>
-          </div>
-          <div class="cv-project-part">
-            <h2>{{ $cv.projects.outcomesLabel }}</h2>
-            <ul>{{ range $project.mainOutcomes }}<li>{{ . }}</li>{{ end }}</ul>
+            <h2>{{ $cv.projects.contributionsLabel }}</h2>
+            <ul>{{ range $project.contributions }}<li>{{ . }}</li>{{ end }}</ul>
           </div>
           {{ $software := where $cv.achievements.items "project" $project.id }}
           {{ $publications := where $cv.publications.items "project" $project.id }}
