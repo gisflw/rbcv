@@ -18,7 +18,7 @@
                   {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
                 </h5>
                 <div class="card-text secondary-font">{{ .content }}</div>
-                {{ with .project }}{{ partial "catalog-project-link.html" (dict "projectId" . "projects" $cv.projects) }}{{ end }}
+
               </div>
             </div>
           </div>

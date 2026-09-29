@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+  {{ partial "head.html" . }}
+  {{ block "head" . }}{{ end }}
+  <link rel="stylesheet" href="{{ "css/career-canvas-overrides.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/cv-pages.css" | relURL }}">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+</head>
+<body class="light">
+  {{ partial "cv-sidebar.html" . }}
+  <div class="cv-page-shell">
+    <main id="content">{{ block "main" . }}{{ end }}</main>
+    {{ partial "sections/footer/index.html" . }}
+  </div>
+  <script src="{{ "bootstrap-5/js/bootstrap.bundle.min.js" | relURL }}"></script>
+  {{ partial "scripts.html" . }}
+</body>
+</html>

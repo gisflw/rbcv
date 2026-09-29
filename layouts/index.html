@@ -2,7 +2,6 @@
 <meta name="description" content={{ .Site.Params.description }}>
 <link rel="stylesheet" href="{{ (printf "%scss/index.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
 <link rel="stylesheet" href="{{ (printf "%scss/projects.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
-<link rel="stylesheet" href="{{ (printf "%scss/career-canvas-overrides.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
 
 <!-- fontawesome -->
 <script defer src="{{ (printf "%sfontawesome-6/all-6.4.2.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
@@ -17,7 +16,6 @@
 {{- partial "sections/about.html" . -}}
 {{- partial "sections/skills.html" . -}}
 {{- partial "sections/experience.html" . -}}
-{{- partial "sections/projects.html" . -}}
 {{- partial "sections/achievements.html" . -}}
 {{- partial "sections/publications.html" . -}}
 {{- partial "sections/contact.html" . -}}

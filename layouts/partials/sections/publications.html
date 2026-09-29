@@ -31,7 +31,7 @@
         {{ with .venue }}
         <span class="cv-publication-venue">{{ . }}</span>
         {{ end }}
-          {{ with .project }}{{ partial "catalog-project-link.html" (dict "projectId" . "projects" $cv.projects) }}{{ end }}
+
         </div>
       </article>
       {{ end }}

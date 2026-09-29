@@ -234,7 +234,7 @@ projects:
       under development.
     - Basin-scale performance assessment and representation of reservoirs and water uses are being
       developed for the national model.
-    partner: ANA
+    partner: Agência Nacional de Águas e Saneamento Básico (ANA)
     partnerUrl: https://www.gov.br/ana/pt-br
   - id: rs-flood-alert
     role: postdoctoral-researcher
@@ -251,7 +251,7 @@ projects:
     mainOutcomes:
     - Integrated water-level, streamflow, and geospatial datasets for basin-scale flood monitoring.
     - Modeling workflows and operational visualizations supporting flood-warning activities.
-    partner: SGB
+    partner: Serviço Geológico do Brasil (SGB)
     partnerUrl: https://www.sgb.gov.br/
   - id: cerrado-conservation
     role: hydrology-data-consultant
@@ -379,7 +379,7 @@ projects:
       in MGB applications.
     - Model units and inputs aligned with the official vector river network for national-scale
       applications.
-    partner: ANA
+    partner: Agência Nacional de Águas e Saneamento Básico (ANA)
     partnerUrl: https://www.gov.br/ana/pt-br
   - id: water-accounting
     role: researcher
@@ -398,7 +398,7 @@ projects:
       accounts.
     - Characterization of spatial and temporal variation in water stocks and fluxes across Brazilian
       hydrographic regions.
-    partner: ANA
+    partner: Agência Nacional de Águas e Saneamento Básico (ANA)
     partnerUrl: https://www.gov.br/ana/pt-br
   - id: reference-streamflow
     role: researcher
@@ -417,7 +417,7 @@ projects:
     - National reference-streamflow estimates for more than 400,000 ungauged river points.
     - Performance and uncertainty assessments of machine-learning estimates across different hydrological
       settings.
-    partner: ANA
+    partner: Agência Nacional de Águas e Saneamento Básico (ANA)
     partnerUrl: https://www.gov.br/ana/pt-br
   - id: masters-riparian
     role: researcher
@@ -437,7 +437,8 @@ projects:
       assessment of riparian vegetation.
     - A large-scale assessment of riparian-vegetation behavior using remote sensing, vegetation indices,
       and evapotranspiration data.
-    funder: CAPES
+    funder: Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)
+    funderUrl: https://www.gov.br/capes/pt-br
 achievements:
   title: Software
   items:
@@ -751,3 +752,11 @@ publications:
     url: https://lume.ufrgs.br/handle/10183/253843
     project: reference-streamflow
     sortDate: '2021'
+
+navigation:
+  label: Main navigation
+  profile: Profile
+  cover: Cover
+  catalog: Catalog
+  languages: Languages
+  theme: Toggle dark mode

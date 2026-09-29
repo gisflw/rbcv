@@ -217,7 +217,7 @@ projects:
     - Configuración nacional reproducible del MGB y flujos de procesamiento asociados, aún en desarrollo.
     - La evaluación del desempeño en cuencas y la representación de embalses y usos del agua están en
       desarrollo para el modelo nacional.
-    partner: ANA
+    partner: Agência Nacional de Águas e Saneamento Básico (ANA)
     partnerUrl: https://www.gov.br/ana/pt-br
   - id: rs-flood-alert
     role: postdoctoral-researcher
@@ -235,7 +235,7 @@ projects:
     - Datos integrados de nivel del agua, caudal e información geoespacial para monitorear inundaciones a
       escala de cuenca.
     - Flujos de modelización y visualizaciones operativas que apoyan las actividades de alerta.
-    partner: SGB
+    partner: Serviço Geológico do Brasil (SGB)
     partnerUrl: https://www.sgb.gov.br/
   - id: cerrado-conservation
     role: hydrology-data-consultant
@@ -367,7 +367,7 @@ projects:
       manera consistente en aplicaciones del MGB.
     - Unidades e insumos del modelo alineados con la red fluvial vectorial oficial para aplicaciones a
       escala nacional.
-    partner: ANA
+    partner: Agência Nacional de Águas e Saneamento Básico (ANA)
     partnerUrl: https://www.gov.br/ana/pt-br
   - id: water-accounting
     role: researcher
@@ -387,7 +387,7 @@ projects:
       agua en Brasil.
     - Caracterización de la variación espacial y temporal de las reservas y los flujos de agua en las
       regiones hidrográficas brasileñas.
-    partner: ANA
+    partner: Agência Nacional de Águas e Saneamento Básico (ANA)
     partnerUrl: https://www.gov.br/ana/pt-br
   - id: reference-streamflow
     role: researcher
@@ -407,7 +407,7 @@ projects:
       monitoreo.
     - Evaluaciones de desempeño e incertidumbre de las estimaciones de aprendizaje automático en
       distintos contextos hidrológicos.
-    partner: ANA
+    partner: Agência Nacional de Águas e Saneamento Básico (ANA)
     partnerUrl: https://www.gov.br/ana/pt-br
   - id: masters-riparian
     role: researcher
@@ -428,7 +428,8 @@ projects:
       evaluación de vegetación ribereña a gran escala.
     - Evaluación a gran escala del comportamiento de la vegetación ribereña mediante teledetección,
       índices de vegetación y datos de evapotranspiración.
-    funder: CAPES
+    funder: Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)
+    funderUrl: https://www.gov.br/capes/pt-br
 achievements:
   title: Software
   items:
@@ -734,3 +735,11 @@ publications:
     url: https://lume.ufrgs.br/handle/10183/253843
     project: reference-streamflow
     sortDate: '2021'
+
+navigation:
+  label: Navegación principal
+  profile: Perfil
+  cover: Portada
+  catalog: Catálogo
+  languages: Idiomas
+  theme: Alternar modo oscuro

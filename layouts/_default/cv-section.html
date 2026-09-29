@@ -1,0 +1,9 @@
+{{ define "head" }}
+<link rel="stylesheet" href="{{ "css/index.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/projects.css" | relURL }}">
+<script defer src="{{ "fontawesome-6/all-6.4.2.js" | relURL }}"></script>
+{{ end }}
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+{{ partial "sections/projects.html" . }}
+{{ end }}

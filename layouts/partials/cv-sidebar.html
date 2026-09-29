@@ -1,0 +1,38 @@
+{{- $cv := index hugo.Data .Site.Language.Lang -}}
+{{- $isProjects := eq .Params.sectionKey "projects" -}}
+{{- $home := .Site.Home.RelPermalink -}}
+{{- $projectsURL := "projects/" | relLangURL -}}
+<aside class="cv-sidebar">
+  <div class="cv-language-links" aria-label="{{ $cv.navigation.languages | default "Languages" }}">
+    {{ range .AllTranslations }}<a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}" {{ if eq .Language.Lang $.Language.Lang }}aria-current="page"{{ end }}>{{ .Language.Label }}</a>{{ end }}
+  </div>
+  <a class="cv-sidebar-brand" href="{{ $home }}">{{ .Site.Title }}</a>
+  <nav aria-label="{{ $cv.navigation.label | default "Main navigation" }}">
+    <div class="cv-nav-group">
+      <span class="cv-nav-heading">{{ $cv.navigation.profile | default "Profile" }}</span>
+      <a href="{{ printf "%s#hero" $home }}">{{ $cv.navigation.cover | default "Cover" }}</a>
+      <a href="{{ printf "%s#about" $home }}">{{ $cv.about.title }}</a>
+      <a href="{{ printf "%s#skills" $home }}">{{ $cv.skills.title }}</a>
+      <a href="{{ printf "%s#experience" $home }}">{{ $cv.experience.title }}</a>
+      <a href="{{ printf "%s#software" $home }}">{{ $cv.achievements.title }}</a>
+      <a href="{{ printf "%s#publications" $home }}">{{ $cv.publications.title }}</a>
+      <a href="{{ printf "%s#contact" $home }}">{{ $cv.contact.title }}</a>
+    </div>
+    <div class="cv-nav-group">
+      <a class="cv-nav-heading cv-nav-heading-link" href="{{ $projectsURL }}" {{ if $isProjects }}aria-current="page"{{ end }}>{{ $cv.projects.title }}</a>
+      {{ range $cv.experience.items }}
+        {{ $role := . }}
+        {{ $matches := where $cv.projects.items "role" .id }}
+        {{ if $matches }}
+        <div class="cv-nav-subgroup">
+          <a class="cv-nav-role" href="{{ printf "%s#project-role-%s" $projectsURL $role.id }}">{{ $role.title }}</a>
+          {{ range $matches }}<a class="cv-nav-project" href="{{ printf "%s#project-%s" $projectsURL .id }}">{{ .title }}</a>{{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </nav>
+  <div class="cv-sidebar-footer">
+    <button id="theme-toggle" type="button" aria-label="{{ $cv.navigation.theme | default "Toggle dark mode" }}"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i></button>
+  </div>
+</aside>
