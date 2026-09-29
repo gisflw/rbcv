@@ -12,7 +12,8 @@ three generated PDF CVs.
 - Keep web content, project descriptions, publications, tools, and CV data in a
   reusable structure.
 - Generate PDF CV versions from the same structured source data, avoiding
-  manual duplication between website and documents.
+  manual duplication between website and documents. Project details appear on
+  the website and are excluded from the PDF CVs.
 
 ## Current state
 

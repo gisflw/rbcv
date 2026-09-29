@@ -142,7 +142,6 @@ experience:
     date: Jul 2025 – present
     location: Brazil
     institutionUrl: https://www.ufrgs.br/
-    workload: Part-time
     overview:
     - Develop and evaluate a national-scale hydrological model for Brazil, integrating observations, environmental
       data, reservoirs, and water uses through reproducible modeling workflows.
@@ -153,7 +152,6 @@ experience:
     institution: Independent
     date: Jan 2025 – present
     location: Brazil
-    workload: Part-time
     overview:
     - Supported the development of a terrain-based hydrological-importance index to help identify priority areas
       for water conservation and restoration in the Cerrado.
@@ -165,7 +163,6 @@ experience:
     date: Jul 2022 – May 2025
     location: United Kingdom
     institutionUrl: https://www.ceh.ac.uk/
-    workload: Full-time
     overview:
     - Built and maintained the National River Flow Archive's PostgreSQL/PostGIS spatial database and catchment
       attributes, supporting hydrological data products including the CAMELS-GB v2.

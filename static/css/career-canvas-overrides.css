@@ -576,12 +576,6 @@ body.dark #skills .cv-tech-item .devicon-qgis-plain {
   margin-top: 0.7rem;
 }
 
-#experience .cv-experience-workload {
-  margin-top: 0.5rem;
-  color: var(--text-secondary-color) !important;
-  font-size: 0.88rem;
-}
-
 #projects .cv-project-group {
   max-width: 1020px;
   margin: 2.5rem auto 0;

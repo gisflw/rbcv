@@ -22,7 +22,7 @@
 
 <% end -%>
 **<%= role["title"] %> — <%= role["institution"] %>** \hfill \cvdate{<%= role["date"] %>}  
-\cvlocation{<%= [role["location"], role["workload"]].reject { |item| blank?(item) }.join(" · ") %>}
+\cvlocation{<%= role["location"] %>}
 
 <% (role["overview"] || []).each do |item| -%>
 - <%= item %>

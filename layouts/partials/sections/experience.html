@@ -15,7 +15,6 @@
             {{ if .institutionUrl }}<a href="{{ .institutionUrl }}" target="_blank" rel="noopener">{{ .institution }}</a>{{ else }}{{ .institution }}{{ end }}
           </div>
           {{ with .location }}<div class="cv-experience-country">{{ . }}</div>{{ end }}
-          {{ with .workload }}<div class="cv-experience-workload">{{ . }}</div>{{ end }}
         </div>
         <div class="cv-experience-card cv-experience-details">
           <ul class="cv-experience-overview">

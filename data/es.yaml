@@ -125,7 +125,6 @@ experience:
     date: jul 2025 – actualidad
     location: Brasil
     institutionUrl: https://www.ufrgs.br/
-    workload: Tiempo parcial
     overview:
     - Desarrollo y evalúo un modelo hidrológico a escala nacional para Brasil, integrando observaciones, datos
       ambientales, embalses y usos del agua mediante flujos de modelización reproducibles.
@@ -136,7 +135,6 @@ experience:
     institution: Independiente
     date: ene 2025 – actualidad
     location: Brasil
-    workload: Tiempo parcial
     overview:
     - Apoyé el desarrollo de un índice de importancia hidrológica basado en el terreno para identificar áreas
       prioritarias para la conservación del agua y la restauración en el Cerrado.
@@ -148,7 +146,6 @@ experience:
     date: jul 2022 – may 2025
     location: Reino Unido
     institutionUrl: https://www.ceh.ac.uk/
-    workload: Tiempo completo
     overview:
     - Construí y mantuve la base espacial PostgreSQL/PostGIS y los atributos de cuencas del National River Flow
       Archive, apoyando productos de datos hidrológicos como CAMELS-GB v2.
