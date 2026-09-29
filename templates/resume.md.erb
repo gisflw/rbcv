@@ -25,7 +25,7 @@
 \cvlocation{<%= role["location"] %>}
 
 <% (role["overview"] || []).each do |item| -%>
-- <%= item %>
+- <%= item["text"] %> [Project details](<%= project_url(item["project"]) %>)
 <% end -%>
 
 <% end -%>

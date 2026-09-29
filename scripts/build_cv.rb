@@ -100,6 +100,13 @@ class CvDocument
     }
   end
 
+  def project_url(id)
+    projects = data.dig("projects", "items") || []
+    abort "Unknown project ID: #{id}" unless projects.any? { |project| project["id"] == id }
+
+    "#{data.fetch("portfolioUrl").sub(%r{/+\z}, "")}/projects/#{id}/"
+  end
+
   def profile_links
     [portfolio_link] + contact_links.reject { |link| link["label"] == "Email" }
   end

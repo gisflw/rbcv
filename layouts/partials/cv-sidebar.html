@@ -18,15 +18,8 @@
     </div>
     <div class="cv-nav-group">
       <a class="cv-nav-heading cv-nav-heading-link" href="{{ $projectsURL }}" {{ if $isProjects }}aria-current="page"{{ end }}>{{ $cv.projects.title }}</a>
-      {{ range $cv.experience.items }}
-        {{ $role := . }}
-        {{ $matches := where $cv.projects.items "role" .id }}
-        {{ if $matches }}
-        <div class="cv-nav-subgroup">
-          <a class="cv-nav-role" href="{{ printf "%s#project-role-%s" $projectsURL $role.id }}">{{ $role.title }}</a>
-          {{ range $matches }}<a class="cv-nav-project" href="{{ printf "projects/%s/" .id | relLangURL }}" {{ if eq .id $activeProject }}aria-current="page"{{ end }}>{{ .title }}</a>{{ end }}
-        </div>
-        {{ end }}
+      {{ range $cv.projects.items }}
+        <a class="cv-nav-project" href="{{ printf "projects/%s/" .id | relLangURL }}" {{ if eq .id $activeProject }}aria-current="page"{{ end }}>{{ .title }}</a>
       {{ end }}
     </div>
   </nav>

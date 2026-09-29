@@ -15,10 +15,10 @@ items:
   endDate: null
   scope: National-scale hydrological modeling for water uses and climate change assessment across Brazil.
   contributions:
-  - Assembly and harmonization of hydrological observations, environmental datasets, and geospatial inputs through reproducible data-preparation workflows for the national MGB configuration
-  - MGB parameterization and basin-scale performance assessment across Brazilian river basins for the national model configuration under development
-  - Ongoing integration of reservoirs and water uses into the national modeling framework
-  - Reproducible model-evaluation and scenario-analysis workflows for studies of land-use change, climate variability, and hydrological forecasting
+  - Assembly and harmonization of hydrological observations, environmental datasets, and geospatial inputs through reproducible data-preparation workflows for the national MGB configuration.
+  - MGB parameterization and basin-scale performance assessment across Brazilian river basins for the national model configuration under development.
+  - Ongoing integration of reservoirs and water uses into the national modeling framework.
+  - Reproducible model-evaluation and scenario-analysis workflows for studies of land-use change, climate variability, and hydrological forecasting.
   partner: Agência Nacional de Águas e Saneamento Básico (ANA)
   partnerUrl: https://www.gov.br/ana/pt-br
 - id: rs-flood-monitor-forecast
@@ -28,11 +28,11 @@ items:
   endDate: null
   scope: Flood monitoring and forecasting for Rio Grande do Sul.
   contributions:
-  - Validation and integration of water-level, streamflow, and geospatial datasets for basin-scale flood monitoring
-  - Water-level and streamflow modeling workflows for basin-scale forecasts
-  - Operational visualizations for flood-warning activities
-  - Quality-control procedures for flood-related environmental data
-  - Rating-curve exploration for streamflow-observation preparation and interpretation
+  - Validation and integration of water-level, streamflow, and geospatial datasets for basin-scale flood monitoring.
+  - Water-level and streamflow modeling workflows for basin-scale forecasts.
+  - Operational visualizations for flood-warning activities.
+  - Quality-control procedures for flood-related environmental data.
+  - Rating-curve exploration for streamflow-observation preparation and interpretation.
   partner: Serviço Geológico do Brasil (SGB)
   partnerUrl: https://www.sgb.gov.br/
 - id: cerrado-water-conservation-mapping
@@ -42,11 +42,11 @@ items:
   endDate: '2025-09'
   scope: Priority areas for native-vegetation conservation and restoration in support of water availability in the Cerrado.
   contributions:
-  - Contribution of hydrological and spatial-analysis methods with emphasis on high-resolution topographic-data processing
-  - Development and application of topographic hydrological indicators for soil-saturation tendency, wetland and valley-bottom occurrence, and natural-infiltration potential
-  - Geospatial-data processing and integration with indicator transformations, methodological criteria, and analysis and visualization of results
-  - Detailed spatial representations of wetter valley bottoms and wetlands versus slopes and plateaus with greater potential for rainfall receipt and infiltration
-  - Inclusion of a topographic indicator in the natural hydrological-importance index and priority-area classification for water conservation
+  - Contribution of hydrological and spatial-analysis methods with emphasis on high-resolution topographic-data processing.
+  - Development and application of topographic hydrological indicators for soil-saturation tendency, wetland and valley-bottom occurrence, and natural-infiltration potential.
+  - Geospatial-data processing and integration with indicator transformations, methodological criteria, and analysis and visualization of results.
+  - Detailed spatial representations of wetter valley bottoms and wetlands versus slopes and plateaus with greater potential for rainfall receipt and infiltration.
+  - Inclusion of a topographic indicator in the natural hydrological-importance index and priority-area classification for water conservation.
   client: Cerrados Institute
   clientUrl: https://cerrados.org/
 - id: brazil-water-availability-database
@@ -56,10 +56,10 @@ items:
   endDate: '2025-11'
   scope: Integration, standardization, accessibility, and maintenance of Brazil’s water-availability information.
   contributions:
-  - Diagnosis of legacy tables, relationships, and spatial routines in ANA's geospatial database for water-availability information
-  - Design of a unified logical and physical PostgreSQL/PostGIS data model
-  - Processing functions and migration routines for consolidation of legacy water-availability records in a unified structure
-  - User manual and technical training materials for data querying, updating, and ingestion
+  - Diagnosis of legacy tables, relationships, and spatial routines in ANA's geospatial database for water-availability information.
+  - Design of a unified logical and physical PostgreSQL/PostGIS data model.
+  - Processing functions and migration routines for consolidation of legacy water-availability records in a unified structure.
+  - User manual and technical training materials for data querying, updating, and ingestion.
   client: Agência Nacional de Águas e Saneamento Básico (ANA)
   clientUrl: https://www.gov.br/ana/pt-br
 - id: uk-catchment-spatial-database
@@ -69,11 +69,11 @@ items:
   endDate: '2025-05'
   scope: Data management of spatial catchment attributes in the UK.
   contributions:
-  - Spatial database design and implementation for river-gauge catchment attributes through consolidation and standardization of vectors, rasters, spreadsheets, and other files
-  - Python routines for spatial processing, data ingestion, and catchment environmental-attribute calculation with precomputation across the UK drainage network
-  - Centralized database architecture under 3 GB with more than 3 million drainage-network points and more than 100 spatial and environmental attributes per point
-  - SQL query times in seconds versus days for some manual procedures and queries
-  - Database maintenance and support for catchment data products such as CAMELS-GB with easier cross-team access, efficient reproducible updates, and addition of new stations
+  - Spatial database design and implementation for river-gauge catchment attributes through consolidation and standardization of vectors, rasters, spreadsheets, and other files.
+  - Python routines for spatial processing, data ingestion, and catchment environmental-attribute calculation with precomputation across the UK drainage network.
+  - Centralized database architecture under 3 GB with more than 3 million drainage-network points and more than 100 spatial and environmental attributes per point.
+  - SQL query times in seconds versus days for some manual procedures and queries.
+  - Database maintenance and support for catchment data products such as CAMELS-GB with easier cross-team access, efficient reproducible updates, and addition of new stations.
   context: National River Flow Archive (NRFA)
   contextUrl: https://nrfa.ceh.ac.uk/
 - id: england-wales-lidar-terrain-models
@@ -83,8 +83,8 @@ items:
   endDate: '2025-05'
   scope: Terrain and surface-elevation information for flood, drought, and environmental research.
   contributions:
-  - Source-data consolidation into consistent digital terrain and digital surface models for England and Wales
-  - Analysis examples in research workflows
+  - Source-data consolidation into consistent digital terrain and digital surface models for England and Wales.
+  - Analysis examples in research workflows.
   context: Floods and Droughts Research Infrastructure (FDRI)
   contextUrl: https://www.ceh.ac.uk/our-science/projects/floods-and-droughts-research-infrastructure-fdri
 - id: shrub-mapping-height-estimation
@@ -94,11 +94,11 @@ items:
   endDate: '2024-10'
   scope: Shrub mapping and biomass estimation for biodiversity and habitat monitoring.
   contributions:
-  - Implementation of an Attention U-Net workflow for shrub-segmentation model training and tiled inference across drone RGB and LiDAR images
-  - Conversion of segmentation predictions into mapped shrub outlines for spatial analysis and habitat assessment
-  - Shrub-height workflow with normalization of structure-from-motion (SfM) surface models against terrain data, LiDAR reference-height extraction from point clouds, and SfM-metric derivation
-  - Cross-validation of machine-learning models for shrub-height estimation from SfM metrics
-  - Shrub-height estimates from SfM data and LiDAR reference measurements for subsequent biomass research
+  - Implementation of an Attention U-Net workflow for shrub-segmentation model training and tiled inference across drone RGB and LiDAR images.
+  - Conversion of segmentation predictions into mapped shrub outlines for spatial analysis and habitat assessment.
+  - Shrub-height workflow with normalization of structure-from-motion (SfM) surface models against terrain data, LiDAR reference-height extraction from point clouds, and SfM-metric derivation.
+  - Cross-validation of machine-learning models for shrub-height estimation from SfM metrics.
+  - Shrub-height estimates from SfM data and LiDAR reference measurements for subsequent biomass research.
   context: Modern approaches to biodiversity monitoring (MAMBO)
   contextUrl: https://www.ceh.ac.uk/our-science/projects/modern-approaches-biodiversity-monitoring-mambo
 - id: environmental-data-support
@@ -108,9 +108,9 @@ items:
   endDate: '2024-12'
   scope: Publication, discovery, preservation, and reuse of environmental research data.
   contributions:
-  - Review and preparation of submitted environmental research datasets for ingestion
-  - Resolution of data-organization issues with effects on publication or downstream reuse
-  - Consistent data-management practices across dataset preparation and release for publication-ready datasets and reuse by other researchers
+  - Review and preparation of submitted environmental research datasets for ingestion.
+  - Resolution of data-organization issues with effects on publication or downstream reuse.
+  - Consistent data-management practices across dataset preparation and release for publication-ready datasets and reuse by other researchers.
   context: Environmental Information Data Centre (EIDC)
   contextUrl: https://eidc.ac.uk/
 - id: bho-mgb-integration
@@ -120,10 +120,10 @@ items:
   endDate: '2022-05'
   scope: Integration of Brazil’s official river network with hydrological modeling frameworks.
   contributions:
-  - BHO river-network discretization methods during MGB preprocessing for consistent use of the official vector river network in MGB applications
-  - Derivation of hydrological parameters from national hydrographic data
-  - Procedures for translation of the vector network into aligned model units and inputs
-  - Evaluation of the effects of discretization choices on national-scale hydrological modeling workflows and related preprocessing and parameter-derivation guidance
+  - BHO river-network discretization methods during MGB preprocessing for consistent use of the official vector river network in MGB applications.
+  - Derivation of hydrological parameters from national hydrographic data.
+  - Procedures for translation of the vector network into aligned model units and inputs.
+  - Evaluation of the effects of discretization choices on national-scale hydrological modeling workflows and related preprocessing and parameter-derivation guidance.
   partner: Agência Nacional de Águas e Saneamento Básico (ANA)
   partnerUrl: https://www.gov.br/ana/pt-br
 - id: brazil-water-accounting
@@ -133,9 +133,9 @@ items:
   endDate: '2022-05'
   scope: Water stocks and flows for environmental-economic water accounting in Brazil.
   contributions:
-  - Assembly of national datasets on precipitation, soil moisture, evapotranspiration, and water storage
-  - Analysis and characterization of spatial and temporal variation in water stocks and fluxes across Brazilian hydrographic regions
-  - National hydrological estimates for Brazil's System of Environmental-Economic Accounting for Water (SEEA-Water) through integration of hydrological evidence with water-stock and water-flow information
+  - Assembly of national datasets on precipitation, soil moisture, evapotranspiration, and water storage.
+  - Analysis and characterization of spatial and temporal variation in water stocks and fluxes across Brazilian hydrographic regions.
+  - National hydrological estimates for Brazil's System of Environmental-Economic Accounting for Water (SEEA-Water) through integration of hydrological evidence with water-stock and water-flow information.
   partner: Agência Nacional de Águas e Saneamento Básico (ANA)
   partnerUrl: https://www.gov.br/ana/pt-br
 - id: brazil-ungauged-streamflow-machine-learning
@@ -145,10 +145,10 @@ items:
   endDate: '2022-05'
   scope: Reference streamflow estimates for ungauged river locations across Brazil.
   contributions:
-  - Assembly of streamflow observations and environmental predictors for model development
-  - Machine-learning models for long-term mean streamflow and Q95 low-flow estimation
-  - Performance and uncertainty assessment across hydrological settings in comparison with alternative reference-streamflow methods
-  - National reference-streamflow predictions for more than 400,000 ungauged river points across the hydrographic network
+  - Assembly of streamflow observations and environmental predictors for model development.
+  - Machine-learning models for long-term mean streamflow and Q95 low-flow estimation.
+  - Performance and uncertainty assessment across hydrological settings in comparison with alternative reference-streamflow methods.
+  - National reference-streamflow predictions for more than 400,000 ungauged river points across the hydrographic network.
   partner: Agência Nacional de Águas e Saneamento Básico (ANA)
   partnerUrl: https://www.gov.br/ana/pt-br
 - id: cerrado-riparian-drainage-mapping
@@ -158,9 +158,9 @@ items:
   endDate: '2020-02'
   scope: Identification and assessment of riparian vegetation across the Cerrado.
   contributions:
-  - Terrain-based drainage-network extraction and mapping from digital elevation models for river-corridor identification
-  - Terrain and topographic-position analysis of spatial variation in drainage density
-  - Combination of remote sensing, vegetation indices, and evapotranspiration data for riparian-vegetation assessment
-  - Large-scale assessment of riparian-vegetation behavior across the Cerrado with mapped drainage information
+  - Terrain-based drainage-network extraction and mapping from digital elevation models for river-corridor identification.
+  - Terrain and topographic-position analysis of spatial variation in drainage density.
+  - Combination of remote sensing, vegetation indices, and evapotranspiration data for riparian-vegetation assessment.
+  - Large-scale assessment of riparian-vegetation behavior across the Cerrado with mapped drainage information.
   funder: Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)
   funderUrl: https://www.gov.br/capes/pt-br

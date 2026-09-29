@@ -21,8 +21,6 @@ body { min-width: 320px; }
 .cv-sidebar nav a:hover, .cv-sidebar nav a[aria-current="page"] { color: var(--primary-color); background: var(--secondary-background-color); }
 .cv-sidebar nav .cv-nav-heading-link { color: var(--text-secondary-color); font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: .45rem .65rem; }
 .cv-sidebar nav .cv-nav-heading-link:hover, .cv-sidebar nav .cv-nav-heading-link[aria-current="page"] { color: var(--primary-color); }
-.cv-nav-subgroup { border-left: 1px solid rgba(127,127,127,.35); margin: .35rem 0 .55rem .75rem; padding-left: .4rem; }
-.cv-sidebar nav .cv-nav-role { display: block; color: var(--text-secondary-color); font-size: .72rem; font-weight: 700; padding: .7rem .45rem .2rem; }
 .cv-sidebar nav .cv-nav-project { font-size: .75rem; line-height: 1.3; padding: .3rem .45rem; }
 .cv-sidebar-footer { margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(127,127,127,.25); }
 #theme-toggle { margin-top: .8rem; border: 0; background: transparent; color: var(--text-color); cursor: pointer; }
@@ -32,14 +30,13 @@ body { min-width: 320px; }
 .cv-page-shell #hero { min-height: 90vh; }
 .cv-page-shell #projects .cv-project-group { max-width: 1100px; scroll-margin-top: 1rem; }
 .cv-page-shell #projects .cv-project-group + .cv-project-group { margin-top: 5rem; }
-.cv-page-shell #projects .cv-project-group h2 { margin: 0 0 .65rem; font-size: .8rem; font-weight: 600; line-height: 1.35; }
-.cv-page-shell #projects .cv-project-group h2 a { color: var(--text-secondary-color); text-decoration: none; }
-.cv-page-shell #projects .cv-project-group h2 a:hover { color: var(--text-link-color); text-decoration: underline; }
-.cv-project-role-company { font-size: .72rem; font-weight: 400; }
+.cv-page-shell #projects .cv-project-group h2 { margin: 0 0 .65rem; color: var(--text-secondary-color); font-size: .8rem; font-weight: 600; line-height: 1.35; }
+.cv-project-role-company, .cv-project-role-date { font-size: .72rem; font-weight: 400; }
 .cv-page-shell #projects .cv-project-card { scroll-margin-top: 1rem; }
 .cv-project-index-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
 .cv-project-index-list li { scroll-margin-top: 1rem; padding: .85rem 1rem; background: var(--secondary-color); border: 1px solid rgba(127,127,127,.28); border-radius: .7rem; }
 .cv-project-index-list a, .cv-project-breadcrumb a { color: var(--text-link-color); text-decoration: underline; text-underline-offset: .15rem; }
+.cv-project-index-period { margin-top: .2rem; color: var(--text-secondary-color); font-size: .8rem; }
 .cv-project-detail { max-width: 1100px; margin: 0 auto; }
 .cv-project-breadcrumb { margin-bottom: 1rem; color: var(--text-secondary-color); font-size: .85rem; }
 .cv-project-detail .cv-project-card .card-title { font-size: clamp(1.5rem, 2.5vw, 2rem); }

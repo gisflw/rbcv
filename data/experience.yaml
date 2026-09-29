@@ -10,16 +10,20 @@ items:
   location: Brazil
   institutionUrl: https://www.ufrgs.br/
   overview:
-  - Development and evaluation of a national-scale hydrological model for Brazil through reproducible integration of observations, environmental data, reservoirs, and water uses
-  - Flood-monitoring and forecasting workflows for Rio Grande do Sul with data validation, water-level and streamflow modeling, and operational warning visualizations
+  - text: Development and evaluation of a national-scale hydrological model for Brazil through reproducible integration of observations, environmental data, reservoirs, and water uses.
+    project: brazil-national-water-model
+  - text: Flood-monitoring and forecasting workflows for Rio Grande do Sul with data validation, water-level and streamflow modeling, and operational warning visualizations.
+    project: rs-flood-monitor-forecast
 - id: hydrology-data-consultant
   title: Hydrology & Data Consultant
   institution: Independent
   date: Jan 2025 – present
   location: Brazil
   overview:
-  - Contribution to a terrain-based hydrological-importance index for priority areas for water conservation and restoration in the Cerrado
-  - Design of a PostgreSQL/PostGIS data model and migration workflows for consolidation of water-availability records and spatial procedures for Brazil's National Water and Sanitation Agency (ANA)
+  - text: Contribution to a terrain-based hydrological-importance index for priority areas for water conservation and restoration in the Cerrado.
+    project: cerrado-water-conservation-mapping
+  - text: Design of a PostgreSQL/PostGIS data model and migration workflows for consolidation of water-availability records and spatial procedures for Brazil's National Water and Sanitation Agency (ANA).
+    project: brazil-water-availability-database
 - id: spatial-data-scientist
   title: Spatial Data Scientist
   institution: UK Centre for Ecology & Hydrology (UKCEH)
@@ -27,10 +31,14 @@ items:
   location: United Kingdom
   institutionUrl: https://www.ceh.ac.uk/
   overview:
-  - Maintenance and improvement of the National River Flow Archive's catchment attributes database with support for hydrological data products such as CAMELS-GB v2
-  - High-resolution integrated LiDAR-derived terrain and surface models for England and Wales
-  - Remote-sensing workflows for shrub delineation from drone imagery and height estimation from terrain and LiDAR reference data
-  - Preparation and curation of environmental research datasets for publication and reuse
+  - text: Maintenance and improvement of the National River Flow Archive's catchment attributes database with support for hydrological data products such as CAMELS-GB v2.
+    project: uk-catchment-spatial-database
+  - text: High-resolution integrated LiDAR-derived terrain and surface models for England and Wales.
+    project: england-wales-lidar-terrain-models
+  - text: Remote-sensing workflows for shrub delineation from drone imagery and height estimation from terrain and LiDAR reference data.
+    project: shrub-mapping-height-estimation
+  - text: Preparation and curation of environmental research datasets for publication and reuse.
+    project: environmental-data-support
 - id: researcher
   title: Researcher
   institution: Federal University of Rio Grande do Sul (UFRGS)
@@ -38,7 +46,11 @@ items:
   location: Brazil
   institutionUrl: https://www.ufrgs.br/
   overview:
-  - Integration of the MGB hydrological model with Brazil's Ottocodified Hydrographic Base (BHO) through river-network preprocessing and parameter-derivation methods for national-scale modeling
-  - Analysis of precipitation, evapotranspiration, soil moisture, and water storage across Brazil for environmental-economic water accounts
-  - Machine-learning methods for long-term mean and low-streamflow estimates at ungauged locations across Brazil
-  - Terrain-based drainage-network extraction and remote-sensing assessment of riparian vegetation in the Brazilian Savannah
+  - text: Integration of the MGB hydrological model with Brazil's Ottocodified Hydrographic Base (BHO) through river-network preprocessing and parameter-derivation methods for national-scale modeling.
+    project: bho-mgb-integration
+  - text: Analysis of precipitation, evapotranspiration, soil moisture, and water storage across Brazil for environmental-economic water accounts.
+    project: brazil-water-accounting
+  - text: Machine-learning methods for long-term mean and low-streamflow estimates at ungauged locations across Brazil.
+    project: brazil-ungauged-streamflow-machine-learning
+  - text: Terrain-based drainage-network extraction and remote-sensing assessment of riparian vegetation in the Brazilian Savannah.
+    project: cerrado-riparian-drainage-mapping

@@ -5,14 +5,16 @@
   <div class="container">
     <h1 class="text-center">{{ $projects.title }}</h1>
     {{ range $cv.experience.items }}
-      {{ $role := . }}
       {{ $matches := where $projects.items "role" .id }}
       {{ if $matches }}
       <div id="project-role-{{ .id }}" class="cv-project-group">
-        <h2><a href="{{ printf "%s#experience-role-%s" $.Site.Home.RelPermalink .id }}"><span class="cv-project-role-title">{{ .title }}</span><span class="cv-project-role-company"> — {{ .institution }}</span></a></h2>
+        <h2><span class="cv-project-role-title">{{ .title }}</span><span class="cv-project-role-company"> — {{ .institution }}</span><span class="cv-project-role-date"> — {{ .date }}</span></h2>
         <ul class="cv-project-index-list">
           {{ range $matches }}
-          <li id="project-{{ .id }}"><a href="{{ printf "projects/%s/" .id | relLangURL }}">{{ .title }}</a></li>
+          <li id="project-{{ .id }}">
+            <a href="{{ printf "projects/%s/" .id | relLangURL }}">{{ .title }}</a>
+            <div class="cv-project-index-period">{{ partial "project-date-range.html" (dict "project" . "current" $cv.labels.current) }}</div>
+          </li>
           {{ end }}
         </ul>
       </div>
