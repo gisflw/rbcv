@@ -138,8 +138,8 @@ experience:
     location: Brasil
     workload: Tiempo parcial
     overview:
-    - Desarrollé un indicador de importancia hidrológica basado en el terreno para identificar áreas prioritarias
-      para la conservación del agua y la restauración en el Cerrado.
+    - Apoyé el desarrollo de un índice de importancia hidrológica basado en el terreno para identificar áreas
+      prioritarias para la conservación del agua y la restauración en el Cerrado.
     - Diseñé un modelo de datos PostgreSQL/PostGIS y flujos de migración para consolidar registros de disponibilidad
       hídrica y procedimientos espaciales para la Agencia Nacional de Aguas y Saneamiento Básico de Brasil (ANA).
   - id: spatial-data-scientist
@@ -196,7 +196,7 @@ projects:
   activitiesLabel: 'Actividades principales:'
   outcomesLabel: 'Resultados principales:'
   softwareLabel: 'Software:'
-  publicationLabel: 'Publicación:'
+  publicationLabel: 'Publicaciones:'
   repositoryLabel: 'Repositorio'
   roleLabel: 'Cargo:'
   projectLinkLabel: 'Proyecto:'
@@ -276,7 +276,7 @@ projects:
     - Modelo de datos PostgreSQL/PostGIS unificado y flujo de migración para información de
       disponibilidad hídrica.
     - Documentación y materiales de capacitación para consultar, actualizar e ingerir datos.
-    client: ANA
+    client: Agência Nacional de Águas e Saneamento Básico (ANA)
     clientUrl: https://www.gov.br/ana/pt-br
   - id: nrfa
     role: spatial-data-scientist

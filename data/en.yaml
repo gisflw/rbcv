@@ -155,8 +155,8 @@ experience:
     location: Brazil
     workload: Part-time
     overview:
-    - Developed a terrain-based hydrological-importance indicator to help identify priority areas for water conservation
-      and restoration in the Cerrado.
+    - Supported the development of a terrain-based hydrological-importance index to help identify priority areas
+      for water conservation and restoration in the Cerrado.
     - Designed a PostgreSQL/PostGIS data model and migration workflows to consolidate water-availability records
       and spatial procedures for Brazil's National Water and Sanitation Agency (ANA).
   - id: spatial-data-scientist
@@ -212,7 +212,7 @@ projects:
   activitiesLabel: 'Main activities:'
   outcomesLabel: 'Main outcomes:'
   softwareLabel: 'Software:'
-  publicationLabel: 'Publication:'
+  publicationLabel: 'Publications:'
   repositoryLabel: 'Repository'
   roleLabel: 'Role:'
   projectLinkLabel: 'Project:'
@@ -292,7 +292,7 @@ projects:
     mainOutcomes:
     - A unified PostgreSQL/PostGIS data model and migration workflow for water-availability information.
     - Documentation and training materials for querying, updating, and ingesting data.
-    client: ANA
+    client: Agência Nacional de Águas e Saneamento Básico (ANA)
     clientUrl: https://www.gov.br/ana/pt-br
   - id: nrfa
     role: spatial-data-scientist

@@ -1,5 +1,6 @@
 {{- $cv := index hugo.Data .Site.Language.Lang -}}
-{{- $isProjects := eq .Params.sectionKey "projects" -}}
+{{- $isProjects := or (eq .Params.sectionKey "projects") (ne (.Params.projectId | default "") "") -}}
+{{- $activeProject := .Params.projectId | default "" -}}
 {{- $home := .Site.Home.RelPermalink -}}
 {{- $projectsURL := "projects/" | relLangURL -}}
 <aside class="cv-sidebar">
@@ -26,7 +27,7 @@
         {{ if $matches }}
         <div class="cv-nav-subgroup">
           <a class="cv-nav-role" href="{{ printf "%s#project-role-%s" $projectsURL $role.id }}">{{ $role.title }}</a>
-          {{ range $matches }}<a class="cv-nav-project" href="{{ printf "%s#project-%s" $projectsURL .id }}">{{ .title }}</a>{{ end }}
+          {{ range $matches }}<a class="cv-nav-project" href="{{ printf "projects/%s/" .id | relLangURL }}" {{ if eq .id $activeProject }}aria-current="page"{{ end }}>{{ .title }}</a>{{ end }}
         </div>
         {{ end }}
       {{ end }}

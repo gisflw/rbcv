@@ -20,10 +20,11 @@ three generated PDF CVs.
 - Language-specific profile, CV, project, tool, and publication summaries are in
   `data/en.yaml`, `data/pt.yaml`, and `data/es.yaml`.
 - The `hugo-profile` theme is vendored under `themes/hugo-profile`.
-- Experience renders role overviews; Projects renders all 12 detailed project records,
-  with linked software and publications selected from their canonical lists.
-- Detailed project, tool, and publication pages can be added under
-  multilingual `content/<lang>/...` paths.
+- Experience renders role overviews. Projects has a compact index grouped by role
+  and one page per project in each language. Project pages pull their titles,
+  descriptions, and related software and publications from the catalog data.
+- Detailed tool and publication pages can be added under multilingual
+  `content/<lang>/...` paths.
 - `public/` contains generated Hugo output and should not be edited by hand.
 - `../scratch.md` is raw CV source material outside this repo.
 
@@ -32,7 +33,7 @@ three generated PDF CVs.
 - `config/_default/` - Hugo setup, shared site parameters, languages, and menus.
 - `data/en.yaml`, `data/pt.yaml`, `data/es.yaml` - structured multilingual
   profile and CV content used by the website and PDF builder.
-- `content/` - multilingual project, tool, and publication detail pages.
+- `content/` - multilingual project page stubs and future tool/publication pages.
 - `layouts/` - project-level Hugo layout overrides.
 - `scripts/build_cv.rb`, `scripts/build_resume.rb`, and `templates/` - PDF CV and
   English resume generation from `data/`.
@@ -80,8 +81,8 @@ its text can be extracted for applicant-tracking systems.
 
 ## Near-term roadmap
 
-- Add detailed pages for projects, tools/datasets, and publications under
-  multilingual `content/<lang>/...` paths.
+- Add detailed pages for tools/datasets and publications under multilingual
+  `content/<lang>/...` paths.
 - Keep translations aligned across English, Portuguese, and Spanish.
 - Replace placeholder/example assets with semantically accurate images and CV
   files.

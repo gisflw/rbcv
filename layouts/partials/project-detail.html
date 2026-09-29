@@ -1,0 +1,56 @@
+{{- $project := .project -}}
+{{- $cv := .cv -}}
+{{- $page := .page -}}
+{{- $role := index (where $cv.experience.items "id" $project.role) 0 -}}
+<section id="projects" class="py-5 cv-projects-section">
+  <div class="container">
+    <div class="cv-project-detail">
+      <p class="cv-project-breadcrumb"><a href="{{ "projects/" | relLangURL }}">{{ $cv.projects.title }}</a> / <a href="{{ printf "projects/#project-role-%s" $project.role | relLangURL }}">{{ $role.title }}</a></p>
+      <article id="project-{{ $project.id }}" class="card cv-project-card" aria-labelledby="project-title-{{ $project.id }}">
+        <div class="card-body">
+          <h1 id="project-title-{{ $project.id }}" class="card-title">{{ $project.title }}</h1>
+          <div class="cv-project-meta">
+            <div>{{ partial "project-date-range.html" (dict "project" $project "lang" $page.Site.Language.Lang "current" $cv.labels.current) }}</div>
+            {{ with $project.partner }}<div>{{ $cv.experience.partnerLabel }} {{ if $project.partnerUrl }}<a href="{{ $project.partnerUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
+            {{ with $project.client }}<div>{{ $cv.experience.clientLabel }} {{ if $project.clientUrl }}<a href="{{ $project.clientUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
+            {{ with $project.funder }}<div>{{ $cv.experience.funderLabel }} {{ if $project.funderUrl }}<a href="{{ $project.funderUrl }}" target="_blank" rel="noopener">{{ . }}</a>{{ else }}{{ . }}{{ end }}</div>{{ end }}
+          </div>
+          <div class="cv-project-part">
+            <h2>{{ $cv.projects.scopeLabel }}</h2>
+            <p>{{ $project.scope }}</p>
+          </div>
+          <div class="cv-project-part">
+            <h2>{{ $cv.projects.activitiesLabel }}</h2>
+            <ul>{{ range $project.mainActivities }}<li>{{ . }}</li>{{ end }}</ul>
+          </div>
+          <div class="cv-project-part">
+            <h2>{{ $cv.projects.outcomesLabel }}</h2>
+            <ul>{{ range $project.mainOutcomes }}<li>{{ . }}</li>{{ end }}</ul>
+          </div>
+          {{ $software := where $cv.achievements.items "project" $project.id }}
+          {{ $publications := where $cv.publications.items "project" $project.id }}
+          {{ if or $software $publications }}
+          <div class="cv-project-related">
+            {{ with $software }}
+            <div class="cv-project-related-group">
+              <h2>{{ $cv.projects.softwareLabel }}</h2>
+              <ul>
+                {{ range . }}<li>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</li>{{ end }}
+              </ul>
+            </div>
+            {{ end }}
+            {{ with $publications }}
+            <div class="cv-project-related-group">
+              <h2>{{ $cv.projects.publicationLabel }}</h2>
+              <ul>
+                {{ range . }}{{ $link := .doi | default .url }}<li>{{ if $link }}<a href="{{ $link }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</li>{{ end }}
+              </ul>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
