@@ -46,7 +46,7 @@
 \cvlocation{<%= role["location"] %>}<% end %>
 
 <% (role["overview"] || []).each do |item| -%>
-- <%= item["text"] %> [Project details](<%= project_url(item["project"]) %>)
+- <%= item["text"] %> [\cvprojectarrow](<%= project_url(item["project"]) %>)
 <% end -%>
 
 \vspace{0.5em}

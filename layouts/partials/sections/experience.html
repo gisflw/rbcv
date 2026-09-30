@@ -18,7 +18,7 @@
         </div>
         <div class="cv-experience-card cv-experience-details">
           <ul class="cv-experience-overview">
-            {{ range .overview }}<li>{{ .text }} <a href="{{ printf "projects/%s/" .project | relLangURL }}">Project details</a></li>{{ end }}
+            {{ range .overview }}<li>{{ .text }} <a href="{{ printf "projects/%s/" .project | relLangURL }}" aria-label="Project details" title="Project details">↗</a></li>{{ end }}
           </ul>
         </div>
       </article>
